@@ -9,11 +9,11 @@
         class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8"
       >
         <div
-          v-for="product in products"
-          :key="product.id"
+          v-for="trip in trips"
+          :key="trip.id"
           class="group relative flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white"
         >
-          <AppTripCard :trip="product" />
+          <AppTripCard :trip="trip" />
         </div>
       </div>
     </div>
@@ -21,32 +21,42 @@
 </template>
 
 <script setup>
-const products = [
+const trips = [
   {
     id: 1,
-    name: 'Basic Tee 8-Pack',
+    title: 'Rainbow Mountain',
+    region: 'Cusco',
+    'trip-type': 'Inca Trail',
+    'trip-duration': '4 days',
+    'trip-season': 'Spring',
+    'trip-difficulty': 'Moderate',
+    'trip-region': 'Peru',
     href: '#',
     price: '$256',
     description:
       'Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.',
-    options: '8 colors',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg',
+
+    imageSrc: '/rainbow-mountain.jpeg',
     imageAlt:
       'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
   },
   {
-    id: 2,
-    name: 'Basic Tee',
+    id: 1,
+    title: 'Machu Picchu',
+    region: 'Cusco',
+    'trip-type': 'Inca Trail',
+    'trip-duration': '4 days',
+    'trip-season': 'Spring',
+    'trip-difficulty': 'Moderate',
+    'trip-region': 'Peru',
     href: '#',
-    price: '$32',
+    price: '$256',
     description:
-      'Look like a visionary CEO and wear the same black t-shirt every day.',
-    options: 'Black',
-    imageSrc:
-      'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-02.jpg',
-    imageAlt: 'Front of plain black t-shirt.',
+      'Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.',
+
+    imageSrc: '/machu-picchu-trip.jpeg',
+    imageAlt:
+      'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
   },
-  // More products...
 ];
 </script>

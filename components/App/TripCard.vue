@@ -12,7 +12,7 @@
     <h3 class="text-sm font-medium text-gray-900">
       <a :href="trip.href">
         <span aria-hidden="true" class="absolute inset-0" />
-        {{ trip.name }}
+        {{ trip.title }}
       </a>
     </h3>
     <p class="text-sm text-gray-500">{{ trip.description }}</p>
@@ -22,28 +22,41 @@
         {{ trip.price }}
       </p>
     </div>
+    <div class="space-x-4">
+      <span
+        class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600"
+        >Moderate</span
+      >
+      <span
+        class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600"
+        >4 Days</span
+      >
+      <span
+        class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600"
+        >March - Janary</span
+      >
+    </div>
   </div>
 </template>
 
 <script setup>
-// const { product } = defineProps(['product']);
-const trip = {
-  id: 1,
-  title: 'Basic Tee 8-Pack',
-  region: 'Cusco',
-  'trip-type': 'Inca Trail',
-  'trip-duration': '4 days',
-  'trip-season': 'Spring',
-  'trip-difficulty': 'Moderate',
-  'trip-region': 'Peru',
-  href: '#',
-  price: '$256',
-  description:
-    'Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.',
+const { trip } = defineProps(['trip']);
+// const trip = {
+//   id: 1,
+//   title: 'Rainbow Mountain',
+//   region: 'Cusco',
+//   'trip-type': 'Inca Trail',
+//   'trip-duration': '4 days',
+//   'trip-season': 'Spring',
+//   'trip-difficulty': 'Moderate',
+//   'trip-region': 'Peru',
+//   href: '#',
+//   price: '$256',
+//   description:
+//     'Get the full lineup of our Basic Tees. Have a fresh shirt all week, and an extra for laundry day.',
 
-  imageSrc:
-    'https://tailwindui.com/img/ecommerce-images/category-page-02-image-card-01.jpg',
-  imageAlt:
-    'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
-};
+//   imageSrc: '/rainbow-mountain.jpeg',
+//   imageAlt:
+//     'Eight shirts arranged on table in black, olive, grey, blue, white, red, mustard, and green.',
+// };
 </script>
