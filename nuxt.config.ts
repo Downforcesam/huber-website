@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light',
   },
-  modules: ['@nuxtjs/i18n', '@nuxt/ui', '@nuxt/content'],
+  modules: ['@nuxtjs/i18n', '@nuxt/ui', 'nuxt-anchorscroll', '@nuxt/content'],
   i18n: {
     baseUrl: 'http://localhost:3000',
     defaultLocale: 'en',

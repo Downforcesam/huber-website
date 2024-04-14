@@ -17,12 +17,13 @@
         </button>
       </div>
       <div class="hidden lg:flex lg:gap-x-12">
-        <a
+        <NuxtLink
           v-for="item in navigation"
           :key="item.name"
-          :href="item.href"
+          :href="`#${item.href}`"
+          @click="scrollToAnchor(item.href)"
           class="text-sm font-semibold leading-6 text-gray-900"
-          >{{ item.name }}</a
+          >{{ item.name }}</NuxtLink
         >
       </div>
     </nav>
@@ -67,38 +68,11 @@
 import { Dialog, DialogPanel } from '@headlessui/vue';
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  { name: 'About Us', href: '#' },
+  { name: 'Destinations', href: 'destinations' },
+  { name: 'Trips', href: '#' },
+  { name: 'Contact', href: '#' },
 ];
 const mobileMenuOpen = ref(false);
 const route = useRoute();
-
-const links = [
-  {
-    label: 'Profile',
-    avatar: {
-      src: 'https://avatars.githubusercontent.com/u/739984?v=4',
-    },
-    badge: 100,
-  },
-  {
-    label: 'Installation',
-    icon: 'i-heroicons-home',
-    to: '/getting-started/installation',
-  },
-  {
-    label: 'Horizontal Navigation',
-    icon: 'i-heroicons-chart-bar',
-    to: `${
-      route.path.startsWith('/dev') ? '/dev' : ''
-    }/components/horizontal-navigation`,
-  },
-  {
-    label: 'Command Palette',
-    icon: 'i-heroicons-command-line',
-    to: '/components/command-palette',
-  },
-];
 </script>
