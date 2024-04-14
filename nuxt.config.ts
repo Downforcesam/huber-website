@@ -8,6 +8,8 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/i18n', '@nuxt/ui', '@nuxt/content'],
   i18n: {
     baseUrl: 'http://localhost:3000',
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default',
     langDir: 'locales/',
     locales: [
       {
