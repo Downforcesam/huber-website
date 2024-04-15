@@ -69,28 +69,22 @@
               <h1
                 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
               >
-                We’re changing the way people connect.
+                Discover Your Andean Adventure.
               </h1>
               <p
                 class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none"
               >
-                Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis
-                cupidatat mollit aute velit. Et labore commodo nulla aliqua
-                proident mollit ullamco exercitation tempor. Sint aliqua anim
-                nulla sunt mollit id pariatur in voluptate cillum.
+                Prepare to embark on a transformative journey through the heart
+                of the Peruvian Andes with Peru Excursions. Our meticulously
+                curated trips promise a harmonious blend of exhilarating
+                adventure, cultural immersion, and awe-inspiring natural beauty.
+                From the rugged peaks of the Andes to the vibrant tapestry of
+                local communities, each expedition offers a unique opportunity
+                to connect with the soul of this legendary landscape. Get ready
+                to discover unforgettable experiences, forge lasting
+                connections, and create memories that will linger long after
+                your return home
               </p>
-              <div class="mt-10 flex items-center gap-x-6">
-                <a
-                  href="#"
-                  class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >Get started</a
-                >
-                <a
-                  href="#"
-                  class="text-sm font-semibold leading-6 text-gray-900"
-                  >Live demo <span aria-hidden="true">→</span></a
-                >
-              </div>
             </div>
             <div
               class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
