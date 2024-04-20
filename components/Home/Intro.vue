@@ -130,7 +130,7 @@
               <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 <div class="relative">
                   <img
-                    src="/public/quechua.jpeg"
+                    src="/public/home-stay.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />

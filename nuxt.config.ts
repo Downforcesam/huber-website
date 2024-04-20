@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   ssr: false,
 
   modules: ['@nuxtjs/i18n', '@nuxt/ui', 'nuxt-anchorscroll', '@nuxt/content'],
+  content: {
+    // locales: ['es'],
+  },
   i18n: {
     baseUrl: 'http://localhost:3000',
     defaultLocale: 'en',

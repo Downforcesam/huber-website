@@ -2,8 +2,7 @@
   <main class="min-h-screen">
     <HomeHero />
     <HomeIntro />
-    <HomeDestinations id="destinations" />
-    <HomeTrips />
+    <HomeTours />
     <HomeContact />
   </main>
 </template>
