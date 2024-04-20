@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/i18n', '@nuxt/ui', 'nuxt-anchorscroll', '@nuxt/content'],
   content: {
-    locales: ['es', 'en'],
+    // locales: ['es', 'en'],
   },
   i18n: {
     baseUrl: 'http://localhost:3000',
