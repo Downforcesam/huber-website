@@ -39,7 +39,7 @@
                 <p class="flex-auto">{{ tour.description }}</p>
                 <p class="mt-6">
                   <NuxtLink
-                    :to="`/${tour.slug}`"
+                    :to="`/tours/${tour.slug}`"
                     class="text-sm font-semibold leading-6 text-indigo-600"
                     >Learn more <span aria-hidden="true">→</span></NuxtLink
                   >
