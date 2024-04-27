@@ -2,6 +2,6 @@
   <NuxtLoadingIndicator />
   <AppNavBar />
 
-  <NuxtPage />
+  <NuxtPage class="bg-white" />
   <AppFooter />
 </template>

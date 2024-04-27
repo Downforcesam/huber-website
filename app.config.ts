@@ -1,7 +1,7 @@
 export default defineAppConfig({
   ui: {
-    primary: 'teal',
-    gray: 'neutral',
+    base: 'bg-white',
+    colorScheme: 'light',
     formGroup: {
       help: 'text-xs mt-1 text-gray-500 dark:text-gray-400',
       error: 'text-xs mt-1 text-red-500 dark:text-red-400',
@@ -9,6 +9,7 @@ export default defineAppConfig({
         base: 'text-sm block font-medium text-gray-500 dark:text-gray-200',
       },
     },
+
     button: {
       rounded:
         'rounded-md transition-transform active:scale-x-[0.98] active:scale-y-[0.99]',

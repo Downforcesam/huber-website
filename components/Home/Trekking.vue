@@ -1,10 +1,10 @@
 <template>
-  <ContentList :path="`/${locale}/tours`" v-slot="{ list }">
+  <ContentList :path="`/${locale}/trekking`" v-slot="{ list }">
     <div class="bg-white">
       <div
         class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
       >
-        <h2 class="text-black">Sightseeing Tours</h2>
+        <h2 class="text-black">Trekking Tours</h2>
 
         <div
           class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-3 lg:gap-x-8"
