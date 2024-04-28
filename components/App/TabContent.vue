@@ -9,7 +9,7 @@
             <h2
               class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
             >
-              {{ day.day.label }}
+              {{ day.label }}
             </h2>
             <p class="mt-6 text-lg leading-8 text-gray-600">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores
@@ -48,7 +48,7 @@
             />
             <div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
               <img
-                :src="day.day.img"
+                :src="day.img"
                 alt="Product screenshot"
                 width="2432"
                 height="1442"
@@ -73,7 +73,7 @@ import {
   ServerIcon,
 } from '@heroicons/vue/20/solid';
 
-const day = defineProps(['day']);
+defineProps(['day']);
 
 const features = [
   {
