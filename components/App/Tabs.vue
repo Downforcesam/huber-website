@@ -1,68 +1,34 @@
 <script setup lang="ts">
 const items = [
   {
-    slot: 'day1',
     label: 'Day 1',
+    content: 'This is the content shown for Tab1',
+    img: '/cusco-city.jpeg',
   },
   {
-    slot: 'day2',
     label: 'Day 2',
+
+    content: 'And, this is the content for Tab2',
+  },
+  {
+    label: 'Day 3',
+    content: 'Finally, this is the content for Tab3',
   },
 ];
-
-const accountForm = reactive({ name: 'Benjamin', username: 'benjamincanac' });
-const passwordForm = reactive({ currentPassword: '', newPassword: '' });
-
-function onSubmitAccount() {
-  console.log('Submitted form:', accountForm);
-}
-
-function onSubmitPassword() {
-  console.log('Submitted form:', passwordForm);
-}
 </script>
 
 <template>
   <UTabs
     :items="items"
+    class="text-gray-700"
     orientation="vertical"
     :ui="{ wrapper: 'flex items-start gap-4', list: { width: 'w-48' } }"
-    class="bg-white"
   >
-    <template #day1="{ item }">
-      <UCard @submit.prevent="onSubmitAccount">
-        <template #header>
-          <p
-            class="text-base font-semibold leading-6 text-gray-900 dark:text-white"
-          >
-            {{ item.label }}
-          </p>
-          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Make changes to your account here. Click save when you're done.
-          </p>
-        </template>
-        <UContainer>
-          <img src="/public/cusco-2.jpeg" alt="" />
-        </UContainer>
-      </UCard>
-    </template>
-
-    <template #day2="{ item }">
-      <UCard @submit.prevent="onSubmitAccount">
-        <template #header>
-          <p
-            class="text-base font-semibold leading-6 text-gray-900 dark:text-white"
-          >
-            {{ item.label }}
-          </p>
-          <p class="mt-1 text-sm text-gray-500 dark:text-gray-400">
-            Make changes to your account here. Click save when you're done.
-          </p>
-        </template>
-        <UContainer>
-          <img src="/public/cusco-city.jpeg" alt="" />
-        </UContainer>
-      </UCard>
+    <template #item="{ item }">
+      <div class="p-4 bg-gray-100 h-full">
+        {{ item.label }}
+        <AppTabContent :day="item" />
+      </div>
     </template>
   </UTabs>
 </template>

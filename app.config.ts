@@ -1,62 +1,37 @@
 export default defineAppConfig({
   ui: {
-    base: 'bg-white',
-    colorScheme: 'light',
-    formGroup: {
-      help: 'text-xs mt-1 text-gray-500 dark:text-gray-400',
-      error: 'text-xs mt-1 text-red-500 dark:text-red-400',
-      label: {
-        base: 'text-sm block font-medium text-gray-500 dark:text-gray-200',
-      },
-    },
-
-    button: {
-      rounded:
-        'rounded-md transition-transform active:scale-x-[0.98] active:scale-y-[0.99]',
-    },
-    modal: {
-      overlay: {
-        background: 'bg-[rgba(0,8,47,.275)] saturate-50',
-      },
-      padding: 'p-0',
-      rounded: 'rounded-t-2xl sm:rounded-xl',
-      transition: {
-        enterFrom: 'opacity-0 translate-y-full sm:translate-y-0 sm:scale-x-95',
-        leaveFrom: 'opacity-100 translate-y-0 sm:scale-x-100',
-      },
-    },
-    container: {
-      constrained: 'max-w-2xl',
-    },
-    horizontalNavigation: {
-      wrapper: 'relative w-full flex items-center justify-between',
-      container: 'flex items-center min-w-0',
-      inner: 'min-w-0',
-      base: 'group relative w-full flex items-center gap-1.5 px-2.5 py-3.5 rounded-md font-medium text-sm focus:outline-none focus-visible:outline-none dark:focus-visible:outline-none focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400 disabled:cursor-not-allowed disabled:opacity-75',
-      before:
-        'before:absolute before:inset-x-0 before:inset-y-2 before:inset-px before:rounded-md hover:before:bg-gray-50 dark:hover:before:bg-gray-800/50',
-      after:
-        'after:absolute after:bottom-0 after:inset-x-2.5 after:block after:h-[2px] after:mt-2',
-      active:
-        'text-gray-900 dark:text-white after:bg-primary-500 dark:after:bg-primary-400 after:rounded-full',
-      inactive:
-        'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white',
-      label: 'truncate relative',
-      icon: {
-        base: 'flex-shrink-0 w-5 h-5 relative',
-        active: 'text-gray-700 dark:text-gray-200',
-        inactive:
-          'text-gray-400 dark:text-gray-500 group-hover:text-gray-700 dark:group-hover:text-gray-200',
-      },
-      avatar: {
-        base: 'flex-shrink-0',
-        size: '2xs',
-      },
-      badge: {
-        base: 'flex-shrink-0 ml-auto relative rounded',
-        color: 'gray',
-        variant: 'solid',
-        size: 'xs',
+    tab: {
+      wrapper: 'relative space-y-2',
+      container: 'relative w-full',
+      base: 'focus:outline-none',
+      list: {
+        base: 'relative',
+        background: 'bg-gray-100 dark:bg-gray-800',
+        rounded: 'rounded-lg',
+        shadow: '',
+        padding: 'p-1',
+        height: 'h-10',
+        width: 'w-full',
+        marker: {
+          wrapper:
+            'absolute top-[4px] left-[4px] duration-200 ease-out focus:outline-none',
+          base: 'w-full h-full',
+          background: 'bg-white dark:bg-gray-900',
+          rounded: 'rounded-md',
+          shadow: 'shadow-sm',
+        },
+        tab: {
+          base: 'relative inline-flex items-center justify-center flex-shrink-0 w-full ui-focus-visible:outline-0 ui-focus-visible:ring-2 ui-focus-visible:ring-primary-500 dark:ui-focus-visible:ring-primary-400 ui-not-focus-visible:outline-none focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 transition-colors duration-200 ease-out',
+          background: '',
+          active: 'text-gray-900 dark:text-white',
+          inactive: 'text-gray-500 dark:text-gray-400',
+          height: 'h-8',
+          padding: 'px-3',
+          size: 'text-sm',
+          font: 'font-medium',
+          rounded: 'rounded-md',
+          shadow: '',
+        },
       },
     },
   },

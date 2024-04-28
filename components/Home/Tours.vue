@@ -25,10 +25,10 @@
             </div>
             <div class="flex flex-1 flex-col space-y-2 p-4">
               <h3 class="text-sm font-medium text-gray-900">
-                <a :href="tour.slug">
+                <NuxtLink :to="`/tours/${tour.slug}`">
                   <span aria-hidden="true" class="absolute inset-0" />
                   {{ tour.title }}
-                </a>
+                </NuxtLink>
               </h3>
               <p class="text-sm text-gray-500">
                 <span v-for="destination in tour.destinations" class="mr-1">
