@@ -9,13 +9,4 @@ const items = [
 ];
 </script>
 
-<template>
-  <UCarousel
-    v-slot="{ item }"
-    :items="items"
-    :ui="{ item: 'basis-full' }"
-    class="rounded-lg overflow-hidden"
-  >
-    <img :src="item" class="w-full" draggable="false" />
-  </UCarousel>
-</template>
+<template></template>

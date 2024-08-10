@@ -2,7 +2,6 @@
   <main class="min-h-screen">
     <HomeHero />
     <HomeIntro />
-
     <HomeTours />
     <HomeTrekking />
     <HomeContact />

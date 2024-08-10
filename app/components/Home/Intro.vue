@@ -94,7 +94,7 @@
               >
                 <div class="relative">
                   <img
-                    src="/public/landscape.jpeg"
+                    src="/landscape.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
@@ -108,7 +108,7 @@
               >
                 <div class="relative">
                   <img
-                    src="/public/cusco-2.jpeg"
+                    src="/cusco-2.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
@@ -118,7 +118,7 @@
                 </div>
                 <div class="relative">
                   <img
-                    src="/public/maras.jpeg"
+                    src="/maras.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
@@ -130,7 +130,7 @@
               <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 <div class="relative">
                   <img
-                    src="/public/home-stay.jpeg"
+                    src="/home-stay.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />
@@ -140,7 +140,7 @@
                 </div>
                 <div class="relative">
                   <img
-                    src="/public//machu-picchu-lama.jpeg"
+                    src="/machu-picchu-lama.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
                   />

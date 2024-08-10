@@ -1,12 +1,12 @@
 <template>
   <div class="relative min-h-screen isolate overflow-hidden">
     <img
-      src="/public/machu-picchu.jpg"
+      src="/machu-picchu.jpg"
       alt=""
       class="absolute inset-0 -z-10 h-full w-full object-cover"
     />
   </div>
-  <div class="absolute inset-0 bg-black bg-opacity-20">
+  <div class="absolute inset-0 bg-black/20">
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
       <div class="text-center">
         <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
