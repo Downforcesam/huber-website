@@ -7,7 +7,7 @@
       <div class="flex lg:flex-1">
         <NuxtLink to="/" class="-m-1.5 p-1.5">
           <span class="sr-only">Your Company</span>
-          <img
+          <NuxtImg
             class="h-8 w-auto"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
             alt=""
@@ -46,7 +46,7 @@
         <div class="flex items-center justify-between">
           <NuxtLink to="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
-            <img
+            <NuxtImg
               class="h-8 w-auto"
               src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
               alt=""
@@ -80,7 +80,6 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
 import { Dialog, DialogPanel } from '@headlessui/vue';
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 

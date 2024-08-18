@@ -1,10 +1,10 @@
 <template>
   <main class="min-h-screen">
     <HomeHero />
-    <HomeIntro />
+    <!-- <HomeIntro /> -->
     <HomeTours />
     <HomeTrekking />
-    <HomeContact />
+    <!-- <HomeContact /> -->
   </main>
 </template>
 

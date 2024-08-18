@@ -47,7 +47,7 @@
               aria-hidden="true"
             />
             <div class="mx-auto max-w-2xl sm:mx-0 sm:max-w-none">
-              <img
+              <NuxtImg
                 :src="day.img"
                 alt="Product screenshot"
                 width="2432"

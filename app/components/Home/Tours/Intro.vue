@@ -93,7 +93,7 @@
                 class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
               >
                 <div class="relative">
-                  <img
+                  <Nuxtimg
                     src="/landscape.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
@@ -107,7 +107,7 @@
                 class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36"
               >
                 <div class="relative">
-                  <img
+                  <Nuxtimg
                     src="/cusco-2.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
@@ -117,7 +117,7 @@
                   />
                 </div>
                 <div class="relative">
-                  <img
+                  <Nuxtimg
                     src="/maras.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
@@ -129,7 +129,7 @@
               </div>
               <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
                 <div class="relative">
-                  <img
+                  <Nuxtimg
                     src="/home-stay.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
@@ -139,7 +139,7 @@
                   />
                 </div>
                 <div class="relative">
-                  <img
+                  <Nuxtimg
                     src="/machu-picchu-lama.jpeg"
                     alt=""
                     class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"

@@ -17,7 +17,7 @@
             <div
               class="aspect-h-4 aspect-w-3 bg-gray-200 sm:aspect-none group-hover:opacity-75 sm:h-96"
             >
-              <img
+              <NuxtImg
                 :src="tour.thumbnail"
                 :alt="tour.title"
                 class="h-full w-full object-cover object-center sm:h-full sm:w-full"
