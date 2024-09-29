@@ -1,13 +1,12 @@
 <template>
   <main class="min-h-screen">
-    <HomeHero />
+    <HomeHero1 />
     <!-- <HomeIntro /> -->
+
     <HomeTours />
-    <HomeTrekking />
-    <!-- <HomeContact /> -->
+    <!-- <HomeTrekking /> -->
+    <HomeContact />
   </main>
 </template>
 
-<script setup>
-const { locale } = useI18n();
-</script>
+<script setup></script>
