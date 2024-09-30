@@ -4,6 +4,7 @@
   >
     <NuxtImg
       src="/cusco.jpeg"
+      :alt="title"
       class="object-cover absolute -z-10 h-full w-full"
     >
     </NuxtImg>

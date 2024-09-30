@@ -1,7 +1,7 @@
 <template>
   <NuxtLoadingIndicator />
 
-  <AppNavBar class="fixed z-50 w-full" />
+  <AppNavBar class="z-50 absolute w-full" />
 
   <NuxtPage class="flex flex-col items-center" />
   <!-- <AppFooter /> -->
