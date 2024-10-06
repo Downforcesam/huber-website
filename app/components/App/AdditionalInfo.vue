@@ -28,12 +28,12 @@
                 </span>
               </DisclosureButton>
             </dt>
-            <DisclosurePanel as="dd" class="mt-2 pr-12">
-              <ul class="pr-12">
+            <DisclosurePanel as="dd" class="mt-2">
+              <ul class="">
                 <li
                   v-for="value in Object.values(item)[0]"
                   :key="value"
-                  class="list-disc list-inside"
+                  class="list-disc list-inside pl-4"
                 >
                   {{ value }}
                 </li>

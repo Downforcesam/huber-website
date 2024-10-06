@@ -38,7 +38,7 @@
             </dt>
             <DisclosurePanel as="dd" class="mt-2">
               <NuxtImg :src="day.image" class="rounded"> </NuxtImg>
-              <p class="text-base text-gray-600 leading-7">
+              <p class="">
                 {{ day.activityDescription }}
               </p>
             </DisclosurePanel>
