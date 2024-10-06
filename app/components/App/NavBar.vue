@@ -8,7 +8,7 @@
         </NuxtLink>
       </div>
       <div></div>
-      <div class="flex lg:hidden">
+      <div class="hidden">
         <button
           type="button"
           class="inline-flex justify-center items-center -m-2.5 p-2.5 rounded-md text-gray-700"

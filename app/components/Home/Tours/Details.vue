@@ -4,6 +4,6 @@
       <h2>{{ $t('itinerary') }}</h2>
     </div>
     <AppTabs />
-    <AppAccordion />
+    <!-- <AppAccordion /> -->
   </div>
 </template>
