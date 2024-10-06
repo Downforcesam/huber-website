@@ -6,5 +6,10 @@
   "heroTitle": "Explora los majestuosos Andes peruanos con Excursiones Perú",
   "heroSubtitle": "Recorre antiguos senderos, descubre joyas ocultas y sumérgete en un viaje de por vida. ¡Comienza tu aventura hoy!",
   "heroButton": "Comienza tu aventura",
-  "itinerary": "Itinerario"
+  "itinerary": "Itinerario",
+  "additionalInfo": "Información adicional",
+
+  "included": "Incluido",
+  "notIncluded": "No incluido",
+  "bring": "Traer"
 }

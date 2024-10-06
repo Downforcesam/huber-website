@@ -1,13 +1,11 @@
 <template>
-  <div id="tours">
+  <div id="tours" class="mt-10 lg:mt-20 px-4 w-full b container">
     <ContentList :path="`/${locale}/tours`" v-slot="{ list }">
-      <div class="bg-white">
-        <div
-          class="mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 max-w-2xl lg:max-w-7xl"
-        >
+      <div class="w-full">
+        
           <h2 class="p-4">{{ $t('tours') }}</h2>
 
-          <div
+          <d
             class="gap-y-4 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
           >
             <div
@@ -50,7 +48,9 @@
                 </div>
               </div>
             </div>
-          </div>
+          </d
+
+
         </div>
       </div></ContentList
     >

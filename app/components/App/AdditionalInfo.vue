@@ -3,13 +3,13 @@
     <div class="mx-auto px-6 lg:px-8 py-24 sm:py-32 lg:py-40 max-w-7xl">
       <div class="mx-auto divide-y divide-gray-900/10 max-w-4xl">
         <h2 class="font-bold text-2xl text-gray-900 leading-10 tracking-tight">
-          {{ $t('itinerary') }}
+          {{ $t('additionalInfo') }}
         </h2>
         <dl class="space-y-2 mt-10 divide-y divide-gray-900/10">
           <Disclosure
             as="div"
-            v-for="day in itinerary"
-            :key="day"
+            v-for="item in info"
+            :key="item"
             class="py-2"
             v-slot="{ open }"
           >
@@ -18,16 +18,8 @@
                 class="flex justify-between items-start w-full text-gray-900 text-left"
               >
                 <div class="flex justify-center items-center">
-                  <div class="flex flex-col justify-center items-center">
-                    <span>
-                      {{ $t('day') }}
-                    </span>
-                    <span class="font-semibold text-base leading-7">{{
-                      day.day
-                    }}</span>
-                  </div>
                   <h3 class="ml-4 font-bold">
-                    {{ day.title }}
+                    {{ $t(`${Object.keys(item)[0]}`) }}
                   </h3>
                 </div>
                 <span class="flex justify-center ml-6 h-7">
@@ -37,10 +29,17 @@
               </DisclosureButton>
             </dt>
             <DisclosurePanel as="dd" class="mt-2 pr-12">
-              <NuxtImg :src="day.image"> </NuxtImg>
-              <p class="text-base text-gray-600 leading-7">
-                {{ day.activityDescription }}
-              </p>
+              <ul class="pr-12">
+                <li
+                  v-for="value in Object.values(item)[0]"
+                  :key="value"
+                  class="list-disc list-inside"
+                >
+                  {{ value }}
+                </li>
+              </ul>
+
+              <p class="text-base text-gray-600 leading-7"></p>
             </DisclosurePanel>
           </Disclosure>
         </dl>
@@ -54,6 +53,6 @@ import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
 import { MinusIcon, PlusIcon } from '@heroicons/vue/24/outline';
 
 const props = defineProps({
-  itinerary: Object,
+  info: Array,
 });
 </script>

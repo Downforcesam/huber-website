@@ -27,7 +27,8 @@
           >{{ item.name }}
         </NuxtLink>
       </div>
-      <AppLangSwitcher class="max-lg:hidden" />
+      <!-- <AppLangSwitcher class="max-lg:hidden" /> -->
+      <AppLangSwitcher />
     </nav>
     <Dialog
       class="lg:hidden"

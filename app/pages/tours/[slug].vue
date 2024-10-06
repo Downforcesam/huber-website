@@ -4,6 +4,7 @@
     <HomeToursDescription :tour="data" />
     <HomeToursDetails :tour="data" />
     <AppAccordion :itinerary="data?.itinerary" />
+    <AppAdditionalInfo :info="data?.additionalInfo" />
   </div>
 </template>
 
