@@ -1,37 +1,50 @@
 <template>
-  <div class="bg-white lg:hidden">
-    <div class="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-      <div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-        <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">
-          Frequently asked questions
+  <div class="lg:hidden bg-white w-full">
+    <div class="mx-auto px-6 lg:px-8 py-24 sm:py-32 lg:py-40 max-w-7xl">
+      <div class="mx-auto divide-y divide-gray-900/10 max-w-4xl">
+        <h2 class="font-bold text-2xl text-gray-900 leading-10 tracking-tight">
+          {{ $t('itinerary') }}
         </h2>
-        <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+        <dl class="space-y-2 mt-10 divide-y divide-gray-900/10">
           <Disclosure
             as="div"
-            v-for="faq in faqs"
-            :key="faq.question"
-            class="pt-6"
+            v-for="day in itinerary"
+            :key="day"
+            class="py-2"
             v-slot="{ open }"
           >
             <dt>
               <DisclosureButton
-                class="flex w-full items-start justify-between text-left text-gray-900"
+                class="flex justify-between items-start w-full text-gray-900 text-left"
               >
-                <span class="text-base font-semibold leading-7">{{
-                  faq.question
-                }}</span>
-                <span class="ml-6 flex h-7 items-center">
+                <div class="flex justify-center items-center">
+                  <div class="flex flex-col justify-center items-center">
+                    <span>
+                      {{ $t('day') }}
+                    </span>
+                    <span class="font-semibold text-base leading-7">{{
+                      day.day
+                    }}</span>
+                  </div>
+                  <h3 class="ml-4 font-bold">
+                    {{ day.title }}
+                  </h3>
+                </div>
+                <span class="flex justify-center ml-6 h-7">
                   <PlusSmallIcon
                     v-if="!open"
-                    class="h-6 w-6"
+                    class="w-6 h-6"
                     aria-hidden="true"
                   />
-                  <MinusSmallIcon v-else class="h-6 w-6" aria-hidden="true" />
+                  <MinusSmallIcon v-else class="w-6 h-6" aria-hidden="true" />
                 </span>
               </DisclosureButton>
             </dt>
             <DisclosurePanel as="dd" class="mt-2 pr-12">
-              <p class="text-base leading-7 text-gray-600">{{ faq.answer }}</p>
+              <NuxtImg :src="day.image"> </NuxtImg>
+              <p class="text-base text-gray-600 leading-7">
+                {{ day.activityDescription }}
+              </p>
             </DisclosurePanel>
           </Disclosure>
         </dl>
@@ -44,12 +57,7 @@
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/vue/24/outline';
 
-const faqs = [
-  {
-    question: "What's the best thing about Switzerland?",
-    answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-  },
-  // More questions...
-];
+const props = defineProps({
+  itinerary: Object,
+});
 </script>

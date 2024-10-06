@@ -6,7 +6,8 @@
       >
         <span class="absolute -inset-1.5" />
         <span class="sr-only">Open user menu</span>
-        <img class="rounded-full w-8 h-8" :src="`/${locale}.svg`" alt="" />
+        <!-- <img class="rounded-full w-8 h-8" :src="`/${locale}.svg`" alt="" /> -->
+        <span class="px-4 py-2 text-sm text-white uppercase">{{ locale }}</span>
       </MenuButton>
     </div>
     <transition
@@ -22,7 +23,7 @@
       >
         <MenuItem
           v-for="lang in availableLocales"
-          :key="availableLocales"
+          :key="availableLocales[0]"
           v-slot="{ active }"
         >
           <NuxtLink
@@ -42,12 +43,13 @@
 
 <script setup>
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue';
-const { locale, locales } = useI18n();
+const { locale, locales, setLocale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
 const availableLocales = computed(() => {
   const lang = locales.value.map((locale) => locale.code);
-  console.log(lang);
   return lang.filter((i) => i.code !== locale.value);
 });
+
+console.log(availableLocales.value);
 </script>

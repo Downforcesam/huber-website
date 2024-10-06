@@ -2,14 +2,12 @@
   <header class="bg-[#0A0D0A] w-full text-white">
     <nav class="flex justify-between items-center px-3" aria-label="Global">
       <div class="flex">
-        <NuxtLink to="/" class="">
-          <span class="sr-only">Your Company</span>
-          <NuxtImg class="w-auto h-20" src="/peru-excursion.svg" alt="" />
+        <NuxtLink :to="localePath('/')" class="">
+          <span class="sr-only">Peru Excursions</span>
+          <NuxtImg class="w-auto h-24" src="/peru-excursion.svg" alt="" />
         </NuxtLink>
       </div>
-      <div>
-        <AppLangSwitcher />
-      </div>
+      <div></div>
       <div class="flex lg:hidden">
         <button
           type="button"
@@ -29,6 +27,7 @@
           >{{ item.name }}
         </NuxtLink>
       </div>
+      <AppLangSwitcher class="max-lg:hidden" />
     </nav>
     <Dialog
       class="lg:hidden"
@@ -78,6 +77,7 @@
 <script setup>
 import { Dialog, DialogPanel } from '@headlessui/vue';
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
+const localePath = useLocalePath();
 
 const navigation = [
   { name: 'Home', href: '/' },

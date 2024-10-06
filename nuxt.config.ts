@@ -9,10 +9,12 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/i18n',
+    '@vueuse/nuxt',
     'vuetify-nuxt-module',
     'nuxt-headlessui',
     '@nuxt/content',
     '@nuxt/image',
+    'nuxt-anchorscroll',
     '@nuxtjs/tailwindcss',
   ],
 
@@ -23,6 +25,11 @@ export default defineNuxtConfig({
   i18n: {
     baseUrl: 'http://localhost:3000',
     defaultLocale: 'en',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root', // recommended
+    },
     strategy: 'prefix_except_default',
     // strategy: 'prefix',
     langDir: '../app/locales/',

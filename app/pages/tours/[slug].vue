@@ -3,7 +3,7 @@
     <HomeToursIntro :title="data?.title" />
     <HomeToursDescription :tour="data" />
     <HomeToursDetails :tour="data" />
-    <AppAccordion />
+    <AppAccordion :itinerary="data?.itinerary" />
   </div>
 </template>
 
@@ -13,6 +13,7 @@ const { locale } = useI18n();
 const { data } = await useAsyncData('tours', () =>
   queryContent(`/${locale.value}/tours`).where({ slug }).findOne()
 );
+
 provide('tour', data);
 
 if (!data.value) {

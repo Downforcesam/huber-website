@@ -4,13 +4,19 @@
 @tailwind utilities;
 
 @layer base {
+  div {
+    @apply text-gray-900;
+  }
+  p {
+    @apply mt-6 text-lg leading-8 text-gray-600;
+  }
   h1 {
     @apply text-6xl font-bold tracking-tight text-gray-900 sm:text-6xl capitalize;
   }
   h2 {
-    @apply text-6xl font-bold;
+    @apply text-6xl font-bold text-gray-900;
   }
   h3 {
-    @apply text-lg;
+    @apply text-lg text-gray-900;
   }
 }

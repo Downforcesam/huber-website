@@ -3,7 +3,7 @@
     <v-sheet
       color="#fff"
       rounded="lg"
-      class="d-flex flex-row container pa-10 border"
+      class="d-flex flex-row border container pa-10"
     >
       <v-tabs
         v-model="tab"
@@ -18,7 +18,7 @@
             :prepend-icon="item.icon"
             :text="item.text"
             :value="item.value"
-            class="text-none bg-blue-500"
+            class="bg-blue-500 text-none"
           ></v-tab>
         </template>
 
@@ -27,12 +27,14 @@
             <v-img cover :src="item.img" aspect-ratio="4/3" height="600">
             </v-img>
             <div class="flex w-full">
-              <div class="text-6xl flex p-3 items-center space-x-2">
+              <div class="flex items-center space-x-2 p-3 text-6xl">
                 <span>{{ $t('day') }}</span>
                 <span>{{ item.day }}</span>
               </div>
-              <div class="flex p-3 line">
-                {{ item.description }}
+              <div class="flex p-3">
+                <p>
+                  {{ item.description }}
+                </p>
               </div>
             </div>
           </v-tabs-window-item>
