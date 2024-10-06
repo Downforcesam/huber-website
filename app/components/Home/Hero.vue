@@ -11,7 +11,7 @@
         <h1 class="font-bold text-4xl text-white sm:text-6xl tracking-tight">
           {{ $t('heroTitle') }}
         </h1>
-        <p class="mt-6 text-gray-100 text-lg leading-8">
+        <p class="mt-6 px-2 text-center text-gray-100 text-lg leading-8">
           {{ $t('heroSubtitle') }}
         </p>
         <div class="flex justify-center items-center gap-x-6 mt-10">
