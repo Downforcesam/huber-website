@@ -1,6 +1,6 @@
 <template>
-  <div class="lg:hidden bg-white w-full">
-    <div class="mx-auto px-6 lg:px-8 py-24 sm:py-32 lg:py-40 max-w-7xl">
+  <div class="flex flex-col items-center bg-white py-10 lg:py-16 w-full">
+    <div class="px-4 container">
       <div class="mx-auto divide-y divide-gray-900/10 max-w-4xl">
         <h2 class="font-bold text-2xl text-gray-900 leading-10 tracking-tight">
           {{ $t('additionalInfo') }}

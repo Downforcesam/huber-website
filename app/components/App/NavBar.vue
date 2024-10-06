@@ -31,7 +31,7 @@
       <AppLangSwitcher />
     </nav>
     <Dialog
-      class="lg:hidden"
+      class="hidden"
       @close="mobileMenuOpen = false"
       :open="mobileMenuOpen"
     >

@@ -26,12 +26,12 @@
           <v-tabs-window-item :value="item.value" class="pa-4">
             <v-img cover :src="item.img" aspect-ratio="4/3" height="600">
             </v-img>
-            <div class="flex w-full">
-              <div class="flex items-center space-x-2 p-3 text-6xl">
+            <div class="flex flex-col w-full">
+              <div class="flex items-center space-x-2 pt-2 text-5xl">
                 <span>{{ $t('day') }}</span>
                 <span>{{ item.day }}</span>
               </div>
-              <div class="flex p-3">
+              <div class="flex">
                 <p>
                   {{ item.description }}
                 </p>
