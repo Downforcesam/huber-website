@@ -3,73 +3,72 @@
   "thumbnail": "/cusco-2.jpeg",
   "slug": "choquequirao",
   "duration": 5,
-  "category": "Trekking",
-  "difficulty": "Moderate",
-  "description": "Choquequira is one of the least visited places in Cusco and also one of the most spectacular places in the Inca-dominated region from the 1400s to 1572, year that the last Inca was captured in Vilcabamba (another city used by the last Incas after the revolution of 1536). Being this an excellent alternative for those who don’t want to be in crowded places as in Machu Picchu and lovers of walks and nature, it is impressive for the perfect harmony reached between nature and man at the time that it was built in a very rugged mountainous area with capricious geography. This is a perfect place to see condors, the spectacled bear (the only bear in South America), archaeology, and history. The place is little visited because it has no access roads, so the only way to get to the area is walking across the Apurimac Canyon to reach this impressive place. It can be done in 4D / 3N or 5D / 4N, the second option which is what we recommend and, if required, it can even be combined with Machu Picchu in a longer trek of 8D / 7N.",
+  "category": "senderismo",
+  "difficulty": "Moderado",
+  "description": "Choquequira es uno de los lugares menos visitados del Cusco y también uno de los más espectaculares de la región dominada por los incas desde el 1400 hasta 1572, año en que fue capturado el último inca en Vilcabamba (otra ciudad utilizada por los últimos incas después de la revolución de 1536). Siendo esta una excelente alternativa para quienes no desean estar en lugares masificados como en Machu Picchu y amantes de las caminatas y la naturaleza, impresiona por la perfecta armonía alcanzada entre la naturaleza y el hombre en la época que fue construido en una zona montañosa muy accidentada y de geografía caprichosa. Es un lugar perfecto para ver cóndores, el oso de anteojos (el único oso de Sudamérica), arqueología e historia. El lugar es poco visitado debido a que no cuenta con vías de acceso, por lo que la única forma de llegar a la zona es caminando a través del Cañón del Apurímac para llegar a este impresionante lugar. Se puede hacer en 4D / 3N o 5D / 4N, la segunda opción que es la que recomendamos y, si se desea, incluso se puede combinar con Machu Picchu en un trekking más largo de 8D / 7N.",
   "additionalInfo": [
     {
       "included": [
-        "Pick up from the hotel",
-        "Muletiers",
-        "Horses",
-        "Transportation",
-        "Professional guide",
-        "Cook",
-        "Meals",
-        "Camping equipment",
-        "Entrance tickets"
+        "Recojo del hotel",
+        "Muleteros",
+        "caballos",
+        "Transporte",
+        "guía profesional",
+        "Cocinar",
+        "Comidas",
+        "Equipo de campamento",
+        "Boletos de entrada"
       ]
     },
     {
-      "notIncluded": ["Sleeping bag", "Tips"]
+      "notIncluded": ["Saco de dormir", "Consejos"]
     },
     {
       "bring": [
-        "Backpack",
-        "Sleeping bag",
-        "Warm clothes",
-        "Hiking shoes",
-        "Hat",
-        "Sunscreen",
-        "Insect repellent",
-        "Water bottle",
-        "Flashlight",
-        "Personal hygiene items",
-        "Camera"
+        "Mochila",
+        "Saco de dormir",
+        "Ropa abrigada",
+        "Zapatos para caminar",
+        "Sombrero",
+        "protector solar",
+        "Repelente de insectos",
+        "botella de agua",
+        "Flash",
+        "Artículos de higiene personal",
+        "Cámara"
       ]
     }
   ],
-
   "itinerary": [
     {
       "day": 1,
-      "title": "Cusco – La Playa",
+      "title": "Cuzco – La Playa",
       "image": "/cusco-2.jpeg",
-      "activityDescription": "The departure begins with the pick up of the group from the hotel in Cusco, the departure is generally at 5 am and then goes by car to the village of Cachora (3:45 h approx) (punta de carretea capuliyoc), on the way it stops at the town of Limatambo to have breakfast and be able to see part of the capricious landscape of the area. Once you arrive at the starting point, the walk begins through a gentle path for about 15 minutes to the capuliyuc pass (2985 masl), where you can see almost the entire route, the camps, and the place where Choquequirao is located. After the photos and admire the whimsical landscape and the spectacular canyon, the descent begins to reach la playa camp (1560 masl). This part of the trail is very scenic because while descending you can see the dry forest with endemic vegetation in the area. The duration of the walk is approximately 4 hours, not counting the break for lunch halfway."
+      "activityDescription": "La salida se inicia con el recojo del grupo del hotel en Cusco, la salida es generalmente a las 5 am y luego se dirige en auto hasta el poblado de Cachora (3:45 h aprox) (punta de carretea capuliyoc), en el trayecto se detiene en el poblado de Limatambo para desayunar y poder apreciar parte del caprichoso paisaje de la zona. Una vez que se llega al punto de partida, se inicia la caminata por un sendero suave durante unos 15 minutos hasta el paso capuliyuc (2985 msnm), desde donde se puede observar casi toda la ruta, los campamentos y el lugar donde se encuentra Choquequirao. Luego de tomar fotos y admirar el caprichoso paisaje y el espectacular cañon, comienza el descenso para llegar al campamento la playa (1560 msnm). Esta parte del sendero es muy pintoresca ya que mientras se desciende se puede observar el bosque seco con vegetación endémica de la zona. La duración de la caminata es de aproximadamente 4 horas, sin contar el descanso para almorzar a mitad de camino."
     },
     {
       "day": 2,
       "title": "La Playa - Choquequirao",
       "image": "/cusco-2.jpeg",
-      "activityDescription": "The walk begins with a delicious breakfast prepared by the cook, then departs before sunrise in order to avoid the sun on the ascent, as this is a deep canyon (1560 masl) in the middle of the Andes with a clear sky almost all the time. At noon it can reach very high temperatures above 40 degrees, the ascent is to the hamlet called marampata at almost 3000 masl. After this point, the road continues to the campsite of choquequirao through an easier path between small ups and downs where the vegetation changes from dry desert forest to a pre-tropical cloud forest. On the way, you can already see part of the terraces that are part of choquequirao. This day lasts approximately 6 hours and as this section is quite intense after lunch, it is recommended to rest and regain energy for the following day."
+      "activityDescription": "La caminata comienza con un delicioso desayuno preparado por el cocinero, luego se parte antes del amanecer para evitar el sol en el ascenso, ya que este es un cañón profundo (1560 msnm) en medio de los Andes con un cielo despejado casi todo el tiempo. Al mediodía se pueden alcanzar temperaturas muy altas por encima de los 40 grados, el ascenso es hasta el caserío llamado marampata a casi 3000 msnm. Después de este punto, el camino continúa hasta el campamento de choquequirao por un sendero más fácil entre pequeñas subidas y bajadas donde la vegetación cambia de bosque seco desértico a un bosque nublado pre-tropical. En el camino ya se puede observar parte de las terrazas que forman parte de choquequirao. Este día dura aproximadamente 6 horas y como este tramo es bastante intenso después del almuerzo, se recomienda descansar y recuperar energías para el día siguiente."
     },
     {
       "day": 3,
-      "title": "Choquequira",
+      "title": "Choquequirá",
       "image": "/cusco-2.jpeg",
-      "activityDescription": "This day is the most interesting of our entire tour because you will visit all sectors of this spectacular place. Choquequirao is a set of archaeological sites scattered in different parts of the mountain, so it takes all day to see most of these places. Among the places to visit that stand out are the terraces where the water temple is, the upper part, the usno, the terraces of the llamas, and the main square of the place. It is recommended to visit the lower part in the morning and the high part in the afternoon because this way the light is better used for the photos and it is easier to see condors from the high part. In the afternoon, the sunset is also a must-see from the usno. This city is a mix of Inca and Spanish architecture for being possibly built by the Inca architects who escaped from Cusco after the revolution of 1536 and which lasted until 1572, a period in which it was still under construction until it was finally abandoned. The city has been discovered long before Machu Picchu but nevertheless, it is less known but no less spectacular, so visitors are fascinated by the beauty of the place."
+      "activityDescription": "Este día es el más interesante de todo nuestro recorrido porque visitará todos los sectores de este espectacular lugar. Choquequirao es un conjunto de sitios arqueológicos dispersos en diferentes partes de la montaña, por lo que se necesita todo el día para conocer la mayoría de estos lugares. Entre los lugares a visitar que destacan están las terrazas donde se encuentra el templo del agua, la parte alta, el usno, las terrazas de las llamas y la plaza principal del lugar. Se recomienda visitar la parte baja por la mañana y la parte alta por la tarde porque así se aprovecha mejor la luz para las fotos y es más fácil ver cóndores desde la parte alta. Por la tarde, la puesta de sol también es una visita obligada desde el usno. Esta ciudad es una mezcla de arquitectura inca y española por ser posiblemente construida por los arquitectos incas que escaparon de Cusco tras la revolución de 1536 y que duró hasta 1572, periodo en el que estuvo aún en construcción hasta que finalmente fue abandonada. La ciudad ha sido descubierta mucho antes que Machu Picchu pero, sin embargo, es menos conocida aunque no menos espectacular, por lo que los visitantes quedan fascinados por la belleza del lugar."
     },
     {
       "day": 4,
-      "title": "Choquequirao Chiquisca",
+      "title": "Choquequirao - Chiquisca",
       "image": "/cusco-2.jpeg",
-      "activityDescription": "This day our return begins through the same path that was done on the first and second day, so we must descend again to the Apurimac canyon in the morning to avoid the intense heat and sun on the way and be in a cool place at noon and in the afternoon start part of the ascent to chiquisca which is a very quiet camp where only two families live. This place is almost like a small oasis in an almost desert place."
+      "activityDescription": "Este día nuestro retorno se inicia por el mismo camino que se hizo el primer y segundo día, por lo que debemos descender nuevamente al cañón del Apurimac por la mañana para evitar el intenso calor y sol del camino y estar en un lugar fresco al medio día y por la tarde iniciar parte del ascenso a chiquisca que es un campamento muy tranquilo donde solo viven dos familias. Este lugar es casi como un pequeño oasis en un lugar casi desértico."
     },
     {
       "day": 5,
-      "title": "Chiquisca Cusco",
+      "title": "Chiquisca - Cusco",
       "image": "/cusco-2.jpeg",
-      "activityDescription": "This day we leave early to make the ascent to Capuliyoc when it is cool and thus avoid the mid-day sun, this day we ascend approximately 1000 m to Capuliyoc which is the place where the transport awaits us to return to Cusco. On the way back, we can stop at a hamlet called saywiti which is the place where a large model rock is found where terraces, shrines dedicated to the toad, snake, puma, water channels were sculpted. Their carving is so precise that even now if one made water runs through the channels irrigating the terraces without much effort despite the wear caused by erosion. The Incas were preparing to use this model as a plan for the construction of terraces and temples in the lower part of the valley (this visit is optional). Finally, the return to Cusco is estimated at 4 pm approx."
+      "activityDescription": "Este día salimos temprano para hacer el ascenso a Capuliyoc cuando esta fresco y así evitar el sol del medio día, este día ascendemos aproximadamente 1000 m a Capuliyoc que es el lugar donde nos espera el transporte para retornar a Cusco. En el camino de retorno, podemos detenernos en un caserío llamado saywiti que es el lugar donde se encuentra una gran roca modelo donde se esculpieron terrazas, santuarios dedicados al sapo, serpiente, puma, canales de agua. Su tallado es tan preciso que incluso ahora si se hiciera el agua corre por los canales regando las terrazas sin mucho esfuerzo a pesar del desgaste causado por la erosión. Los incas se disponían a utilizar este modelo como plano para la construcción de terrazas y templos en la parte baja del valle (esta visita es opcional). Finalmente, el retorno a Cusco se estima a las 4 pm aprox."
     }
   ]
 }
