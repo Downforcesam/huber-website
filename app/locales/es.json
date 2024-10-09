@@ -11,5 +11,8 @@
 
   "included": "Incluido",
   "notIncluded": "No incluido",
-  "bring": "Traer"
+  "bring": "Traer",
+  "send": "Enviar",
+  "emailSuccess": "Tu correo ha sido enviado exitosamente",
+  "emailError": "Hubo un error al enviar tu correo"
 }

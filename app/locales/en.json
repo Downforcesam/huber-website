@@ -10,5 +10,8 @@
   "additionalInfo": "Additional Information",
   "included": "Included",
   "notIncluded": "Not Included",
-  "bring": "Bring"
+  "bring": "Bring",
+  "send": "Send",
+  "emailSuccess": "Your email has been sent successfully",
+  "emailError": "There was an error sending your email"
 }
