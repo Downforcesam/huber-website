@@ -23,13 +23,14 @@
                 />
               </div>
               <div class="flex flex-col flex-1 space-y-2 p-4">
-                <h3 class="font-medium text-gray-900 text-sm">
+                <h3 class="font-medium">
                   <NuxtLink :to="localePath(`/tours/${tour.slug}`)">
-                    <span aria-hidden="true" class="absolute inset-0" />
-                    {{ tour.title }}
+                    <span aria-hidden="true" class="text-gray-900">
+                      {{ tour.title }}
+                    </span>
                   </NuxtLink>
                 </h3>
-                <p class="text-gray-500 text-sm">
+                <p class="">
                   <span v-for="destination in tour.destinations" class="mr-1">
                     {{ destination }}
                   </span>
