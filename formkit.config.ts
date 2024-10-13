@@ -8,5 +8,8 @@ export default defineFormKitConfig({
   // theme: 'genesis',
   config: {
     rootClasses,
+    classes: {
+      outer: { $reset: true },
+    },
   },
 });

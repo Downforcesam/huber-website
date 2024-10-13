@@ -1,48 +1,47 @@
 <template>
-  <div class="flex flex-col items-center p-10 container">
-    <div class="w-full">
-      <h2>Contact</h2>
+  <div class="p-4 max-w-lg container">
+    <h2>Contact</h2>
+
+    <FormKit
+      type="form"
+      :submit-label="$t('send')"
+      @submit="send"
+      id="contactForm"
+    >
       <FormKit
-        type="form"
-        :submit-label="$t('send')"
-        @submit="send"
-        id="contactForm"
-        class="w-full"
-      >
-        <FormKit
-          type="text"
-          name="senderName"
-          id="name"
-          validation="required"
-          label="Name"
-          placeholder="Enter your name"
-          help="Please enter your name"
-        />
-        <FormKit
-          type="email"
-          name="senderEmail"
-          id="email"
-          validation="email | required"
-          label="Email"
-          placeholder="Enter your email"
-        />
-        <FormKit
-          type="text"
-          name="senderSubject"
-          id="subject"
-          validation="required"
-          label="Subject"
-          placeholder="Subject"
-        />
-        <FormKit
-          type="textarea"
-          name="senderMessage"
-          id="message"
-          label="Message"
-          placeholder="Enter your message"
-        />
-      </FormKit>
-    </div>
+        type="text"
+        name="senderName"
+        id="name"
+        validation="required"
+        label="Name"
+        placeholder="Enter your name"
+        help="Please enter your name"
+        class="w-screen"
+      />
+      <FormKit
+        type="email"
+        name="senderEmail"
+        id="email"
+        validation="email | required"
+        label="Email"
+        placeholder="Enter your email"
+      />
+      <FormKit
+        type="text"
+        name="senderSubject"
+        id="subject"
+        validation="required"
+        label="Subject"
+        placeholder="Subject"
+      />
+      <FormKit
+        type="textarea"
+        name="senderMessage"
+        id="message"
+        label="Message"
+        placeholder="Enter your message"
+      />
+    </FormKit>
 
     <AppSnackBar
       :show="show"
