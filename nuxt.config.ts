@@ -36,6 +36,7 @@ export default defineNuxtConfig({
     // Experimental support for auto loading (see note):
     autoImport: true,
   },
+
   content: {
     // locales: ['es', 'en'],
   },
