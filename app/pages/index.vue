@@ -1,7 +1,8 @@
 <template>
   <main class="min-h-screen">
     <HomeHero />
-    <!-- <HomeIntro /> -->
+    <HomeIntro />
+    <HomeDestinations />
 
     <HomeTours />
     <!-- <HomeTrekking /> -->
