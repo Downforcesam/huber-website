@@ -1,8 +1,8 @@
 <template>
   <main class="bg-white">
-    <div class="relative isolate">
+    <div class="isolate relative">
       <svg
-        class="absolute inset-x-0 top-0 -z-10 h-[64rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
+        class="top-0 -z-10 absolute inset-x-0 stroke-gray-200 w-full h-[64rem] [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]"
         aria-hidden="true"
       >
         <defs>
@@ -17,7 +17,7 @@
             <path d="M.5 200V.5H200" fill="none" />
           </pattern>
         </defs>
-        <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+        <svg x="50%" y="-1" class="fill-gray-50 overflow-visible">
           <path
             d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z"
             stroke-width="0"
@@ -31,11 +31,11 @@
         />
       </svg>
       <div
-        class="absolute left-1/2 right-0 top-0 -z-10 -ml-24 transform-gpu overflow-hidden blur-3xl lg:ml-24 xl:ml-48"
+        class="top-0 right-0 left-1/2 -z-10 absolute blur-3xl -ml-24 lg:ml-24 xl:ml-48 overflow-hidden transform-gpu"
         aria-hidden="true"
       >
         <!-- <div
-          class="aspect-[801/1036] w-[50.0625rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+          class="bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 w-[50.0625rem] aspect-[801/1036]"
           style="
             clip-path: polygon(
               63.1% 29.5%,
@@ -60,19 +60,24 @@
       </div>
       <div class="overflow-hidden">
         <div
-          class="mx-auto max-w-7xl px-6 pb-32 pt-36 sm:pt-60 lg:px-8 lg:pt-32"
+          class="mx-auto px-6 lg:px-8 pt-36 sm:pt-60 lg:pt-32 pb-32 max-w-7xl"
         >
           <div
-            class="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center"
+            class="lg:flex lg:items-center gap-x-14 mx-auto lg:mx-0 lg:max-w-none max-w-2xl"
           >
-            <div class="relative w-full max-w-xl lg:shrink-0 xl:max-w-2xl">
+            <div
+              v-motion-fade
+              :delay="200"
+              :duration="500"
+              class="relative w-full max-w-xl xl:max-w-2xl lg:shrink-0"
+            >
               <h1
-                class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl"
+                class="font-bold text-gray-900 text-4xl sm:text-6xl tracking-tight"
               >
                 Discover Your Andean Adventure.
               </h1>
               <p
-                class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none"
+                class="mt-6 lg:max-w-none sm:max-w-md text-gray-600 text-lg leading-8"
               >
                 Prepare to embark on a transformative journey through the heart
                 of the Peruvian Andes with Peru Excursions. Our meticulously
@@ -87,65 +92,65 @@
               </p>
             </div>
             <div
-              class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0"
+              class="flex justify-end sm:justify-start gap-8 mt-14 sm:-mt-44 lg:mt-0 sm:pl-20 lg:pl-0"
             >
               <div
-                class="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80"
+                class="flex-none space-y-8 lg:order-last xl:order-none ml-auto sm:ml-0 pt-32 sm:pt-80 lg:pt-36 xl:pt-80 w-44"
               >
                 <div class="relative">
                   <NuxtImg
                     src="/landscape.jpeg"
                     alt=""
-                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    class="bg-gray-900/5 shadow-lg rounded-xl w-full object-cover aspect-[2/3]"
                   />
                   <div
-                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    class="absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset pointer-events-none"
                   />
                 </div>
               </div>
               <div
-                class="mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36"
+                class="flex-none space-y-8 mr-auto sm:mr-0 sm:pt-52 lg:pt-36 w-44"
               >
                 <div class="relative">
                   <NuxtImg
                     src="/cusco-2.jpeg"
                     alt=""
-                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    class="bg-gray-900/5 shadow-lg rounded-xl w-full object-cover aspect-[2/3]"
                   />
                   <div
-                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    class="absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset pointer-events-none"
                   />
                 </div>
                 <div class="relative">
                   <NuxtImg
                     src="/maras.jpeg"
                     alt=""
-                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    class="bg-gray-900/5 shadow-lg rounded-xl w-full object-cover aspect-[2/3]"
                   />
                   <div
-                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    class="absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset pointer-events-none"
                   />
                 </div>
               </div>
-              <div class="w-44 flex-none space-y-8 pt-32 sm:pt-0">
+              <div class="flex-none space-y-8 pt-32 sm:pt-0 w-44">
                 <div class="relative">
                   <NuxtImg
                     src="/home-stay.jpeg"
                     alt=""
-                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    class="bg-gray-900/5 shadow-lg rounded-xl w-full object-cover aspect-[2/3]"
                   />
                   <div
-                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    class="absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset pointer-events-none"
                   />
                 </div>
                 <div class="relative">
                   <NuxtImg
                     src="/machu-picchu-lama.jpeg"
                     alt=""
-                    class="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
+                    class="bg-gray-900/5 shadow-lg rounded-xl w-full object-cover aspect-[2/3]"
                   />
                   <div
-                    class="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10"
+                    class="absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset pointer-events-none"
                   />
                 </div>
               </div>

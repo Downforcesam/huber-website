@@ -11,10 +11,11 @@
             <div
               v-for="tour in list"
               :key="tour.id"
-              class="relative flex flex-col border-gray-200 bg-white border rounded-lg overflow-hidden group"
+              class="group relative flex flex-col bg-white border border-gray-200 rounded-lg overflow-hidden"
             >
+            <NuxtLink :to="localePath(`/tours/${tour.slug}`)">
               <div
-                class="bg-gray-200 group-hover:opacity-75 aspect-w-3 aspect-h-4 sm:aspect-none sm:h-96"
+                class="bg-gray-200 group-hover:opacity-75 sm:h-96 aspect-h-4 aspect-w-3 sm:aspect-none"
               >
                 <NuxtImg
                   :src="tour.thumbnail"
@@ -24,20 +25,18 @@
               </div>
               <div class="flex flex-col flex-1 space-y-2 p-4">
                 <h3 class="font-medium">
-                  <NuxtLink :to="localePath(`/tours/${tour.slug}`)">
                     <span aria-hidden="true" class="text-gray-900">
                       {{ tour.title }}
                     </span>
-                  </NuxtLink>
-                </h3>
-                <p class="">
-                  <span v-for="destination in tour.destinations" class="mr-1">
-                    {{ destination }}
-                  </span>
-                </p>
-                <div
+                  </h3>
+                  <p class="">
+                    <span v-for="destination in tour.destinations" class="mr-1">
+                      {{ destination }}
+                    </span>
+                  </p>
+                  <div
                   class="flex flex-col flex-1 justify-end italic tracking-wide"
-                >
+                  >
                   <div class="flex space-x-1">
                     <span>{{ $t('day') }}:</span>
                     <span> {{ tour.duration }}</span>
@@ -48,6 +47,7 @@
                   </div>
                 </div>
               </div>
+            </NuxtLink>
             </div>
           </d
 

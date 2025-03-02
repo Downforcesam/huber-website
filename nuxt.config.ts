@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     'nuxt-anchorscroll',
     '@nuxtjs/tailwindcss',
     '@formkit/nuxt',
+    '@vueuse/motion/nuxt',
   ],
   formkit: {
     // Experimental support for auto loading (see note):
@@ -40,7 +41,26 @@ export default defineNuxtConfig({
   content: {
     // locales: ['es', 'en'],
   },
-
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {
+          'pop-bottom': {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            },
+          },
+        },
+      },
+    },
+  },
   i18n: {
     baseUrl: 'http://localhost:3000',
     defaultLocale: 'en',

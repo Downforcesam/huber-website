@@ -1,6 +1,6 @@
 <template>
-  <main class="min-h-screen">
-    <HomeHero />
+  <main class="">
+    <!-- <HomeHero /> -->
     <HomeIntro />
     <HomeDestinations />
 

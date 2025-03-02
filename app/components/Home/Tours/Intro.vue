@@ -1,18 +1,16 @@
 <template>
-  <div
-    class="py-24 sm:py-32 isolate relative w-screen h-screen flex items-center justify-center"
-  >
+  <div class="relative flex flex-col items-center h-full container">
     <NuxtImg
       src="/cusco.jpeg"
       :alt="title"
-      class="object-cover absolute -z-10 h-full w-full"
+      class="rounded-md object-cover container"
     >
     </NuxtImg>
-    <div class="absolute inset-0 bg-black opacity-20 z-0"></div>
-    <div class="mx-auto max-w-2xl text-center z-10">
-      <h2
-        class="text-4xl font-bold tracking-tight text-white sm:text-6xl shadow-md"
-      >
+    <!-- <div class="z-0 absolute inset-0 bg-black opacity-20 container"></div> -->
+    <div
+      class="top-1/3 z-10 absolute bg-slate-50/70 mx-auto p-4 rounded-md max-w-2xl text-center"
+    >
+      <h2 class="shadow-md font-bold text-4xl sm:text-6xl tracking-tight">
         {{ title }}
       </h2>
     </div>
