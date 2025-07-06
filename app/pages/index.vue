@@ -1,13 +1,13 @@
 <template>
-  <main class="">
-    <!-- <HomeHero /> -->
+  <main>
+    <HomeHero />
     <HomeIntro />
     <HomeDestinations />
-
     <HomeTours />
-    <!-- <HomeTrekking /> -->
     <HomeContact />
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+console.log('🏠 Index page script setup is running');
+</script>

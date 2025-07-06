@@ -1,10 +1,10 @@
 <template>
   <div>
-    <HomeToursIntro :title="data?.title" />
-    <HomeToursDescription :tour="data" />
-    <HomeToursDetails :tour="data" />
-    <AppAccordion :itinerary="data?.itinerary" />
-    <AppAdditionalInfo :info="data?.additionalInfo" />
+    <ToursIntro :title="data?.title" />
+    <ToursDescription :tour="data" />
+    <ToursDetails :tour="data" />
+    <UiAccordion :itinerary="data?.itinerary" />
+    <UiAdditionalInfo :info="data?.additionalInfo" />
   </div>
 </template>
 

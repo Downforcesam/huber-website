@@ -1,0 +1,48 @@
+{
+  "title": "Machu Picchu",
+  "slug": "machu-picchu",
+  "thumbnail": "/machu-picchu.jpg",
+  "hero_image": "/machu-picchu-sunrise.jpg",
+  "region": "Cusco Region",
+  "elevation": "2,430m (7,970ft)",
+  "climate": "Cloud forest",
+  "best_time": "May to September (dry season)",
+  "description": "The Lost City of the Incas, Machu Picchu is Peru's most iconic destination and one of the New Seven Wonders of the World. This remarkably preserved Inca citadel sits dramatically on a mountain ridge above the Sacred Valley.",
+  "highlights": [
+    "Inca citadel ruins",
+    "Huayna Picchu mountain",
+    "Temple of the Sun",
+    "Intihuatana stone",
+    "Spectacular mountain views",
+    "Cloud forest wildlife"
+  ],
+  "activities": [
+    {
+      "name": "Classic Machu Picchu Tour",
+      "duration": "Full day",
+      "difficulty": "Easy"
+    },
+    {
+      "name": "Huayna Picchu Hike",
+      "duration": "3-4 hours",
+      "difficulty": "Challenging"
+    },
+    {
+      "name": "Machu Picchu Mountain Hike",
+      "duration": "4-5 hours",
+      "difficulty": "Challenging"
+    }
+  ],
+  "related_tours": ["machu-picchu", "choquequirao"],
+  "gallery": [
+    "/machu-picchu-panorama.jpg",
+    "/huayna-picchu.jpg",
+    "/machu-picchu-llamas.jpg",
+    "/machu-picchu-terraces.jpg"
+  ],
+  "practical_info": {
+    "getting_there": "Train from Cusco/Ollantaytambo to Aguas Calientes, then bus to entrance",
+    "tickets": "Must be booked in advance, especially for Huayna Picchu",
+    "best_photos": "Early morning for sunrise, fewer crowds"
+  }
+}

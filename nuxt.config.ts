@@ -6,6 +6,9 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
   ssr: false,
+
+  css: ['~/assets/css/main.css'],
+
   app: {
     head: {
       link: [
@@ -22,24 +25,46 @@ export default defineNuxtConfig({
     },
   },
   modules: [
+    '@nuxt/eslint',
     '@nuxtjs/i18n',
     '@vueuse/nuxt',
-    'vuetify-nuxt-module',
+    '@nuxt/ui',
+    '@nuxt/ui-pro',
+    '@nuxt/icon',
     'nuxt-headlessui',
     '@nuxt/content',
     '@nuxt/image',
     'nuxt-anchorscroll',
-    '@nuxtjs/tailwindcss',
-    '@formkit/nuxt',
     '@vueuse/motion/nuxt',
   ],
-  formkit: {
-    // Experimental support for auto loading (see note):
-    autoImport: true,
-  },
+
+  // Configure component auto-imports for new structure
+  components: [
+    '~/components',
+    {
+      path: '~/components/features',
+      pattern: '**/*.vue',
+      pathPrefix: false,
+    },
+    {
+      path: '~/components/layout',
+      pattern: '**/*.vue',
+      pathPrefix: false,
+    },
+    {
+      path: '~/components/ui',
+      pattern: '**/*.vue',
+      pathPrefix: false,
+    },
+  ],
 
   content: {
-    // locales: ['es', 'en'],
+    // Basic content configuration
+  },
+
+  image: {
+    // Disable image optimization in development to avoid _ipx errors
+    provider: 'none',
   },
   runtimeConfig: {
     public: {
@@ -61,31 +86,40 @@ export default defineNuxtConfig({
       },
     },
   },
+
   i18n: {
-    baseUrl: 'http://localhost:3000',
     defaultLocale: 'en',
     detectBrowserLanguage: {
       useCookie: true,
       cookieKey: 'i18n_redirected',
-      redirectOn: 'root', // recommended
+      redirectOn: 'root',
     },
     strategy: 'prefix_except_default',
-    // strategy: 'prefix',
-    langDir: '../app/locales/',
     locales: [
       {
         code: 'en',
-        Name: 'English',
-        language: 'en-US',
+        name: 'English',
         file: 'en.json',
       },
       {
         code: 'es',
-        Name: 'Español',
-        language: 'es-ES',
+        name: 'Español',
         file: 'es.json',
       },
     ],
+  },
+
+  // TypeScript configuration
+  typescript: {
+    strict: false,
+    typeCheck: false,
+  },
+
+  // Path aliases for better imports
+  alias: {
+    '@shared': '~/shared',
+    '@components': '~/components',
+    '@features': '~/features',
   },
 
   compatibilityDate: '2024-07-20',
