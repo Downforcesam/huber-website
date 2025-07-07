@@ -4,106 +4,98 @@
       <!-- Section Header -->
       <div class="mb-16 text-center">
         <UBadge color="primary" variant="soft" size="lg" class="mb-4">
-          Popular Destinations
+          {{ t('popularDestinations') }}
         </UBadge>
         <h2
           class="mb-6 font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl"
         >
-          Explore Peru's Most
-          <span class="text-primary-600">Iconic Places</span>
+          {{ t('exploreIconicPlaces') }}
+          <span class="text-primary-600">{{ t('iconicPlaces') }}</span>
         </h2>
         <p class="mx-auto max-w-3xl text-gray-600 text-xl">
-          From ancient citadels to vibrant markets, discover the most
-          breathtaking destinations Peru has to offer with our expertly guided
-          tours.
+          {{ t('ancientCitadels') }}
         </p>
       </div>
 
       <!-- Destinations Grid -->
-      <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-12">
+      <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-16">
         <UCard
           v-for="destination in destinations"
           :key="destination.name"
-          class="group hover:shadow-xl transition-all hover:-translate-y-2 duration-300 transform"
+          class="group hover:shadow-xl overflow-hidden transition-all duration-300 cursor-pointer"
         >
-          <template #header>
-            <div class="relative overflow-hidden">
-              <NuxtImg
-                :src="destination.image"
-                :alt="destination.name"
-                class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+          <div class="relative">
+            <NuxtImg
+              :src="destination.image"
+              :alt="destination.name"
+              class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div
+              class="top-4 right-4 absolute bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full"
+            >
+              <UBadge :color="destination.badgeColor" variant="soft" size="sm">
+                {{ destination.type }}
+              </UBadge>
+            </div>
+            <div
+              class="top-4 left-4 absolute bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full"
+            >
+              <UIcon
+                :name="destination.icon"
+                class="w-4 h-4 text-primary-600"
               />
-              <div class="top-4 left-4 absolute">
-                <UBadge
-                  :color="destination.badgeColor"
-                  variant="solid"
-                  size="sm"
-                >
-                  {{ destination.type }}
-                </UBadge>
+            </div>
+          </div>
+
+          <template #header>
+            <div class="flex justify-between items-start">
+              <div>
+                <h3 class="mb-2 font-bold text-gray-900 text-xl">
+                  {{ destination.name }}
+                </h3>
+                <div class="flex items-center space-x-2 text-gray-500 text-sm">
+                  <UIcon name="i-heroicons-clock" class="w-4 h-4" />
+                  <span>{{ destination.duration }}</span>
+                </div>
               </div>
             </div>
           </template>
 
-          <div class="p-6">
-            <div class="flex items-center gap-2 mb-3">
-              <UIcon
-                :name="destination.icon"
-                class="w-5 h-5 text-primary-600"
-              />
-              <h3
-                class="font-bold text-gray-900 group-hover:text-primary-600 text-xl transition-colors"
-              >
-                {{ destination.name }}
-              </h3>
-            </div>
+          <p class="mb-4 text-gray-600">{{ destination.description }}</p>
 
-            <p class="mb-4 text-gray-600 line-clamp-3">
-              {{ destination.description }}
-            </p>
-
-            <!-- Features -->
-            <div class="flex flex-wrap gap-2 mb-4">
-              <UBadge
-                v-for="feature in destination.features"
-                :key="feature"
-                color="primary"
-                variant="soft"
-                size="xs"
-              >
-                {{ feature }}
-              </UBadge>
-            </div>
-
-            <div class="flex justify-between items-center">
-              <div class="flex items-center gap-1 text-gray-500 text-sm">
-                <UIcon name="i-heroicons-clock" class="w-4 h-4" />
-                <span>{{ destination.duration }}</span>
-              </div>
-
-              <UButton
-                size="sm"
-                color="primary"
-                variant="outline"
-                icon="i-heroicons-arrow-right"
-                trailing
-              >
-                Learn More
-              </UButton>
-            </div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <UBadge
+              v-for="feature in destination.features"
+              :key="feature"
+              variant="outline"
+              size="sm"
+            >
+              {{ feature }}
+            </UBadge>
           </div>
+
+          <template #footer>
+            <UButton
+              variant="ghost"
+              size="sm"
+              icon="i-heroicons-arrow-right"
+              trailing
+              block
+            >
+              Learn More
+            </UButton>
+          </template>
         </UCard>
       </div>
 
-      <!-- Additional Features -->
+      <!-- Call to Action -->
       <div class="bg-white shadow-lg p-8 lg:p-12 rounded-2xl">
         <div class="mb-12 text-center">
           <h3 class="mb-4 font-bold text-gray-900 text-2xl lg:text-3xl">
-            Why Choose Our Tours?
+            {{ t('whyChooseTours') }}
           </h3>
           <p class="mx-auto max-w-2xl text-gray-600 text-lg">
-            We provide personalized experiences tailored to your interests and
-            adventure level
+            {{ t('personalizedExperiences') }}
           </p>
         </div>
 
@@ -119,9 +111,9 @@
               <UIcon :name="feature.icon" class="w-8 h-8 text-primary-600" />
             </div>
             <h4 class="mb-2 font-semibold text-gray-900 text-lg">
-              {{ feature.name }}
+              {{ t(feature.translationKey) }}
             </h4>
-            <p class="text-gray-600 text-sm">{{ feature.description }}</p>
+            <p class="text-gray-600 text-sm">{{ t(feature.descriptionKey) }}</p>
           </div>
         </div>
       </div>
@@ -130,6 +122,8 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
+
 const destinations = [
   {
     name: 'Machu Picchu',
@@ -202,24 +196,26 @@ const destinations = [
 const features = [
   {
     name: 'Expert Guides',
-    description:
-      'Local knowledge and certified expertise for safe, informative tours',
+    translationKey: 'expertGuides',
+    descriptionKey: 'localKnowledge',
     icon: 'i-heroicons-academic-cap',
   },
   {
     name: 'Small Groups',
-    description:
-      'Intimate group sizes for personalized attention and flexibility',
+    translationKey: 'smallGroups',
+    descriptionKey: 'intimateGroupSizes',
     icon: 'i-heroicons-user-group',
   },
   {
     name: 'Authentic Experiences',
-    description: 'Connect with local communities and traditional customs',
+    translationKey: 'authenticExperiences',
+    descriptionKey: 'connectWithCommunities',
     icon: 'i-heroicons-heart',
   },
   {
     name: 'Safety First',
-    description: 'Comprehensive safety measures and emergency protocols',
+    translationKey: 'safetyFirst',
+    descriptionKey: 'safetyCoverage',
     icon: 'i-heroicons-shield-check',
   },
 ];

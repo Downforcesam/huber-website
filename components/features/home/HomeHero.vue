@@ -19,21 +19,16 @@
     <div
       class="z-10 relative mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center"
     >
-      <UBadge color="primary" variant="soft" size="lg" class="mb-6">
-        {{ t('authenticPeruAdventures') }}
-      </UBadge>
-
       <h1
         class="mb-6 font-bold text-white text-4xl sm:text-5xl lg:text-7xl leading-tight"
       >
-        {{ t('discoverMagic') }}
-        <span class="block text-primary-400">{{ t('ancientPeru') }}</span>
+        {{ t('heroTitle') }}
       </h1>
 
       <p
         class="mx-auto mb-8 max-w-3xl text-gray-200 text-xl sm:text-2xl leading-relaxed"
       >
-        {{ t('experienceBreathtaking') }}
+        {{ t('heroSubtitle') }}
       </p>
 
       <!-- CTA Buttons -->
@@ -48,7 +43,7 @@
           icon="i-heroicons-map"
           class="min-w-[200px]"
         >
-          {{ t('exploreTours') }}
+          {{ t('heroButton') }}
         </UButton>
 
         <UButton
@@ -60,7 +55,7 @@
           icon="i-simple-icons-whatsapp"
           class="border-white min-w-[200px] text-white hover:text-white"
         >
-          {{ t('whatsappUs') }}
+          {{ t('whatsappContact') }}
         </UButton>
       </div>
 
@@ -85,7 +80,7 @@
         <div class="text-center">
           <UIcon
             name="i-heroicons-shield-check"
-            class="mx-auto mb-2 w-8 h-8 text-green-400"
+            class="mx-auto mb-2 w-8 h-8 text-primary-400"
           />
           <p class="font-semibold text-white">{{ t('safeAdventures') }}</p>
         </div>
@@ -101,7 +96,7 @@
           size="sm"
           icon="i-heroicons-chevron-down"
           class="text-white hover:text-primary-400"
-          aria-label="Scroll to tours"
+          :aria-label="t('scrollToTours')"
         />
       </div>
     </div>

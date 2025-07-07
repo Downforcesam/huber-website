@@ -12,19 +12,17 @@
         <!-- Content Section -->
         <div class="space-y-8">
           <div>
-            <UBadge color="primary" variant="soft" size="lg" class="mb-6">
-              {{ t('aboutPeruAdventures') }}
-            </UBadge>
-
             <h2
               class="mb-6 font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl leading-tight"
             >
-              {{ t('discoverAndean') }}
-              <span class="text-primary-600">{{ t('andeanAdventure') }}</span>
+              {{ t('introTitle') }}
+              <span class="text-primary-600">{{
+                t('introTitleHighlight')
+              }}</span>
             </h2>
 
             <p class="mb-8 text-gray-600 text-xl leading-relaxed">
-              {{ t('transformativeJourney') }}
+              {{ t('introDescription') }}
             </p>
           </div>
 
@@ -42,7 +40,7 @@
                   {{ t('epicLandscapes') }}
                 </h3>
                 <p class="text-gray-600">
-                  {{ t('ruggedAndeanPeaks') }}
+                  {{ t('epicLandscapesDesc') }}
                 </p>
               </div>
             </div>
@@ -59,7 +57,7 @@
                   {{ t('culturalImmersion') }}
                 </h3>
                 <p class="text-gray-600">
-                  {{ t('vibrantCommunities') }}
+                  {{ t('culturalImmersionDesc') }}
                 </p>
               </div>
             </div>
@@ -76,7 +74,7 @@
                   {{ t('unforgettableMoments') }}
                 </h3>
                 <p class="text-gray-600">
-                  {{ t('memoriesLastLifetime') }}
+                  {{ t('unforgettableMomentsDesc') }}
                 </p>
               </div>
             </div>
@@ -93,7 +91,7 @@
                   {{ t('expertGuides') }}
                 </h3>
                 <p class="text-gray-600">
-                  {{ t('localKnowledgeTrust') }}
+                  {{ t('expertGuidesDesc') }}
                 </p>
               </div>
             </div>
@@ -165,14 +163,6 @@
                 class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
               />
             </UCard>
-          </div>
-
-          <!-- Floating badge -->
-          <div class="-top-4 -right-4 absolute">
-            <UBadge color="success" variant="solid" size="lg" class="shadow-lg">
-              <UIcon name="i-heroicons-star-solid" class="mr-1 w-4 h-4" />
-              5.0 Rating
-            </UBadge>
           </div>
         </div>
       </div>

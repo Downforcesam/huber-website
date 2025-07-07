@@ -4,16 +4,15 @@
       <!-- Section Header -->
       <div class="mb-16 text-center">
         <UBadge color="primary" variant="soft" size="lg" class="mb-4">
-          Our Adventures
+          {{ t('ourAdventures') }}
         </UBadge>
         <h2
           class="mb-6 font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl"
         >
-          Discover Peru's Wonders
+          {{ t('discoverWonders') }}
         </h2>
         <p class="mx-auto max-w-3xl text-gray-600 text-xl">
-          From ancient ruins to breathtaking landscapes, explore Peru's most
-          incredible destinations with our carefully crafted tour experiences.
+          {{ t('ancientRuins') }}
         </p>
       </div>
 
@@ -23,40 +22,42 @@
           name="i-heroicons-arrow-path"
           class="mx-auto mb-4 w-8 h-8 text-primary-500 animate-spin"
         />
-        <p class="text-gray-600">Loading amazing tours...</p>
+        <p class="text-gray-600">{{ t('loadingTours') }}</p>
       </div>
 
       <!-- Tours Grid -->
       <div v-else class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <UCard
-          v-for="tour in tours"
-          :key="tour.id"
-          class="group hover:shadow-xl transition-all hover:-translate-y-2 duration-300 transform"
+          v-for="tour in tours.slice(0, 6)"
+          :key="tour._path"
+          class="group hover:shadow-xl overflow-hidden transition-all duration-300 cursor-pointer"
+          @click="navigateToTour(tour._path)"
         >
           <template #header>
             <div class="relative overflow-hidden">
               <NuxtImg
-                :src="tour.thumbnail || '/placeholder-tour.jpg'"
+                :src="tour.featuredImage || '/machu-picchu.jpg'"
                 :alt="tour.title"
-                class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
+              <!-- Category Badge -->
               <div class="top-4 left-4 absolute">
                 <UBadge
                   :color="getCategoryColor(tour.category)"
                   variant="solid"
                   size="sm"
                 >
-                  {{ formatCategory(tour.category) }}
+                  {{ t(tour.category) }}
                 </UBadge>
               </div>
+              <!-- Difficulty Badge -->
               <div class="top-4 right-4 absolute">
                 <UBadge
-                  color="neutral"
-                  variant="solid"
+                  :color="getDifficultyColor(tour.difficulty)"
+                  variant="outline"
                   size="sm"
-                  class="bg-white text-gray-900"
                 >
-                  {{ tour.duration }} days
+                  {{ t(tour.difficulty) }}
                 </UBadge>
               </div>
             </div>
@@ -70,71 +71,46 @@
             </h3>
 
             <p class="mb-4 text-gray-600 line-clamp-2">
-              {{ tour.description }}
+              {{ tour.shortDescription }}
             </p>
 
-            <!-- Tour Features -->
-            <div class="flex items-center gap-4 mb-6 text-gray-500 text-sm">
-              <div class="flex items-center gap-1">
+            <!-- Tour Details -->
+            <div class="space-y-2 mb-4 text-gray-500 text-sm">
+              <div class="flex items-center gap-2">
                 <UIcon name="i-heroicons-clock" class="w-4 h-4" />
-                <span>{{ tour.duration }} days</span>
+                <span>{{ tour.duration }} {{ t('days') }}</span>
               </div>
-              <div class="flex items-center gap-1">
+              <div class="flex items-center gap-2">
                 <UIcon name="i-heroicons-signal" class="w-4 h-4" />
-                <span>{{ formatDifficulty(tour.difficulty) }}</span>
+                <span>{{ t('difficulty') }}: {{ t(tour.difficulty) }}</span>
               </div>
             </div>
 
-            <div class="flex justify-between items-center">
-              <div class="flex items-center gap-1">
-                <UIcon
-                  name="i-heroicons-star-solid"
-                  class="w-4 h-4 text-yellow-400"
-                />
-                <UIcon
-                  name="i-heroicons-star-solid"
-                  class="w-4 h-4 text-yellow-400"
-                />
-                <UIcon
-                  name="i-heroicons-star-solid"
-                  class="w-4 h-4 text-yellow-400"
-                />
-                <UIcon
-                  name="i-heroicons-star-solid"
-                  class="w-4 h-4 text-yellow-400"
-                />
-                <UIcon
-                  name="i-heroicons-star-solid"
-                  class="w-4 h-4 text-yellow-400"
-                />
-                <span class="ml-1 text-gray-600 text-sm">5.0</span>
-              </div>
-
-              <UButton
-                :to="localePath(`/tours/${tour.slug}`)"
-                size="sm"
-                color="primary"
-                variant="outline"
-                icon="i-heroicons-arrow-right"
-                trailing
-              >
-                View Details
-              </UButton>
-            </div>
+            <!-- Action Button -->
+            <UButton
+              variant="ghost"
+              size="sm"
+              icon="i-heroicons-arrow-right"
+              trailing
+              block
+              class="group-hover:bg-primary-50"
+            >
+              {{ t('viewDetails') }}
+            </UButton>
           </div>
         </UCard>
       </div>
 
       <!-- View All Tours Button -->
-      <div class="mt-12 text-center" v-if="tours && tours.length > 0">
+      <div v-if="tours && tours.length > 6" class="mt-12 text-center">
         <UButton
           :to="localePath('/tours')"
-          size="xl"
+          size="lg"
           color="primary"
-          variant="solid"
-          icon="i-heroicons-map"
+          variant="outline"
+          icon="i-heroicons-squares-2x2"
         >
-          View All Tours
+          {{ t('browseTours') }}
         </UButton>
       </div>
     </div>
@@ -142,54 +118,64 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n();
 const localePath = useLocalePath();
 
-// Query tours using the new Nuxt Content v3 Collections API
-const { data: tours } = await useAsyncData('tours', () =>
-  queryCollection('tours').all()
-);
+// Mock tours data for demonstration (in production this would come from Nuxt Content)
+const tours = [
+  {
+    _path: '/en/tours/machu-picchu',
+    title: 'Classic Machu Picchu Trek',
+    shortDescription:
+      'Experience the iconic Inca Trail to Machu Picchu with expert guides.',
+    featuredImage: '/machu-picchu.jpg',
+    category: 'trekking',
+    difficulty: 'moderate',
+    duration: 4,
+  },
+  {
+    _path: '/en/tours/sacred-valley',
+    title: 'Sacred Valley Explorer',
+    shortDescription:
+      'Discover ancient ruins and local markets in the Sacred Valley.',
+    featuredImage: '/sacred-valley.jpeg',
+    category: 'cityTour',
+    difficulty: 'easy',
+    duration: 2,
+  },
+  {
+    _path: '/en/tours/rainbow-mountain',
+    title: 'Rainbow Mountain Adventure',
+    shortDescription: 'Hike to the stunning colorful peaks of Vinicunca.',
+    featuredImage: '/rainbow-mountain.jpeg',
+    category: 'trekking',
+    difficulty: 'challenging',
+    duration: 1,
+  },
+];
 
-// Helper functions for formatting
-const getCategoryColor = (
-  category: string
-):
-  | 'primary'
-  | 'secondary'
-  | 'success'
-  | 'info'
-  | 'warning'
-  | 'error'
-  | 'neutral' => {
-  const colors: Record<
-    string,
-    | 'primary'
-    | 'secondary'
-    | 'success'
-    | 'info'
-    | 'warning'
-    | 'error'
-    | 'neutral'
-  > = {
+function navigateToTour(path: string) {
+  const tourSlug = path.split('/').pop();
+  navigateTo(localePath(`/tours/${tourSlug}`));
+}
+
+function getCategoryColor(category: string) {
+  const colors = {
     trekking: 'success',
+    cityTour: 'primary',
     cultural: 'warning',
     adventure: 'error',
-    city: 'primary',
-    nature: 'success',
-  };
-  return colors[category] || 'primary';
-};
+  } as const;
+  return colors[category as keyof typeof colors] || 'neutral';
+}
 
-const formatCategory = (category: string) => {
-  return category.charAt(0).toUpperCase() + category.slice(1);
-};
-
-const formatDifficulty = (difficulty: string) => {
-  const levels: Record<string, string> = {
-    easy: 'Easy',
-    moderate: 'Moderate',
-    challenging: 'Challenging',
-    expert: 'Expert',
-  };
-  return levels[difficulty] || difficulty;
-};
+function getDifficultyColor(difficulty: string) {
+  const colors = {
+    easy: 'success',
+    moderate: 'warning',
+    challenging: 'error',
+    expert: 'error',
+  } as const;
+  return colors[difficulty as keyof typeof colors] || 'neutral';
+}
 </script>
