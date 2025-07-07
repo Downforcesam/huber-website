@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "huber-website",
   "private": true,
   "type": "module",
   "scripts": {
@@ -38,5 +38,6 @@
     "tailwindcss": "^4.1.11",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.10"
-  }
+  },
+  "packageManager": "pnpm@10.12.2"
 }
