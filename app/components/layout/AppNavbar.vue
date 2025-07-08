@@ -10,7 +10,7 @@
             <span class="sr-only">Peru Excursions</span>
             <NuxtImg
               class="w-auto h-10 lg:h-12"
-              src="/peru-excursion.svg"
+              src="/peru-excursion-logo.png"
               alt="Peru Excursions"
             />
           </NuxtLink>

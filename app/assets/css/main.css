@@ -6,6 +6,9 @@
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Lora', serif;
   --font-body: 'Montserrat', sans-serif;
+  --color-logo-teal: #4ca6a8;
+  --color-logo-gold: #c7a24b;
+  --color-logo-dark: #343938;
 }
 
 /* Global styles */
