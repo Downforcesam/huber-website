@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: false, // Disable dark mode completely
   content: [],
   theme: {
     extend: {

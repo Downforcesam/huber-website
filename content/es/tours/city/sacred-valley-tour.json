@@ -1,6 +1,6 @@
 {
   "title": "Tour Valle Sagrado",
-  "slug": "tour-valle-sagrado",
+  "slug": "sacred-valley-tour",
   "duration": 1,
   "category": "Ciudad",
   "difficulty": "Fácil",
@@ -11,11 +11,7 @@
   "description": "Explora el fértil Valle Sagrado de los Incas, hogar de impresionantes ruinas arqueológicas, pueblos tradicionales andinos y paisajes espectaculares. Este tour te lleva a través del corazón del antiguo Imperio Inca.",
   "longDescription": "El Valle Sagrado, conocido como el 'Jardín del Inca', fue el centro agrícola y espiritual del Imperio Inca. Este valle fértil, irrigado por el río Urubamba, alberga algunos de los sitios arqueológicos más importantes de Perú, incluyendo Pisac, Ollantaytambo y Chinchero. Cada sitio revela diferentes aspectos de la ingeniería, arquitectura y espiritualidad inca, mientras que los pueblos tradicionales mantienen vivas las costumbres y tradiciones andinas.",
   "featuredImage": "/sacred-valley.jpeg",
-  "gallery": [
-    "/sacred-valley.jpeg",
-    "/sacred-valley-terraces.jpeg",
-    "/sacred-valley-village.jpeg"
-  ],
+  "gallery": ["/sacred-valley.jpeg"],
   "highlights": [
     "Ruinas de Pisac",
     "Fortaleza de Ollantaytambo",

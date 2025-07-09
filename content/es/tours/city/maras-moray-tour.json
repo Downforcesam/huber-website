@@ -1,6 +1,6 @@
 {
   "title": "Tour Maras y Moray",
-  "slug": "tour-maras-moray",
+  "slug": "maras-moray-tour",
   "duration": 1,
   "category": "Ciudad",
   "difficulty": "Fácil",
@@ -10,8 +10,8 @@
   "groupSize": "2-15 personas",
   "description": "Descubre dos de los sitios más fascinantes del Valle Sagrado: las salineras de Maras y el laboratorio agrícola de Moray. Este tour combina historia, ingeniería inca y paisajes únicos.",
   "longDescription": "Maras y Moray representan dos aspectos fascinantes de la ingeniería y agricultura inca. Las salineras de Maras, con más de 3,000 pozas de sal, han sido utilizadas desde tiempos pre-incas y siguen produciendo sal de alta calidad. Moray, por otro lado, es un complejo de terrazas circulares que funcionó como un laboratorio agrícola experimental, donde los incas probaban diferentes cultivos en microclimas variados. Este tour te permite explorar ambos sitios y comprender la sofisticación de la civilización inca.",
-  "featuredImage": "/maras-moray.jpeg",
-  "gallery": ["/maras-moray.jpeg", "/maras.jpeg", "/maras-salt-pools.jpeg"],
+  "featuredImage": "/maras.jpeg",
+  "gallery": ["/maras.jpeg", "/maras-moray.jpeg"],
   "highlights": [
     "Salineras de Maras",
     "Laboratorio agrícola de Moray",
