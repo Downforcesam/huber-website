@@ -1,0 +1,51 @@
+{
+  "title": "Maras y Moray",
+  "slug": "maras-moray",
+  "type": "Arqueológico/Natural",
+  "description": "Antiguos laboratorios agrícolas incas y espectaculares terrazas de sal que muestran la ingeniería andina ingeniosa.",
+  "longDescription": "Maras y Moray representan dos de los ejemplos más fascinantes del ingenio inca en el Valle Sagrado. Moray presenta misteriosas terrazas circulares que sirvieron como laboratorio agrícola donde los incas experimentaron con diferentes cultivos a varias altitudes. Cerca, las minas de sal de Maras han estado produciendo sal durante más de 500 años a través de un sistema intrincado de estanques aterrazados alimentados por manantiales de sal naturales, creando un paisaje geométrico impresionante de piscinas blancas y doradas.",
+  "image": "/maras.jpeg",
+  "gallery": ["/maras.jpeg", "/maras-moray.jpeg"],
+  "location": {
+    "region": "Cusco",
+    "country": "Perú",
+    "coordinates": {
+      "lat": -13.3847,
+      "lng": -72.2031
+    }
+  },
+  "elevation": "3,500m (11,480ft)",
+  "climate": "Subtropical de altura",
+  "bestTimeToVisit": "Abril a octubre (época seca)",
+  "highlights": [
+    "Terrazas agrícolas circulares de Moray",
+    "Terrazas y piscinas de sal de Maras",
+    "Experimentación agrícola inca",
+    "Cosecha tradicional de sal",
+    "Patrones geométricos espectaculares",
+    "Vistas panorámicas del Valle Sagrado"
+  ],
+  "features": [
+    "Innovación agrícola inca",
+    "Producción tradicional de sal",
+    "Fotografía de paisajes únicos",
+    "Preservación del patrimonio cultural",
+    "Fácil accesibilidad desde Cusco"
+  ],
+  "accessibility": {
+    "difficulty": "Fácil a Moderado",
+    "facilities": "Centros de visitantes, estacionamiento, guías locales",
+    "transportation": "45 minutos en auto desde Cusco"
+  },
+  "culturalSignificance": "Moray sirvió como centro de investigación agrícola inca con microclimas para experimentación de cultivos. Maras representa el conocimiento indígena continuo en producción de sal que abarca siglos.",
+  "sites": {
+    "moray": {
+      "description": "Anfiteatros aterrazados circulares usados para experimentos agrícolas",
+      "features": "Variaciones de temperatura, pruebas de cultivos, propósitos ceremoniales"
+    },
+    "maras": {
+      "description": "Minas de sal ancestrales con más de 3,000 piscinas aterrazadas",
+      "features": "Manantiales de sal naturales, cosecha tradicional, importancia económica"
+    }
+  }
+}

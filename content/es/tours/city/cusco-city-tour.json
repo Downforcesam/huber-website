@@ -1,0 +1,78 @@
+{
+  "title": "Tour Ciudad de Cusco",
+  "slug": "tour-ciudad-cusco",
+  "duration": 1,
+  "category": "Ciudad",
+  "difficulty": "Fácil",
+  "destinations": ["cusco"],
+  "price": 25,
+  "currency": "USD",
+  "groupSize": "2-15 personas",
+  "description": "Explora la antigua capital del Imperio Inca en este tour completo de un día. Descubre la rica historia, arquitectura colonial y sitios arqueológicos que hacen de Cusco una de las ciudades más fascinantes de Sudamérica.",
+  "longDescription": "Cusco, la antigua capital del Imperio Inca y Patrimonio de la Humanidad por la UNESCO, es una ciudad donde la historia cobra vida. Este tour te lleva a través de siglos de historia, desde las impresionantes ruinas incas hasta las magníficas iglesias coloniales construidas sobre templos incas. Experimenta la fusión única de culturas que define a Cusco mientras exploras sus calles empedradas, plazas históricas y sitios arqueológicos cercanos.",
+  "featuredImage": "/cusco-city.jpeg",
+  "gallery": ["/cusco-city.jpeg", "/cusco.jpeg", "/cusco-2.jpeg"],
+  "highlights": [
+    "Plaza de Armas y Catedral",
+    "Templo del Sol (Qorikancha)",
+    "Sacsayhuamán",
+    "Q'enqo y Tambomachay",
+    "Barrio de San Blas",
+    "Mercado de San Pedro"
+  ],
+  "included": [
+    "Guía profesional en inglés/español",
+    "Transporte desde/hacia hotel",
+    "Todas las tarifas de entrada",
+    "Almuerzo en restaurante local",
+    "Botella de agua",
+    "Briefing previo"
+  ],
+  "notIncluded": [
+    "Propinas para guías",
+    "Gastos personales",
+    "Bebidas alcohólicas",
+    "Compras personales"
+  ],
+  "whatToBring": [
+    "Pasaporte (copia)",
+    "Ropa cómoda para caminar",
+    "Zapatos cómodos",
+    "Protección solar",
+    "Cámara",
+    "Dinero para propinas y compras",
+    "Chaqueta ligera (las noches pueden ser frías)"
+  ],
+  "physicalRequirement": "Nivel fácil - caminata moderada por la ciudad. Algunos sitios arqueológicos tienen escaleras y terreno irregular.",
+  "bestTime": "Todo el año (mejor de mayo a septiembre)",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Tour Completo de Cusco",
+      "distance": "5-6km caminando",
+      "duration": "8 horas",
+      "elevation": "3,400m",
+      "description": "Comienza en el corazón de Cusco y explora los sitios más importantes de la ciudad, desde la Plaza de Armas hasta las impresionantes ruinas de Sacsayhuamán.",
+      "meals": ["almuerzo"],
+      "accommodation": "No incluido",
+      "activities": [
+        "Recogida desde hotel",
+        "Plaza de Armas y Catedral",
+        "Templo del Sol (Qorikancha)",
+        "Barrio de San Blas",
+        "Almuerzo en restaurante local",
+        "Sacsayhuamán",
+        "Q'enqo y Tambomachay",
+        "Mercado de San Pedro",
+        "Regreso al hotel"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Tour de día - no se incluye alojamiento",
+    "food": "Almuerzo incluido en restaurante local con opciones vegetarianas disponibles",
+    "safety": "Guías experimentados con conocimiento profundo de la historia y cultura de Cusco",
+    "groupSize": "Grupos pequeños para una experiencia más personalizada",
+    "accessibility": "La mayoría de sitios son accesibles, pero algunos pueden tener escaleras o terreno irregular"
+  }
+}

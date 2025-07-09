@@ -1,16 +1,10 @@
 <template>
-  <section id="destinations" class="bg-gray-50 py-16 lg:py-24">
+  <section class="bg-gray-50 py-16 sm:py-24">
     <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <!-- Section Header -->
       <div class="mb-16 text-center">
-        <UBadge color="primary" variant="soft" size="lg" class="mb-4">
-          {{ t('popularDestinations') }}
-        </UBadge>
-        <h2
-          class="mb-6 font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl"
-        >
-          {{ t('exploreIconicPlaces') }}
-          <span class="text-primary-600">{{ t('iconicPlaces') }}</span>
+        <h2 class="mb-6 font-bold text-gray-900 text-3xl sm:text-4xl">
+          {{ t('exploreDestinations') }}
         </h2>
         <p class="mx-auto max-w-3xl text-gray-600 text-xl">
           {{ t('ancientCitadels') }}
@@ -18,74 +12,72 @@
       </div>
 
       <!-- Destinations Grid -->
-      <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-16">
+      <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8">
         <UCard
-          v-for="destination in destinations"
+          v-for="destination in destinations.slice(0, 3)"
           :key="destination.name"
           class="group hover:shadow-xl overflow-hidden transition-all duration-300 cursor-pointer"
         >
-          <div class="relative">
-            <NuxtImg
-              :src="destination.image"
-              :alt="destination.name"
-              class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-            />
-            <div
-              class="top-4 right-4 absolute bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full"
-            >
-              <UBadge :color="destination.badgeColor" variant="soft" size="sm">
-                {{ destination.type }}
-              </UBadge>
-            </div>
-            <div
-              class="top-4 left-4 absolute bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full"
-            >
-              <UIcon
-                :name="destination.icon"
-                class="w-4 h-4 text-primary-600"
-              />
-            </div>
-          </div>
-
           <template #header>
-            <div class="flex justify-between items-start">
-              <div>
-                <h3 class="mb-2 font-bold text-gray-900 text-xl">
-                  {{ destination.name }}
-                </h3>
-                <div class="flex items-center space-x-2 text-gray-500 text-sm">
-                  <UIcon name="i-heroicons-clock" class="w-4 h-4" />
-                  <span>{{ destination.duration }}</span>
-                </div>
-              </div>
+            <div class="relative overflow-hidden">
+              <NuxtImg
+                :src="destination.image"
+                :alt="destination.name"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+              />
             </div>
           </template>
 
-          <p class="mb-4 text-gray-600">{{ destination.description }}</p>
-
-          <div class="flex flex-wrap gap-2 mb-4">
-            <UBadge
-              v-for="feature in destination.features"
-              :key="feature"
-              variant="outline"
-              size="sm"
+          <div class="p-6">
+            <h3
+              class="mb-3 font-bold text-gray-900 text-xl transition-colors group-hover:brand-teal"
             >
-              {{ feature }}
-            </UBadge>
-          </div>
+              {{ destination.name }}
+            </h3>
 
-          <template #footer>
+            <p class="mb-4 text-gray-600 text-sm line-clamp-2">
+              {{ destination.description }}
+            </p>
+
+            <!-- Destination Details -->
+            <div class="space-y-2 mb-4 text-gray-500 text-sm">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <UIcon name="i-heroicons-clock" class="w-4 h-4" />
+                  <span>{{ destination.duration }}</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <UIcon name="i-heroicons-map-pin" class="w-4 h-4" />
+                  <span>Peru</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Button -->
             <UButton
-              variant="ghost"
+              color="primary"
+              variant="outline"
               size="sm"
               icon="i-heroicons-arrow-right"
               trailing
               block
+              class="mt-4"
             >
               Learn More
             </UButton>
-          </template>
+          </div>
         </UCard>
+      </div>
+
+      <!-- See all destinations button -->
+      <div class="flex justify-center mb-16">
+        <NuxtLink
+          to="/destinations"
+          class="inline-flex items-center bg-brand-teal hover:bg-brand-teal-dark shadow px-6 py-3 rounded-lg font-semibold text-white transition-colors"
+        >
+          {{ t('seeAllDestinations') }}
+          <UIcon name="i-heroicons-arrow-right" class="ml-2 w-5 h-5" />
+        </NuxtLink>
       </div>
 
       <!-- Call to Action -->
@@ -108,7 +100,7 @@
             <div
               class="inline-flex justify-center items-center bg-primary-100 group-hover:bg-primary-200 mb-4 rounded-full w-16 h-16 transition-colors"
             >
-              <UIcon :name="feature.icon" class="w-8 h-8 text-primary-600" />
+              <UIcon :name="feature.icon" class="w-8 h-8 brand-teal" />
             </div>
             <h4 class="mb-2 font-semibold text-gray-900 text-lg">
               {{ t(feature.translationKey) }}
@@ -143,7 +135,7 @@ const destinations = [
       'Discover ancient ruins, bustling markets, and breathtaking scenery in the Sacred Valley of the Incas.',
     image: '/sacred-valley.jpeg',
     icon: 'i-heroicons-photo',
-    badgeColor: 'success' as const,
+    badgeColor: 'primary' as const,
     features: ['Pisac Market', 'Ollantaytambo', 'Local Culture'],
     duration: '1-2 days',
   },

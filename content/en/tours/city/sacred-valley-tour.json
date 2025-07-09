@@ -1,0 +1,79 @@
+{
+  "title": "Sacred Valley Tour",
+  "slug": "sacred-valley-tour",
+  "duration": 1,
+  "category": "City Tour",
+  "difficulty": "Easy",
+  "destinations": ["sacred-valley", "cusco"],
+  "price": 55,
+  "currency": "USD",
+  "groupSize": "2-12 people",
+  "description": "Explore the heartland of the Inca Empire on this comprehensive tour of the Sacred Valley. Visit traditional villages, impressive archaeological sites, and colorful markets while learning about Andean culture and traditions.",
+  "longDescription": "The Sacred Valley of the Incas was once the agricultural heartland of the Inca Empire, providing food for the entire empire. This fertile valley, carved by the Urubamba River, is dotted with traditional Andean villages, impressive archaeological sites, and vibrant markets. Our tour takes you to the most important sites including Pisaq with its impressive terraces and famous market, Ollantaytambo with its massive fortress, and Chinchero with its traditional weaving techniques. The valley's lower altitude also makes it perfect for acclimatization before visiting Machu Picchu.",
+  "featuredImage": "/sacred-valley.jpeg",
+  "gallery": [
+    "/sacred-valley.jpeg",
+    "/pisaq-terraces.jpeg",
+    "/ollantaytambo.jpeg"
+  ],
+  "highlights": [
+    "Pisaq archaeological site and market",
+    "Ollantaytambo fortress",
+    "Chinchero weaving village",
+    "Urubamba River valley",
+    "Traditional Andean villages",
+    "Agricultural terraces"
+  ],
+  "included": [
+    "Professional English/Spanish speaking guide",
+    "All entrance fees",
+    "Transportation in comfortable vehicle",
+    "Hotel pickup and drop-off",
+    "Bottled water"
+  ],
+  "notIncluded": [
+    "Lunch",
+    "Personal expenses",
+    "Tips for guides",
+    "Optional activities",
+    "Market purchases"
+  ],
+  "whatToBring": [
+    "Comfortable walking shoes",
+    "Sun protection (hat, sunscreen)",
+    "Camera",
+    "Water bottle",
+    "Light jacket",
+    "Small daypack",
+    "Cash for market purchases"
+  ],
+  "physicalRequirement": "Easy to Moderate - suitable for most fitness levels. Some walking on uneven terrain at archaeological sites.",
+  "bestTime": "Year-round. Tuesday, Thursday, and Sunday are best for Pisaq market.",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Sacred Valley Exploration",
+      "duration": "8-9 hours",
+      "description": "Full day exploring the most important sites of the Sacred Valley, from archaeological wonders to traditional markets.",
+      "meals": ["Not included"],
+      "accommodation": "Not included",
+      "activities": [
+        "Hotel pickup from Cusco",
+        "Visit Pisaq archaeological site",
+        "Explore Pisaq market (Tues/Thurs/Sun)",
+        "Lunch in Urubamba",
+        "Tour Ollantaytambo fortress",
+        "Visit Chinchero weaving village",
+        "Return to Cusco"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Day tour - no accommodation included",
+    "food": "Lunch not included - guide can recommend local restaurants",
+    "safety": "Experienced local guides with deep knowledge of Andean culture",
+    "groupSize": "Small groups ensure personalized attention",
+    "accessibility": "Some archaeological sites have stairs and uneven surfaces",
+    "market": "Pisaq market is most vibrant on Tuesdays, Thursdays, and Sundays"
+  }
+}

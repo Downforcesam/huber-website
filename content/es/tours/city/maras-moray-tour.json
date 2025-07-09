@@ -1,0 +1,77 @@
+{
+  "title": "Tour Maras y Moray",
+  "slug": "tour-maras-moray",
+  "duration": 1,
+  "category": "Ciudad",
+  "difficulty": "Fácil",
+  "destinations": ["maras", "cusco"],
+  "price": 30,
+  "currency": "USD",
+  "groupSize": "2-15 personas",
+  "description": "Descubre dos de los sitios más fascinantes del Valle Sagrado: las salineras de Maras y el laboratorio agrícola de Moray. Este tour combina historia, ingeniería inca y paisajes únicos.",
+  "longDescription": "Maras y Moray representan dos aspectos fascinantes de la ingeniería y agricultura inca. Las salineras de Maras, con más de 3,000 pozas de sal, han sido utilizadas desde tiempos pre-incas y siguen produciendo sal de alta calidad. Moray, por otro lado, es un complejo de terrazas circulares que funcionó como un laboratorio agrícola experimental, donde los incas probaban diferentes cultivos en microclimas variados. Este tour te permite explorar ambos sitios y comprender la sofisticación de la civilización inca.",
+  "featuredImage": "/maras-moray.jpeg",
+  "gallery": ["/maras-moray.jpeg", "/maras.jpeg", "/maras-salt-pools.jpeg"],
+  "highlights": [
+    "Salineras de Maras",
+    "Laboratorio agrícola de Moray",
+    "Terrazas circulares únicas",
+    "Vistas panorámicas del valle",
+    "Historia de la producción de sal",
+    "Ingeniería agrícola inca"
+  ],
+  "included": [
+    "Guía profesional en inglés/español",
+    "Transporte desde/hacia Cusco",
+    "Todas las tarifas de entrada",
+    "Almuerzo en restaurante local",
+    "Botella de agua",
+    "Briefing previo"
+  ],
+  "notIncluded": [
+    "Propinas para guías",
+    "Gastos personales",
+    "Bebidas alcohólicas",
+    "Compras de sal o artesanías"
+  ],
+  "whatToBring": [
+    "Pasaporte (copia)",
+    "Ropa cómoda para caminar",
+    "Zapatos cómodos",
+    "Protección solar",
+    "Cámara",
+    "Dinero para propinas y compras",
+    "Chaqueta ligera",
+    "Sombrero"
+  ],
+  "physicalRequirement": "Nivel fácil - caminata ligera en ambos sitios. Terreno relativamente plano con algunas escaleras.",
+  "bestTime": "Todo el año (mejor de mayo a septiembre)",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Maras y Moray",
+      "distance": "80km en auto",
+      "duration": "6 horas",
+      "elevation": "3,300m - 3,500m",
+      "description": "Visita dos de los sitios más únicos del Valle Sagrado, aprendiendo sobre la producción tradicional de sal y la experimentación agrícola inca.",
+      "meals": ["almuerzo"],
+      "accommodation": "No incluido",
+      "activities": [
+        "Recogida desde hotel en Cusco",
+        "Visita a las salineras de Maras",
+        "Aprendizaje sobre producción de sal",
+        "Almuerzo en restaurante local",
+        "Exploración de Moray",
+        "Explicación del laboratorio agrícola",
+        "Regreso a Cusco"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Tour de día - no se incluye alojamiento",
+    "food": "Almuerzo incluido en restaurante local con opciones vegetarianas disponibles",
+    "safety": "Guías experimentados con conocimiento profundo de la historia y cultura inca",
+    "groupSize": "Grupos pequeños para una experiencia más personalizada",
+    "accessibility": "Ambos sitios son accesibles, con caminos bien mantenidos"
+  }
+}

@@ -1,9 +1,7 @@
 <template>
   <div class="bg-gray-50 min-h-screen">
     <!-- Hero section with guide photo -->
-    <div
-      class="relative bg-gradient-to-r from-blue-900 to-green-800 text-white"
-    >
+    <div class="relative bg-gradient-to-r from-blue-900 to-teal-800 text-white">
       <div class="mx-auto px-4 py-16 sm:py-24 container">
         <div class="items-center gap-8 grid grid-cols-1 lg:grid-cols-2">
           <div>
@@ -17,7 +15,7 @@
               <a
                 href="https://wa.me/your-number"
                 target="_blank"
-                class="inline-flex justify-center items-center bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-semibold text-white transition-colors"
+                class="inline-flex justify-center items-center bg-teal-600 hover:bg-teal-700 px-6 py-3 rounded-lg font-semibold text-white transition-colors"
               >
                 <svg
                   class="mr-2 w-5 h-5"

@@ -1,48 +1,51 @@
 {
   "title": "Machu Picchu",
   "slug": "machu-picchu",
-  "thumbnail": "/machu-picchu.jpg",
-  "hero_image": "/machu-picchu-sunrise.jpg",
-  "region": "Cusco Region",
+  "type": "Archaeological",
+  "description": "The iconic Lost City of the Incas, a UNESCO World Heritage Site perched high in the Andes mountains.",
+  "longDescription": "Machu Picchu, often called the 'Lost City of the Incas,' is Peru's most famous archaeological site. Built in the 15th century and abandoned during the Spanish conquest, this remarkably preserved Incan citadel sits majestically at 2,430 meters above sea level, surrounded by dramatic mountain peaks and lush cloud forests.",
+  "image": "/machu-picchu.jpg",
+  "gallery": [
+    "/machu-picchu.jpg",
+    "/machu-picchu-lama.jpeg",
+    "/machu-picchu-trip.jpeg"
+  ],
+  "location": {
+    "region": "Cusco",
+    "country": "Peru",
+    "coordinates": {
+      "lat": -13.1631,
+      "lng": -72.545
+    }
+  },
   "elevation": "2,430m (7,970ft)",
-  "climate": "Cloud forest",
-  "best_time": "May to September (dry season)",
-  "description": "The Lost City of the Incas, Machu Picchu is Peru's most iconic destination and one of the New Seven Wonders of the World. This remarkably preserved Inca citadel sits dramatically on a mountain ridge above the Sacred Valley.",
+  "climate": "Subtropical highland",
+  "bestTimeToVisit": "May to September (dry season)",
   "highlights": [
-    "Inca citadel ruins",
+    "UNESCO World Heritage Site",
+    "Inca Trail access point",
     "Huayna Picchu mountain",
     "Temple of the Sun",
     "Intihuatana stone",
+    "Agricultural terraces"
+  ],
+  "features": [
+    "Archaeological significance",
     "Spectacular mountain views",
-    "Cloud forest wildlife"
+    "Rich biodiversity",
+    "Cultural heritage",
+    "Photography opportunities"
   ],
-  "activities": [
-    {
-      "name": "Classic Machu Picchu Tour",
-      "duration": "Full day",
-      "difficulty": "Easy"
-    },
-    {
-      "name": "Huayna Picchu Hike",
-      "duration": "3-4 hours",
-      "difficulty": "Challenging"
-    },
-    {
-      "name": "Machu Picchu Mountain Hike",
-      "duration": "4-5 hours",
-      "difficulty": "Challenging"
-    }
-  ],
-  "related_tours": ["machu-picchu", "choquequirao"],
-  "gallery": [
-    "/machu-picchu-panorama.jpg",
-    "/huayna-picchu.jpg",
-    "/machu-picchu-llamas.jpg",
-    "/machu-picchu-terraces.jpg"
-  ],
-  "practical_info": {
-    "getting_there": "Train from Cusco/Ollantaytambo to Aguas Calientes, then bus to entrance",
-    "tickets": "Must be booked in advance, especially for Huayna Picchu",
-    "best_photos": "Early morning for sunrise, fewer crowds"
-  }
+  "accessibility": {
+    "difficulty": "Easy to Challenging (depending on route)",
+    "facilities": "Visitor center, restrooms, first aid",
+    "transportation": "Train + bus or hiking trails"
+  },
+  "culturalSignificance": "Sacred Inca citadel and astronomical observatory, representing the pinnacle of Inca architecture and urban planning.",
+  "wildlife": [
+    "Spectacled bears",
+    "Mountain viscachas",
+    "Over 400 bird species",
+    "Diverse flora including orchids"
+  ]
 }

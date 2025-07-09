@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-50 min-h-screen">
     <!-- Hero section -->
-    <div class="bg-gradient-to-r from-blue-900 to-green-800 text-white">
+    <div class="bg-gradient-to-r from-blue-900 to-teal-800 text-white">
       <div class="mx-auto px-4 py-16 sm:py-24 container">
         <div class="text-center">
           <h1 class="mb-6 font-bold text-3xl sm:text-4xl lg:text-5xl">
@@ -209,20 +209,19 @@
                   type="submit"
                   size="xl"
                   :loading="loading"
-                  class="flex-1"
+                  class="flex-1 bg-brand-teal hover:bg-brand-teal-dark border-brand-teal hover:border-brand-teal-dark text-white"
                   icon="i-heroicons-paper-airplane"
                 >
                   {{ $t('sendCustomRequest') }}
                 </UButton>
 
                 <UButton
-                  color="green"
                   variant="outline"
                   size="xl"
                   :to="whatsappLink"
                   target="_blank"
                   icon="i-simple-icons-whatsapp"
-                  class="flex-1"
+                  class="flex-1 hover:bg-brand-gold border-brand-gold text-brand-gold hover:text-white"
                 >
                   {{ $t('discussOnWhatsapp') }}
                 </UButton>
@@ -367,8 +366,7 @@ async function onSubmit(event) {
     toast.add({
       title: $t('customRequestSent'),
       description: $t('customRequestSuccess'),
-      icon: 'i-heroicons-check-circle',
-      color: 'green',
+      color: 'primary',
     });
 
     // Reset form

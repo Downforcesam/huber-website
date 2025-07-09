@@ -1,6 +1,6 @@
 <template>
   <header
-    class="top-0 z-50 sticky bg-white/95 shadow-sm backdrop-blur-md border-gray-200 border-b"
+    class="top-0 z-50 sticky bg-white shadow-sm backdrop-blur-md border-gray-200 border-b"
   >
     <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <div class="flex justify-between items-center h-16 lg:h-20">
@@ -22,11 +22,11 @@
             v-for="item in navigation"
             :key="item.name"
             :to="localePath(item.href)"
-            class="group relative font-medium text-gray-700 hover:text-primary-600 text-sm transition-colors duration-200"
+            class="group relative font-medium text-gray-700 hover:text-brand-teal text-sm transition-colors duration-200"
           >
             {{ t(item.name) }}
             <span
-              class="-bottom-1 left-0 absolute bg-primary-600 w-0 group-hover:w-full h-0.5 transition-all duration-200"
+              class="-bottom-1 left-0 absolute bg-brand-teal w-0 group-hover:w-full h-0.5 transition-all duration-200"
             ></span>
           </NuxtLink>
         </nav>
@@ -34,15 +34,6 @@
         <!-- Desktop Actions -->
         <div class="hidden lg:flex items-center space-x-4">
           <AppLangSwitcher />
-          <UButton
-            to="#contact"
-            color="primary"
-            variant="solid"
-            size="sm"
-            icon="i-heroicons-envelope"
-          >
-            {{ t('contactUs') }}
-          </UButton>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -90,7 +81,7 @@
               :key="item.name"
               :to="localePath(item.href)"
               @click="mobileMenuOpen = false"
-              class="block hover:bg-gray-50 px-3 py-2 rounded-md font-medium text-gray-700 hover:text-primary-600 text-base transition-colors"
+              class="block hover:bg-gray-50 px-3 py-2 rounded-md font-medium text-gray-700 hover:text-brand-teal text-base transition-colors"
             >
               {{ t(item.name) }}
             </NuxtLink>
@@ -119,7 +110,7 @@
             <UButton
               to="https://wa.me/your-number"
               target="_blank"
-              color="success"
+              color="secondary"
               variant="outline"
               size="lg"
               block
@@ -142,8 +133,8 @@ const localePath = useLocalePath();
 const navigation = [
   { name: 'home', href: '/' },
   { name: 'tours', href: '/tours' },
-  { name: 'destinations', href: '#destinations' },
-  { name: 'about', href: '#about' },
+  { name: 'destinations', href: '/destinations' },
+  { name: 'about', href: '/about' },
   { name: 'contact', href: '#contact' },
 ];
 

@@ -18,146 +18,172 @@
 
     <!-- Destinations grid -->
     <div class="mx-auto px-4 py-12 sm:py-16 container">
-      <ContentList :path="`/${locale}/destinations`" v-slot="{ list }">
+      <div
+        class="gap-6 lg:gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
         <div
-          class="gap-6 lg:gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          v-for="destination in destinations"
+          :key="destination._id"
+          class="group relative bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-shadow duration-300"
         >
-          <div
-            v-for="destination in list"
-            :key="destination.id"
-            class="group relative bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-shadow duration-300"
+          <NuxtLink
+            :to="localePath(`/destinations/${destination.slug}`)"
+            class="block"
           >
-            <NuxtLink
-              :to="localePath(`/destinations/${destination.slug}`)"
-              class="block"
+            <!-- Destination image -->
+            <div
+              class="relative bg-gray-200 h-64 sm:h-72 overflow-hidden group-hover:scale-105 transition-transform duration-300"
             >
-              <!-- Destination image -->
+              <NuxtImg
+                :src="destination.featuredImage"
+                :alt="destination.title"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <!-- Gradient overlay -->
               <div
-                class="relative bg-gray-200 h-64 sm:h-72 overflow-hidden group-hover:scale-105 transition-transform duration-300"
-              >
-                <NuxtImg
-                  :src="destination.thumbnail"
-                  :alt="destination.title"
-                  class="w-full h-full object-cover"
-                  loading="lazy"
-                />
-                <!-- Gradient overlay -->
-                <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-                ></div>
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+              ></div>
 
-                <!-- Destination info overlay -->
-                <div class="bottom-4 left-4 absolute text-white">
-                  <h3 class="mb-1 font-bold text-xl sm:text-2xl">
-                    {{ destination.title }}
-                  </h3>
-                  <p class="text-gray-200 text-sm">
-                    {{ destination.region }}
-                  </p>
-                </div>
-              </div>
-
-              <!-- Content -->
-              <div class="p-6">
-                <p class="mb-4 text-gray-600 text-sm sm:text-base line-clamp-3">
-                  {{ destination.description }}
-                </p>
-
-                <!-- Key info -->
-                <div class="gap-4 grid grid-cols-2 mb-4 text-sm">
-                  <div>
-                    <span class="text-gray-500">{{ $t('elevation') }}:</span>
-                    <span class="ml-1 font-medium">{{
-                      destination.elevation
-                    }}</span>
-                  </div>
-                  <div>
-                    <span class="text-gray-500">{{ $t('bestTime') }}:</span>
-                    <span class="ml-1 font-medium">{{
-                      destination.best_time
-                    }}</span>
-                  </div>
-                </div>
-
-                <!-- Highlights -->
-                <div class="mb-4">
-                  <h4 class="mb-2 font-semibold text-gray-700 text-sm">
-                    {{ $t('highlights') }}:
-                  </h4>
-                  <div class="flex flex-wrap gap-1">
-                    <span
-                      v-for="highlight in destination.highlights?.slice(0, 3)"
-                      :key="highlight"
-                      class="inline-block bg-blue-100 px-2 py-1 rounded-full text-blue-800 text-xs"
-                    >
-                      {{ highlight }}
-                    </span>
-                    <span
-                      v-if="destination.highlights?.length > 3"
-                      class="inline-block bg-gray-100 px-2 py-1 rounded-full text-gray-600 text-xs"
-                    >
-                      +{{ destination.highlights.length - 3 }} {{ $t('more') }}
-                    </span>
-                  </div>
-                </div>
-
-                <!-- CTA -->
-                <div
-                  class="flex items-center font-medium text-blue-600 group-hover:text-blue-700 text-sm"
-                >
-                  {{ $t('exploreDestination') }}
-                  <svg
-                    class="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
+              <!-- Destination info overlay -->
+              <div class="bottom-4 left-4 absolute text-white">
+                <h3 class="mb-1 font-bold text-xl sm:text-2xl">
+                  {{ destination.title }}
+                </h3>
+                <p class="text-gray-200 text-sm">
+                  {{ destination.location?.region
+                  }}<span v-if="destination.location?.country"
+                    >, {{ destination.location.country }}</span
                   >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
+                </p>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6">
+              <p class="mb-4 text-gray-600 text-sm sm:text-base line-clamp-3">
+                {{ destination.description }}
+              </p>
+
+              <!-- Key info -->
+              <div class="gap-4 grid grid-cols-2 mb-4 text-sm">
+                <div>
+                  <span class="text-gray-500">{{ $t('elevation') }}:</span>
+                  <span class="ml-1 font-medium">{{
+                    destination.elevation
+                  }}</span>
+                </div>
+                <div>
+                  <span class="text-gray-500">{{ $t('bestTime') }}:</span>
+                  <span class="ml-1 font-medium">{{
+                    destination.bestTimeToVisit || destination.bestTime
+                  }}</span>
                 </div>
               </div>
-            </NuxtLink>
-          </div>
-        </div>
 
-        <!-- Empty state -->
-        <div v-if="list.length === 0" class="py-12 text-center">
-          <div class="mb-4 text-gray-400">
-            <svg
-              class="mx-auto w-16 h-16"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-              />
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-              />
-            </svg>
-          </div>
-          <h3 class="mb-2 font-medium text-gray-900 text-lg">
-            {{ $t('noDestinationsFound') }}
-          </h3>
-          <p class="text-gray-600">{{ $t('destinationsComingSoon') }}</p>
+              <!-- Highlights -->
+              <div class="mb-4">
+                <h4 class="mb-2 font-semibold text-gray-700 text-sm">
+                  {{ $t('highlights') }}:
+                </h4>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    v-for="highlight in destination.highlights?.slice(0, 3)"
+                    :key="highlight"
+                    class="inline-block bg-blue-100 px-2 py-1 rounded-full text-blue-800 text-xs"
+                  >
+                    {{ highlight }}
+                  </span>
+                  <span
+                    v-if="destination.highlights?.length > 3"
+                    class="inline-block bg-gray-100 px-2 py-1 rounded-full text-gray-600 text-xs"
+                  >
+                    +{{ destination.highlights.length - 3 }} {{ $t('more') }}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Activities -->
+              <div class="mb-4">
+                <h4 class="mb-2 font-semibold text-gray-700 text-sm">
+                  {{ $t('activities') }}:
+                </h4>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    v-for="activity in destination.activities?.slice(0, 2)"
+                    :key="activity"
+                    class="inline-block bg-green-100 px-2 py-1 rounded-full text-green-800 text-xs"
+                  >
+                    {{ activity }}
+                  </span>
+                  <span
+                    v-if="destination.activities?.length > 2"
+                    class="inline-block bg-gray-100 px-2 py-1 rounded-full text-gray-600 text-xs"
+                  >
+                    +{{ destination.activities.length - 2 }} {{ $t('more') }}
+                  </span>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div
+                class="flex items-center font-medium text-blue-600 group-hover:text-blue-700 text-sm"
+              >
+                {{ $t('exploreDestination') }}
+                <svg
+                  class="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
+            </div>
+          </NuxtLink>
         </div>
-      </ContentList>
+      </div>
+
+      <!-- Empty state -->
+      <div
+        v-if="!destinations || destinations.length === 0"
+        class="py-12 text-center"
+      >
+        <div class="mb-4 text-gray-400">
+          <svg
+            class="mx-auto w-16 h-16"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+            />
+          </svg>
+        </div>
+        <h3 class="mb-2 font-medium text-gray-900 text-lg">
+          {{ $t('noDestinationsFound') }}
+        </h3>
+        <p class="text-gray-600">{{ $t('destinationsComingSoon') }}</p>
+      </div>
     </div>
 
     <!-- CTA section -->
-    <div class="bg-gradient-to-r from-blue-900 to-green-800 text-white">
+    <div class="bg-gradient-to-r from-blue-900 to-teal-800 text-white">
       <div class="mx-auto px-4 py-12 sm:py-16 container">
         <div class="text-center">
           <h2 class="mb-4 font-bold text-2xl sm:text-3xl">
@@ -189,6 +215,17 @@
 <script setup>
 const { locale } = useI18n();
 const localePath = useLocalePath();
+
+// Reactive collection name based on current locale
+const collectionName = computed(() =>
+  locale.value === 'es' ? 'esDestinations' : 'enDestinations'
+);
+
+// Fetch destinations using new Nuxt Content v3 API with unique cache key per language
+const { data: destinations } = await useAsyncData(
+  () => `destinations-${locale.value}`,
+  () => queryCollection(collectionName.value).all()
+);
 
 // SEO
 useHead({

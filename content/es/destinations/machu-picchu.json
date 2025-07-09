@@ -1,0 +1,51 @@
+{
+  "title": "Machu Picchu",
+  "slug": "machu-picchu",
+  "type": "Arqueológico",
+  "description": "La icónica Ciudad Perdida de los Incas, un Sitio Patrimonio Mundial de la UNESCO ubicado en las montañas de los Andes.",
+  "longDescription": "Machu Picchu, a menudo llamada la 'Ciudad Perdida de los Incas', es el sitio arqueológico más famoso de Perú. Construida en el siglo XV y abandonada durante la conquista española, esta ciudadela inca extraordinariamente preservada se asienta majestuosamente a 2,430 metros sobre el nivel del mar, rodeada de picos montañosos dramáticos y exuberantes bosques nubosos.",
+  "image": "/machu-picchu.jpg",
+  "gallery": [
+    "/machu-picchu.jpg",
+    "/machu-picchu-lama.jpeg",
+    "/machu-picchu-trip.jpeg"
+  ],
+  "location": {
+    "region": "Cusco",
+    "country": "Perú",
+    "coordinates": {
+      "lat": -13.1631,
+      "lng": -72.545
+    }
+  },
+  "elevation": "2,430m (7,970ft)",
+  "climate": "Subtropical de altura",
+  "bestTimeToVisit": "Mayo a septiembre (época seca)",
+  "highlights": [
+    "Sitio Patrimonio Mundial UNESCO",
+    "Punto de acceso al Camino Inca",
+    "Montaña Huayna Picchu",
+    "Templo del Sol",
+    "Piedra Intihuatana",
+    "Terrazas agrícolas"
+  ],
+  "features": [
+    "Importancia arqueológica",
+    "Vistas espectaculares de montañas",
+    "Rica biodiversidad",
+    "Patrimonio cultural",
+    "Oportunidades fotográficas"
+  ],
+  "accessibility": {
+    "difficulty": "Fácil a Desafiante (dependiendo de la ruta)",
+    "facilities": "Centro de visitantes, baños, primeros auxilios",
+    "transportation": "Tren + bus o senderos de trekking"
+  },
+  "culturalSignificance": "Ciudadela inca sagrada y observatorio astronómico, representando el pináculo de la arquitectura y planificación urbana inca.",
+  "wildlife": [
+    "Osos de anteojos",
+    "Vizcachas de montaña",
+    "Más de 400 especies de aves",
+    "Flora diversa incluyendo orquídeas"
+  ]
+}

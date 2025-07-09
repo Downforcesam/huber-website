@@ -1,0 +1,147 @@
+{
+  "title": "Trek Choquequirao",
+  "slug": "trek-choquequirao",
+  "duration": 5,
+  "category": "Senderismo",
+  "difficulty": "Desafiante",
+  "destinations": ["choquequirao", "cusco"],
+  "price": 750,
+  "currency": "USD",
+  "groupSize": "2-8 personas",
+  "description": "Embárcate en un trek épico de 5 días a la 'Ciudad Hermana' de Machu Picchu. Esta aventura desafiante te lleva a través del dramático Cañón del Apurímac para llegar a la espectacular ciudadela inca de Choquequirao, uno de los sitios arqueológicos más remotos y prístinos del Perú.",
+  "longDescription": "Choquequirao, que significa 'Cuna de Oro' en quechua, a menudo es llamada la 'Ciudad Hermana' de Machu Picchu debido a su estilo arquitectónico similar y significado histórico. Este trek de 5 días ofrece una aventura verdaderamente auténtica a través de algunos de los paisajes más espectaculares del Perú, incluyendo el profundo Cañón del Apurímac y bosques nubosos prístinos. A diferencia del Camino Inca concurrido, esta ruta proporciona una experiencia pacífica e íntima con ruinas incas ancestrales y paisajes naturales impresionantes.",
+  "featuredImage": "/choquequirao.jpeg",
+  "gallery": [
+    "/choquequirao.jpeg",
+    "/choquequirao-terraces.jpeg",
+    "/choquequirao-canyon.jpeg"
+  ],
+  "highlights": [
+    "Visita la remota ciudadela de Choquequirao",
+    "Trek a través del dramático Cañón del Apurímac",
+    "Oportunidades espectaculares de avistamiento de cóndores",
+    "Sitio arqueológico prístino con pocos visitantes",
+    "Experimenta la cultura andina auténtica",
+    "Vistas impresionantes de montañas y cañón"
+  ],
+  "included": [
+    "Guía profesional en inglés/español",
+    "Todas las comidas durante el trek (desayuno, almuerzo, cena)",
+    "Equipo de campamento (carpas, colchonetas)",
+    "Mulas y muleteros para transporte de equipo",
+    "Todas las tarifas de entrada y permisos",
+    "Transporte desde/hacia Cusco",
+    "Oxígeno de emergencia y botiquín de primeros auxilios",
+    "Briefing previo al trek en Cusco"
+  ],
+  "notIncluded": [
+    "Sacos de dormir (se pueden alquilar)",
+    "Bastones de trekking (se pueden alquilar)",
+    "Seguro de viaje",
+    "Propinas para guías y muleteros",
+    "Gastos personales",
+    "Bebidas alcohólicas"
+  ],
+  "whatToBring": [
+    "Pasaporte (original)",
+    "Mochila personal (25-30L)",
+    "Ropa abrigada para noches frías",
+    "Equipo de lluvia (poncho o chaqueta)",
+    "Botas de trekking cómodas",
+    "Protección solar (sombrero, protector solar, gafas)",
+    "Medicación personal",
+    "Cámara y baterías extra",
+    "Linterna o frontal",
+    "Botella de agua (2L mínimo)"
+  ],
+  "physicalRequirement": "Se requiere excelente nivel de condición física. Este trek involucra días largos de caminata (6-8 horas) con cambios significativos de elevación y gran altitud.",
+  "bestTime": "Abril a octubre (época seca)",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Cusco a La Playa",
+      "distance": "12km",
+      "duration": "6-7 horas",
+      "elevation": "2,850m a 1,560m",
+      "description": "Salida temprana desde Cusco hacia el pueblo de Cachora. Comienza el trekking a través del Cañón del Apurímac, descendiendo a nuestro primer campamento en La Playa.",
+      "meals": ["desayuno", "almuerzo", "cena"],
+      "accommodation": "Campamento",
+      "activities": [
+        "Transfer desde Cusco a Cachora",
+        "Trek a través del Cañón del Apurímac",
+        "Descenso al campamento La Playa",
+        "Disfrutar vistas del cañón y bosque seco"
+      ]
+    },
+    {
+      "day": 2,
+      "title": "La Playa a Choquequirao",
+      "distance": "8km",
+      "duration": "6-8 horas",
+      "elevation": "1,560m a 3,050m",
+      "description": "Ascenso desafiante a través del cañón para llegar al sitio arqueológico de Choquequirao. Experimenta el cambio dramático de vegetación de bosque seco a bosque nuboso.",
+      "meals": ["desayuno", "almuerzo", "cena"],
+      "accommodation": "Campamento",
+      "activities": [
+        "Ascenso temprano para evitar el calor",
+        "Cruzar el Cañón del Apurímac",
+        "Llegar al campamento de Choquequirao",
+        "Primeras vistas del sitio arqueológico"
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Explorar Choquequirao",
+      "distance": "5km",
+      "duration": "Exploración de día completo",
+      "elevation": "3,050m",
+      "description": "Día completo explorando el magnífico complejo arqueológico de Choquequirao. Visita todos los sectores incluyendo terrazas, templos y la plaza principal.",
+      "meals": ["desayuno", "almuerzo", "cena"],
+      "accommodation": "Campamento",
+      "activities": [
+        "Tour guiado de Choquequirao",
+        "Visitar templo del agua y terrazas",
+        "Explorar terrazas de llamas y plaza principal",
+        "Oportunidades de avistamiento de cóndores",
+        "Atardecer desde la plataforma Usno"
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Choquequirao a Chiquisca",
+      "distance": "10km",
+      "duration": "6-7 horas",
+      "elevation": "3,050m a 1,900m",
+      "description": "Comienza nuestro viaje de regreso, descendiendo de vuelta a través del cañón al pacífico campamento de Chiquisca.",
+      "meals": ["desayuno", "almuerzo", "cena"],
+      "accommodation": "Campamento",
+      "activities": [
+        "Descenso a través del Cañón del Apurímac",
+        "Regreso al campamento Chiquisca",
+        "Relajarse en entorno montañoso pacífico"
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Chiquisca a Cusco",
+      "distance": "8km",
+      "duration": "4-5 horas",
+      "elevation": "1,900m a 2,850m",
+      "description": "Ascenso final al paso Capuliyoc y regreso a Cusco. Visita opcional al sitio arqueológico de Saywite.",
+      "meals": ["desayuno", "almuerzo"],
+      "accommodation": "No incluido",
+      "activities": [
+        "Ascenso temprano a Capuliyoc",
+        "Visita opcional al sitio Saywite",
+        "Regreso a Cusco",
+        "Celebración de finalización del tour"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Campamento en carpas cómodas con colchonetas proporcionadas",
+    "food": "Comidas deliciosas preparadas por nuestro cocinero profesional usando ingredientes locales frescos",
+    "safety": "Guías experimentados con entrenamiento en primeros auxilios y equipo de emergencia",
+    "groupSize": "Grupos pequeños aseguran atención personalizada y mejor experiencia"
+  }
+}

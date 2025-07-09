@@ -1,0 +1,133 @@
+{
+  "title": "Trek Clásico Machu Picchu",
+  "slug": "trek-machu-picchu-clasico",
+  "duration": 4,
+  "category": "Senderismo",
+  "difficulty": "Moderado",
+  "destinations": ["machu-picchu", "cusco"],
+  "price": 650,
+  "currency": "USD",
+  "groupSize": "2-12 personas",
+  "description": "Experimenta el trek más famoso del mundo a lo largo del antiguo Camino Inca para llegar a la magnífica ciudadela de Machu Picchu. Este viaje de 4 días combina senderismo desafiante, paisajes andinos impresionantes y sitios arqueológicos fascinantes.",
+  "longDescription": "El Camino Inca Clásico a Machu Picchu es el trek más icónico de Sudamérica, siguiendo el sendero original de piedra construido por los incas hace más de 500 años. Esta aventura de 4 días te lleva a través de diversos ecosistemas, desde la alta puna andina hasta exuberantes bosques nubosos, mientras visitas impresionantes ruinas incas en el camino. El viaje culmina con una llegada al amanecer a la Puerta del Sol (Inti Punku) para tu primera vista mágica de Machu Picchu.",
+  "featuredImage": "/machu-picchu.jpg",
+  "gallery": [
+    "/machu-picchu.jpg",
+    "/machu-picchu-lama.jpeg",
+    "/machu-picchu-trip.jpeg"
+  ],
+  "highlights": [
+    "Camina por el Camino Inca original",
+    "Visita las ruinas de Wiñay Wayna",
+    "Cruza el Paso de la Mujer Muerta (4,215m)",
+    "Amanecer en Machu Picchu",
+    "Guía arqueológica experta",
+    "Experiencia en grupos pequeños"
+  ],
+  "included": [
+    "Guía profesional en inglés/español",
+    "Todas las comidas durante el trek",
+    "Equipo de campamento (carpas, colchonetas)",
+    "Porteadores para transporte de equipo",
+    "Todas las tarifas de entrada y permisos",
+    "Transporte desde/hacia Cusco",
+    "Oxígeno de emergencia y botiquín de primeros auxilios",
+    "Briefing previo al trek en Cusco"
+  ],
+  "notIncluded": [
+    "Sacos de dormir (se pueden alquilar)",
+    "Bastones de trekking (se pueden alquilar)",
+    "Seguro de viaje",
+    "Propinas para guías y porteadores",
+    "Gastos personales",
+    "Bebidas alcohólicas"
+  ],
+  "whatToBring": [
+    "Pasaporte (original)",
+    "Mochila personal (25-30L)",
+    "Ropa abrigada para noches frías",
+    "Equipo de lluvia (poncho o chaqueta)",
+    "Botas de trekking cómodas",
+    "Protección solar (sombrero, protector solar, gafas)",
+    "Medicación personal",
+    "Cámara y baterías extra",
+    "Linterna o frontal",
+    "Botella de agua (2L mínimo)"
+  ],
+  "physicalRequirement": "Se requiere buen nivel de condición física. Este trek involucra días largos de caminata (6-8 horas) con cambios significativos de elevación.",
+  "bestTime": "Mayo a septiembre (época seca)",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Cusco a Wayllabamba",
+      "distance": "12km",
+      "duration": "6-7 horas",
+      "elevation": "3,000m a 3,000m",
+      "description": "Comienza tu aventura con recogida desde Cusco y traslado a Ollantaytambo para desayunar. Inicia el trekking desde el pueblo de Wayllabamba a través de hermosos paisajes andinos.",
+      "meals": ["desayuno", "almuerzo", "cena"],
+      "accommodation": "Campamento",
+      "activities": [
+        "Transfer desde Cusco al punto de partida",
+        "Conoce a tu guía y porteadores",
+        "Trek a través del valle de Wayllabamba",
+        "Montar campamento en Wayllabamba"
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Wayllabamba a Pacaymayo",
+      "distance": "11km",
+      "duration": "7-8 horas",
+      "elevation": "3,000m a 4,215m a 3,600m",
+      "description": "El día más desafiante mientras cruzas el punto más alto del sendero, el Paso de la Mujer Muerta (4,215m). Disfruta de vistas espectaculares de montañas y paisajes de bosque nuboso.",
+      "meals": ["desayuno", "almuerzo", "cena"],
+      "accommodation": "Campamento",
+      "activities": [
+        "Ascenso temprano al Paso de la Mujer Muerta",
+        "Vistas espectaculares de 360° de montañas",
+        "Descenso a través del bosque nuboso",
+        "Campamento en el valle de Pacaymayo"
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Pacaymayo a Wiñay Wayna",
+      "distance": "16km",
+      "duration": "8-9 horas",
+      "elevation": "3,600m a 3,680m a 2,650m",
+      "description": "Explora fascinantes ruinas incas incluyendo Runkurakay y Sayacmarca. Visita el espectacular complejo arqueológico de Wiñay Wayna en la tarde.",
+      "meals": ["desayuno", "almuerzo", "cena"],
+      "accommodation": "Campamento",
+      "activities": [
+        "Visita las ruinas circulares de Runkurakay",
+        "Cruza el segundo paso de montaña",
+        "Explora las ruinas de Sayacmarca",
+        "Descubre las terrazas de Wiñay Wayna",
+        "Campamento final antes de Machu Picchu"
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Wiñay Wayna a Machu Picchu",
+      "distance": "4km",
+      "duration": "2 horas + tour",
+      "elevation": "2,650m a 2,430m",
+      "description": "Caminata temprana a la Puerta del Sol (Inti Punku) para la primera vista mágica de Machu Picchu. Desciende a la ciudadela para un tour guiado completo.",
+      "meals": ["desayuno"],
+      "accommodation": "No incluido",
+      "activities": [
+        "Caminata temprana a la Puerta del Sol",
+        "Primera vista de Machu Picchu",
+        "Tour guiado de la ciudadela",
+        "Regreso a Cusco",
+        "Celebración de finalización del tour"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Campamento en carpas cómodas con colchonetas proporcionadas",
+    "food": "Comidas deliciosas preparadas por nuestro cocinero profesional usando ingredientes locales frescos",
+    "safety": "Guías experimentados con entrenamiento en primeros auxilios y equipo de emergencia",
+    "groupSize": "Grupos pequeños aseguran atención personalizada y mejor experiencia"
+  }
+}

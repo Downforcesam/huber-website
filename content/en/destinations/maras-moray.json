@@ -1,0 +1,51 @@
+{
+  "title": "Maras & Moray",
+  "slug": "maras-moray",
+  "type": "Archaeological/Natural",
+  "description": "Ancient Inca agricultural laboratories and spectacular salt terraces showcasing ingenious Andean engineering.",
+  "longDescription": "Maras and Moray represent two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Moray features mysterious circular terraces that served as an agricultural laboratory where the Incas experimented with different crops at various altitudes. Nearby, the Maras salt mines have been producing salt for over 500 years through an intricate system of terraced ponds fed by natural salt springs, creating a stunning geometric landscape of white and golden pools.",
+  "image": "/maras.jpeg",
+  "gallery": ["/maras.jpeg", "/maras-moray.jpeg"],
+  "location": {
+    "region": "Cusco",
+    "country": "Peru",
+    "coordinates": {
+      "lat": -13.3847,
+      "lng": -72.2031
+    }
+  },
+  "elevation": "3,500m (11,480ft)",
+  "climate": "Highland subtropical",
+  "bestTimeToVisit": "April to October (dry season)",
+  "highlights": [
+    "Moray circular agricultural terraces",
+    "Maras salt terraces and ponds",
+    "Inca agricultural experimentation",
+    "Traditional salt harvesting",
+    "Spectacular geometric patterns",
+    "Sacred Valley panoramic views"
+  ],
+  "features": [
+    "Inca agricultural innovation",
+    "Traditional salt production",
+    "Unique landscape photography",
+    "Cultural heritage preservation",
+    "Easy accessibility from Cusco"
+  ],
+  "accessibility": {
+    "difficulty": "Easy to Moderate",
+    "facilities": "Visitor centers, parking, local guides",
+    "transportation": "45-minute drive from Cusco"
+  },
+  "culturalSignificance": "Moray served as an Inca agricultural research center with microclimates for crop experimentation. Maras represents continuous indigenous knowledge in salt production spanning centuries.",
+  "sites": {
+    "moray": {
+      "description": "Circular terraced amphitheaters used for agricultural experiments",
+      "features": "Temperature variations, crop testing, ceremonial purposes"
+    },
+    "maras": {
+      "description": "Ancient salt mines with over 3,000 terraced pools",
+      "features": "Natural salt springs, traditional harvesting, economic importance"
+    }
+  }
+}

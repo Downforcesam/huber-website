@@ -1,0 +1,46 @@
+{
+  "title": "Montaña de Colores",
+  "slug": "montana-colores",
+  "type": "Natural/Geológico",
+  "description": "Una maravilla natural impresionante con depósitos minerales coloridos creando laderas montañosas con rayas arcoíris.",
+  "longDescription": "La Montaña de Colores, conocida localmente como Vinicunca o Montaña de Siete Colores, es una de las maravillas naturales más fotografiadas de Perú. Esta maravilla geológica muestra franjas vibrantes de rojo, naranja, amarillo, verde y azul en sus laderas, creadas por diferentes depósitos minerales expuestos durante millones de años. Ubicada en los Andes al sureste de Cusco, este destino turístico relativamente descubierto recientemente ofrece senderismo de gran altitud y vistas panorámicas espectaculares.",
+  "image": "/rainbow-mountain.jpeg",
+  "gallery": ["/rainbow-mountain.jpeg"],
+  "location": {
+    "region": "Cusco",
+    "country": "Perú",
+    "coordinates": {
+      "lat": -13.8658,
+      "lng": -71.3032
+    }
+  },
+  "elevation": "5,200m (17,060ft)",
+  "climate": "Alpino alto",
+  "bestTimeToVisit": "Mayo a septiembre (época seca)",
+  "highlights": [
+    "Laderas vibrantes de colores arcoíris",
+    "Vistas panorámicas andinas",
+    "Cordillera Ausangate",
+    "Senderismo de gran altitud",
+    "Formaciones geológicas únicas",
+    "Rebaños de alpacas y llamas"
+  ],
+  "features": [
+    "Maravilla geológica natural",
+    "Desafío de gran altitud",
+    "Paraíso fotográfico",
+    "Ubicación montañosa remota",
+    "Encuentros culturales con comunidades locales"
+  ],
+  "accessibility": {
+    "difficulty": "Desafiante (gran altitud)",
+    "facilities": "Instalaciones básicas en el punto de partida, refugios de montaña",
+    "transportation": "3 horas en auto desde Cusco + 1.5 horas de caminata"
+  },
+  "culturalSignificance": "Montaña sagrada (Apu) en la cosmología andina, considerada una deidad viviente por las comunidades locales, parte de rutas de peregrinaje ancestrales.",
+  "geologicalInfo": {
+    "formation": "Depósitos minerales de capas de roca sedimentaria",
+    "colors": "Óxido de hierro (rojo), azufre (amarillo), clorita (verde), goetita (naranja)",
+    "age": "Más de 14 millones de años"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Choquequirao",
+  "slug": "choquequirao",
+  "type": "Archaeological",
+  "description": "The 'Sister City' of Machu Picchu, an remote and spectacular Inca citadel accessible only by trekking.",
+  "longDescription": "Choquequirao, meaning 'Cradle of Gold' in Quechua, is one of Peru's most spectacular yet least visited archaeological sites. Often called the 'Sister City' of Machu Picchu, this magnificent Inca citadel sits dramatically on a mountain ridge overlooking the Apurímac Canyon. Built in the same period as Machu Picchu, it served as both a royal estate and sacred center, featuring impressive terraces, temples, and residential complexes.",
+  "image": "/trekking.jpeg",
+  "gallery": ["/trekking.jpeg"],
+  "location": {
+    "region": "Cusco/Apurímac",
+    "country": "Peru",
+    "coordinates": {
+      "lat": -13.5369,
+      "lng": -72.8419
+    }
+  },
+  "elevation": "3,050m (10,010ft)",
+  "climate": "Cloud forest to highland",
+  "bestTimeToVisit": "April to October (dry season)",
+  "highlights": [
+    "Sister city to Machu Picchu",
+    "Spectacular terraced agriculture",
+    "Condor viewing opportunities",
+    "Pristine archaeological site",
+    "Dramatic canyon views",
+    "Llama and alpaca reliefs"
+  ],
+  "features": [
+    "Remote and uncrowded",
+    "Challenging trek access only",
+    "Rich biodiversity",
+    "Archaeological significance",
+    "Spiritual energy"
+  ],
+  "accessibility": {
+    "difficulty": "Challenging (trekking only access)",
+    "facilities": "Basic camping facilities, no visitor center",
+    "transportation": "4-5 day trek from Cachora"
+  },
+  "culturalSignificance": "Sacred Inca citadel and royal estate, representing advanced Inca architecture and astronomical alignment, connected to the last Inca resistance.",
+  "wildlife": [
+    "Andean condors",
+    "Spectacled bears",
+    "Mountain viscachas",
+    "Over 300 bird species",
+    "Endemic orchids and bromeliads"
+  ]
+}

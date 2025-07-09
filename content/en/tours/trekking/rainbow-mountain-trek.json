@@ -1,0 +1,83 @@
+{
+  "title": "Rainbow Mountain Trek",
+  "slug": "rainbow-mountain-trek",
+  "duration": 1,
+  "category": "Trekking",
+  "difficulty": "Challenging",
+  "destinations": ["rainbow-mountain", "cusco"],
+  "price": 45,
+  "currency": "USD",
+  "groupSize": "2-12 people",
+  "description": "Embark on a spectacular day trek to one of Peru's most photographed natural wonders. Rainbow Mountain (Vinicunca) showcases vibrant mineral deposits creating a stunning rainbow-striped landscape at 5,200m elevation.",
+  "longDescription": "Rainbow Mountain, known locally as Vinicunca or Montaña de Siete Colores (Mountain of Seven Colors), is one of Peru's most recently discovered tourist destinations. This geological marvel features vibrant stripes of red, orange, yellow, green, and blue across its slopes, created by different mineral deposits exposed over millions of years. The trek offers breathtaking high-altitude hiking and spectacular panoramic views of the Ausangate mountain range.",
+  "featuredImage": "/rainbow-mountain.jpeg",
+  "gallery": [
+    "/rainbow-mountain.jpeg",
+    "/rainbow-mountain-panorama.jpeg",
+    "/rainbow-mountain-hikers.jpeg"
+  ],
+  "highlights": [
+    "Vibrant rainbow-colored slopes",
+    "Panoramic Andean views",
+    "Ausangate mountain range",
+    "High-altitude hiking experience",
+    "Unique geological formations",
+    "Alpaca and llama herds"
+  ],
+  "included": [
+    "Professional English/Spanish speaking guide",
+    "Breakfast and lunch",
+    "Transportation to/from Cusco",
+    "All entrance fees",
+    "Emergency oxygen and first aid kit",
+    "Pre-trek briefing"
+  ],
+  "notIncluded": [
+    "Walking poles (can be rented)",
+    "Travel insurance",
+    "Tips for guides",
+    "Personal expenses",
+    "Alcoholic beverages"
+  ],
+  "whatToBring": [
+    "Passport (copy)",
+    "Personal daypack",
+    "Warm clothing (layers)",
+    "Rain gear",
+    "Comfortable hiking boots",
+    "Sun protection (hat, sunscreen, sunglasses)",
+    "Personal medication",
+    "Camera",
+    "Water bottle (2L minimum)",
+    "Snacks"
+  ],
+  "physicalRequirement": "Good fitness level required. This trek involves high-altitude hiking (5,200m) with steep sections. Acclimatization in Cusco for 2-3 days recommended.",
+  "bestTime": "May to September (dry season)",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Cusco to Rainbow Mountain",
+      "distance": "6km round trip",
+      "duration": "8-10 hours total",
+      "elevation": "4,300m to 5,200m",
+      "description": "Early morning departure from Cusco for the 3-hour drive to the trailhead. Trek through the stunning Ausangate mountain range to reach the colorful Rainbow Mountain.",
+      "meals": ["breakfast", "lunch"],
+      "accommodation": "Not included",
+      "activities": [
+        "Early morning pickup from Cusco",
+        "3-hour drive to trailhead",
+        "Breakfast at local restaurant",
+        "Trek to Rainbow Mountain",
+        "Photo opportunities and exploration",
+        "Return to Cusco"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Day trip - no accommodation included",
+    "food": "Breakfast and lunch provided at local restaurants",
+    "safety": "Experienced guides with high-altitude training and emergency equipment",
+    "groupSize": "Small groups ensure personalized attention and better experience",
+    "altitude": "This trek reaches 5,200m elevation - proper acclimatization is essential"
+  }
+}

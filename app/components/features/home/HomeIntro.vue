@@ -12,15 +12,10 @@
         <!-- Content Section -->
         <div class="space-y-8">
           <div>
-            <UBadge color="primary" variant="soft" size="lg" class="mb-6">
-              {{ t('aboutPeruAdventures') }}
-            </UBadge>
-
             <h2
               class="mb-6 font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl leading-tight"
             >
-              {{ t('discoverAndean') }}
-              <span class="text-primary-600">{{ t('andeanAdventure') }}</span>
+              {{ t('introTitle') }}
             </h2>
 
             <p class="mb-8 text-gray-600 text-xl leading-relaxed">
@@ -32,10 +27,7 @@
           <div class="gap-6 grid grid-cols-1 sm:grid-cols-2">
             <div class="flex items-start space-x-4">
               <div class="flex-shrink-0">
-                <UIcon
-                  name="i-heroicons-photo"
-                  class="w-8 h-8 text-primary-600"
-                />
+                <UIcon name="i-heroicons-photo" class="w-8 h-8 brand-teal" />
               </div>
               <div>
                 <h3 class="mb-2 font-semibold text-gray-900 text-lg">
@@ -49,10 +41,7 @@
 
             <div class="flex items-start space-x-4">
               <div class="flex-shrink-0">
-                <UIcon
-                  name="i-heroicons-users"
-                  class="w-8 h-8 text-primary-600"
-                />
+                <UIcon name="i-heroicons-users" class="w-8 h-8 brand-teal" />
               </div>
               <div>
                 <h3 class="mb-2 font-semibold text-gray-900 text-lg">
@@ -66,10 +55,7 @@
 
             <div class="flex items-start space-x-4">
               <div class="flex-shrink-0">
-                <UIcon
-                  name="i-heroicons-camera"
-                  class="w-8 h-8 text-primary-600"
-                />
+                <UIcon name="i-heroicons-camera" class="w-8 h-8 brand-teal" />
               </div>
               <div>
                 <h3 class="mb-2 font-semibold text-gray-900 text-lg">
@@ -85,7 +71,7 @@
               <div class="flex-shrink-0">
                 <UIcon
                   name="i-heroicons-shield-check"
-                  class="w-8 h-8 text-primary-600"
+                  class="w-8 h-8 brand-teal"
                 />
               </div>
               <div>
@@ -102,15 +88,15 @@
           <!-- Stats -->
           <div class="gap-8 grid grid-cols-3 pt-8 border-gray-200 border-t">
             <div class="text-center">
-              <div class="mb-2 font-bold text-primary-600 text-3xl">500+</div>
+              <div class="mb-2 font-bold text-3xl brand-teal">500+</div>
               <div class="text-gray-600 text-sm">{{ t('happyTravelers') }}</div>
             </div>
             <div class="text-center">
-              <div class="mb-2 font-bold text-primary-600 text-3xl">15+</div>
+              <div class="mb-2 font-bold text-3xl brand-teal">15+</div>
               <div class="text-gray-600 text-sm">{{ t('tourOptions') }}</div>
             </div>
             <div class="text-center">
-              <div class="mb-2 font-bold text-primary-600 text-3xl">10</div>
+              <div class="mb-2 font-bold text-3xl brand-teal">10</div>
               <div class="text-gray-600 text-sm">
                 {{ t('yearsExperience') }}
               </div>
@@ -165,14 +151,6 @@
                 class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
               />
             </UCard>
-          </div>
-
-          <!-- Floating badge -->
-          <div class="-top-4 -right-4 absolute">
-            <UBadge color="success" variant="solid" size="lg" class="shadow-lg">
-              <UIcon name="i-heroicons-star-solid" class="mr-1 w-4 h-4" />
-              5.0 Rating
-            </UBadge>
           </div>
         </div>
       </div>

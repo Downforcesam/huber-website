@@ -1,0 +1,147 @@
+{
+  "title": "Choquequirao Trek",
+  "slug": "choquequirao-trek",
+  "duration": 5,
+  "category": "Trekking",
+  "difficulty": "Challenging",
+  "destinations": ["choquequirao", "cusco"],
+  "price": 750,
+  "currency": "USD",
+  "groupSize": "2-8 people",
+  "description": "Embark on an epic 5-day trek to the 'Sister City' of Machu Picchu. This challenging adventure takes you through the dramatic Apurímac Canyon to reach the spectacular Inca citadel of Choquequirao, one of Peru's most remote and pristine archaeological sites.",
+  "longDescription": "Choquequirao, meaning 'Cradle of Gold' in Quechua, is often called the 'Sister City' of Machu Picchu due to its similar architectural style and historical significance. This 5-day trek offers a truly authentic adventure through some of Peru's most spectacular landscapes, including the deep Apurímac Canyon and pristine cloud forests. Unlike the crowded Inca Trail, this route provides a peaceful and intimate experience with ancient Inca ruins and breathtaking natural scenery.",
+  "featuredImage": "/choquequirao.jpeg",
+  "gallery": [
+    "/choquequirao.jpeg",
+    "/choquequirao-terraces.jpeg",
+    "/choquequirao-canyon.jpeg"
+  ],
+  "highlights": [
+    "Visit the remote Choquequirao citadel",
+    "Trek through the dramatic Apurímac Canyon",
+    "Spectacular condor viewing opportunities",
+    "Pristine archaeological site with few visitors",
+    "Experience authentic Andean culture",
+    "Breathtaking mountain and canyon views"
+  ],
+  "included": [
+    "Professional English/Spanish speaking guide",
+    "All meals during the trek (breakfast, lunch, dinner)",
+    "Camping equipment (tents, sleeping mats)",
+    "Mules and muleteers for equipment transport",
+    "All entrance fees and permits",
+    "Transportation to/from Cusco",
+    "Emergency oxygen and first aid kit",
+    "Pre-trek briefing in Cusco"
+  ],
+  "notIncluded": [
+    "Sleeping bags (can be rented)",
+    "Walking poles (can be rented)",
+    "Travel insurance",
+    "Tips for guides and muleteers",
+    "Personal expenses",
+    "Alcoholic beverages"
+  ],
+  "whatToBring": [
+    "Passport (original)",
+    "Personal daypack (25-30L)",
+    "Warm clothing for cold nights",
+    "Rain gear (poncho or jacket)",
+    "Comfortable hiking boots",
+    "Sun protection (hat, sunscreen, sunglasses)",
+    "Personal medication",
+    "Camera and extra batteries",
+    "Flashlight or headlamp",
+    "Water bottle (2L minimum)"
+  ],
+  "physicalRequirement": "Excellent fitness level required. This trek involves long days of hiking (6-8 hours) with significant elevation changes and high altitude.",
+  "bestTime": "April to October (dry season)",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Cusco to La Playa",
+      "distance": "12km",
+      "duration": "6-7 hours",
+      "elevation": "2,850m to 1,560m",
+      "description": "Early morning departure from Cusco to the village of Cachora. Begin trekking through the Apurímac Canyon, descending to our first camp at La Playa.",
+      "meals": ["breakfast", "lunch", "dinner"],
+      "accommodation": "Camping",
+      "activities": [
+        "Transfer from Cusco to Cachora",
+        "Trek through Apurímac Canyon",
+        "Descend to La Playa camp",
+        "Enjoy canyon views and dry forest"
+      ]
+    },
+    {
+      "day": 2,
+      "title": "La Playa to Choquequirao",
+      "distance": "8km",
+      "duration": "6-8 hours",
+      "elevation": "1,560m to 3,050m",
+      "description": "Challenging ascent through the canyon to reach the Choquequirao archaeological site. Experience the dramatic change from dry forest to cloud forest vegetation.",
+      "meals": ["breakfast", "lunch", "dinner"],
+      "accommodation": "Camping",
+      "activities": [
+        "Early morning ascent to avoid heat",
+        "Cross Apurímac Canyon",
+        "Arrive at Choquequirao camp",
+        "First views of the archaeological site"
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Explore Choquequirao",
+      "distance": "5km",
+      "duration": "Full day exploration",
+      "elevation": "3,050m",
+      "description": "Full day exploring the magnificent Choquequirao archaeological complex. Visit all sectors including terraces, temples, and the main plaza.",
+      "meals": ["breakfast", "lunch", "dinner"],
+      "accommodation": "Camping",
+      "activities": [
+        "Guided tour of Choquequirao",
+        "Visit water temple and terraces",
+        "Explore llama terraces and main plaza",
+        "Condor watching opportunities",
+        "Sunset from the Usno platform"
+      ]
+    },
+    {
+      "day": 4,
+      "title": "Choquequirao to Chiquisca",
+      "distance": "10km",
+      "duration": "6-7 hours",
+      "elevation": "3,050m to 1,900m",
+      "description": "Begin our return journey, descending back through the canyon to the peaceful Chiquisca camp.",
+      "meals": ["breakfast", "lunch", "dinner"],
+      "accommodation": "Camping",
+      "activities": [
+        "Descend through Apurímac Canyon",
+        "Return to Chiquisca camp",
+        "Relax in peaceful mountain setting"
+      ]
+    },
+    {
+      "day": 5,
+      "title": "Chiquisca to Cusco",
+      "distance": "8km",
+      "duration": "4-5 hours",
+      "elevation": "1,900m to 2,850m",
+      "description": "Final ascent to Capuliyoc pass and return to Cusco. Optional visit to Saywite archaeological site.",
+      "meals": ["breakfast", "lunch"],
+      "accommodation": "Not included",
+      "activities": [
+        "Early morning ascent to Capuliyoc",
+        "Optional visit to Saywite site",
+        "Return to Cusco",
+        "Tour completion celebration"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Camping in comfortable tents with sleeping mats provided",
+    "food": "Delicious meals prepared by our professional cook using fresh local ingredients",
+    "safety": "Experienced guides with first aid training and emergency equipment",
+    "groupSize": "Small groups ensure personalized attention and better experience"
+  }
+}

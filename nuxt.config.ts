@@ -40,7 +40,6 @@ export default defineNuxtConfig({
 
   // Configure component auto-imports for new structure
   components: [
-    '~/components',
     {
       path: '~/components/features',
       pattern: '**/*.vue',

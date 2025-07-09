@@ -1,0 +1,48 @@
+{
+  "title": "Ciudad del Cusco",
+  "slug": "cusco",
+  "type": "Colonial/Histórico",
+  "description": "La histórica capital del Imperio Inca, ahora una vibrante ciudad colonial y puerta de entrada a Machu Picchu.",
+  "longDescription": "Cusco, una vez capital del poderoso Imperio Inca, es una fascinante mezcla de arquitectura inca y colonial. Conocida como la 'Ciudad Imperial', este Sitio Patrimonio Mundial de la UNESCO sirve como la base perfecta para explorar el Valle Sagrado y Machu Picchu. Sus calles empedradas, muros ancestrales y mercados vibrantes cuentan la historia de la rica herencia cultural del Perú.",
+  "image": "/cusco.jpeg",
+  "gallery": ["/cusco.jpeg", "/cusco-2.jpeg", "/cusco-city.jpeg"],
+  "location": {
+    "region": "Cusco",
+    "country": "Perú",
+    "coordinates": {
+      "lat": -13.5319,
+      "lng": -71.9675
+    }
+  },
+  "elevation": "3,400m (11,200ft)",
+  "climate": "Subtropical de altura",
+  "bestTimeToVisit": "Abril a octubre (época seca)",
+  "highlights": [
+    "Plaza de Armas",
+    "Templo Qorikancha",
+    "Fortaleza Sacsayhuamán",
+    "Mercado San Pedro",
+    "Arquitectura colonial",
+    "Muros de piedra inca"
+  ],
+  "features": [
+    "Sitio Patrimonio Mundial UNESCO",
+    "Arquitectura colonial e inca",
+    "Cultura local vibrante",
+    "Mercados tradicionales",
+    "Puerta de entrada al Valle Sagrado"
+  ],
+  "accessibility": {
+    "difficulty": "Fácil",
+    "facilities": "Servicios urbanos completos, hoteles, restaurantes, hospitales",
+    "transportation": "Aeropuerto internacional, buses, taxis"
+  },
+  "culturalSignificance": "Antigua capital del Imperio Inca, centro de la cultura y tradiciones andinas, y el corazón histórico del Perú.",
+  "cuisine": [
+    "Cuy (cuy)",
+    "Carne de alpaca",
+    "Platos de quinua",
+    "Ingredientes andinos tradicionales",
+    "Cocteles de pisco"
+  ]
+}

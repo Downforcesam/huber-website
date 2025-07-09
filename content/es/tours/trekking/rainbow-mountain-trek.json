@@ -1,0 +1,83 @@
+{
+  "title": "Trek Montaña de Colores",
+  "slug": "trek-montana-colores",
+  "duration": 1,
+  "category": "Senderismo",
+  "difficulty": "Desafiante",
+  "destinations": ["montana-colores", "cusco"],
+  "price": 45,
+  "currency": "USD",
+  "groupSize": "2-12 personas",
+  "description": "Embárcate en un trek espectacular de un día a una de las maravillas naturales más fotografiadas de Perú. La Montaña de Colores (Vinicunca) muestra depósitos minerales vibrantes creando un paisaje impresionante con rayas arcoíris a 5,200m de elevación.",
+  "longDescription": "La Montaña de Colores, conocida localmente como Vinicunca o Montaña de Siete Colores, es uno de los destinos turísticos más recientemente descubiertos de Perú. Esta maravilla geológica presenta franjas vibrantes de rojo, naranja, amarillo, verde y azul en sus laderas, creadas por diferentes depósitos minerales expuestos durante millones de años. El trek ofrece senderismo de gran altitud y vistas panorámicas espectaculares de la cordillera Ausangate.",
+  "featuredImage": "/rainbow-mountain.jpeg",
+  "gallery": [
+    "/rainbow-mountain.jpeg",
+    "/rainbow-mountain-panorama.jpeg",
+    "/rainbow-mountain-hikers.jpeg"
+  ],
+  "highlights": [
+    "Laderas vibrantes de colores arcoíris",
+    "Vistas panorámicas andinas",
+    "Cordillera Ausangate",
+    "Experiencia de senderismo de gran altitud",
+    "Formaciones geológicas únicas",
+    "Rebaños de alpacas y llamas"
+  ],
+  "included": [
+    "Guía profesional en inglés/español",
+    "Desayuno y almuerzo",
+    "Transporte desde/hacia Cusco",
+    "Todas las tarifas de entrada",
+    "Oxígeno de emergencia y botiquín de primeros auxilios",
+    "Briefing previo"
+  ],
+  "notIncluded": [
+    "Bastones de trekking (se pueden alquilar)",
+    "Seguro de viaje",
+    "Propinas para guías",
+    "Gastos personales",
+    "Bebidas alcohólicas"
+  ],
+  "whatToBring": [
+    "Pasaporte (copia)",
+    "Mochila personal",
+    "Ropa abrigada (capas)",
+    "Equipo de lluvia",
+    "Botas de trekking cómodas",
+    "Protección solar (sombrero, protector solar, gafas)",
+    "Medicación personal",
+    "Cámara",
+    "Botella de agua (2L mínimo)",
+    "Snacks"
+  ],
+  "physicalRequirement": "Se requiere buen nivel de condición física. Este trek involucra senderismo de gran altitud (5,200m) con secciones empinadas. Se recomienda aclimatación en Cusco por 2-3 días.",
+  "bestTime": "Mayo a septiembre (época seca)",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Cusco a Montaña de Colores",
+      "distance": "6km ida y vuelta",
+      "duration": "8-10 horas total",
+      "elevation": "4,300m a 5,200m",
+      "description": "Salida temprana desde Cusco para el viaje de 3 horas al punto de partida. Trek a través de la impresionante cordillera Ausangate para llegar a la colorida Montaña de Colores.",
+      "meals": ["desayuno", "almuerzo"],
+      "accommodation": "No incluido",
+      "activities": [
+        "Recogida temprana desde Cusco",
+        "3 horas en auto al punto de partida",
+        "Desayuno en restaurante local",
+        "Trek a la Montaña de Colores",
+        "Oportunidades fotográficas y exploración",
+        "Regreso a Cusco"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Tour de día - no se incluye alojamiento",
+    "food": "Desayuno y almuerzo proporcionados en restaurantes locales",
+    "safety": "Guías experimentados con entrenamiento de gran altitud y equipo de emergencia",
+    "groupSize": "Grupos pequeños aseguran atención personalizada y mejor experiencia",
+    "altitude": "Este trek alcanza 5,200m de elevación - la aclimatación adecuada es esencial"
+  }
+}

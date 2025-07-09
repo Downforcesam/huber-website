@@ -1,37 +1,38 @@
 <template>
-  <div id="contact" class="bg-white py-16 lg:py-24">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-      <div class="mb-12 text-center">
-        <UBadge color="primary" variant="soft" size="lg" class="mb-4">
-          Get In Touch
-        </UBadge>
-        <h2
-          class="mb-6 font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl"
-        >
-          Start Your Adventure Today
+  <section
+    id="contact"
+    class="bg-gradient-to-r from-blue-900 to-teal-800 py-16 sm:py-24"
+  >
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+      <!-- Section Header -->
+      <div class="mb-16 text-center">
+        <h2 class="mb-6 font-bold text-white text-3xl sm:text-4xl">
+          {{ t('getInTouch') }}
         </h2>
-        <p class="mx-auto max-w-3xl text-gray-600 text-xl">
+        <p class="mx-auto max-w-3xl text-white/90 text-xl">
           Ready to explore Peru? Contact us to plan your perfect adventure. Our
           expert team is here to create unforgettable memories for you.
         </p>
       </div>
 
-      <div class="items-start gap-12 grid grid-cols-1 lg:grid-cols-2">
+      <div class="mx-auto max-w-lg">
         <!-- Contact Form -->
-        <UCard class="shadow-lg">
+        <UCard class="shadow-lg p-0">
           <template #header>
-            <div class="text-center">
-              <h3 class="mb-2 font-bold text-gray-900 text-2xl">
+            <div class="pb-2 text-center">
+              <h3 class="mb-1 font-bold text-gray-900 text-2xl">
                 Send us a message
               </h3>
-              <p class="text-gray-600">We'll get back to you within 24 hours</p>
+              <p class="text-gray-600 text-base">
+                We'll get back to you within 24 hours
+              </p>
             </div>
           </template>
 
           <UForm
             :schema="schema"
             :state="state"
-            class="space-y-6"
+            class="space-y-4"
             @submit="onSubmit"
             :loading="loading"
           >
@@ -41,6 +42,7 @@
                 placeholder="Enter your name"
                 size="lg"
                 icon="i-heroicons-user"
+                class="mx-auto w-full max-w-sm"
               />
             </UFormField>
 
@@ -51,6 +53,7 @@
                 placeholder="Enter your email"
                 size="lg"
                 icon="i-heroicons-envelope"
+                class="mx-auto w-full max-w-sm"
               />
             </UFormField>
 
@@ -60,6 +63,7 @@
                 placeholder="What's this about?"
                 size="lg"
                 icon="i-heroicons-chat-bubble-left-right"
+                class="mx-auto w-full max-w-sm"
               />
             </UFormField>
 
@@ -67,117 +71,43 @@
               <UTextarea
                 v-model="state.senderMessage"
                 placeholder="Tell me about your dream adventure..."
-                :rows="5"
+                :rows="7"
                 size="lg"
+                class="mx-auto w-full max-w-md min-h-[140px]"
               />
             </UFormField>
 
-            <div class="flex sm:flex-row flex-col gap-4">
+            <div
+              class="flex sm:flex-row flex-col justify-center gap-3 mx-auto pt-2 max-w-md"
+            >
               <UButton
                 type="submit"
                 size="lg"
+                color="primary"
                 :loading="loading"
-                class="flex-1"
                 icon="i-heroicons-paper-airplane"
+                class="w-full sm:w-auto"
               >
                 {{ t('send') }}
               </UButton>
 
               <UButton
-                color="success"
                 variant="outline"
                 size="lg"
+                color="secondary"
                 :to="`https://wa.me/your-number?text=${encodeURIComponent('Hi! I\'m interested in a Peru adventure. Can you help me plan something amazing?')}`"
                 target="_blank"
                 icon="i-simple-icons-whatsapp"
-                class="flex-1"
+                class="w-full sm:w-auto"
               >
                 {{ t('whatsappContact') }}
               </UButton>
             </div>
           </UForm>
         </UCard>
-
-        <!-- Contact Information -->
-        <div class="space-y-8">
-          <div>
-            <h3 class="mb-6 font-bold text-gray-900 text-2xl">Get in touch</h3>
-            <div class="space-y-6">
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0">
-                  <UIcon
-                    name="i-heroicons-phone"
-                    class="w-6 h-6 text-primary-600"
-                  />
-                </div>
-                <div>
-                  <p class="font-medium text-gray-900 text-lg">Phone</p>
-                  <p class="text-gray-600">+51 123 456 789</p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0">
-                  <UIcon
-                    name="i-heroicons-envelope"
-                    class="w-6 h-6 text-primary-600"
-                  />
-                </div>
-                <div>
-                  <p class="font-medium text-gray-900 text-lg">Email</p>
-                  <p class="text-gray-600">info@peruadventures.com</p>
-                </div>
-              </div>
-
-              <div class="flex items-start space-x-4">
-                <div class="flex-shrink-0">
-                  <UIcon
-                    name="i-heroicons-map-pin"
-                    class="w-6 h-6 text-primary-600"
-                  />
-                </div>
-                <div>
-                  <p class="font-medium text-gray-900 text-lg">Location</p>
-                  <p class="text-gray-600">Cusco, Peru</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Quick Contact Options -->
-          <div class="bg-gray-50 p-6 rounded-xl">
-            <h4 class="mb-4 font-semibold text-gray-900 text-lg">
-              Quick Contact
-            </h4>
-            <div class="space-y-3">
-              <UButton
-                to="https://wa.me/your-number"
-                target="_blank"
-                color="success"
-                variant="outline"
-                icon="i-simple-icons-whatsapp"
-                size="lg"
-                block
-              >
-                WhatsApp Us
-              </UButton>
-
-              <UButton
-                to="mailto:info@peruadventures.com"
-                color="primary"
-                variant="outline"
-                icon="i-heroicons-envelope"
-                size="lg"
-                block
-              >
-                Send Email
-              </UButton>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
@@ -220,8 +150,7 @@ async function onSubmit(event: any) {
     toast.add({
       title: t('emailSuccess'),
       description: t('emailSuccessDescription'),
-      icon: 'i-heroicons-check-circle',
-      color: 'success',
+      color: 'primary',
     });
 
     // Reset form

@@ -1,0 +1,74 @@
+{
+  "title": "Maras & Moray Tour",
+  "slug": "maras-moray-tour",
+  "duration": 1,
+  "category": "City Tour",
+  "difficulty": "Easy",
+  "destinations": ["maras-moray", "cusco"],
+  "price": 40,
+  "currency": "USD",
+  "groupSize": "2-12 people",
+  "description": "Discover two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Visit the mysterious circular terraces of Moray and the spectacular salt mines of Maras, showcasing ancient Andean engineering.",
+  "longDescription": "Maras and Moray represent two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Moray features mysterious circular terraces that served as an agricultural laboratory where the Incas experimented with different crops at various altitudes, creating microclimates for crop testing. Nearby, the Maras salt mines have been producing salt for over 500 years through an intricate system of terraced ponds fed by natural salt springs, creating a stunning geometric landscape of white and golden pools. This tour offers a unique insight into Inca agricultural innovation and traditional salt production techniques.",
+  "featuredImage": "/maras.jpeg",
+  "gallery": ["/maras.jpeg", "/maras-moray.jpeg", "/moray-terraces.jpeg"],
+  "highlights": [
+    "Moray circular agricultural terraces",
+    "Maras salt terraces and ponds",
+    "Inca agricultural experimentation",
+    "Traditional salt harvesting",
+    "Spectacular geometric patterns",
+    "Sacred Valley panoramic views"
+  ],
+  "included": [
+    "Professional English/Spanish speaking guide",
+    "All entrance fees",
+    "Transportation in comfortable vehicle",
+    "Hotel pickup and drop-off",
+    "Bottled water"
+  ],
+  "notIncluded": [
+    "Lunch",
+    "Personal expenses",
+    "Tips for guides",
+    "Optional activities",
+    "Salt purchases"
+  ],
+  "whatToBring": [
+    "Comfortable walking shoes",
+    "Sun protection (hat, sunscreen)",
+    "Camera",
+    "Water bottle",
+    "Light jacket",
+    "Small daypack",
+    "Cash for salt purchases"
+  ],
+  "physicalRequirement": "Easy - suitable for all fitness levels. Moderate walking on uneven terrain.",
+  "bestTime": "Year-round. Morning tours recommended for better photography.",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Maras & Moray Exploration",
+      "duration": "6-7 hours",
+      "description": "Full day exploring the agricultural laboratories of Moray and the salt mines of Maras.",
+      "meals": ["Not included"],
+      "accommodation": "Not included",
+      "activities": [
+        "Hotel pickup from Cusco",
+        "Visit Moray circular terraces",
+        "Learn about Inca agricultural innovation",
+        "Explore Maras salt mines",
+        "Photography opportunities",
+        "Return to Cusco"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Day tour - no accommodation included",
+    "food": "Lunch not included - guide can recommend local restaurants",
+    "safety": "Experienced local guides with deep knowledge of Inca engineering",
+    "groupSize": "Small groups ensure personalized attention",
+    "accessibility": "Some areas have uneven terrain",
+    "photography": "Excellent photography opportunities, especially in the morning light"
+  }
+}

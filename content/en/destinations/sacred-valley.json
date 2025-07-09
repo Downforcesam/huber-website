@@ -1,0 +1,48 @@
+{
+  "title": "Sacred Valley",
+  "slug": "sacred-valley",
+  "type": "Valley/Archaeological",
+  "description": "The heartland of the Inca Empire, a fertile valley dotted with traditional villages and ancient ruins.",
+  "longDescription": "The Sacred Valley of the Incas (Valle Sagrado) is a breathtaking valley in the Peruvian Andes that was once the heartland of the Inca Empire. This fertile valley, carved by the Urubamba River, stretches from the village of Pisaq to Ollantaytambo and is dotted with traditional Andean villages, colorful markets, ancient terraces, and impressive archaeological sites. The valley's lower altitude makes it an ideal place to acclimatize before visiting Machu Picchu.",
+  "image": "/sacred-valley.jpeg",
+  "gallery": ["/sacred-valley.jpeg"],
+  "location": {
+    "region": "Cusco",
+    "country": "Peru",
+    "coordinates": {
+      "lat": -13.2921,
+      "lng": -72.1542
+    }
+  },
+  "elevation": "2,800m (9,186ft)",
+  "climate": "Temperate highland",
+  "bestTimeToVisit": "April to October (dry season)",
+  "highlights": [
+    "Pisaq archaeological site and market",
+    "Ollantaytambo fortress",
+    "Chinchero weaving village",
+    "Urubamba River valley",
+    "Traditional Andean villages",
+    "Agricultural terraces"
+  ],
+  "features": [
+    "Lower altitude acclimatization",
+    "Rich cultural heritage",
+    "Traditional markets",
+    "Agricultural innovation",
+    "Gateway to Machu Picchu"
+  ],
+  "accessibility": {
+    "difficulty": "Easy to Moderate",
+    "facilities": "Hotels, restaurants, markets, transportation",
+    "transportation": "Road access from Cusco, train to Machu Picchu"
+  },
+  "culturalSignificance": "Heart of the Inca Empire, center of agricultural innovation, and living testament to Andean culture and traditions.",
+  "villages": [
+    "Pisaq - market and ruins",
+    "Ollantaytambo - living Inca town",
+    "Chinchero - weaving traditions",
+    "Urubamba - adventure sports hub",
+    "Maras - salt terraces"
+  ]
+}

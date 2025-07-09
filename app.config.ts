@@ -1,19 +1,14 @@
 export default defineAppConfig({
   ui: {
+    // Color aliases that map to Tailwind colors
     colors: {
-      primary: 'teal',
-      secondary: 'amber',
-      neutral: 'stone',
-      success: 'green',
-      info: 'blue',
-      warning: 'yellow',
-      error: 'red',
-    },
-    // Override button component to use primary color by default
-    button: {
-      defaultVariants: {
-        color: 'primary',
-      },
+      primary: 'teal', // Maps to our custom teal scale
+      secondary: 'amber', // Maps to our custom amber scale
+      neutral: 'stone', // For backgrounds and text
+      success: 'emerald', // For success states
+      info: 'sky', // For info states
+      warning: 'amber', // For warning states
+      error: 'red', // For error states
     },
   },
 });

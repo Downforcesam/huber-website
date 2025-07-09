@@ -53,6 +53,7 @@
   "elevation": "Elevation",
   "bestTime": "Best Time",
   "highlights": "Highlights",
+  "features": "Features",
   "more": "more",
   "exploreDestination": "Explore Destination",
   "noDestinationsFound": "No destinations found",
@@ -121,5 +122,19 @@
   "sendEmail": "Send Email",
   "phone": "Phone",
   "email": "Email",
-  "location": "Location"
+  "location": "Location",
+  "introTitle": "Your Peruvian Adventure Awaits",
+  "exploreDestinations": "Explore Destinations",
+  "seeAllTours": "See All Tours",
+  "seeAllDestinations": "See all destinations",
+
+  "climate": "Climate",
+  "accessibility": "Accessibility",
+  "culturalSignificance": "Cultural Significance",
+  "wildlife": "Wildlife",
+  "quickInfo": "Quick Info",
+  "relatedTours": "Related Tours",
+  "readyToExplore": "Ready to Explore?",
+  "readyToExploreText": "Start planning your adventure to this incredible destination today.",
+  "activities": "Activities"
 }

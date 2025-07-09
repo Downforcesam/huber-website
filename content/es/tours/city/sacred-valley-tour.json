@@ -1,0 +1,81 @@
+{
+  "title": "Tour Valle Sagrado",
+  "slug": "tour-valle-sagrado",
+  "duration": 1,
+  "category": "Ciudad",
+  "difficulty": "Fácil",
+  "destinations": ["valle-sagrado", "cusco"],
+  "price": 35,
+  "currency": "USD",
+  "groupSize": "2-15 personas",
+  "description": "Explora el fértil Valle Sagrado de los Incas, hogar de impresionantes ruinas arqueológicas, pueblos tradicionales andinos y paisajes espectaculares. Este tour te lleva a través del corazón del antiguo Imperio Inca.",
+  "longDescription": "El Valle Sagrado, conocido como el 'Jardín del Inca', fue el centro agrícola y espiritual del Imperio Inca. Este valle fértil, irrigado por el río Urubamba, alberga algunos de los sitios arqueológicos más importantes de Perú, incluyendo Pisac, Ollantaytambo y Chinchero. Cada sitio revela diferentes aspectos de la ingeniería, arquitectura y espiritualidad inca, mientras que los pueblos tradicionales mantienen vivas las costumbres y tradiciones andinas.",
+  "featuredImage": "/sacred-valley.jpeg",
+  "gallery": [
+    "/sacred-valley.jpeg",
+    "/sacred-valley-terraces.jpeg",
+    "/sacred-valley-village.jpeg"
+  ],
+  "highlights": [
+    "Ruinas de Pisac",
+    "Fortaleza de Ollantaytambo",
+    "Pueblo de Chinchero",
+    "Mercado artesanal de Pisac",
+    "Terrazas agrícolas incas",
+    "Vistas panorámicas del valle"
+  ],
+  "included": [
+    "Guía profesional en inglés/español",
+    "Transporte desde/hacia Cusco",
+    "Todas las tarifas de entrada",
+    "Almuerzo buffet en restaurante local",
+    "Botella de agua",
+    "Briefing previo"
+  ],
+  "notIncluded": [
+    "Propinas para guías",
+    "Gastos personales",
+    "Bebidas alcohólicas",
+    "Compras en mercados artesanales"
+  ],
+  "whatToBring": [
+    "Pasaporte (copia)",
+    "Ropa cómoda para caminar",
+    "Zapatos cómodos",
+    "Protección solar",
+    "Cámara",
+    "Dinero para propinas y compras",
+    "Chaqueta ligera",
+    "Sombrero"
+  ],
+  "physicalRequirement": "Nivel fácil - caminata moderada en sitios arqueológicos. Algunas áreas tienen escaleras y terreno irregular.",
+  "bestTime": "Todo el año (mejor de mayo a septiembre)",
+  "itinerary": [
+    {
+      "day": 1,
+      "title": "Valle Sagrado Completo",
+      "distance": "150km en auto",
+      "duration": "10 horas",
+      "elevation": "2,800m - 3,400m",
+      "description": "Recorre el Valle Sagrado visitando los sitios más importantes: Pisac, Ollantaytambo y Chinchero, cada uno con su propia historia y belleza única.",
+      "meals": ["almuerzo"],
+      "accommodation": "No incluido",
+      "activities": [
+        "Recogida desde hotel en Cusco",
+        "Visita a las ruinas de Pisac",
+        "Mercado artesanal de Pisac",
+        "Almuerzo buffet en Urubamba",
+        "Fortaleza de Ollantaytambo",
+        "Pueblo de Chinchero",
+        "Regreso a Cusco"
+      ]
+    }
+  ],
+  "additionalInfo": {
+    "accommodation": "Tour de día - no se incluye alojamiento",
+    "food": "Almuerzo buffet incluido con opciones locales e internacionales",
+    "safety": "Guías experimentados con conocimiento profundo de la arqueología y cultura inca",
+    "groupSize": "Grupos pequeños para una experiencia más personalizada",
+    "accessibility": "La mayoría de sitios son accesibles, pero algunos pueden tener escaleras o terreno irregular"
+  }
+}

@@ -15,19 +15,13 @@
       class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60"
     />
 
-    <!-- Content -->
-    <div
-      class="z-10 relative mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center"
-    >
-      <UBadge color="primary" variant="soft" size="lg" class="mb-6">
-        {{ t('authenticPeruAdventures') }}
-      </UBadge>
-
+    <!-- Hero Content -->
+    <div class="z-10 relative text-center">
       <h1
-        class="mb-6 font-bold text-white text-4xl sm:text-5xl lg:text-7xl leading-tight"
+        class="drop-shadow-2xl mb-6 font-extrabold text-white text-4xl sm:text-5xl lg:text-6xl leading-tight"
       >
         {{ t('discoverMagic') }}
-        <span class="block text-primary-400">{{ t('ancientPeru') }}</span>
+        <span class="block brand-teal">{{ t('ancientPeru') }}</span>
       </h1>
 
       <p
@@ -55,12 +49,12 @@
           to="https://wa.me/your-number"
           target="_blank"
           size="xl"
-          color="success"
+          color="secondary"
           variant="outline"
           icon="i-simple-icons-whatsapp"
-          class="border-white min-w-[200px] text-white hover:text-white"
+          class="hover:bg-white/10 border-white min-w-[200px] text-white hover:text-white"
         >
-          {{ t('whatsappUs') }}
+          {{ t('whatsappContact') }}
         </UButton>
       </div>
 
@@ -85,7 +79,7 @@
         <div class="text-center">
           <UIcon
             name="i-heroicons-shield-check"
-            class="mx-auto mb-2 w-8 h-8 text-green-400"
+            class="mx-auto mb-2 w-8 h-8 brand-teal"
           />
           <p class="font-semibold text-white">{{ t('safeAdventures') }}</p>
         </div>
