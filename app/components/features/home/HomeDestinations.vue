@@ -73,7 +73,7 @@
       <div class="flex justify-center mb-16">
         <NuxtLink
           to="/destinations"
-          class="inline-flex items-center bg-brand-teal hover:bg-brand-teal-dark shadow px-6 py-3 rounded-lg font-semibold text-white transition-colors"
+          class="inline-flex items-center bg-brand-teal hover:bg-brand-teal/80 shadow px-6 py-3 rounded-lg font-semibold text-white transition-colors"
         >
           {{ t('seeAllDestinations') }}
           <UIcon name="i-heroicons-arrow-right" class="ml-2 w-5 h-5" />

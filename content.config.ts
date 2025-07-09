@@ -2,6 +2,64 @@ import { defineCollection, defineContentConfig } from '@nuxt/content';
 import { TourSchema } from './app/shared/schemas/tour';
 import { z } from 'zod';
 
+// Define guide schema
+const GuideSchema = z.object({
+  title: z.string(),
+  subtitle: z.string(),
+  description: z.string(),
+  image: z.string(),
+  experience: z.object({
+    years: z.number(),
+    since: z.number(),
+    clients: z.number(),
+  }),
+  intro: z.string(),
+  whyChooseMe: z.object({
+    localExpertise: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
+    personalizedAdventures: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
+    safetyProfessionalism: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
+    passionateStoryteller: z.object({
+      title: z.string(),
+      description: z.string(),
+    }),
+  }),
+  specialties: z.object({
+    multiDayTrekking: z.object({
+      title: z.string(),
+      tours: z.array(z.string()),
+    }),
+    dayAdventures: z.object({
+      title: z.string(),
+      tours: z.array(z.string()),
+    }),
+    culturalImmersion: z.object({
+      title: z.string(),
+      tours: z.array(z.string()),
+    }),
+  }),
+  testimonials: z.array(
+    z.object({
+      text: z.string(),
+      author: z.string(),
+      country: z.string(),
+    })
+  ),
+  certifications: z.array(z.string()),
+  contact: z.object({
+    whatsapp: z.string(),
+    email: z.string(),
+  }),
+});
+
 // Define destination schema
 const DestinationSchema = z.object({
   title: z.string(),
@@ -79,6 +137,23 @@ export default defineContentConfig({
         exclude: [],
       },
       type: 'page',
+    }),
+    // Guide content
+    enGuide: defineCollection({
+      source: {
+        include: 'en/guide/**/*.json',
+        exclude: [],
+      },
+      type: 'data',
+      schema: GuideSchema,
+    }),
+    esGuide: defineCollection({
+      source: {
+        include: 'es/guide/**/*.json',
+        exclude: [],
+      },
+      type: 'data',
+      schema: GuideSchema,
     }),
   },
 });

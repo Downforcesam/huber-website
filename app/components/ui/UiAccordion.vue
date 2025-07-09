@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col items-center lg:hidden bg-white w-full">
+  <div class="lg:hidden flex flex-col items-center bg-white w-full">
     <div class="px-4 container">
       <div class="mx-auto divide-y divide-gray-900/10 max-w-4xl">
-        <h2 class="font-bold text-2xl text-gray-900 leading-10 tracking-tight">
+        <h2 class="font-bold text-gray-900 text-2xl leading-10 tracking-tight">
           {{ $t('itinerary') }}
         </h2>
         <dl class="space-y-2 mt-10 divide-y divide-gray-900/10">

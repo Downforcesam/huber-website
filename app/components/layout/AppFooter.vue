@@ -4,13 +4,6 @@
       <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <!-- Brand Section -->
         <div class="lg:col-span-2">
-          <div class="flex items-center mb-6">
-            <NuxtImg
-              class="w-auto h-12"
-              src="/images/shared/peru-excursion.svg"
-              alt="Peru Excursions"
-            />
-          </div>
           <p class="mb-6 max-w-md text-gray-300 text-lg">
             Discover the magic of Peru with authentic adventures through the
             Andes. Expert guides, small groups, and unforgettable experiences

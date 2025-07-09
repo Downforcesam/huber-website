@@ -1,0 +1,80 @@
+{
+  "title": "HUBER HUILLCA DIAZ - Your Adventure Guru",
+  "subtitle": "Your Local Adventure Expert",
+  "description": "Meet Huber Huillca Diaz, your expert adventure guide in Peru since 2005. Discover personalized tours to Machu Picchu, Sacred Valley, Rainbow Mountain and more.",
+  "image": "/images/guide/huber-guide.jpg",
+  "experience": {
+    "years": 18,
+    "since": 2005,
+    "clients": 500
+  },
+  "intro": "Welcome to Peru! I'm a certified trekking guide with over 18 years of experience leading adventurers through the breathtaking landscapes of the Peruvian Andes. Since 2005, I have been exploring the wonders of Peru, guiding adventurers like you through the breathtaking landscapes and rich cultural heritage of the southern Andes.",
+  "whyChooseMe": {
+    "localExpertise": {
+      "title": "Local Expertise",
+      "description": "Born in Cusco, I know every trail, every view, and every story. Fluent in Spanish, English, and Quechua (the ancient Inca language). Deep connections with local communities and authentic experiences."
+    },
+    "personalizedAdventures": {
+      "title": "Personalized Adventures",
+      "description": "Flexible itineraries tailored to your interests and fitness level. Small groups or private tours for a more intimate experience. Can adapt any tour based on weather, your preferences, or special requests."
+    },
+    "safetyProfessionalism": {
+      "title": "Safety & Professionalism",
+      "description": "Certified wilderness first aid and mountain rescue training. Licensed by the Peruvian Ministry of Tourism. Comprehensive insurance and safety equipment always included."
+    },
+    "passionateStoryteller": {
+      "title": "Passionate Storyteller",
+      "description": "I don't just show you places - I share the stories, legends, and history. Learn about Inca culture, local traditions, and modern Peruvian life. Connect with local families and communities along the way."
+    }
+  },
+  "specialties": {
+    "multiDayTrekking": {
+      "title": "Multi-Day Trekking",
+      "tours": [
+        "Choquequirao Trek - My personal favorite hidden gem",
+        "Inca Trail to Machu Picchu - The classic adventure",
+        "Custom wilderness expeditions - Let's create something unique"
+      ]
+    },
+    "dayAdventures": {
+      "title": "Day Adventures",
+      "tours": [
+        "Rainbow Mountain - Spectacular high-altitude hiking",
+        "Sacred Valley exploration - Culture and archaeology combined",
+        "Cusco city tours - History comes alive in ancient streets"
+      ]
+    },
+    "culturalImmersion": {
+      "title": "Cultural Immersion",
+      "tours": [
+        "Home stays with local families in traditional villages",
+        "Cooking classes with authentic Peruvian cuisine",
+        "Textile workshops with master weavers"
+      ]
+    }
+  },
+  "testimonials": [
+    {
+      "text": "Huber didn't just guide us through Peru - he opened our hearts to its soul. His knowledge, warmth, and flexibility made our trip absolutely unforgettable.",
+      "author": "Sarah & Mike",
+      "country": "USA"
+    },
+    {
+      "text": "We wanted something off the beaten path, and Huber delivered beyond our wildest dreams. The custom trek he designed was perfect for our family.",
+      "author": "The Johnson Family",
+      "country": "Canada"
+    }
+  ],
+  "certifications": [
+    "Licensed Tour Guide - Ministry of Tourism, Peru",
+    "Wilderness First Aid Certified",
+    "Mountain Rescue Training",
+    "Member of the Association of Cusco Tour Guides",
+    "18+ years of guiding experience",
+    "500+ satisfied clients from around the world"
+  ],
+  "contact": {
+    "whatsapp": "+51 XXX XXX XXX",
+    "email": "huber@peruexcursions.net"
+  }
+}

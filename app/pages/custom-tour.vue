@@ -209,7 +209,7 @@
                   type="submit"
                   size="xl"
                   :loading="loading"
-                  class="flex-1 bg-brand-teal hover:bg-brand-teal-dark border-brand-teal hover:border-brand-teal-dark text-white"
+                  class="flex-1 bg-brand-teal hover:bg-brand-teal/80 border-brand-teal hover:border-brand-teal/80 text-white"
                   icon="i-heroicons-paper-airplane"
                 >
                   {{ $t('sendCustomRequest') }}

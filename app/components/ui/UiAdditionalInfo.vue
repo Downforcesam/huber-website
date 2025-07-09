@@ -2,7 +2,7 @@
   <div class="flex flex-col items-center bg-white py-10 lg:py-16 w-full">
     <div class="px-4 container">
       <div class="mx-auto divide-y divide-gray-900/10 max-w-4xl">
-        <h2 class="font-bold text-2xl text-gray-900 leading-10 tracking-tight">
+        <h2 class="font-bold text-gray-900 text-2xl leading-10 tracking-tight">
           {{ $t('additionalInfo') }}
         </h2>
         <dl class="space-y-2 mt-10 divide-y divide-gray-900/10">
@@ -33,13 +33,13 @@
                 <li
                   v-for="value in Object.values(item)[0]"
                   :key="value"
-                  class="list-disc list-inside pl-4"
+                  class="pl-4 list-disc list-inside"
                 >
                   {{ value }}
                 </li>
               </ul>
 
-              <p class="text-base text-gray-600 leading-7"></p>
+              <p class="text-gray-600 text-base leading-7"></p>
             </DisclosurePanel>
           </Disclosure>
         </dl>

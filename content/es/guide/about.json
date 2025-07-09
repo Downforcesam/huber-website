@@ -1,0 +1,80 @@
+{
+  "title": "HUBER HUILLCA DIAZ - Tu Gurú de Aventuras",
+  "subtitle": "Tu Experto Local de Aventuras",
+  "description": "Conoce a Huber Huillca Diaz, tu experto guía de aventuras en Perú desde 2005. Descubre tours personalizados a Machu Picchu, Valle Sagrado, Montaña de Colores y más.",
+  "image": "/images/guide/huber-guide.jpg",
+  "experience": {
+    "years": 18,
+    "since": 2005,
+    "clients": 500
+  },
+  "intro": "¡Bienvenidos a Perú! Soy un guía de trekking certificado con más de 18 años de experiencia liderando aventureros a través de los impresionantes paisajes de los Andes peruanos. Desde 2005, he estado explorando las maravillas de Perú, guiando a aventureros como ustedes a través de los impresionantes paisajes y la rica herencia cultural de los Andes del sur.",
+  "whyChooseMe": {
+    "localExpertise": {
+      "title": "Experiencia Local",
+      "description": "Nacido en Cusco, conozco cada sendero, cada vista y cada historia. Fluido en español, inglés y quechua (el antiguo idioma inca). Conexiones profundas con comunidades locales y experiencias auténticas."
+    },
+    "personalizedAdventures": {
+      "title": "Aventuras Personalizadas",
+      "description": "Itinerarios flexibles adaptados a tus intereses y nivel de condición física. Grupos pequeños o tours privados para una experiencia más íntima. Puedo adaptar cualquier tour según el clima, tus preferencias o solicitudes especiales."
+    },
+    "safetyProfessionalism": {
+      "title": "Seguridad y Profesionalismo",
+      "description": "Certificado en primeros auxilios en áreas silvestres y entrenamiento de rescate en montaña. Licenciado por el Ministerio de Turismo del Perú. Seguro integral y equipo de seguridad siempre incluido."
+    },
+    "passionateStoryteller": {
+      "title": "Narrador Apasionado",
+      "description": "No solo te muestro lugares - comparto las historias, leyendas e historia. Aprende sobre la cultura inca, tradiciones locales y la vida peruana moderna. Conéctate con familias y comunidades locales en el camino."
+    }
+  },
+  "specialties": {
+    "multiDayTrekking": {
+      "title": "Trekking de Múltiples Días",
+      "tours": [
+        "Trek Choquequirao - Mi joya oculta favorita personal",
+        "Camino Inca a Machu Picchu - La aventura clásica",
+        "Expediciones personalizadas en la naturaleza - Creemos algo único"
+      ]
+    },
+    "dayAdventures": {
+      "title": "Aventuras de Día",
+      "tours": [
+        "Montaña de Colores - Senderismo espectacular de gran altitud",
+        "Exploración del Valle Sagrado - Cultura y arqueología combinadas",
+        "Tours por la ciudad de Cusco - La historia cobra vida en calles ancestrales"
+      ]
+    },
+    "culturalImmersion": {
+      "title": "Inmersión Cultural",
+      "tours": [
+        "Estadías en casas con familias locales en pueblos tradicionales",
+        "Clases de cocina con auténtica cocina peruana",
+        "Talleres de textiles con maestros tejedores"
+      ]
+    }
+  },
+  "testimonials": [
+    {
+      "text": "Huber no solo nos guió a través de Perú - abrió nuestros corazones a su alma. Su conocimiento, calidez y flexibilidad hicieron que nuestro viaje fuera absolutamente inolvidable.",
+      "author": "Sarah & Mike",
+      "country": "Estados Unidos"
+    },
+    {
+      "text": "Queríamos algo fuera de lo común, y Huber entregó más allá de nuestros sueños más salvajes. El trek personalizado que diseñó fue perfecto para nuestra familia.",
+      "author": "La Familia Johnson",
+      "country": "Canadá"
+    }
+  ],
+  "certifications": [
+    "Guía de Turismo Licenciado - Ministerio de Turismo, Perú",
+    "Certificado en Primeros Auxilios en Áreas Silvestres",
+    "Entrenamiento en Rescate en Montaña",
+    "Miembro de la Asociación de Guías de Turismo de Cusco",
+    "18+ años de experiencia como guía",
+    "500+ clientes satisfechos de todo el mundo"
+  ],
+  "contact": {
+    "whatsapp": "+51 XXX XXX XXX",
+    "email": "huber@peruexcursions.net"
+  }
+}
