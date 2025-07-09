@@ -12,59 +12,79 @@
       </div>
 
       <!-- Destinations Grid -->
-      <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8">
-        <UCard
+      <div
+        class="gap-6 lg:gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8"
+      >
+        <div
           v-for="destination in destinations"
           :key="destination.slug"
-          class="group hover:shadow-xl overflow-hidden transition-all duration-300 cursor-pointer"
+          class="group relative bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer"
         >
-          <template #header>
-            <div class="relative overflow-hidden">
-              <NuxtImg
-                :src="destination.thumbnail"
-                :alt="destination.title"
-                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-              />
+          <!-- Destination image -->
+          <div
+            class="relative bg-gray-200 h-64 sm:h-72 overflow-hidden group-hover:scale-105 transition-transform duration-300"
+          >
+            <NuxtImg
+              :src="destination.thumbnail"
+              :alt="destination.title"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+            <!-- Gradient overlay -->
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+            ></div>
+
+            <!-- Destination info overlay -->
+            <div class="bottom-4 left-4 absolute text-white">
+              <h3 class="mb-1 font-bold text-xl sm:text-2xl">
+                {{ destination.title }}
+              </h3>
+              <p class="text-gray-200 text-sm">Peru</p>
             </div>
-          </template>
+          </div>
 
+          <!-- Content -->
           <div class="p-6">
-            <h3 class="mb-3 font-bold text-gray-900 text-xl">
-              {{ destination.title }}
-            </h3>
-
-            <p class="mb-4 text-gray-600 text-sm line-clamp-2">
+            <p class="mb-4 text-gray-600 text-sm sm:text-base line-clamp-3">
               {{ destination.description }}
             </p>
 
-            <!-- Destination Details -->
-            <div class="space-y-2 mb-4 text-gray-500 text-sm">
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-2">
-                  <UIcon name="i-heroicons-clock" class="w-4 h-4" />
-                  <span>{{ destination.elevation }}</span>
-                </div>
-                <div class="flex items-center gap-2">
-                  <UIcon name="i-heroicons-map-pin" class="w-4 h-4" />
-                  <span>Peru</span>
-                </div>
+            <!-- Key info -->
+            <div class="gap-4 grid grid-cols-2 mb-4 text-sm">
+              <div>
+                <span class="text-gray-500">{{ t('elevation') }}:</span>
+                <span class="ml-1 font-medium">{{
+                  destination.elevation
+                }}</span>
+              </div>
+              <div>
+                <span class="text-gray-500">{{ t('region') }}:</span>
+                <span class="ml-1 font-medium">Peru</span>
               </div>
             </div>
 
-            <!-- Action Button -->
-            <UButton
-              color="primary"
-              variant="outline"
-              size="sm"
-              icon="i-heroicons-arrow-right"
-              trailing
-              block
-              class="mt-4"
+            <!-- CTA -->
+            <div
+              class="flex items-center font-medium text-blue-600 group-hover:text-blue-700 text-sm"
             >
-              Learn More
-            </UButton>
+              {{ t('exploreDestination') }}
+              <svg
+                class="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </div>
           </div>
-        </UCard>
+        </div>
       </div>
 
       <!-- See all destinations button -->

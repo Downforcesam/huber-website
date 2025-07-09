@@ -93,28 +93,41 @@
       </div>
 
       <!-- Tours grid -->
-      <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <UCard
+      <div
+        class="gap-6 lg:gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <div
           v-for="tour in filteredTours"
           :key="tour._id"
-          class="group hover:shadow-xl overflow-hidden transition-all duration-300 cursor-pointer"
+          class="group relative bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-shadow duration-300"
         >
-          <template #header>
-            <div class="relative overflow-hidden">
+          <NuxtLink :to="localePath(`/tours/${tour.slug}`)" class="block">
+            <!-- Tour image -->
+            <div
+              class="relative bg-gray-200 h-64 sm:h-72 overflow-hidden group-hover:scale-105 transition-transform duration-300"
+            >
               <NuxtImg
                 :src="tour.thumbnail || '/images/shared/landscape.jpg'"
                 :alt="tour.title"
-                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                class="w-full h-full object-cover"
+                loading="lazy"
               />
-              <!-- Category Badge -->
-              <div class="top-4 left-4 absolute">
-                <span
-                  class="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-medium text-gray-700 text-sm"
-                >
+              <!-- Gradient overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+              ></div>
+
+              <!-- Tour info overlay -->
+              <div class="bottom-4 left-4 absolute text-white">
+                <h3 class="mb-1 font-bold text-xl sm:text-2xl">
+                  {{ tour.title }}
+                </h3>
+                <p class="text-gray-200 text-sm">
                   {{ tour.category }}
-                </span>
+                </p>
               </div>
-              <!-- Price Badge -->
+
+              <!-- Price badge -->
               <div class="top-4 right-4 absolute">
                 <span
                   class="bg-brand-teal/90 backdrop-blur-sm px-3 py-1 rounded-full font-medium text-white text-sm"
@@ -123,56 +136,79 @@
                 </span>
               </div>
             </div>
-          </template>
 
-          <div class="p-6">
-            <h3 class="mb-3 font-bold text-gray-900 text-xl">
-              {{ tour.title }}
-            </h3>
+            <!-- Content -->
+            <div class="p-6">
+              <p class="mb-4 text-gray-600 text-sm sm:text-base line-clamp-3">
+                {{ tour.description }}
+              </p>
 
-            <p class="mb-4 text-gray-600 text-sm line-clamp-2">
-              {{ tour.description }}
-            </p>
-
-            <!-- Tour Details -->
-            <div class="space-y-2 mb-4 text-gray-500 text-sm">
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-2">
-                  <UIcon name="i-heroicons-clock" class="w-4 h-4" />
-                  <span>{{ tour.duration }} {{ t('days') }}</span>
+              <!-- Key info -->
+              <div class="gap-4 grid grid-cols-2 mb-4 text-sm">
+                <div>
+                  <span class="text-gray-500">{{ t('duration') }}:</span>
+                  <span class="ml-1 font-medium"
+                    >{{ tour.duration }} {{ t('days') }}</span
+                  >
                 </div>
-                <div class="flex items-center gap-2">
-                  <UIcon name="i-heroicons-signal" class="w-4 h-4" />
-                  <span>{{ t(tour.difficulty?.toLowerCase()) }}</span>
+                <div>
+                  <span class="text-gray-500">{{ t('difficulty') }}:</span>
+                  <span class="ml-1 font-medium">{{
+                    t(tour.difficulty?.toLowerCase())
+                  }}</span>
                 </div>
               </div>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center gap-2">
-                  <UIcon name="i-heroicons-user-group" class="w-4 h-4" />
-                  <span>{{ tour.groupSize }}</span>
+
+              <!-- Tour details -->
+              <div class="mb-4">
+                <h4 class="mb-2 font-semibold text-gray-700 text-sm">
+                  {{ t('groupSize') }}:
+                </h4>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="inline-block bg-blue-100 px-2 py-1 rounded-full text-blue-800 text-xs"
+                  >
+                    {{ tour.groupSize }}
+                  </span>
                 </div>
-                <div class="flex items-center gap-2">
-                  <UIcon name="i-heroicons-calendar" class="w-4 h-4" />
-                  <span>{{ tour.bestTime }}</span>
+              </div>
+
+              <!-- Best time -->
+              <div class="mb-4">
+                <h4 class="mb-2 font-semibold text-gray-700 text-sm">
+                  {{ t('bestTime') }}:
+                </h4>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    class="inline-block bg-green-100 px-2 py-1 rounded-full text-green-800 text-xs"
+                  >
+                    {{ tour.bestTime }}
+                  </span>
                 </div>
+              </div>
+
+              <!-- CTA -->
+              <div
+                class="flex items-center font-medium text-blue-600 group-hover:text-blue-700 text-sm"
+              >
+                {{ t('viewDetails') }}
+                <svg
+                  class="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
               </div>
             </div>
-
-            <!-- Action Button -->
-            <UButton
-              :to="localePath(`/tours/${tour.slug}`)"
-              color="primary"
-              variant="outline"
-              size="sm"
-              icon="i-heroicons-arrow-right"
-              trailing
-              block
-              class="mt-4"
-            >
-              {{ t('viewDetails') }}
-            </UButton>
-          </div>
-        </UCard>
+          </NuxtLink>
+        </div>
       </div>
 
       <!-- Empty state -->
@@ -277,7 +313,9 @@ const availableDifficulties = computed(() => {
           ? t('moderate')
           : difficulty === 'Challenging' || difficulty === 'Desafiante'
             ? t('challenging')
-            : difficulty,
+            : difficulty === 'Expert' || difficulty === 'Experto'
+              ? t('expert')
+              : difficulty,
   }));
 });
 
