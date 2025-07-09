@@ -4,7 +4,7 @@
   >
     <!-- Background image -->
     <NuxtImg
-      src="/machu-picchu.jpg"
+      src="/images/landing/hero-machu-picchu.jpg"
       alt="Machu Picchu - Peru Excursions"
       class="absolute inset-0 w-full h-full object-cover"
       loading="eager"

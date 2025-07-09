@@ -4,7 +4,7 @@
   "type": "Natural/Geological",
   "description": "A stunning natural wonder featuring colorful mineral deposits creating rainbow-striped mountain slopes.",
   "longDescription": "Rainbow Mountain, known locally as Vinicunca or Montaña de Siete Colores (Mountain of Seven Colors), is one of Peru's most photographed natural wonders. This geological marvel showcases vibrant stripes of red, orange, yellow, green, and blue across its slopes, created by different mineral deposits exposed over millions of years. Located in the Andes southeast of Cusco, this relatively recently discovered tourist destination offers breathtaking high-altitude hiking and spectacular panoramic views.",
-  "image": "/rainbow-mountain.jpeg",
+  "thumbnail": "/images/destinations/rainbow-mountain/main.jpg",
   "gallery": ["/rainbow-mountain.jpeg"],
   "location": {
     "region": "Cusco",

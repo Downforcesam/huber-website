@@ -1,10 +1,11 @@
 {
   "title": "Machu Picchu",
   "slug": "machu-picchu",
+  "featured": true,
   "type": "Arqueológico",
   "description": "La icónica Ciudad Perdida de los Incas, un Sitio Patrimonio Mundial de la UNESCO ubicado en las montañas de los Andes.",
   "longDescription": "Machu Picchu, a menudo llamada la 'Ciudad Perdida de los Incas', es el sitio arqueológico más famoso de Perú. Construida en el siglo XV y abandonada durante la conquista española, esta ciudadela inca extraordinariamente preservada se asienta majestuosamente a 2,430 metros sobre el nivel del mar, rodeada de picos montañosos dramáticos y exuberantes bosques nubosos.",
-  "image": "/machu-picchu.jpg",
+  "thumbnail": "/images/destinations/machu-picchu/main.jpg",
   "gallery": [
     "/machu-picchu.jpg",
     "/machu-picchu-lama.jpeg",

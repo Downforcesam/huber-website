@@ -4,7 +4,7 @@
   "type": "Arqueológico",
   "description": "La 'Ciudad Hermana' de Machu Picchu, una ciudadela inca remota y espectacular accesible solo por trekking.",
   "longDescription": "Choquequirao, que significa 'Cuna de Oro' en quechua, es uno de los sitios arqueológicos más espectaculares pero menos visitados de Perú. A menudo llamada la 'Ciudad Hermana' de Machu Picchu, esta magnífica ciudadela inca se asienta dramáticamente en una cresta montañosa con vista al Cañón del Apurímac. Construida en el mismo período que Machu Picchu, sirvió como finca real y centro sagrado, con impresionantes terrazas, templos y complejos residenciales.",
-  "image": "/trekking.jpeg",
+  "thumbnail": "/images/destinations/choquequirao/main.jpg",
   "gallery": ["/trekking.jpeg"],
   "location": {
     "region": "Cusco/Apurímac",

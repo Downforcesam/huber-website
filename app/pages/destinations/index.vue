@@ -35,7 +35,7 @@
               class="relative bg-gray-200 h-64 sm:h-72 overflow-hidden group-hover:scale-105 transition-transform duration-300"
             >
               <NuxtImg
-                :src="destination.featuredImage"
+                :src="destination.thumbnail"
                 :alt="destination.title"
                 class="w-full h-full object-cover"
                 loading="lazy"

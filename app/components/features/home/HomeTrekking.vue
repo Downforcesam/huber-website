@@ -17,7 +17,7 @@
             class="bg-gray-200 group-hover:opacity-75 sm:h-96 aspect-h-4 aspect-w-3 sm:aspect-none"
           >
             <NuxtImg
-              :src="tour.featuredImage"
+              :src="tour.thumbnail || tour.featuredImage"
               :alt="tour.title"
               class="w-full sm:w-full h-full sm:h-full object-center object-cover"
             />

@@ -4,7 +4,7 @@
   "type": "Archaeological/Natural",
   "description": "Ancient Inca agricultural laboratories and spectacular salt terraces showcasing ingenious Andean engineering.",
   "longDescription": "Maras and Moray represent two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Moray features mysterious circular terraces that served as an agricultural laboratory where the Incas experimented with different crops at various altitudes. Nearby, the Maras salt mines have been producing salt for over 500 years through an intricate system of terraced ponds fed by natural salt springs, creating a stunning geometric landscape of white and golden pools.",
-  "image": "/maras.jpeg",
+  "thumbnail": "/images/destinations/maras-moray/main.jpg",
   "gallery": ["/maras.jpeg", "/maras-moray.jpeg"],
   "location": {
     "region": "Cusco",

@@ -7,7 +7,7 @@
           <div class="flex items-center mb-6">
             <NuxtImg
               class="w-auto h-12"
-              src="/peru-excursion.svg"
+              src="/images/shared/peru-excursion.svg"
               alt="Peru Excursions"
             />
           </div>

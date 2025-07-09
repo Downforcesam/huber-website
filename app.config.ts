@@ -1,5 +1,8 @@
 export default defineAppConfig({
   ui: {
+    // Disable dark mode completely
+    darkMode: false,
+
     // Color aliases that map to Tailwind colors
     colors: {
       primary: 'teal', // Maps to our custom teal scale

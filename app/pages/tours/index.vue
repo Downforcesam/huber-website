@@ -107,7 +107,7 @@
               class="relative bg-gray-200 group-hover:opacity-90 h-48 sm:h-56 lg:h-64 transition-opacity duration-300"
             >
               <NuxtImg
-                :src="tour.featuredImage || tour.thumbnail"
+                :src="tour.thumbnail || '/images/shared/landscape.jpg'"
                 :alt="tour.title"
                 class="w-full h-full object-cover"
                 loading="lazy"

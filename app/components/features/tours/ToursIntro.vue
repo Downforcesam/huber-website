@@ -1,7 +1,7 @@
 <template>
   <div class="relative flex flex-col items-center h-full container">
     <NuxtImg
-      src="/cusco.jpeg"
+      src="/images/destinations/cusco/main.jpg"
       :alt="title"
       class="rounded-md object-cover container"
     >

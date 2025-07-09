@@ -4,7 +4,7 @@
   "type": "Archaeological",
   "description": "The 'Sister City' of Machu Picchu, an remote and spectacular Inca citadel accessible only by trekking.",
   "longDescription": "Choquequirao, meaning 'Cradle of Gold' in Quechua, is one of Peru's most spectacular yet least visited archaeological sites. Often called the 'Sister City' of Machu Picchu, this magnificent Inca citadel sits dramatically on a mountain ridge overlooking the Apurímac Canyon. Built in the same period as Machu Picchu, it served as both a royal estate and sacred center, featuring impressive terraces, temples, and residential complexes.",
-  "image": "/trekking.jpeg",
+  "thumbnail": "/images/destinations/choquequirao/main.jpg",
   "gallery": ["/trekking.jpeg"],
   "location": {
     "region": "Cusco/Apurímac",

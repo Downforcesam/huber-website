@@ -14,15 +14,15 @@
       <!-- Destinations Grid -->
       <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8">
         <UCard
-          v-for="destination in destinations.slice(0, 3)"
-          :key="destination.name"
+          v-for="destination in destinations"
+          :key="destination.slug"
           class="group hover:shadow-xl overflow-hidden transition-all duration-300 cursor-pointer"
         >
           <template #header>
             <div class="relative overflow-hidden">
               <NuxtImg
-                :src="destination.image"
-                :alt="destination.name"
+                :src="destination.thumbnail"
+                :alt="destination.title"
                 class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -32,7 +32,7 @@
             <h3
               class="mb-3 font-bold text-gray-900 text-xl transition-colors group-hover:brand-teal"
             >
-              {{ destination.name }}
+              {{ destination.title }}
             </h3>
 
             <p class="mb-4 text-gray-600 text-sm line-clamp-2">
@@ -44,7 +44,7 @@
               <div class="flex justify-between items-center">
                 <div class="flex items-center gap-2">
                   <UIcon name="i-heroicons-clock" class="w-4 h-4" />
-                  <span>{{ destination.duration }}</span>
+                  <span>{{ destination.elevation }}</span>
                 </div>
                 <div class="flex items-center gap-2">
                   <UIcon name="i-heroicons-map-pin" class="w-4 h-4" />
@@ -115,75 +115,27 @@
 
 <script setup lang="ts">
 const { t } = useI18n();
+const { locale } = useI18n();
+const localePath = useLocalePath();
 
-const destinations = [
-  {
-    name: 'Machu Picchu',
-    type: 'Archaeological',
-    description:
-      'Experience the magic of this UNESCO World Heritage Site. Trek through cloud forests and ancient Inca trails to reach this iconic citadel.',
-    image: '/machu-picchu.jpg',
-    icon: 'i-heroicons-building-library',
-    badgeColor: 'warning' as const,
-    features: ['UNESCO Site', 'Inca Trail', 'Guided Tour'],
-    duration: '1-4 days',
-  },
-  {
-    name: 'Sacred Valley',
-    type: 'Cultural',
-    description:
-      'Discover ancient ruins, bustling markets, and breathtaking scenery in the Sacred Valley of the Incas.',
-    image: '/sacred-valley.jpeg',
-    icon: 'i-heroicons-photo',
-    badgeColor: 'primary' as const,
-    features: ['Pisac Market', 'Ollantaytambo', 'Local Culture'],
-    duration: '1-2 days',
-  },
-  {
-    name: 'Rainbow Mountain',
-    type: 'Adventure',
-    description:
-      'Hike to the stunning Rainbow Mountain (Vinicunca) and witness the incredible natural colors of the Andes.',
-    image: '/rainbow-mountain.jpeg',
-    icon: 'i-heroicons-photo',
-    badgeColor: 'error' as const,
-    features: ['High Altitude', 'Colorful Peaks', 'Photography'],
-    duration: '1 day',
-  },
-  {
-    name: 'Cusco City',
-    type: 'Historical',
-    description:
-      'Explore the former capital of the Inca Empire with its colonial architecture and rich history.',
-    image: '/cusco-city.jpeg',
-    icon: 'i-heroicons-building-office-2',
-    badgeColor: 'primary' as const,
-    features: ['Colonial Architecture', 'Inca Ruins', 'Museums'],
-    duration: '1 day',
-  },
-  {
-    name: 'Maras Salt Flats',
-    type: 'Natural',
-    description:
-      'Visit the ancient salt mines of Maras and the mysterious agricultural terraces of Moray.',
-    image: '/maras-moray.jpeg',
-    icon: 'i-heroicons-squares-plus',
-    badgeColor: 'info' as const,
-    features: ['Salt Mines', 'Terraces', 'Local Techniques'],
-    duration: '1 day',
-  },
-  {
-    name: 'Choquequirao',
-    type: 'Trekking',
-    description:
-      'Embark on an challenging trek to the "sister city" of Machu Picchu, less crowded but equally spectacular.',
-    image: '/trekking.jpeg',
-    icon: 'i-heroicons-map',
-    badgeColor: 'warning' as const,
-    features: ['Multi-day Trek', 'Remote Location', 'Archaeological Site'],
-    duration: '4-7 days',
-  },
-];
+// Reactive collection name based on current locale
+const collectionName = computed(() =>
+  locale.value === 'es' ? 'esDestinations' : 'enDestinations'
+);
+
+// Fetch featured destinations using Nuxt Content v3 API
+const { data: allDestinations } = await useAsyncData(
+  () => `home-featured-destinations-${locale.value}`,
+  () => queryCollection(collectionName.value).all()
+);
+
+// Filter for featured destinations only
+const destinations = computed(() => {
+  if (!allDestinations.value) return [];
+  return allDestinations.value
+    .filter((destination) => destination.featured === true)
+    .slice(0, 3); // Limit to top 3
+});
 
 const features = [
   {

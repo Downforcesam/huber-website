@@ -111,7 +111,7 @@
             <div class="col-span-2">
               <UCard class="overflow-hidden">
                 <NuxtImg
-                  src="/landscape.jpeg"
+                  src="/images/landing/gallery-landscape.jpeg"
                   alt="Peruvian Landscape"
                   class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -121,7 +121,7 @@
             <!-- Two smaller images -->
             <UCard class="overflow-hidden">
               <NuxtImg
-                src="/cusco-2.jpeg"
+                src="/images/landing/gallery-cusco-architecture.jpeg"
                 alt="Cusco Architecture"
                 class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -129,7 +129,7 @@
 
             <UCard class="overflow-hidden">
               <NuxtImg
-                src="/maras.jpeg"
+                src="/images/landing/gallery-maras-salt-flats.jpeg"
                 alt="Maras Salt Flats"
                 class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -138,7 +138,7 @@
             <!-- Bottom row -->
             <UCard class="overflow-hidden">
               <NuxtImg
-                src="/home-stay.jpeg"
+                src="/images/landing/gallery-home-stay.jpeg"
                 alt="Local Home Stay"
                 class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
               />
@@ -146,7 +146,7 @@
 
             <UCard class="overflow-hidden">
               <NuxtImg
-                src="/machu-picchu-lama.jpeg"
+                src="/images/landing/gallery-machu-picchu-llama.jpeg"
                 alt="Machu Picchu Llama"
                 class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
               />

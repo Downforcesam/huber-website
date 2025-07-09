@@ -1,10 +1,11 @@
 {
   "title": "Sacred Valley",
   "slug": "sacred-valley",
+  "featured": true,
   "type": "Valley/Archaeological",
   "description": "The heartland of the Inca Empire, a fertile valley dotted with traditional villages and ancient ruins.",
   "longDescription": "The Sacred Valley of the Incas (Valle Sagrado) is a breathtaking valley in the Peruvian Andes that was once the heartland of the Inca Empire. This fertile valley, carved by the Urubamba River, stretches from the village of Pisaq to Ollantaytambo and is dotted with traditional Andean villages, colorful markets, ancient terraces, and impressive archaeological sites. The valley's lower altitude makes it an ideal place to acclimatize before visiting Machu Picchu.",
-  "image": "/sacred-valley.jpeg",
+  "thumbnail": "/images/destinations/sacred-valley/main.jpg",
   "gallery": ["/sacred-valley.jpeg"],
   "location": {
     "region": "Cusco",

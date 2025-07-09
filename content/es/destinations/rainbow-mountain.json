@@ -4,7 +4,7 @@
   "type": "Natural/Geológico",
   "description": "Una maravilla natural impresionante con depósitos minerales coloridos creando laderas montañosas con rayas arcoíris.",
   "longDescription": "La Montaña de Colores, conocida localmente como Vinicunca o Montaña de Siete Colores, es una de las maravillas naturales más fotografiadas de Perú. Esta maravilla geológica muestra franjas vibrantes de rojo, naranja, amarillo, verde y azul en sus laderas, creadas por diferentes depósitos minerales expuestos durante millones de años. Ubicada en los Andes al sureste de Cusco, este destino turístico relativamente descubierto recientemente ofrece senderismo de gran altitud y vistas panorámicas espectaculares.",
-  "image": "/rainbow-mountain.jpeg",
+  "thumbnail": "/images/destinations/rainbow-mountain/main.jpg",
   "gallery": ["/rainbow-mountain.jpeg"],
   "location": {
     "region": "Cusco",

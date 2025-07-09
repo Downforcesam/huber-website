@@ -23,15 +23,15 @@
       <!-- Tours Grid -->
       <div v-else class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <UCard
-          v-for="tour in tours.slice(0, 3)"
-          :key="tour._path"
+          v-for="tour in tours"
+          :key="tour.slug"
           class="group hover:shadow-xl overflow-hidden transition-all duration-300 cursor-pointer"
-          @click="navigateToTour(tour._path)"
+          @click="navigateToTour(tour.slug)"
         >
           <template #header>
             <div class="relative overflow-hidden">
               <NuxtImg
-                :src="tour.featuredImage || '/machu-picchu.jpg'"
+                :src="tour.thumbnail || '/images/shared/landscape.jpg'"
                 :alt="tour.title"
                 class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -54,7 +54,7 @@
             </h3>
 
             <p class="mb-4 text-gray-600 text-sm line-clamp-2">
-              {{ tour.shortDescription }}
+              {{ tour.description }}
             </p>
 
             <!-- Tour Details -->
@@ -107,43 +107,27 @@
 <script setup lang="ts">
 const { t } = useI18n();
 const localePath = useLocalePath();
+const { locale } = useI18n();
 
-// Mock tours data for demonstration (in production this would come from Nuxt Content)
-const tours = [
-  {
-    _path: '/en/tours/machu-picchu',
-    title: 'Classic Machu Picchu Trek',
-    shortDescription:
-      'Experience the iconic Inca Trail to Machu Picchu with expert guides.',
-    featuredImage: '/machu-picchu.jpg',
-    category: 'trekking',
-    difficulty: 'moderate',
-    duration: 4,
-  },
-  {
-    _path: '/en/tours/sacred-valley',
-    title: 'Sacred Valley Explorer',
-    shortDescription:
-      'Discover ancient ruins and local markets in the Sacred Valley.',
-    featuredImage: '/sacred-valley.jpeg',
-    category: 'cityTour',
-    difficulty: 'easy',
-    duration: 2,
-  },
-  {
-    _path: '/en/tours/rainbow-mountain',
-    title: 'Rainbow Mountain Adventure',
-    shortDescription: 'Hike to the stunning colorful peaks of Vinicunca.',
-    featuredImage: '/rainbow-mountain.jpeg',
-    category: 'trekking',
-    difficulty: 'challenging',
-    duration: 1,
-  },
-];
+// Reactive collection name based on current locale
+const collectionName = computed(() =>
+  locale.value === 'es' ? 'esTours' : 'enTours'
+);
 
-function navigateToTour(path: string) {
-  const tourSlug = path.split('/').pop();
-  navigateTo(localePath(`/tours/${tourSlug}`));
+// Fetch featured tours using Nuxt Content v3 API
+const { data: allTours } = await useAsyncData(
+  () => `home-featured-tours-${locale.value}`,
+  () => queryCollection(collectionName.value).all()
+);
+
+// Filter for featured tours only
+const tours = computed(() => {
+  if (!allTours.value) return [];
+  return allTours.value.filter((tour) => tour.featured === true).slice(0, 3); // Limit to top 3
+});
+
+function navigateToTour(slug: string) {
+  navigateTo(localePath(`/tours/${slug}`));
 }
 
 function getCategoryColor(category: string) {
