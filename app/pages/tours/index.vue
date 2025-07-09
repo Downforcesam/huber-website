@@ -93,153 +93,86 @@
       </div>
 
       <!-- Tours grid -->
-      <div
-        class="gap-4 sm:gap-6 lg:gap-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        <div
+      <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <UCard
           v-for="tour in filteredTours"
           :key="tour._id"
-          class="group relative flex flex-col bg-white shadow-sm hover:shadow-md border border-gray-200 rounded-xl overflow-hidden transition-shadow duration-300"
+          class="group hover:shadow-xl overflow-hidden transition-all duration-300 cursor-pointer"
         >
-          <NuxtLink :to="localePath(`/tours/${tour.slug}`)" class="block">
-            <!-- Mobile-optimized image container -->
-            <div
-              class="relative bg-gray-200 group-hover:opacity-90 h-48 sm:h-56 lg:h-64 transition-opacity duration-300"
-            >
+          <template #header>
+            <div class="relative overflow-hidden">
               <NuxtImg
                 :src="tour.thumbnail || '/images/shared/landscape.jpg'"
                 :alt="tour.title"
-                class="w-full h-full object-cover"
-                loading="lazy"
+                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
               />
-              <!-- Mobile-friendly overlay with category -->
-              <div class="top-2 left-2 absolute">
+              <!-- Category Badge -->
+              <div class="top-4 left-4 absolute">
                 <span
-                  class="inline-flex items-center bg-blue-100 px-2 py-1 rounded-full font-medium text-blue-800 text-xs"
+                  class="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full font-medium text-gray-700 text-sm"
                 >
                   {{ tour.category }}
                 </span>
               </div>
-              <!-- Price badge -->
-              <div class="top-2 right-2 absolute">
+              <!-- Price Badge -->
+              <div class="top-4 right-4 absolute">
                 <span
-                  class="inline-flex items-center bg-green-100 px-2 py-1 rounded-full font-medium text-green-800 text-xs"
+                  class="bg-brand-teal/90 backdrop-blur-sm px-3 py-1 rounded-full font-medium text-white text-sm"
                 >
                   ${{ tour.price }}
                 </span>
               </div>
             </div>
+          </template>
 
-            <!-- Mobile-optimized content -->
-            <div class="flex flex-col flex-1 p-4 sm:p-5">
-              <h3
-                class="mb-2 font-semibold text-gray-900 text-lg sm:text-xl line-clamp-2"
-              >
-                {{ tour.title }}
-              </h3>
+          <div class="p-6">
+            <h3 class="mb-3 font-bold text-gray-900 text-xl">
+              {{ tour.title }}
+            </h3>
 
-              <!-- Description -->
-              <p class="mb-3 text-gray-600 text-sm line-clamp-2">
-                {{ tour.description }}
-              </p>
+            <p class="mb-4 text-gray-600 text-sm line-clamp-2">
+              {{ tour.description }}
+            </p>
 
-              <!-- Mobile-friendly tour details -->
-              <div class="flex flex-col space-y-2 mb-3 text-gray-600 text-sm">
-                <div class="flex justify-between items-center">
-                  <span class="flex items-center">
-                    <svg
-                      class="mr-1 w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                      />
-                    </svg>
-                    {{ tour.duration }}
-                    {{ tour.duration === 1 ? $t('day') : $t('days') }}
-                  </span>
-                  <span class="flex items-center">
-                    <svg
-                      class="mr-1 w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      />
-                    </svg>
-                    {{ tour.difficulty }}
-                  </span>
+            <!-- Tour Details -->
+            <div class="space-y-2 mb-4 text-gray-500 text-sm">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <UIcon name="i-heroicons-clock" class="w-4 h-4" />
+                  <span>{{ tour.duration }} {{ t('days') }}</span>
                 </div>
-                <div class="flex justify-between items-center">
-                  <span class="flex items-center">
-                    <svg
-                      class="mr-1 w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                      />
-                    </svg>
-                    {{ tour.groupSize }}
-                  </span>
-                  <span class="flex items-center">
-                    <svg
-                      class="mr-1 w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                    {{ tour.bestTime }}
-                  </span>
+                <div class="flex items-center gap-2">
+                  <UIcon name="i-heroicons-signal" class="w-4 h-4" />
+                  <span>{{ t(tour.difficulty?.toLowerCase()) }}</span>
                 </div>
               </div>
-
-              <!-- Mobile-friendly CTA -->
-              <div class="mt-auto">
-                <span
-                  class="inline-flex items-center font-medium text-blue-600 group-hover:text-blue-700 text-sm"
-                >
-                  {{ $t('viewDetails') }}
-                  <svg
-                    class="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5l7 7-7 7"
-                    />
-                  </svg>
-                </span>
+              <div class="flex justify-between items-center">
+                <div class="flex items-center gap-2">
+                  <UIcon name="i-heroicons-user-group" class="w-4 h-4" />
+                  <span>{{ tour.groupSize }}</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <UIcon name="i-heroicons-calendar" class="w-4 h-4" />
+                  <span>{{ tour.bestTime }}</span>
+                </div>
               </div>
             </div>
-          </NuxtLink>
-        </div>
+
+            <!-- Action Button -->
+            <UButton
+              :to="localePath(`/tours/${tour.slug}`)"
+              color="primary"
+              variant="outline"
+              size="sm"
+              icon="i-heroicons-arrow-right"
+              trailing
+              block
+              class="mt-4"
+            >
+              {{ t('viewDetails') }}
+            </UButton>
+          </div>
+        </UCard>
       </div>
 
       <!-- Empty state -->

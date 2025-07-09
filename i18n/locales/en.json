@@ -176,5 +176,11 @@
   "aboutContactButton2": "Browse All Tours",
   "specialties": "Specialties",
   "testimonials": "Testimonials",
-  "certifications": "Certifications"
+  "certifications": "Certifications",
+  "overview": "Overview",
+  "gallery": "Gallery",
+  "distance": "Distance",
+  "meals": "Meals",
+  "groupSize": "Group Size",
+  "price": "Price"
 }

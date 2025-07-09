@@ -29,9 +29,7 @@
           </template>
 
           <div class="p-6">
-            <h3
-              class="mb-3 font-bold text-gray-900 text-xl transition-colors group-hover:brand-teal"
-            >
+            <h3 class="mb-3 font-bold text-gray-900 text-xl">
               {{ destination.title }}
             </h3>
 

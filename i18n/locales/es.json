@@ -176,5 +176,11 @@
   "aboutContactButton2": "Explorar Todos los Tours",
   "specialties": "Especialidades",
   "testimonials": "Testimonios",
-  "certifications": "Certificaciones"
+  "certifications": "Certificaciones",
+  "overview": "Resumen",
+  "gallery": "Galería",
+  "distance": "Distancia",
+  "meals": "Comidas",
+  "groupSize": "Tamaño del Grupo",
+  "price": "Precio"
 }
