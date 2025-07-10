@@ -7,10 +7,10 @@
           <h1
             class="mb-4 font-bold text-gray-900 text-3xl sm:text-4xl lg:text-5xl"
           >
-            {{ $t('destinations') }}
+            {{ t('destinations') }}
           </h1>
           <p class="mx-auto max-w-3xl text-gray-600 text-lg sm:text-xl">
-            {{ $t('destinationsDescription') }}
+            {{ t('destinationsDescription') }}
           </p>
         </div>
       </div>
@@ -68,13 +68,13 @@
               <!-- Key info -->
               <div class="gap-4 grid grid-cols-2 mb-4 text-sm">
                 <div>
-                  <span class="text-gray-500">{{ $t('elevation') }}:</span>
+                  <span class="text-gray-500">{{ t('elevation') }}:</span>
                   <span class="ml-1 font-medium">{{
                     destination.elevation
                   }}</span>
                 </div>
                 <div>
-                  <span class="text-gray-500">{{ $t('bestTime') }}:</span>
+                  <span class="text-gray-500">{{ t('bestTime') }}:</span>
                   <span class="ml-1 font-medium">{{
                     destination.bestTimeToVisit || destination.bestTime
                   }}</span>
@@ -84,7 +84,7 @@
               <!-- Highlights -->
               <div class="mb-4">
                 <h4 class="mb-2 font-semibold text-gray-700 text-sm">
-                  {{ $t('highlights') }}:
+                  {{ t('highlights') }}:
                 </h4>
                 <div class="flex flex-wrap gap-1">
                   <span
@@ -98,7 +98,7 @@
                     v-if="destination.highlights?.length > 3"
                     class="inline-block bg-gray-100 px-2 py-1 rounded-full text-gray-600 text-xs"
                   >
-                    +{{ destination.highlights.length - 3 }} {{ $t('more') }}
+                    +{{ destination.highlights.length - 3 }} {{ t('more') }}
                   </span>
                 </div>
               </div>
@@ -106,7 +106,7 @@
               <!-- Activities -->
               <div class="mb-4">
                 <h4 class="mb-2 font-semibold text-gray-700 text-sm">
-                  {{ $t('activities') }}:
+                  {{ t('activities') }}:
                 </h4>
                 <div class="flex flex-wrap gap-1">
                   <span
@@ -120,7 +120,7 @@
                     v-if="destination.activities?.length > 2"
                     class="inline-block bg-gray-100 px-2 py-1 rounded-full text-gray-600 text-xs"
                   >
-                    +{{ destination.activities.length - 2 }} {{ $t('more') }}
+                    +{{ destination.activities.length - 2 }} {{ t('more') }}
                   </span>
                 </div>
               </div>
@@ -129,7 +129,7 @@
               <div
                 class="flex items-center font-medium text-blue-600 group-hover:text-blue-700 text-sm"
               >
-                {{ $t('exploreDestination') }}
+                {{ t('exploreDestination') }}
                 <svg
                   class="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200"
                   fill="none"
@@ -176,9 +176,9 @@
           </svg>
         </div>
         <h3 class="mb-2 font-medium text-gray-900 text-lg">
-          {{ $t('noDestinationsFound') }}
+          {{ t('noDestinationsFound') }}
         </h3>
-        <p class="text-gray-600">{{ $t('destinationsComingSoon') }}</p>
+        <p class="text-gray-600">{{ t('destinationsComingSoon') }}</p>
       </div>
     </div>
 
@@ -187,23 +187,23 @@
       <div class="mx-auto px-4 py-12 sm:py-16 container">
         <div class="text-center">
           <h2 class="mb-4 font-bold text-2xl sm:text-3xl">
-            {{ $t('planYourJourney') }}
+            {{ t('planYourJourney') }}
           </h2>
           <p class="mx-auto mb-8 max-w-2xl text-blue-100 text-lg">
-            {{ $t('planYourJourneyText') }}
+            {{ t('planYourJourneyText') }}
           </p>
           <div class="flex sm:flex-row flex-col justify-center gap-4">
             <NuxtLink
               to="/custom-tour"
               class="inline-flex justify-center items-center bg-yellow-500 hover:bg-yellow-600 px-8 py-4 rounded-lg font-semibold text-gray-900 transition-colors"
             >
-              {{ $t('createCustomTour') }}
+              {{ t('createCustomTour') }}
             </NuxtLink>
             <NuxtLink
               to="/tours"
               class="inline-flex justify-center items-center hover:bg-white px-8 py-4 border border-white rounded-lg font-semibold text-white hover:text-gray-900 transition-colors"
             >
-              {{ $t('browseTours') }}
+              {{ t('browseTours') }}
             </NuxtLink>
           </div>
         </div>
@@ -213,7 +213,7 @@
 </template>
 
 <script setup>
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 const localePath = useLocalePath();
 
 // Reactive collection name based on current locale

@@ -3,7 +3,7 @@
     <div class="px-4 container">
       <div class="mx-auto divide-y divide-gray-900/10 max-w-4xl">
         <h2 class="font-bold text-gray-900 text-2xl leading-10 tracking-tight">
-          {{ $t('additionalInfo') }}
+          {{ t('additionalInfo') }}
         </h2>
         <dl class="space-y-2 mt-10 divide-y divide-gray-900/10">
           <Disclosure
@@ -19,7 +19,7 @@
               >
                 <div class="flex justify-center items-center">
                   <h3 class="ml-4 font-bold">
-                    {{ $t(`${Object.keys(item)[0]}`) }}
+                    {{ t(`${Object.keys(item)[0]}`) }}
                   </h3>
                 </div>
                 <span class="flex justify-center ml-6 h-7">
@@ -51,6 +51,8 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
 import { MinusIcon, PlusIcon } from '@heroicons/vue/24/outline';
+
+const { t } = useI18n();
 
 const props = defineProps({
   info: Array,

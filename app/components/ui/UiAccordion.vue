@@ -3,7 +3,7 @@
     <div class="px-4 container">
       <div class="mx-auto divide-y divide-gray-900/10 max-w-4xl">
         <h2 class="font-bold text-gray-900 text-2xl leading-10 tracking-tight">
-          {{ $t('itinerary') }}
+          {{ t('itinerary') }}
         </h2>
         <dl class="space-y-2 mt-10 divide-y divide-gray-900/10">
           <Disclosure
@@ -20,7 +20,7 @@
                 <div class="flex justify-center items-center">
                   <div class="flex flex-col justify-center items-center">
                     <span>
-                      {{ $t('day') }}
+                      {{ t('day') }}
                     </span>
                     <span class="font-semibold text-base leading-7">{{
                       day.day
@@ -52,6 +52,8 @@
 <script setup>
 import { Disclosure, DisclosureButton, DisclosurePanel } from '@headlessui/vue';
 import { MinusIcon, PlusIcon } from '@heroicons/vue/24/outline';
+
+const { t } = useI18n();
 
 const props = defineProps({
   itinerary: Object,

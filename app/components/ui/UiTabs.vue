@@ -28,7 +28,7 @@
             </v-img>
             <div class="flex flex-col w-full">
               <div class="flex items-center space-x-2 pt-2 text-5xl">
-                <span>{{ $t('day') }}</span>
+                <span>{{ t('day') }}</span>
                 <span>{{ item.day }}</span>
               </div>
               <div class="flex">
@@ -44,6 +44,7 @@
   </div>
 </template>
 <script setup>
+const { t } = useI18n();
 inject('tour');
 const tab = shallowRef('tab-1');
 const tour = inject('tour');

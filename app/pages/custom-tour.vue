@@ -5,10 +5,10 @@
       <div class="mx-auto px-4 py-16 sm:py-24 container">
         <div class="text-center">
           <h1 class="mb-6 font-bold text-3xl sm:text-4xl lg:text-5xl">
-            {{ $t('createCustomTour') }}
+            {{ t('createCustomTour') }}
           </h1>
           <p class="mx-auto max-w-3xl text-blue-100 text-lg sm:text-xl">
-            {{ $t('customTourDescription') }}
+            {{ t('customTourDescription') }}
           </p>
         </div>
       </div>
@@ -70,7 +70,7 @@
             <!-- Trip Details -->
             <div class="pt-8 border-t">
               <h3 class="mb-6 font-semibold text-gray-900 text-xl">
-                {{ $t('tripDetails') }}
+                {{ t('tripDetails') }}
               </h3>
 
               <div class="gap-6 grid grid-cols-1 md:grid-cols-3">
@@ -126,7 +126,7 @@
             <!-- Interests -->
             <div class="pt-8 border-t">
               <h3 class="mb-6 font-semibold text-gray-900 text-xl">
-                {{ $t('interests') }}
+                {{ t('interests') }}
               </h3>
 
               <UFormGroup label="What interests you most?" name="interests">
@@ -158,7 +158,7 @@
             <!-- Special Requirements -->
             <div class="pt-8 border-t">
               <h3 class="mb-6 font-semibold text-gray-900 text-xl">
-                {{ $t('specialRequirements') }}
+                {{ t('specialRequirements') }}
               </h3>
 
               <UFormGroup
@@ -212,7 +212,7 @@
                   class="flex-1 bg-brand-teal hover:bg-brand-teal/80 border-brand-teal hover:border-brand-teal/80 text-white"
                   icon="i-heroicons-paper-airplane"
                 >
-                  {{ $t('sendCustomRequest') }}
+                  {{ t('sendCustomRequest') }}
                 </UButton>
 
                 <UButton
@@ -223,12 +223,12 @@
                   icon="i-simple-icons-whatsapp"
                   class="flex-1 hover:bg-brand-gold border-brand-gold text-brand-gold hover:text-white"
                 >
-                  {{ $t('discussOnWhatsapp') }}
+                  {{ t('discussOnWhatsapp') }}
                 </UButton>
               </div>
 
               <p class="mt-4 text-gray-500 text-sm text-center">
-                {{ $t('responseTime') }}
+                {{ t('responseTime') }}
               </p>
             </div>
           </UForm>
@@ -244,7 +244,7 @@
 <script setup>
 import { z } from 'zod';
 
-const { $t } = useI18n();
+const { t } = useI18n();
 const toast = useToast();
 
 // Form validation schema
@@ -364,8 +364,8 @@ async function onSubmit(event) {
 
     // Success notification
     toast.add({
-      title: $t('customRequestSent'),
-      description: $t('customRequestSuccess'),
+      title: t('customRequestSent'),
+      description: t('customRequestSuccess'),
       color: 'primary',
     });
 
@@ -380,8 +380,8 @@ async function onSubmit(event) {
   } catch (error) {
     // Error notification
     toast.add({
-      title: $t('customRequestError'),
-      description: $t('customRequestErrorDescription'),
+      title: t('customRequestError'),
+      description: t('customRequestErrorDescription'),
       icon: 'i-heroicons-exclamation-triangle',
       color: 'red',
     });

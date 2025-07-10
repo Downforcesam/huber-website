@@ -40,7 +40,7 @@
           <!-- Description -->
           <div class="bg-white shadow-sm mb-6 p-6 rounded-lg">
             <h2 class="mb-4 font-bold text-gray-900 text-2xl">
-              {{ $t('about') }}
+              {{ t('about') }}
             </h2>
             <p class="text-gray-600 leading-relaxed">
               {{ destination?.longDescription }}
@@ -50,7 +50,7 @@
           <!-- Highlights -->
           <div class="bg-white shadow-sm mb-6 p-6 rounded-lg">
             <h2 class="mb-4 font-bold text-gray-900 text-2xl">
-              {{ $t('highlights') }}
+              {{ t('highlights') }}
             </h2>
             <div class="gap-3 grid sm:grid-cols-2">
               <div
@@ -79,7 +79,7 @@
           <!-- Activities -->
           <div class="bg-white shadow-sm mb-6 p-6 rounded-lg">
             <h2 class="mb-4 font-bold text-gray-900 text-2xl">
-              {{ $t('activities') }}
+              {{ t('activities') }}
             </h2>
             <div class="gap-3 grid sm:grid-cols-2">
               <div
@@ -111,7 +111,7 @@
             class="bg-white shadow-sm mb-6 p-6 rounded-lg"
           >
             <h2 class="mb-4 font-bold text-gray-900 text-2xl">
-              {{ $t('culturalSites') }}
+              {{ t('culturalSites') }}
             </h2>
             <div class="gap-3 grid sm:grid-cols-2">
               <div
@@ -140,7 +140,7 @@
           <!-- Travel Tips -->
           <div class="bg-white shadow-sm mb-6 p-6 rounded-lg">
             <h2 class="mb-4 font-bold text-gray-900 text-2xl">
-              {{ $t('travelTips') }}
+              {{ t('travelTips') }}
             </h2>
             <div class="space-y-3">
               <div
@@ -172,23 +172,23 @@
           <!-- Quick info -->
           <div class="bg-white shadow-sm mb-6 p-6 rounded-lg">
             <h3 class="mb-4 font-bold text-gray-900 text-xl">
-              {{ $t('quickInfo') }}
+              {{ t('quickInfo') }}
             </h3>
             <div class="space-y-3">
               <div class="flex justify-between">
-                <span class="text-gray-600">{{ $t('elevation') }}:</span>
+                <span class="text-gray-600">{{ t('elevation') }}:</span>
                 <span class="font-medium">{{ destination?.elevation }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600">{{ $t('climate') }}:</span>
+                <span class="text-gray-600">{{ t('climate') }}:</span>
                 <span class="font-medium">{{ destination?.climate }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600">{{ $t('bestTime') }}:</span>
+                <span class="text-gray-600">{{ t('bestTime') }}:</span>
                 <span class="font-medium">{{ destination?.bestTime }}</span>
               </div>
               <div class="flex justify-between">
-                <span class="text-gray-600">{{ $t('accessibility') }}:</span>
+                <span class="text-gray-600">{{ t('accessibility') }}:</span>
                 <span class="font-medium">{{
                   destination?.additionalInfo?.accessibility
                 }}</span>
@@ -202,84 +202,35 @@
             class="bg-white shadow-sm mb-6 p-6 rounded-lg"
           >
             <h3 class="mb-4 font-bold text-gray-900 text-xl">
-              {{ $t('gettingThere') }}
+              {{ t('gettingThere') }}
             </h3>
-            <div class="space-y-3">
-              <div>
-                <span class="text-gray-600">{{ $t('fromCusco') }}:</span>
-                <p class="font-medium">
-                  {{ destination.gettingThere.fromCusco }}
-                </p>
-              </div>
-              <div>
-                <span class="text-gray-600">{{ $t('duration') }}:</span>
-                <p class="font-medium">
-                  {{ destination.gettingThere.duration }}
-                </p>
-              </div>
-              <div>
-                <span class="text-gray-600">{{ $t('transportation') }}:</span>
-                <ul class="mt-1">
-                  <li
-                    v-for="transport in destination.gettingThere.transportation"
-                    :key="transport"
-                    class="text-sm"
-                  >
-                    • {{ transport }}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!-- Related tours -->
-          <div class="bg-white shadow-sm mb-6 p-6 rounded-lg">
-            <h3 class="mb-4 font-bold text-gray-900 text-xl">
-              {{ $t('relatedTours') }}
-            </h3>
-            <div class="space-y-3">
-              <NuxtLink
-                v-for="tour in relatedTours"
-                :key="tour._id"
-                :to="localePath(`/tours/${tour.slug}`)"
-                class="block hover:bg-blue-50 p-3 border border-gray-200 hover:border-blue-300 rounded-lg transition-colors"
-              >
-                <h4 class="mb-1 font-medium text-gray-900">
-                  {{ tour.title }}
-                </h4>
-                <div class="flex justify-between text-gray-600 text-sm">
-                  <span
-                    >{{ tour.duration }}
-                    {{ tour.duration === 1 ? $t('day') : $t('days') }}</span
-                  >
-                  <span>${{ tour.price }}</span>
-                </div>
-              </NuxtLink>
-            </div>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              {{ destination.gettingThere }}
+            </p>
           </div>
 
           <!-- CTA -->
           <div
-            class="bg-gradient-to-r from-blue-600 to-blue-700 p-6 rounded-lg text-white"
+            class="bg-gradient-to-r from-blue-900 to-teal-800 p-6 rounded-lg text-white"
           >
-            <h3 class="mb-3 font-bold text-xl">
-              {{ $t('readyToExplore') }}
+            <h3 class="mb-4 font-bold text-xl">
+              {{ t('planYourVisit') }}
             </h3>
-            <p class="mb-4 text-blue-100">
-              {{ $t('readyToExploreText') }}
+            <p class="mb-6 text-blue-100 text-sm">
+              {{ t('planYourVisitText') }}
             </p>
             <div class="space-y-3">
               <NuxtLink
-                to="/tours"
-                class="block bg-white hover:bg-gray-100 px-4 py-3 rounded-lg w-full font-semibold text-blue-600 text-center transition-colors"
+                :to="localePath('/custom-tour')"
+                class="block bg-yellow-500 hover:bg-yellow-600 px-4 py-3 rounded-lg w-full font-semibold text-gray-900 text-center transition-colors"
               >
-                {{ $t('browseTours') }}
+                {{ t('createCustomTour') }}
               </NuxtLink>
               <NuxtLink
-                to="/custom-tour"
-                class="block hover:bg-white px-4 py-3 border border-white rounded-lg w-full font-semibold text-white hover:text-blue-600 text-center transition-colors"
+                :to="localePath('/tours')"
+                class="block bg-transparent hover:bg-white px-4 py-3 border border-white rounded-lg w-full font-semibold text-white hover:text-gray-900 text-center transition-colors"
               >
-                {{ $t('createCustomTour') }}
+                {{ t('browseTours') }}
               </NuxtLink>
             </div>
           </div>
@@ -290,57 +241,33 @@
 </template>
 
 <script setup>
-const { slug } = useRoute().params;
-const { locale } = useI18n();
+const { locale, t } = useI18n();
 const localePath = useLocalePath();
+const route = useRoute();
 
-// Reactive collection names based on current locale
-const destinationCollectionName = computed(() =>
+// Reactive collection name based on current locale
+const collectionName = computed(() =>
   locale.value === 'es' ? 'esDestinations' : 'enDestinations'
 );
-const toursCollectionName = computed(() =>
-  locale.value === 'es' ? 'esTours' : 'enTours'
-);
 
-// Get destination data using new Nuxt Content v3 API with unique cache key per language
+// Fetch destination using new Nuxt Content v3 API
 const { data: destination } = await useAsyncData(
-  () => `destination-${slug}-${locale.value}`,
+  () => `destination-${route.params.slug}-${locale.value}`,
   () =>
-    queryCollection(destinationCollectionName.value)
-      .where('slug', '==', slug)
+    queryCollection(collectionName.value)
+      .where({ slug: route.params.slug })
       .first()
 );
 
-// Get related tours using new Nuxt Content v3 API with unique cache key per language
-const { data: allTours } = await useAsyncData(
-  () => `tours-for-destination-${locale.value}`,
-  () => queryCollection(toursCollectionName.value).all()
-);
-
-// Get related tours
-const relatedTours = computed(() => {
-  if (!destination.value || !allTours.value) return [];
-  return allTours.value
-    .filter((tour) => tour.destinations?.includes(destination.value.slug))
-    .slice(0, 3);
-});
-
-// Handle 404
-if (!destination.value) {
-  throw createError({
-    statusCode: 404,
-    statusMessage: 'Destination Not Found',
-    fatal: true,
-  });
-}
-
 // SEO
 useHead({
-  title: `${destination.value.title} - Peru Excursions`,
+  title: `${destination.value?.title || 'Destination'} - Peru Excursions`,
   meta: [
     {
       name: 'description',
-      content: destination.value.description,
+      content:
+        destination.value?.description ||
+        'Discover amazing destinations in Peru with our expert guides.',
     },
   ],
 });

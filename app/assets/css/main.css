@@ -13,6 +13,23 @@
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Lora', serif;
   --font-body: 'Montserrat', sans-serif;
+
+  /* Additional Nuxt UI variables to ensure proper rendering */
+  --ui-bg: #ffffff;
+  --ui-bg-elevated: #ffffff;
+  --ui-bg-accented: #f8fafc;
+  --ui-bg-inverted: #1f2937;
+  --ui-text: #374151;
+  --ui-text-muted: #6b7280;
+  --ui-text-highlighted: #111827;
+  --ui-text-inverted: #ffffff;
+  --ui-border: #e5e7eb;
+  --ui-border-accented: #d1d5db;
+  --ui-border-inverted: #374151;
+  --ui-error: #ef4444;
+  --ui-info: #3b82f6;
+  --ui-success: #10b981;
+  --ui-warning: #f59e0b;
 }
 
 /* Dark mode disabled - removed for deployment */
