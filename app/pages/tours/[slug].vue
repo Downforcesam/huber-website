@@ -50,7 +50,7 @@
               </h2>
               <div class="max-w-none prose prose-lg">
                 <p class="text-gray-600 leading-relaxed">
-                  {{ tour?.longDescription }}
+                  {{ tour?.description }}
                 </p>
               </div>
             </div>
@@ -117,7 +117,7 @@
                       <span class="font-medium text-gray-700"
                         >{{ t('elevation') }}:</span
                       >
-                      <span class="text-gray-600">{{ day.elevation }}</span>
+                      <span class="text-gray-600">{{ day.altitude }}</span>
                     </div>
                     <div>
                       <span class="font-medium text-gray-700"
@@ -189,108 +189,15 @@
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-600">{{ t('price') }}:</span>
-                  <span class="font-medium text-brand-teal"
-                    >${{ tour?.price }}</span
-                  >
+                  <span class="font-medium text-brand-teal">
+                    {{ tour?.price ? `$${tour.price}` : 'Contact us' }}
+                  </span>
                 </div>
                 <div class="flex justify-between">
                   <span class="text-gray-600">{{ t('category') }}:</span>
                   <span class="font-medium">{{ tour?.category }}</span>
                 </div>
               </div>
-            </div>
-
-            <!-- What's Included -->
-            <div v-if="tour?.included" class="bg-gray-50 mb-6 p-6 rounded-lg">
-              <h3 class="mb-4 font-bold text-gray-900 text-xl">
-                {{ t('included') }}
-              </h3>
-              <ul class="space-y-2">
-                <li
-                  v-for="item in tour.included"
-                  :key="item"
-                  class="flex items-start text-sm"
-                >
-                  <svg
-                    class="flex-shrink-0 mt-0.5 mr-2 w-4 h-4 text-green-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                  <span class="text-gray-700">{{ item }}</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Not Included -->
-            <div
-              v-if="tour?.notIncluded"
-              class="bg-gray-50 mb-6 p-6 rounded-lg"
-            >
-              <h3 class="mb-4 font-bold text-gray-900 text-xl">
-                {{ t('notIncluded') }}
-              </h3>
-              <ul class="space-y-2">
-                <li
-                  v-for="item in tour.notIncluded"
-                  :key="item"
-                  class="flex items-start text-sm"
-                >
-                  <svg
-                    class="flex-shrink-0 mt-0.5 mr-2 w-4 h-4 text-red-500"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12"
-                    />
-                  </svg>
-                  <span class="text-gray-700">{{ item }}</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- What to Bring -->
-            <div
-              v-if="tour?.whatToBring"
-              class="bg-gray-50 mb-6 p-6 rounded-lg"
-            >
-              <h3 class="mb-4 font-bold text-gray-900 text-xl">
-                {{ t('bring') }}
-              </h3>
-              <ul class="space-y-2">
-                <li
-                  v-for="item in tour.whatToBring"
-                  :key="item"
-                  class="flex items-start text-sm"
-                >
-                  <svg
-                    class="flex-shrink-0 mt-0.5 mr-2 w-4 h-4 text-brand-teal"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
-                    />
-                  </svg>
-                  <span class="text-gray-700">{{ item }}</span>
-                </li>
-              </ul>
             </div>
 
             <!-- CTA -->
@@ -306,7 +213,7 @@
               <div class="space-y-3">
                 <UButton
                   to="/custom-tour"
-                  color="white"
+                  color="primary"
                   variant="solid"
                   size="lg"
                   block
@@ -317,7 +224,7 @@
                 <UButton
                   to="https://wa.me/your-number"
                   target="_blank"
-                  color="white"
+                  color="primary"
                   variant="outline"
                   size="lg"
                   block
@@ -327,30 +234,6 @@
                 </UButton>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section v-if="tour?.gallery" class="bg-gray-50 py-12 sm:py-20">
-      <div class="mx-auto px-4 max-w-7xl">
-        <h2
-          class="mb-8 font-bold text-gray-900 text-2xl sm:text-3xl text-center"
-        >
-          {{ t('gallery') }}
-        </h2>
-        <div class="gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          <div
-            v-for="(image, index) in tour.gallery"
-            :key="index"
-            class="group relative rounded-lg overflow-hidden"
-          >
-            <NuxtImg
-              :src="image"
-              :alt="`${tour.title} - Image ${index + 1}`"
-              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-            />
           </div>
         </div>
       </div>
@@ -366,14 +249,23 @@
         </h2>
         <div class="space-y-6">
           <div
-            v-for="(info, key) in tour.additionalInfo"
-            :key="key"
+            v-for="info in tour.additionalInfo"
+            :key="info.title"
             class="bg-gray-50 p-6 rounded-lg"
           >
-            <h3 class="mb-3 font-bold text-gray-900 text-lg capitalize">
-              {{ t(key) }}
+            <h3 class="mb-3 font-bold text-gray-900 text-lg">
+              {{ info.title }}
             </h3>
-            <p class="text-gray-600">{{ info }}</p>
+            <p class="text-gray-600">{{ info.description }}</p>
+            <ul v-if="info.items" class="space-y-1 mt-3">
+              <li
+                v-for="item in info.items"
+                :key="item"
+                class="text-gray-600 text-sm"
+              >
+                • {{ item }}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -384,6 +276,7 @@
 <script setup lang="ts">
 const { slug } = useRoute().params;
 const { t, locale } = useI18n();
+const route = useRoute();
 
 // Reactive collection name based on current locale
 const collectionName = computed(() =>
@@ -393,7 +286,10 @@ const collectionName = computed(() =>
 // Fetch tour data using the same approach as destinations
 const { data: tour } = await useAsyncData(
   () => `tour-${slug}-${locale.value}`,
-  () => queryCollection(collectionName.value).where({ slug }).first()
+  () =>
+    queryCollection(collectionName.value)
+      .where({ slug: route.params.slug })
+      .first()
 );
 
 // Handle 404
@@ -407,11 +303,13 @@ if (!tour.value) {
 
 // SEO
 useHead({
-  title: `${tour.value.title} - Peru Excursions`,
+  title: `${tour.value?.title || 'Tour'} - Peru Excursions`,
   meta: [
     {
       name: 'description',
-      content: tour.value.description,
+      content:
+        tour.value?.description ||
+        'Discover amazing tours in Peru with our expert guides.',
     },
   ],
 });

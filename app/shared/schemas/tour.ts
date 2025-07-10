@@ -7,73 +7,44 @@ export const ItineraryItemSchema = z.object({
   description: z.string().min(1),
   activities: z.array(z.string()).optional(),
   accommodation: z.string().optional(),
-  meals: z.array(z.enum(['breakfast', 'lunch', 'dinner'])).optional(),
-  altitude: z.number().optional(),
+  meals: z.array(z.string()).optional(),
+  elevation: z.string().optional(),
   distance: z.string().optional(),
   duration: z.string().optional(),
 });
 
-export const AdditionalInfoSchema = z.object({
-  category: z.string().min(1),
-  title: z.string().min(1),
-  description: z.string().min(1),
-  icon: z.string().optional(),
-  items: z.array(z.string()).optional(),
-});
+export const AdditionalInfoSchema = z.record(z.string()).optional();
 
-export const TourPriceSchema = z.object({
-  currency: z.enum(['USD', 'EUR', 'PEN']).default('USD'),
-  amount: z.number().positive(),
-  groupSize: z.object({
-    min: z.number().positive(),
-    max: z.number().positive(),
-  }),
-  includes: z.array(z.string()).optional(),
-  excludes: z.array(z.string()).optional(),
-});
-
-export const TourLocationSchema = z.object({
-  name: z.string().min(1),
-  coordinates: z
-    .object({
-      latitude: z.number().min(-90).max(90),
-      longitude: z.number().min(-180).max(180),
-    })
-    .optional(),
-  altitude: z.number().optional(),
-  region: z.string().optional(),
-});
-
-// Main tour schema
+// Main tour schema - updated to match actual content files
 export const TourSchema = z.object({
-  id: z.string().min(1),
   title: z.string().min(1),
   slug: z.string().min(1),
   description: z.string().min(1),
+  longDescription: z.string().optional(),
   thumbnail: z.string().url(),
-  images: z.array(z.string().url()).optional(),
-  category: z.enum(['trekking', 'cultural', 'adventure', 'city', 'nature']),
-  difficulty: z.enum(['easy', 'moderate', 'challenging', 'expert']),
+  gallery: z.array(z.string()).optional(),
+  category: z.string().min(1),
+  difficulty: z.string().min(1),
   duration: z.number().positive(),
-  durationUnit: z.enum(['hours', 'days', 'weeks']).default('days'),
-  maxGroupSize: z.number().positive().optional(),
-  minAge: z.number().positive().optional(),
-  bestSeason: z.array(z.string()).optional(),
-  highlights: z.array(z.string()).optional(),
-  itinerary: z.array(ItineraryItemSchema).optional(),
-  additionalInfo: z.array(AdditionalInfoSchema).optional(),
-  pricing: z.array(TourPriceSchema).optional(),
-  location: TourLocationSchema.optional(),
-  tags: z.array(z.string()).optional(),
+  destinations: z.array(z.string()).optional(),
+  price: z.number().positive(),
+  currency: z.string().default('USD'),
+  groupSize: z.string().optional(),
   featured: z.boolean().default(false),
-  available: z.boolean().default(true),
+  highlights: z.array(z.string()).optional(),
+  included: z.array(z.string()).optional(),
+  notIncluded: z.array(z.string()).optional(),
+  whatToBring: z.array(z.string()).optional(),
+  physicalRequirement: z.string().optional(),
+  bestTime: z.string().optional(),
+  itinerary: z.array(ItineraryItemSchema).optional(),
+  additionalInfo: AdditionalInfoSchema,
   createdAt: z.string().datetime().optional(),
   updatedAt: z.string().datetime().optional(),
 });
 
 // Schema for tour listing/summary (subset of full tour)
 export const TourSummarySchema = TourSchema.pick({
-  id: true,
   title: true,
   slug: true,
   description: true,
@@ -81,17 +52,15 @@ export const TourSummarySchema = TourSchema.pick({
   category: true,
   difficulty: true,
   duration: true,
-  durationUnit: true,
+  price: true,
+  currency: true,
   featured: true,
-  available: true,
 });
 
 // Schema for tour filters
 export const TourFiltersSchema = z.object({
-  category: z
-    .enum(['trekking', 'cultural', 'adventure', 'city', 'nature'])
-    .optional(),
-  difficulty: z.enum(['easy', 'moderate', 'challenging', 'expert']).optional(),
+  category: z.string().optional(),
+  difficulty: z.string().optional(),
   duration: z
     .object({
       min: z.number().positive().optional(),
@@ -99,8 +68,12 @@ export const TourFiltersSchema = z.object({
     })
     .optional(),
   featured: z.boolean().optional(),
-  available: z.boolean().optional(),
-  tags: z.array(z.string()).optional(),
+  price: z
+    .object({
+      min: z.number().positive().optional(),
+      max: z.number().positive().optional(),
+    })
+    .optional(),
 });
 
 export type Tour = z.infer<typeof TourSchema>;
@@ -108,5 +81,3 @@ export type TourSummary = z.infer<typeof TourSummarySchema>;
 export type TourFilters = z.infer<typeof TourFiltersSchema>;
 export type ItineraryItem = z.infer<typeof ItineraryItemSchema>;
 export type AdditionalInfo = z.infer<typeof AdditionalInfoSchema>;
-export type TourPrice = z.infer<typeof TourPriceSchema>;
-export type TourLocation = z.infer<typeof TourLocationSchema>;
