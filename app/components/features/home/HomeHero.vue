@@ -35,7 +35,7 @@
         class="flex sm:flex-row flex-col justify-center items-center gap-4 mb-12"
       >
         <UButton
-          @click="scrollToAnchor('tours')"
+          @click="scrollToTours"
           size="xl"
           color="primary"
           variant="solid"
@@ -59,7 +59,9 @@
       </div>
 
       <!-- Features -->
-      <div class="gap-6 grid grid-cols-1 sm:grid-cols-3 mx-auto max-w-3xl">
+      <div
+        class="gap-6 grid grid-cols-1 sm:grid-cols-3 mx-auto mb-16 max-w-3xl"
+      >
         <div class="text-center">
           <UIcon
             name="i-heroicons-star"
@@ -87,14 +89,14 @@
 
       <!-- Scroll indicator -->
       <div
-        class="bottom-8 left-1/2 absolute -translate-x-1/2 animate-bounce transform"
+        class="bottom-2 left-1/2 absolute -translate-x-1/2 animate-bounce transform"
       >
         <UButton
-          @click="scrollToAnchor('tours')"
+          @click="scrollToTours"
           variant="ghost"
-          size="sm"
+          size="lg"
           icon="i-heroicons-chevron-down"
-          class="text-white hover:text-primary-400"
+          class="text-white hover:text-brand-teal cursor-pointer"
           aria-label="Scroll to tours"
         />
       </div>
@@ -105,12 +107,16 @@
 <script setup lang="ts">
 const { t } = useI18n();
 
-const { scrollToAnchor } = useAnchorScroll({
-  toTop: {
-    scrollOptions: {
+function scrollToTours() {
+  const toursSection = document.getElementById('tours');
+  if (toursSection) {
+    const headerHeight = 80; // Approximate header height
+    const elementTop = toursSection.offsetTop - headerHeight;
+
+    window.scrollTo({
+      top: elementTop,
       behavior: 'smooth',
-      offsetTop: 0,
-    },
-  },
-});
+    });
+  }
+}
 </script>

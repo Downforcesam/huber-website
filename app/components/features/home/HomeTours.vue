@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-white py-16 sm:py-24">
+  <section id="tours" class="bg-white py-16 sm:py-24">
     <div class="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
       <!-- Section Header -->
       <div class="mb-16 text-center">
@@ -62,6 +62,15 @@
                       : tour.category
                 }}
               </p>
+            </div>
+
+            <!-- Price badge -->
+            <div class="top-4 right-4 absolute">
+              <span
+                class="bg-white/95 shadow-lg px-3 py-1 border border-gray-200 rounded-full font-bold text-gray-900 text-sm"
+              >
+                ${{ tour.price }}
+              </span>
             </div>
           </div>
 

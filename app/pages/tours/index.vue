@@ -138,7 +138,7 @@
             <!-- Price badge -->
             <div class="top-4 right-4 absolute">
               <span
-                class="bg-brand-teal/90 backdrop-blur-sm px-3 py-1 rounded-full font-medium text-white text-sm"
+                class="bg-white/95 shadow-lg px-3 py-1 border border-gray-200 rounded-full font-bold text-gray-900 text-sm"
               >
                 ${{ tour.price }}
               </span>
@@ -253,6 +253,9 @@
       </div>
     </div>
   </div>
+
+  <!-- Bottom margin -->
+  <div class="my-16"></div>
 </template>
 
 <script setup>

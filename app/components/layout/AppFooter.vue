@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-gray-900 text-white">
-    <div class="mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 max-w-7xl">
+    <div class="mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12 max-w-7xl">
       <div class="gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <!-- Brand Section -->
         <div class="lg:col-span-2">
@@ -79,7 +79,7 @@
       </div>
 
       <!-- Bottom Section -->
-      <div class="mt-12 pt-8 border-gray-800 border-t">
+      <div class="mt-8 pt-6 border-gray-800 border-t">
         <div class="flex md:flex-row flex-col justify-between items-center">
           <div class="mb-4 md:mb-0 text-gray-400 text-sm">
             © {{ new Date().getFullYear() }} Peru Excursions. All rights

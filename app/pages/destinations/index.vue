@@ -178,6 +178,9 @@
       </div>
     </div>
 
+    <!-- Bottom margin -->
+    <div class="my-16"></div>
+
     <!-- CTA section -->
     <div class="bg-gradient-to-r from-blue-900 to-teal-800 text-white">
       <div class="mx-auto px-4 py-12 sm:py-16 container">
