@@ -3,8 +3,8 @@
   "slug": "cusco",
   "featured": true,
   "type": "Colonial/Historical",
-  "description": "The historic capital of the Inca Empire, now a vibrant colonial city and gateway to Machu Picchu.",
-  "longDescription": "Cusco, once the capital of the mighty Inca Empire, is a fascinating blend of Inca and colonial architecture. Known as the 'Imperial City,' this UNESCO World Heritage Site serves as the perfect base for exploring the Sacred Valley and Machu Picchu. Its cobblestone streets, ancient walls, and vibrant markets tell the story of Peru's rich cultural heritage.",
+  "summary": "The historic capital of the Inca Empire, now a vibrant colonial city and gateway to Machu Picchu.",
+  "description": "Cusco, once the capital of the mighty Inca Empire, is a fascinating blend of Inca and colonial architecture. Known as the 'Imperial City,' this UNESCO World Heritage Site serves as the perfect base for exploring the Sacred Valley and Machu Picchu. Its cobblestone streets, ancient walls, and vibrant markets tell the story of Peru's rich cultural heritage.",
   "thumbnail": "/images/destinations/cusco/main.jpg",
   "gallery": [
     "/images/destinations/cusco/main.jpg",

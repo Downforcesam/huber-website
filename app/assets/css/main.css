@@ -47,6 +47,10 @@ html {
 }
 
 /* Custom base styles */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-body);
 }
@@ -58,6 +62,11 @@ h4,
 h5,
 h6 {
   font-family: var(--font-serif);
+}
+
+/* Handle fixed header offset for anchor links */
+[id] {
+  scroll-margin-top: 5rem; /* Adjust based on header height */
 }
 
 /* Peru Travel Brand Color Classes - High Specificity */

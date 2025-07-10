@@ -8,8 +8,8 @@
   "price": 40,
   "currency": "USD",
   "groupSize": "2-12 people",
-  "description": "Discover two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Visit the mysterious circular terraces of Moray and the spectacular salt mines of Maras, showcasing ancient Andean engineering.",
-  "longDescription": "Maras and Moray represent two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Moray features mysterious circular terraces that served as an agricultural laboratory where the Incas experimented with different crops at various altitudes, creating microclimates for crop testing. Nearby, the Maras salt mines have been producing salt for over 500 years through an intricate system of terraced ponds fed by natural salt springs, creating a stunning geometric landscape of white and golden pools. This tour offers a unique insight into Inca agricultural innovation and traditional salt production techniques.",
+  "summary": "Discover two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Visit the mysterious circular terraces of Moray and the spectacular salt mines of Maras, showcasing ancient Andean engineering.",
+  "summary": "Maras and Moray represent two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Moray features mysterious circular terraces that served as an agricultural laboratory where the Incas experimented with different crops at various altitudes, creating microclimates for crop testing. Nearby, the Maras salt mines have been producing salt for over 500 years through an intricate system of terraced ponds fed by natural salt springs, creating a stunning geometric landscape of white and golden pools. This tour offers a unique insight into Inca agricultural innovation and traditional salt production techniques.",
   "thumbnail": "/images/tours/maras-moray-tour/main.jpg",
   "gallery": ["/maras.jpeg", "/maras-moray.jpeg", "/moray-terraces.jpeg"],
   "highlights": [
@@ -50,7 +50,7 @@
       "day": 1,
       "title": "Maras & Moray Exploration",
       "duration": "6-7 hours",
-      "description": "Full day exploring the agricultural laboratories of Moray and the salt mines of Maras.",
+      "summary": "Full day exploring the agricultural laboratories of Moray and the salt mines of Maras.",
       "meals": ["Not included"],
       "accommodation": "Not included",
       "activities": [

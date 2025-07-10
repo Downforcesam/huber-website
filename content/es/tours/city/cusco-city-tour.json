@@ -8,8 +8,8 @@
   "price": 25,
   "currency": "USD",
   "groupSize": "2-15 personas",
-  "description": "Explora la antigua capital del Imperio Inca en este tour completo de un día. Descubre la rica historia, arquitectura colonial y sitios arqueológicos que hacen de Cusco una de las ciudades más fascinantes de Sudamérica.",
-  "longDescription": "Cusco, la antigua capital del Imperio Inca y Patrimonio de la Humanidad por la UNESCO, es una ciudad donde la historia cobra vida. Este tour te lleva a través de siglos de historia, desde las impresionantes ruinas incas hasta las magníficas iglesias coloniales construidas sobre templos incas. Experimenta la fusión única de culturas que define a Cusco mientras exploras sus calles empedradas, plazas históricas y sitios arqueológicos cercanos.",
+  "summary": "Explora la antigua capital del Imperio Inca en este tour completo de un día. Descubre la rica historia, arquitectura colonial y sitios arqueológicos que hacen de Cusco una de las ciudades más fascinantes de Sudamérica.",
+  "summary": "Cusco, la antigua capital del Imperio Inca y Patrimonio de la Humanidad por la UNESCO, es una ciudad donde la historia cobra vida. Este tour te lleva a través de siglos de historia, desde las impresionantes ruinas incas hasta las magníficas iglesias coloniales construidas sobre templos incas. Experimenta la fusión única de culturas que define a Cusco mientras exploras sus calles empedradas, plazas históricas y sitios arqueológicos cercanos.",
   "thumbnail": "/images/tours/cusco-city-tour/main.jpg",
   "gallery": ["/cusco.jpeg", "/cusco-2.jpeg", "/cusco-city.jpeg"],
   "highlights": [
@@ -52,7 +52,7 @@
       "distance": "5-6km caminando",
       "duration": "8 horas",
       "elevation": "3,400m",
-      "description": "Comienza en el corazón de Cusco y explora los sitios más importantes de la ciudad, desde la Plaza de Armas hasta las impresionantes ruinas de Sacsayhuamán.",
+      "summary": "Comienza en el corazón de Cusco y explora los sitios más importantes de la ciudad, desde la Plaza de Armas hasta las impresionantes ruinas de Sacsayhuamán.",
       "meals": ["almuerzo"],
       "accommodation": "No incluido",
       "activities": [

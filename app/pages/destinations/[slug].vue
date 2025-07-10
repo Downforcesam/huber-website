@@ -43,7 +43,7 @@
               {{ t('about') }}
             </h2>
             <p class="text-gray-600 leading-relaxed">
-              {{ destination?.longDescription }}
+              {{ destination?.description }}
             </p>
           </div>
 

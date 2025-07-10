@@ -148,7 +148,7 @@
             <!-- Content -->
             <div class="p-6">
               <p class="mb-4 text-gray-600 text-sm sm:text-base line-clamp-3">
-                {{ tour.description }}
+                {{ tour.summary }}
               </p>
 
               <!-- Key info -->

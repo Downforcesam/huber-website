@@ -111,18 +111,13 @@
 </template>
 
 <script setup lang="ts">
-import { z } from 'zod';
+import { SimpleContactFormSchema } from '~/shared/schemas/contact';
 
 const { t } = useI18n();
 const toast = useToast();
 
 // Form validation schema
-const schema = z.object({
-  senderName: z.string().min(2, 'Name must be at least 2 characters'),
-  senderEmail: z.string().email('Please enter a valid email'),
-  senderSubject: z.string().min(5, 'Subject must be at least 5 characters'),
-  senderMessage: z.string().min(10, 'Message must be at least 10 characters'),
-});
+const schema = SimpleContactFormSchema;
 
 // Form state
 const state = reactive({

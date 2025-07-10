@@ -18,17 +18,28 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden lg:flex items-center space-x-8">
-          <NuxtLink
-            v-for="item in navigation"
-            :key="item.name"
-            :to="localePath(item.href)"
-            class="group relative font-medium text-gray-700 hover:text-brand-teal text-sm transition-colors duration-200"
-          >
-            {{ t(item.name) }}
-            <span
-              class="-bottom-1 left-0 absolute bg-brand-teal w-0 group-hover:w-full h-0.5 transition-all duration-200"
-            ></span>
-          </NuxtLink>
+          <template v-for="item in navigation" :key="item.name">
+            <NuxtLink
+              v-if="!item.href.startsWith('#')"
+              :to="localePath(item.href)"
+              class="group relative font-medium text-gray-700 hover:text-brand-teal text-sm transition-colors duration-200"
+            >
+              {{ t(item.name) }}
+              <span
+                class="-bottom-1 left-0 absolute bg-brand-teal w-0 group-hover:w-full h-0.5 transition-all duration-200"
+              ></span>
+            </NuxtLink>
+            <a
+              v-else
+              :href="route.path === '/' ? item.href : `/${item.href}`"
+              class="group relative font-medium text-gray-700 hover:text-brand-teal text-sm transition-colors duration-200"
+            >
+              {{ t(item.name) }}
+              <span
+                class="-bottom-1 left-0 absolute bg-brand-teal w-0 group-hover:w-full h-0.5 transition-all duration-200"
+              ></span>
+            </a>
+          </template>
         </nav>
 
         <!-- Desktop Actions -->
@@ -76,15 +87,24 @@
             >
               Navigation
             </h3>
-            <NuxtLink
-              v-for="item in navigation"
-              :key="item.name"
-              :to="localePath(item.href)"
-              @click="mobileMenuOpen = false"
-              class="block hover:bg-gray-50 px-3 py-2 rounded-md font-medium text-gray-700 hover:text-brand-teal text-base transition-colors"
-            >
-              {{ t(item.name) }}
-            </NuxtLink>
+            <template v-for="item in navigation" :key="item.name">
+              <NuxtLink
+                v-if="!item.href.startsWith('#')"
+                :to="localePath(item.href)"
+                @click="mobileMenuOpen = false"
+                class="block hover:bg-gray-50 px-3 py-2 rounded-md font-medium text-gray-700 hover:text-brand-teal text-base transition-colors"
+              >
+                {{ t(item.name) }}
+              </NuxtLink>
+              <a
+                v-else
+                :href="route.path === '/' ? item.href : `/${item.href}`"
+                @click="mobileMenuOpen = false"
+                class="block hover:bg-gray-50 px-3 py-2 rounded-md font-medium text-gray-700 hover:text-brand-teal text-base transition-colors"
+              >
+                {{ t(item.name) }}
+              </a>
+            </template>
           </div>
 
           <!-- Quick Actions -->
@@ -96,7 +116,7 @@
             </h3>
 
             <UButton
-              to="#contact"
+              :to="route.path === '/' ? '#contact' : '/#contact'"
               color="primary"
               variant="solid"
               size="lg"
@@ -129,6 +149,7 @@
 <script setup lang="ts">
 const { t } = useI18n();
 const localePath = useLocalePath();
+const route = useRoute();
 
 const navigation = [
   { name: 'home', href: '/' },

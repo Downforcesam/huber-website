@@ -8,8 +8,8 @@
   "price": 35,
   "currency": "USD",
   "groupSize": "2-12 people",
-  "description": "Discover the fascinating blend of Inca and colonial architecture in Cusco, the historic capital of the Inca Empire. This comprehensive city tour takes you through the most important sites and hidden gems of this UNESCO World Heritage city.",
-  "longDescription": "Cusco, once the capital of the mighty Inca Empire, is a living museum where colonial architecture sits atop Inca foundations. This UNESCO World Heritage site serves as the perfect introduction to Peruvian culture and history. Our expert guides will take you through the most significant sites, from the impressive Qorikancha (Temple of the Sun) to the massive Sacsayhuamán fortress, while sharing fascinating stories about Inca engineering, Spanish conquest, and modern Andean culture.",
+  "summary": "Discover the fascinating blend of Inca and colonial architecture in Cusco, the historic capital of the Inca Empire. This comprehensive city tour takes you through the most important sites and hidden gems of this UNESCO World Heritage city.",
+  "summary": "Cusco, once the capital of the mighty Inca Empire, is a living museum where colonial architecture sits atop Inca foundations. This UNESCO World Heritage site serves as the perfect introduction to Peruvian culture and history. Our expert guides will take you through the most significant sites, from the impressive Qorikancha (Temple of the Sun) to the massive Sacsayhuamán fortress, while sharing fascinating stories about Inca engineering, Spanish conquest, and modern Andean culture.",
   "thumbnail": "/images/tours/cusco-city-tour/main.jpg",
   "gallery": [
     "/images/destinations/cusco/main.jpg",
@@ -52,7 +52,7 @@
       "day": 1,
       "title": "Cusco City Exploration",
       "duration": "6-7 hours",
-      "description": "Full day exploring the most important sites of Cusco, from the historic center to the surrounding archaeological sites.",
+      "summary": "Full day exploring the most important sites of Cusco, from the historic center to the surrounding archaeological sites.",
       "meals": ["Not included"],
       "accommodation": "Not included",
       "activities": [

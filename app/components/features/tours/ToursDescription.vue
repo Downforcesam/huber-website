@@ -8,13 +8,8 @@
         >
           <div class="px-6 md:px-0 lg:pt-4 lg:pr-4">
             <div class="">
-              <p class="">
-                Our classic Choquequirao package visits stunning archaeological
-                sites and immerses travelers in the culture of Cusco and the
-                Sacred Valley.
-              </p>
-              <p >
-                {{ tour.description }}
+              <p class="mb-4 text-gray-600 text-sm line-clamp-3">
+                {{ tour.summary }}
               </p>
             </div>
           </div>

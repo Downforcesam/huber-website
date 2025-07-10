@@ -32,11 +32,19 @@
           <ul class="space-y-3">
             <li v-for="link in quickLinks" :key="link.name">
               <NuxtLink
+                v-if="!link.href.startsWith('/#')"
                 :to="link.href"
                 class="text-gray-300 hover:text-white transition-colors duration-200"
               >
                 {{ link.name }}
               </NuxtLink>
+              <a
+                v-else
+                :href="link.href"
+                class="text-gray-300 hover:text-white transition-colors duration-200"
+              >
+                {{ link.name }}
+              </a>
             </li>
           </ul>
         </div>
@@ -79,18 +87,12 @@
           </div>
 
           <div class="flex space-x-6">
-            <a
-              href="#"
-              class="text-gray-400 hover:text-white text-sm transition-colors duration-200"
-            >
+            <span class="text-gray-400 text-sm cursor-not-allowed">
               Privacy Policy
-            </a>
-            <a
-              href="#"
-              class="text-gray-400 hover:text-white text-sm transition-colors duration-200"
-            >
+            </span>
+            <span class="text-gray-400 text-sm cursor-not-allowed">
               Terms of Service
-            </a>
+            </span>
           </div>
         </div>
       </div>
@@ -102,9 +104,9 @@
 const quickLinks = [
   { name: 'Home', href: '/' },
   { name: 'Tours', href: '/tours' },
-  { name: 'Destinations', href: '#destinations' },
-  { name: 'About Us', href: '#about' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Destinations', href: '/destinations' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Contact', href: '/#contact' },
 ];
 
 const socialLinks = [

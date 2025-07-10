@@ -10,14 +10,17 @@
   "contact": "Contacto",
   "contactUs": "Contáctanos",
   "viewDetails": "Ver Detalles",
+
   "heroTitle": "Explora los majestuosos Andes peruanos con Peru Excursions",
   "heroSubtitle": "Camina por senderos ancestrales, descubre gemas ocultas y sumérgete en un viaje de por vida. Comienza tu aventura hoy.",
   "heroButton": "Comienza tu aventura",
+
   "itinerary": "Itinerario",
   "additionalInfo": "Información Adicional",
   "included": "Incluido",
   "notIncluded": "No Incluido",
   "bring": "Traer",
+
   "send": "Enviar Mensaje",
   "emailSuccess": "¡Mensaje Enviado!",
   "emailSuccessDescription": "¡Gracias por tu mensaje. Te responderé dentro de 24 horas!",
@@ -25,6 +28,7 @@
   "emailErrorDescription": "Hubo un error al enviar tu mensaje. Por favor intenta WhatsApp.",
   "contactDescription": "¿Listo para comenzar tu aventura peruana? Envíame un mensaje o contáctame directamente por WhatsApp.",
   "whatsappContact": "WhatsApp Me",
+
   "toursDescription": "Descubre nuestros increíbles tours en Perú. Desde aventuras de trekking hasta experiencias culturales, encuentra el tour perfecto para tu próxima aventura.",
   "category": "Categoría",
   "duration": "Duración",
@@ -42,13 +46,14 @@
   "clearFilters": "Limpiar Filtros",
   "noToursFound": "No se encontraron tours",
   "tryDifferentFilters": "Intenta ajustar tus filtros para ver más resultados",
-  "contactWhatsApp": "WhatsApp Me",
+
   "getInTouch": "Ponte en Contacto",
   "yearsExperience": "Años de Experiencia",
   "readyForAdventure": "¿Listo para tu Aventura?",
   "readyForAdventureText": "Creemos una experiencia peruana inolvidable adaptada solo para ti.",
   "createCustomTour": "Crear Tour Personalizado",
   "browseTours": "Explorar Tours",
+
   "destinationsDescription": "Descubre los destinos más hermosos de Perú. Desde ciudadelas ancestrales hasta montañas coloridas, explora las maravillas de los Andes.",
   "elevation": "Elevación",
   "bestTime": "Mejor Época",
@@ -58,6 +63,7 @@
   "exploreDestination": "Explorar Destino",
   "noDestinationsFound": "No se encontraron destinos",
   "destinationsComingSoon": "Más destinos próximamente",
+
   "planYourJourney": "Planifica tu Viaje",
   "planYourJourneyText": "¿Listo para explorar estos destinos increíbles? Creemos el itinerario perfecto para tu aventura peruana.",
   "customTourDescription": "Cuéntame sobre tu aventura soñada en Perú y crearé un itinerario personalizado solo para ti. Cada detalle adaptado a tus intereses, nivel de condición física y presupuesto.",
@@ -114,6 +120,7 @@
   "readyExplore": "¿Listo para explorar Perú? Contáctanos para planificar tu aventura perfecta. Nuestro equipo experto está aquí para crear recuerdos inolvidables para ti.",
   "sendMessage": "Envíanos un mensaje",
   "getBackWithin24": "Te responderemos dentro de 24 horas",
+
   "name": "Nombre",
   "enterName": "Ingresa tu nombre",
   "email": "Correo electrónico",
@@ -121,5 +128,23 @@
   "subject": "Asunto",
   "enterSubject": "¿De qué se trata?",
   "message": "Mensaje",
-  "enterMessage": "Cuéntame sobre tu aventura soñada..."
+  "enterMessage": "Cuéntame sobre tu aventura soñada...",
+
+  "introTitle": "Título de Introducción",
+  "exploreDestinations": "Explorar Destinos",
+  "region": "Región",
+  "seeAllDestinations": "Ver Todos los Destinos",
+  "seeAllTours": "Ver Todos los Tours",
+  "quickInfo": "Información Rápida",
+  "groupSize": "Tamaño del Grupo",
+  "price": "Precio",
+  "readyToExplore": "¿Listo para Explorar?",
+  "readyToExploreText": "Contáctanos para planificar tu próxima aventura peruana",
+  "activities": "Actividades",
+  "meals": "Comidas",
+  "accommodation": "Alojamiento",
+  "distance": "Distancia",
+  "specialties": "Especialidades",
+  "testimonials": "Testimonios",
+  "certifications": "Certificaciones"
 }

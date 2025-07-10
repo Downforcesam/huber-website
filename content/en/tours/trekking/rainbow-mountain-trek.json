@@ -9,8 +9,8 @@
   "price": 45,
   "currency": "USD",
   "groupSize": "2-12 people",
-  "description": "Embark on a spectacular day trek to one of Peru's most photographed natural wonders. Rainbow Mountain (Vinicunca) showcases vibrant mineral deposits creating a stunning rainbow-striped landscape at 5,200m elevation.",
-  "longDescription": "Rainbow Mountain, known locally as Vinicunca or Montaña de Siete Colores (Mountain of Seven Colors), is one of Peru's most recently discovered tourist destinations. This geological marvel features vibrant stripes of red, orange, yellow, green, and blue across its slopes, created by different mineral deposits exposed over millions of years. The trek offers breathtaking high-altitude hiking and spectacular panoramic views of the Ausangate mountain range.",
+  "summary": "Embark on a spectacular day trek to one of Peru's most photographed natural wonders. Rainbow Mountain (Vinicunca) showcases vibrant mineral deposits creating a stunning rainbow-striped landscape at 5,200m elevation.",
+  "description": "Rainbow Mountain, known locally as Vinicunca or Montaña de Siete Colores (Mountain of Seven Colors), is one of Peru's most recently discovered tourist destinations. This geological marvel features vibrant stripes of red, orange, yellow, green, and blue across its slopes, created by different mineral deposits exposed over millions of years. The trek offers breathtaking high-altitude hiking and spectacular panoramic views of the Ausangate mountain range.",
   "thumbnail": "/images/tours/rainbow-mountain-trek/main.jpg",
   "gallery": [
     "/rainbow-mountain.jpeg",

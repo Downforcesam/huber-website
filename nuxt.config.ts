@@ -94,6 +94,9 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
     strategy: 'prefix_except_default',
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
     locales: [
       {
         code: 'en',
@@ -112,6 +115,20 @@ export default defineNuxtConfig({
   typescript: {
     strict: false,
     typeCheck: false,
+  },
+
+  // Vite configuration to handle WebAssembly source maps and warnings
+  vite: {
+    build: {
+      sourcemap: false,
+    },
+    define: {
+      __VUE_OPTIONS_API__: true,
+      __VUE_PROD_DEVTOOLS__: false,
+    },
+    optimizeDeps: {
+      exclude: ['@sqlite.org/sqlite-wasm'],
+    },
   },
 
   // Path aliases for better imports

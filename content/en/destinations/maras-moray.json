@@ -2,8 +2,8 @@
   "title": "Maras & Moray",
   "slug": "maras-moray",
   "type": "Archaeological/Natural",
-  "description": "Ancient Inca agricultural laboratories and spectacular salt terraces showcasing ingenious Andean engineering.",
-  "longDescription": "Maras and Moray represent two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Moray features mysterious circular terraces that served as an agricultural laboratory where the Incas experimented with different crops at various altitudes. Nearby, the Maras salt mines have been producing salt for over 500 years through an intricate system of terraced ponds fed by natural salt springs, creating a stunning geometric landscape of white and golden pools.",
+  "summary": "Ancient Inca agricultural laboratories and spectacular salt terraces showcasing ingenious Andean engineering.",
+  "description": "Maras and Moray represent two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Moray features mysterious circular terraces that served as an agricultural laboratory where the Incas experimented with different crops at various altitudes. Nearby, the Maras salt mines have been producing salt for over 500 years through an intricate system of terraced ponds fed by natural salt springs, creating a stunning geometric landscape of white and golden pools.",
   "thumbnail": "/images/destinations/maras-moray/main.jpg",
   "gallery": ["/maras.jpeg", "/maras-moray.jpeg"],
   "location": {
@@ -40,11 +40,11 @@
   "culturalSignificance": "Moray served as an Inca agricultural research center with microclimates for crop experimentation. Maras represents continuous indigenous knowledge in salt production spanning centuries.",
   "sites": {
     "moray": {
-      "description": "Circular terraced amphitheaters used for agricultural experiments",
+      "summary": "Circular terraced amphitheaters used for agricultural experiments",
       "features": "Temperature variations, crop testing, ceremonial purposes"
     },
     "maras": {
-      "description": "Ancient salt mines with over 3,000 terraced pools",
+      "summary": "Ancient salt mines with over 3,000 terraced pools",
       "features": "Natural salt springs, traditional harvesting, economic importance"
     }
   }

@@ -19,8 +19,8 @@ export const AdditionalInfoSchema = z.record(z.string()).optional();
 export const TourSchema = z.object({
   title: z.string().min(1),
   slug: z.string().min(1),
-  description: z.string().min(1),
-  longDescription: z.string().optional(),
+  summary: z.string().min(1), // Short version for cards/hero
+  description: z.string().min(1), // Full detailed description
   thumbnail: z.string().url(),
   gallery: z.array(z.string()).optional(),
   category: z.string().min(1),
@@ -47,7 +47,7 @@ export const TourSchema = z.object({
 export const TourSummarySchema = TourSchema.pick({
   title: true,
   slug: true,
-  description: true,
+  summary: true,
   thumbnail: true,
   category: true,
   difficulty: true,

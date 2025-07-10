@@ -9,8 +9,8 @@
   "price": 45,
   "currency": "USD",
   "groupSize": "2-12 personas",
-  "description": "Embárcate en un trek espectacular de un día a una de las maravillas naturales más fotografiadas de Perú. La Montaña de Colores (Vinicunca) muestra depósitos minerales vibrantes creando un paisaje impresionante con rayas arcoíris a 5,200m de elevación.",
-  "longDescription": "La Montaña de Colores, conocida localmente como Vinicunca o Montaña de Siete Colores, es uno de los destinos turísticos más recientemente descubiertos de Perú. Esta maravilla geológica presenta franjas vibrantes de rojo, naranja, amarillo, verde y azul en sus laderas, creadas por diferentes depósitos minerales expuestos durante millones de años. El trek ofrece senderismo de gran altitud y vistas panorámicas espectaculares de la cordillera Ausangate.",
+  "summary": "Embárcate en un trek espectacular de un día a una de las maravillas naturales más fotografiadas de Perú. La Montaña de Colores (Vinicunca) muestra depósitos minerales vibrantes creando un paisaje impresionante con rayas arcoíris a 5,200m de elevación.",
+  "summary": "La Montaña de Colores, conocida localmente como Vinicunca o Montaña de Siete Colores, es uno de los destinos turísticos más recientemente descubiertos de Perú. Esta maravilla geológica presenta franjas vibrantes de rojo, naranja, amarillo, verde y azul en sus laderas, creadas por diferentes depósitos minerales expuestos durante millones de años. El trek ofrece senderismo de gran altitud y vistas panorámicas espectaculares de la cordillera Ausangate.",
   "thumbnail": "/images/tours/rainbow-mountain-trek/main.jpg",
   "gallery": ["/rainbow-mountain.jpeg"],
   "highlights": [
@@ -57,7 +57,7 @@
       "distance": "6km ida y vuelta",
       "duration": "8-10 horas total",
       "elevation": "4,300m a 5,200m",
-      "description": "Salida temprana desde Cusco para el viaje de 3 horas al punto de partida. Trek a través de la impresionante cordillera Ausangate para llegar a la colorida Montaña de Colores.",
+      "summary": "Salida temprana desde Cusco para el viaje de 3 horas al punto de partida. Trek a través de la impresionante cordillera Ausangate para llegar a la colorida Montaña de Colores.",
       "meals": ["desayuno", "almuerzo"],
       "accommodation": "No incluido",
       "activities": [

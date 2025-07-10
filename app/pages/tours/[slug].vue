@@ -4,7 +4,7 @@
     <section class="relative bg-gray-900">
       <div class="relative h-64 sm:h-80 lg:h-96 overflow-hidden">
         <NuxtImg
-          :src="tour?.thumbnail || '/images/shared/landscape.jpg'"
+          :src="tour?.thumbnail || '/landscape.jpeg'"
           :alt="tour?.title"
           class="w-full h-full object-cover"
         />
@@ -31,7 +31,7 @@
             {{ tour?.title }}
           </h1>
           <p class="max-w-2xl text-gray-200 text-lg">
-            {{ tour?.description }}
+            {{ tour?.summary }}
           </p>
         </div>
       </div>
@@ -117,7 +117,7 @@
                       <span class="font-medium text-gray-700"
                         >{{ t('elevation') }}:</span
                       >
-                      <span class="text-gray-600">{{ day.altitude }}</span>
+                      <span class="text-gray-600">{{ day.elevation }}</span>
                     </div>
                     <div>
                       <span class="font-medium text-gray-700"
@@ -249,23 +249,14 @@
         </h2>
         <div class="space-y-6">
           <div
-            v-for="info in tour.additionalInfo"
-            :key="info.title"
+            v-for="(value, key) in tour.additionalInfo"
+            :key="key"
             class="bg-gray-50 p-6 rounded-lg"
           >
             <h3 class="mb-3 font-bold text-gray-900 text-lg">
-              {{ info.title }}
+              {{ t(key) }}
             </h3>
-            <p class="text-gray-600">{{ info.description }}</p>
-            <ul v-if="info.items" class="space-y-1 mt-3">
-              <li
-                v-for="item in info.items"
-                :key="item"
-                class="text-gray-600 text-sm"
-              >
-                • {{ item }}
-              </li>
-            </ul>
+            <p class="text-gray-600">{{ value }}</p>
           </div>
         </div>
       </div>
@@ -273,7 +264,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const { slug } = useRoute().params;
 const { t, locale } = useI18n();
 const route = useRoute();
@@ -308,7 +299,7 @@ useHead({
     {
       name: 'description',
       content:
-        tour.value?.description ||
+        tour.value?.summary ||
         'Discover amazing tours in Peru with our expert guides.',
     },
   ],

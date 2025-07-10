@@ -1,5 +1,36 @@
 import { z } from 'zod';
 
+// Simple contact form schema (from HomeContact.vue)
+export const SimpleContactFormSchema = z.object({
+  senderName: z.string().min(2, 'Name must be at least 2 characters'),
+  senderEmail: z.string().email('Please enter a valid email'),
+  senderSubject: z.string().min(5, 'Subject must be at least 5 characters'),
+  senderMessage: z.string().min(10, 'Message must be at least 10 characters'),
+});
+
+// Custom tour request schema (from custom-tour.vue)
+export const CustomTourRequestSchema = z.object({
+  name: z.string().min(2, 'Name must be at least 2 characters'),
+  email: z.string().email('Please enter a valid email'),
+  phone: z.string().optional(),
+  country: z.string().min(2, 'Please enter your country'),
+  dates: z.string().optional(),
+  duration: z.string().min(1, 'Please select duration'),
+  groupSize: z.string().min(1, 'Please select group size'),
+  budget: z.string().optional(),
+  fitnessLevel: z.string().min(1, 'Please select fitness level'),
+  interests: z.array(z.string()).optional(),
+  destinations: z.string().optional(),
+  dietary: z.string().optional(),
+  health: z.string().optional(),
+  message: z
+    .string()
+    .min(
+      20,
+      'Please tell me more about your dream adventure (at least 20 characters)'
+    ),
+});
+
 // Contact form schema
 export const ContactFormSchema = z.object({
   name: z
@@ -83,6 +114,8 @@ export const NewsletterSchema = z.object({
   language: z.enum(['en', 'es']).default('en'),
 });
 
+export type SimpleContactForm = z.infer<typeof SimpleContactFormSchema>;
+export type CustomTourRequest = z.infer<typeof CustomTourRequestSchema>;
 export type ContactForm = z.infer<typeof ContactFormSchema>;
 export type TourInquiry = z.infer<typeof TourInquirySchema>;
 export type Newsletter = z.infer<typeof NewsletterSchema>;

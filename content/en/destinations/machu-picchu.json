@@ -3,8 +3,8 @@
   "slug": "machu-picchu",
   "featured": true,
   "type": "Archaeological",
-  "description": "The iconic Lost City of the Incas, a UNESCO World Heritage Site perched high in the Andes mountains.",
-  "longDescription": "Machu Picchu, often called the 'Lost City of the Incas,' is Peru's most famous archaeological site. Built in the 15th century and abandoned during the Spanish conquest, this remarkably preserved Incan citadel sits majestically at 2,430 meters above sea level, surrounded by dramatic mountain peaks and lush cloud forests.",
+  "summary": "The iconic Lost City of the Incas, a UNESCO World Heritage Site perched high in the Andes mountains.",
+  "description": "Machu Picchu, often called the 'Lost City of the Incas,' is Peru's most famous archaeological site. Built in the 15th century and abandoned during the Spanish conquest, this remarkably preserved Incan citadel sits majestically at 2,430 meters above sea level, surrounded by dramatic mountain peaks and lush cloud forests.",
   "thumbnail": "/images/destinations/machu-picchu/main.jpg",
   "gallery": [
     "/machu-picchu.jpg",

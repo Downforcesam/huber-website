@@ -9,8 +9,8 @@
   "price": 55,
   "currency": "USD",
   "groupSize": "2-12 people",
-  "description": "Explore the heartland of the Inca Empire on this comprehensive tour of the Sacred Valley. Visit traditional villages, impressive archaeological sites, and colorful markets while learning about Andean culture and traditions.",
-  "longDescription": "The Sacred Valley of the Incas was once the agricultural heartland of the Inca Empire, providing food for the entire empire. This fertile valley, carved by the Urubamba River, is dotted with traditional Andean villages, impressive archaeological sites, and vibrant markets. Our tour takes you to the most important sites including Pisaq with its impressive terraces and famous market, Ollantaytambo with its massive fortress, and Chinchero with its traditional weaving techniques. The valley's lower altitude also makes it perfect for acclimatization before visiting Machu Picchu.",
+  "summary": "Explore the heartland of the Inca Empire on this comprehensive tour of the Sacred Valley. Visit traditional villages, impressive archaeological sites, and colorful markets while learning about Andean culture and traditions.",
+  "summary": "The Sacred Valley of the Incas was once the agricultural heartland of the Inca Empire, providing food for the entire empire. This fertile valley, carved by the Urubamba River, is dotted with traditional Andean villages, impressive archaeological sites, and vibrant markets. Our tour takes you to the most important sites including Pisaq with its impressive terraces and famous market, Ollantaytambo with its massive fortress, and Chinchero with its traditional weaving techniques. The valley's lower altitude also makes it perfect for acclimatization before visiting Machu Picchu.",
   "thumbnail": "/images/tours/sacred-valley-tour/main.jpg",
   "gallery": [
     "/sacred-valley.jpeg",
@@ -55,7 +55,7 @@
       "day": 1,
       "title": "Sacred Valley Exploration",
       "duration": "8-9 hours",
-      "description": "Full day exploring the most important sites of the Sacred Valley, from archaeological wonders to traditional markets.",
+      "summary": "Full day exploring the most important sites of the Sacred Valley, from archaeological wonders to traditional markets.",
       "meals": ["Not included"],
       "accommodation": "Not included",
       "activities": [

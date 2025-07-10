@@ -10,14 +10,17 @@
   "contact": "Contact",
   "contactUs": "Contact Us",
   "viewDetails": "View Details",
+
   "heroTitle": "Explore the majestic Peruvian Andes with Peru Excursions",
   "heroSubtitle": "Trek through ancient trails, uncover hidden gems, and immerse yourself in a journey of a lifetime. Start your adventure today.",
   "heroButton": "Start your adventure",
+
   "itinerary": "Itinerary",
   "additionalInfo": "Additional Information",
   "included": "Included",
   "notIncluded": "Not Included",
   "bring": "Bring",
+
   "send": "Send Message",
   "emailSuccess": "Message Sent!",
   "emailSuccessDescription": "Thank you for your message. I'll get back to you within 24 hours!",
@@ -25,6 +28,7 @@
   "emailErrorDescription": "There was an error sending your message. Please try WhatsApp instead.",
   "contactDescription": "Ready to start your Peruvian adventure? Send me a message or contact me directly via WhatsApp.",
   "whatsappContact": "WhatsApp Me",
+
   "toursDescription": "Discover our amazing tours in Peru. From trekking adventures to cultural experiences, find the perfect tour for your next adventure.",
   "category": "Category",
   "duration": "Duration",
@@ -42,13 +46,14 @@
   "clearFilters": "Clear Filters",
   "noToursFound": "No tours found",
   "tryDifferentFilters": "Try adjusting your filters to see more results",
-  "contactWhatsApp": "WhatsApp Me",
+
   "getInTouch": "Get in Touch",
   "yearsExperience": "Years Experience",
   "readyForAdventure": "Ready for Your Adventure?",
   "readyForAdventureText": "Let's create an unforgettable Peruvian experience tailored just for you.",
   "createCustomTour": "Create Custom Tour",
   "browseTours": "Browse Tours",
+
   "destinationsDescription": "Discover the most beautiful destinations in Peru. From ancient citadels to colorful mountains, explore the wonders of the Andes.",
   "elevation": "Elevation",
   "bestTime": "Best Time",
@@ -58,6 +63,7 @@
   "exploreDestination": "Explore Destination",
   "noDestinationsFound": "No destinations found",
   "destinationsComingSoon": "More destinations coming soon",
+
   "planYourJourney": "Plan Your Journey",
   "planYourJourneyText": "Ready to explore these incredible destinations? Let's create the perfect itinerary for your Peruvian adventure.",
   "customTourDescription": "Tell me about your dream Peru adventure and I'll create a personalized itinerary just for you. Every detail tailored to your interests, fitness level, and budget.",
@@ -114,6 +120,7 @@
   "readyExplore": "Ready to explore Peru? Contact us to plan your perfect adventure. Our expert team is here to create unforgettable memories for you.",
   "sendMessage": "Send us a message",
   "getBackWithin24": "We'll get back to you within 24 hours",
+
   "name": "Name",
   "enterName": "Enter your name",
   "email": "Email",
@@ -121,5 +128,23 @@
   "subject": "Subject",
   "enterSubject": "What's this about?",
   "message": "Message",
-  "enterMessage": "Tell me about your dream adventure..."
+  "enterMessage": "Tell me about your dream adventure...",
+
+  "introTitle": "Introduction Title",
+  "exploreDestinations": "Explore Destinations",
+  "region": "Region",
+  "seeAllDestinations": "See All Destinations",
+  "seeAllTours": "See All Tours",
+  "quickInfo": "Quick Info",
+  "groupSize": "Group Size",
+  "price": "Price",
+  "readyToExplore": "Ready to Explore?",
+  "readyToExploreText": "Contact us to plan your next Peruvian adventure",
+  "activities": "Activities",
+  "meals": "Meals",
+  "accommodation": "Accommodation",
+  "distance": "Distance",
+  "specialties": "Specialties",
+  "testimonials": "Testimonials",
+  "certifications": "Certifications"
 }

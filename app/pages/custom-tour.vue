@@ -242,33 +242,13 @@
 </template>
 
 <script setup>
-import { z } from 'zod';
+import { CustomTourRequestSchema } from '~/shared/schemas/contact';
 
 const { t } = useI18n();
 const toast = useToast();
 
 // Form validation schema
-const schema = z.object({
-  name: z.string().min(2, 'Name must be at least 2 characters'),
-  email: z.string().email('Please enter a valid email'),
-  phone: z.string().optional(),
-  country: z.string().min(2, 'Please enter your country'),
-  dates: z.string().optional(),
-  duration: z.string().min(1, 'Please select duration'),
-  groupSize: z.string().min(1, 'Please select group size'),
-  budget: z.string().optional(),
-  fitnessLevel: z.string().min(1, 'Please select fitness level'),
-  interests: z.array(z.string()).optional(),
-  destinations: z.string().optional(),
-  dietary: z.string().optional(),
-  health: z.string().optional(),
-  message: z
-    .string()
-    .min(
-      20,
-      'Please tell me more about your dream adventure (at least 20 characters)'
-    ),
-});
+const schema = CustomTourRequestSchema;
 
 // Form state
 const state = reactive({

@@ -8,8 +8,8 @@
   "price": 750,
   "currency": "USD",
   "groupSize": "2-8 personas",
-  "description": "Embárcate en un trek épico de 5 días a la 'Ciudad Hermana' de Machu Picchu. Esta aventura desafiante te lleva a través del dramático Cañón del Apurímac para llegar a la espectacular ciudadela inca de Choquequirao, uno de los sitios arqueológicos más remotos y prístinos del Perú.",
-  "longDescription": "Choquequirao, que significa 'Cuna de Oro' en quechua, a menudo es llamada la 'Ciudad Hermana' de Machu Picchu debido a su estilo arquitectónico similar y significado histórico. Este trek de 5 días ofrece una aventura verdaderamente auténtica a través de algunos de los paisajes más espectaculares del Perú, incluyendo el profundo Cañón del Apurímac y bosques nubosos prístinos. A diferencia del Camino Inca concurrido, esta ruta proporciona una experiencia pacífica e íntima con ruinas incas ancestrales y paisajes naturales impresionantes.",
+  "summary": "Embárcate en un trek épico de 5 días a la 'Ciudad Hermana' de Machu Picchu. Esta aventura desafiante te lleva a través del dramático Cañón del Apurímac para llegar a la espectacular ciudadela inca de Choquequirao, uno de los sitios arqueológicos más remotos y prístinos del Perú.",
+  "summary": "Choquequirao, que significa 'Cuna de Oro' en quechua, a menudo es llamada la 'Ciudad Hermana' de Machu Picchu debido a su estilo arquitectónico similar y significado histórico. Este trek de 5 días ofrece una aventura verdaderamente auténtica a través de algunos de los paisajes más espectaculares del Perú, incluyendo el profundo Cañón del Apurímac y bosques nubosos prístinos. A diferencia del Camino Inca concurrido, esta ruta proporciona una experiencia pacífica e íntima con ruinas incas ancestrales y paisajes naturales impresionantes.",
   "thumbnail": "/images/tours/choquequirao-trek/main.jpg",
   "gallery": ["/trekking.jpeg"],
   "highlights": [
@@ -59,7 +59,7 @@
       "distance": "12km",
       "duration": "6-7 horas",
       "elevation": "2,850m a 1,560m",
-      "description": "Salida temprana desde Cusco hacia el pueblo de Cachora. Comienza el trekking a través del Cañón del Apurímac, descendiendo a nuestro primer campamento en La Playa.",
+      "summary": "Salida temprana desde Cusco hacia el pueblo de Cachora. Comienza el trekking a través del Cañón del Apurímac, descendiendo a nuestro primer campamento en La Playa.",
       "meals": ["desayuno", "almuerzo", "cena"],
       "accommodation": "Campamento",
       "activities": [
@@ -75,7 +75,7 @@
       "distance": "8km",
       "duration": "6-8 horas",
       "elevation": "1,560m a 3,050m",
-      "description": "Ascenso desafiante a través del cañón para llegar al sitio arqueológico de Choquequirao. Experimenta el cambio dramático de vegetación de bosque seco a bosque nuboso.",
+      "summary": "Ascenso desafiante a través del cañón para llegar al sitio arqueológico de Choquequirao. Experimenta el cambio dramático de vegetación de bosque seco a bosque nuboso.",
       "meals": ["desayuno", "almuerzo", "cena"],
       "accommodation": "Campamento",
       "activities": [
@@ -91,7 +91,7 @@
       "distance": "5km",
       "duration": "Exploración de día completo",
       "elevation": "3,050m",
-      "description": "Día completo explorando el magnífico complejo arqueológico de Choquequirao. Visita todos los sectores incluyendo terrazas, templos y la plaza principal.",
+      "summary": "Día completo explorando el magnífico complejo arqueológico de Choquequirao. Visita todos los sectores incluyendo terrazas, templos y la plaza principal.",
       "meals": ["desayuno", "almuerzo", "cena"],
       "accommodation": "Campamento",
       "activities": [
@@ -108,7 +108,7 @@
       "distance": "10km",
       "duration": "6-7 horas",
       "elevation": "3,050m a 1,900m",
-      "description": "Comienza nuestro viaje de regreso, descendiendo de vuelta a través del cañón al pacífico campamento de Chiquisca.",
+      "summary": "Comienza nuestro viaje de regreso, descendiendo de vuelta a través del cañón al pacífico campamento de Chiquisca.",
       "meals": ["desayuno", "almuerzo", "cena"],
       "accommodation": "Campamento",
       "activities": [
@@ -123,7 +123,7 @@
       "distance": "8km",
       "duration": "4-5 horas",
       "elevation": "1,900m a 2,850m",
-      "description": "Ascenso final al paso Capuliyoc y regreso a Cusco. Visita opcional al sitio arqueológico de Saywite.",
+      "summary": "Ascenso final al paso Capuliyoc y regreso a Cusco. Visita opcional al sitio arqueológico de Saywite.",
       "meals": ["desayuno", "almuerzo"],
       "accommodation": "No incluido",
       "activities": [

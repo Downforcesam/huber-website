@@ -9,8 +9,8 @@
   "price": 35,
   "currency": "USD",
   "groupSize": "2-15 personas",
-  "description": "Explora el fértil Valle Sagrado de los Incas, hogar de impresionantes ruinas arqueológicas, pueblos tradicionales andinos y paisajes espectaculares. Este tour te lleva a través del corazón del antiguo Imperio Inca.",
-  "longDescription": "El Valle Sagrado, conocido como el 'Jardín del Inca', fue el centro agrícola y espiritual del Imperio Inca. Este valle fértil, irrigado por el río Urubamba, alberga algunos de los sitios arqueológicos más importantes de Perú, incluyendo Pisac, Ollantaytambo y Chinchero. Cada sitio revela diferentes aspectos de la ingeniería, arquitectura y espiritualidad inca, mientras que los pueblos tradicionales mantienen vivas las costumbres y tradiciones andinas.",
+  "summary": "Explora el fértil Valle Sagrado de los Incas, hogar de impresionantes ruinas arqueológicas, pueblos tradicionales andinos y paisajes espectaculares. Este tour te lleva a través del corazón del antiguo Imperio Inca.",
+  "summary": "El Valle Sagrado, conocido como el 'Jardín del Inca', fue el centro agrícola y espiritual del Imperio Inca. Este valle fértil, irrigado por el río Urubamba, alberga algunos de los sitios arqueológicos más importantes de Perú, incluyendo Pisac, Ollantaytambo y Chinchero. Cada sitio revela diferentes aspectos de la ingeniería, arquitectura y espiritualidad inca, mientras que los pueblos tradicionales mantienen vivas las costumbres y tradiciones andinas.",
   "thumbnail": "/images/tours/sacred-valley-tour/main.jpg",
   "gallery": ["/sacred-valley.jpeg"],
   "highlights": [
@@ -54,7 +54,7 @@
       "distance": "150km en auto",
       "duration": "10 horas",
       "elevation": "2,800m - 3,400m",
-      "description": "Recorre el Valle Sagrado visitando los sitios más importantes: Pisac, Ollantaytambo y Chinchero, cada uno con su propia historia y belleza única.",
+      "summary": "Recorre el Valle Sagrado visitando los sitios más importantes: Pisac, Ollantaytambo y Chinchero, cada uno con su propia historia y belleza única.",
       "meals": ["almuerzo"],
       "accommodation": "No incluido",
       "activities": [

@@ -8,8 +8,8 @@
   "price": 30,
   "currency": "USD",
   "groupSize": "2-15 personas",
-  "description": "Descubre dos de los sitios más fascinantes del Valle Sagrado: las salineras de Maras y el laboratorio agrícola de Moray. Este tour combina historia, ingeniería inca y paisajes únicos.",
-  "longDescription": "Maras y Moray representan dos aspectos fascinantes de la ingeniería y agricultura inca. Las salineras de Maras, con más de 3,000 pozas de sal, han sido utilizadas desde tiempos pre-incas y siguen produciendo sal de alta calidad. Moray, por otro lado, es un complejo de terrazas circulares que funcionó como un laboratorio agrícola experimental, donde los incas probaban diferentes cultivos en microclimas variados. Este tour te permite explorar ambos sitios y comprender la sofisticación de la civilización inca.",
+  "summary": "Descubre dos de los sitios más fascinantes del Valle Sagrado: las salineras de Maras y el laboratorio agrícola de Moray. Este tour combina historia, ingeniería inca y paisajes únicos.",
+  "summary": "Maras y Moray representan dos aspectos fascinantes de la ingeniería y agricultura inca. Las salineras de Maras, con más de 3,000 pozas de sal, han sido utilizadas desde tiempos pre-incas y siguen produciendo sal de alta calidad. Moray, por otro lado, es un complejo de terrazas circulares que funcionó como un laboratorio agrícola experimental, donde los incas probaban diferentes cultivos en microclimas variados. Este tour te permite explorar ambos sitios y comprender la sofisticación de la civilización inca.",
   "thumbnail": "/images/tours/maras-moray-tour/main.jpg",
   "gallery": ["/maras.jpeg", "/maras-moray.jpeg"],
   "highlights": [
@@ -53,7 +53,7 @@
       "distance": "80km en auto",
       "duration": "6 horas",
       "elevation": "3,300m - 3,500m",
-      "description": "Visita dos de los sitios más únicos del Valle Sagrado, aprendiendo sobre la producción tradicional de sal y la experimentación agrícola inca.",
+      "summary": "Visita dos de los sitios más únicos del Valle Sagrado, aprendiendo sobre la producción tradicional de sal y la experimentación agrícola inca.",
       "meals": ["almuerzo"],
       "accommodation": "No incluido",
       "activities": [

@@ -3,8 +3,8 @@
   "slug": "valle-sagrado",
   "featured": true,
   "type": "Valle/Arqueológico",
-  "description": "El corazón del Imperio Inca, un valle fértil salpicado de pueblos tradicionales y ruinas antiguas.",
-  "longDescription": "El Valle Sagrado de los Incas (Valle Sagrado) es un valle impresionante en los Andes peruanos que una vez fue el corazón del Imperio Inca. Este valle fértil, tallado por el río Urubamba, se extiende desde el pueblo de Pisaq hasta Ollantaytambo y está salpicado de pueblos andinos tradicionales, mercados coloridos, terrazas ancestrales y sitios arqueológicos impresionantes. La menor altitud del valle lo convierte en un lugar ideal para aclimatarse antes de visitar Machu Picchu.",
+  "summary": "El corazón del Imperio Inca, un valle fértil salpicado de pueblos tradicionales y ruinas antiguas.",
+  "description": "El Valle Sagrado de los Incas (Valle Sagrado) es un valle impresionante en los Andes peruanos que una vez fue el corazón del Imperio Inca. Este valle fértil, tallado por el río Urubamba, se extiende desde el pueblo de Pisaq hasta Ollantaytambo y está salpicado de pueblos andinos tradicionales, mercados coloridos, terrazas ancestrales y sitios arqueológicos impresionantes. La menor altitud del valle lo convierte en un lugar ideal para aclimatarse antes de visitar Machu Picchu.",
   "thumbnail": "/images/destinations/sacred-valley/main.jpg",
   "gallery": ["/sacred-valley.jpeg"],
   "location": {
