@@ -109,58 +109,48 @@
           <div class="gap-4 grid grid-cols-2">
             <!-- Large image -->
             <div class="col-span-2">
-              <div
-                class="bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-all duration-300"
-              >
+              <UCard class="overflow-hidden">
                 <NuxtImg
                   src="/images/landing/gallery-landscape.jpeg"
                   alt="Peruvian Landscape"
                   class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
                 />
-              </div>
+              </UCard>
             </div>
 
             <!-- Two smaller images -->
-            <div
-              class="bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-all duration-300"
-            >
+            <UCard class="overflow-hidden">
               <NuxtImg
                 src="/images/landing/gallery-cusco-architecture.jpeg"
                 alt="Cusco Architecture"
                 class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
               />
-            </div>
+            </UCard>
 
-            <div
-              class="bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-all duration-300"
-            >
+            <UCard class="overflow-hidden">
               <NuxtImg
                 src="/images/landing/gallery-maras-salt-flats.jpeg"
                 alt="Maras Salt Flats"
                 class="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
               />
-            </div>
+            </UCard>
 
             <!-- Bottom row -->
-            <div
-              class="bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-all duration-300"
-            >
+            <UCard class="overflow-hidden">
               <NuxtImg
                 src="/images/landing/gallery-home-stay.jpeg"
                 alt="Local Home Stay"
                 class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
               />
-            </div>
+            </UCard>
 
-            <div
-              class="bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-all duration-300"
-            >
+            <UCard class="overflow-hidden">
               <NuxtImg
                 src="/images/landing/gallery-machu-picchu-llama.jpeg"
                 alt="Machu Picchu Llama"
                 class="w-full h-40 object-cover hover:scale-105 transition-transform duration-300"
               />
-            </div>
+            </UCard>
           </div>
         </div>
       </div>

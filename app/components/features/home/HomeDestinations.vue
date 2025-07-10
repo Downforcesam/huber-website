@@ -18,7 +18,8 @@
         <UCard
           v-for="destination in destinations"
           :key="destination.slug"
-          class="group relative bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer"
+          :to="localePath(`/destinations/${destination.slug}`)"
+          class="group cursor-pointer"
         >
           <template #header>
             <!-- Destination image -->

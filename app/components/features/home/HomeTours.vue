@@ -25,11 +25,11 @@
         v-else
         class="gap-6 lg:gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
-        <div
+        <UCard
           v-for="tour in tours"
           :key="tour.slug"
-          class="group relative bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer"
-          @click="navigateToTour(tour.slug)"
+          :to="localePath(`/tours/${tour.slug}`)"
+          class="group cursor-pointer"
         >
           <!-- Tour image -->
           <div
@@ -119,7 +119,7 @@
               </svg>
             </div>
           </div>
-        </div>
+        </UCard>
       </div>
 
       <!-- See All Tours Button -->

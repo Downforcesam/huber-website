@@ -17,7 +17,7 @@
 
       <div class="mx-auto max-w-lg">
         <!-- Contact Form -->
-        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+        <UCard class="shadow-lg">
           <div class="p-6 pb-2 text-center">
             <h3 class="mb-1 font-bold text-gray-900 text-2xl">
               Send us a message
@@ -104,7 +104,7 @@
               </div>
             </UForm>
           </div>
-        </div>
+        </UCard>
       </div>
     </div>
   </section>

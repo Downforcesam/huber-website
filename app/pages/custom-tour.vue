@@ -17,7 +17,7 @@
     <!-- Form section -->
     <div class="mx-auto px-4 py-12 sm:py-16 container">
       <div class="mx-auto max-w-4xl">
-        <div class="bg-white shadow-sm p-6 sm:p-8 rounded-xl">
+        <UCard class="shadow-sm">
           <UForm
             :schema="schema"
             :state="state"
@@ -232,7 +232,7 @@
               </p>
             </div>
           </UForm>
-        </div>
+        </UCard>
       </div>
     </div>
 
