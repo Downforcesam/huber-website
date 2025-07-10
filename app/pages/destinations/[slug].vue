@@ -25,9 +25,6 @@
           <h1 class="mb-2 font-bold text-3xl sm:text-4xl lg:text-5xl">
             {{ destination?.title }}
           </h1>
-          <p class="text-gray-200 text-lg">
-            {{ destination?.location }}
-          </p>
         </div>
       </div>
     </div>
