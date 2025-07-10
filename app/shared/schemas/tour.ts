@@ -11,6 +11,17 @@ export const ItineraryItemSchema = z.object({
   elevation: z.string().optional(),
   distance: z.string().optional(),
   duration: z.string().optional(),
+  images: z.array(z.string()).optional(), // Images specific to this day/stop
+  location: z.string().optional(), // Location name for this day/stop
+});
+
+export const PricingOptionSchema = z.object({
+  name: z.string().min(1),
+  price: z.number().positive(),
+  currency: z.string().default('USD'),
+  description: z.string().optional(),
+  features: z.array(z.string()).optional(),
+  popular: z.boolean().default(false),
 });
 
 export const AdditionalInfoSchema = z.record(z.string()).optional();
@@ -22,6 +33,8 @@ export const TourSchema = z.object({
   summary: z.string().min(1), // Short version for cards/hero
   description: z.string().min(1), // Full detailed description
   thumbnail: z.string(),
+  heroImage: z.string().optional(), // Large hero image for detail page
+  mapImage: z.string().optional(), // Route map image
   gallery: z.array(z.string()).optional(),
   category: z.string().min(1),
   difficulty: z.string().min(1),
@@ -29,6 +42,7 @@ export const TourSchema = z.object({
   destinations: z.array(z.string()).optional(),
   price: z.number().positive(),
   currency: z.string().default('USD'),
+  pricingOptions: z.array(PricingOptionSchema).optional(), // Multiple pricing options
   groupSize: z.string().optional(),
   featured: z.boolean().default(false),
   highlights: z.array(z.string()).optional(),
@@ -81,3 +95,4 @@ export type TourSummary = z.infer<typeof TourSummarySchema>;
 export type TourFilters = z.infer<typeof TourFiltersSchema>;
 export type ItineraryItem = z.infer<typeof ItineraryItemSchema>;
 export type AdditionalInfo = z.infer<typeof AdditionalInfoSchema>;
+export type PricingOption = z.infer<typeof PricingOptionSchema>;

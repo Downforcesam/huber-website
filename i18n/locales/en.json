@@ -156,5 +156,18 @@
   "planYourVisit": "Plan Your Visit",
   "planYourVisitText": "Ready to explore this destination? Let's plan your perfect adventure together.",
   "fromCusco": "From Cusco",
-  "transportation": "Transportation"
+  "transportation": "Transportation",
+
+  "overview": "Overview",
+  "routeMap": "Route Map",
+  "gallery": "Gallery",
+  "whatsIncluded": "What's Included",
+  "whatToBring": "What to Bring",
+  "pricingOptions": "Pricing Options",
+  "mostPopular": "Most Popular",
+  "selectOption": "Select Option",
+  "startingFrom": "Starting From",
+  "physicalRequirement": "Physical Requirement",
+  "food": "Food",
+  "safety": "Safety"
 }

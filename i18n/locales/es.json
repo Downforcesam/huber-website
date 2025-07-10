@@ -156,5 +156,18 @@
   "planYourVisit": "Planifica tu Visita",
   "planYourVisitText": "¿Listo para explorar este destino? Planifiquemos tu aventura perfecta juntos.",
   "fromCusco": "Desde Cusco",
-  "transportation": "Transporte"
+  "transportation": "Transporte",
+
+  "overview": "Resumen",
+  "routeMap": "Mapa de Ruta",
+  "gallery": "Galería",
+  "whatsIncluded": "Qué Está Incluido",
+  "whatToBring": "Qué Traer",
+  "pricingOptions": "Opciones de Precio",
+  "mostPopular": "Más Popular",
+  "selectOption": "Seleccionar Opción",
+  "startingFrom": "Desde",
+  "physicalRequirement": "Requerimiento Físico",
+  "food": "Comida",
+  "safety": "Seguridad"
 }

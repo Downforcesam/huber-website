@@ -8,10 +8,11 @@
       <div
         class="gap-y-4 sm:gap-x-6 sm:gap-y-10 lg:gap-x-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
       >
-        <div
+        <NuxtLink
           v-for="tour in trekkingTours"
           :key="tour._id"
-          class="group relative flex flex-col bg-white border border-gray-200 rounded-lg overflow-hidden"
+          :to="localePath(`/tours/${tour.slug}`)"
+          class="group relative flex flex-col bg-white hover:shadow-lg border border-gray-200 rounded-lg overflow-hidden transition-shadow"
         >
           <div
             class="bg-gray-200 group-hover:opacity-75 sm:h-96 aspect-h-4 aspect-w-3 sm:aspect-none"
@@ -24,10 +25,7 @@
           </div>
           <div class="flex flex-col flex-1 space-y-2 p-4">
             <h3 class="font-medium text-gray-900 text-sm">
-              <NuxtLink :to="localePath(`/tours/${tour.slug}`)">
-                <span aria-hidden="true" class="absolute inset-0" />
-                {{ tour.title }}
-              </NuxtLink>
+              {{ tour.title }}
             </h3>
             <p class="text-gray-500 text-sm">
               <span
@@ -44,7 +42,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </div>
