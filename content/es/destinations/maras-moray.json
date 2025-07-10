@@ -1,51 +1,69 @@
 {
   "title": "Maras y Moray",
   "slug": "maras-moray",
-  "type": "Arqueológico/Natural",
-  "summary": "Antiguos laboratorios agrícolas incas y espectaculares terrazas de sal que muestran la ingeniería andina ingeniosa.",
-  "description": "Maras y Moray representan dos de los ejemplos más fascinantes del ingenio inca en el Valle Sagrado. Moray presenta misteriosas terrazas circulares que sirvieron como laboratorio agrícola donde los incas experimentaron con diferentes cultivos a varias altitudes. Cerca, las minas de sal de Maras han estado produciendo sal durante más de 500 años a través de un sistema intrincado de estanques aterrazados alimentados por manantiales de sal naturales, creando un paisaje geométrico impresionante de piscinas blancas y doradas.",
+  "featured": false,
+  "type": "Arqueológico",
+  "summary": "Las antiguas terrazas circulares de Moray y las salineras de Maras, ejemplos únicos de ingeniería inca.",
+  "description": "Maras y Moray son dos sitios arqueológicos únicos en el Valle Sagrado que muestran la ingeniería avanzada de los incas. Moray presenta terrazas circulares concéntricas que funcionaban como un laboratorio agrícola experimental, mientras que Maras alberga miles de pozos de sal que han sido utilizados desde tiempos preincaicos hasta la actualidad.",
   "thumbnail": "/images/destinations/maras-moray/main.jpg",
-  "gallery": ["/maras.jpeg", "/maras-moray.jpeg"],
-  "location": {
-    "region": "Cusco",
-    "country": "Perú",
-    "coordinates": {
-      "lat": -13.3847,
-      "lng": -72.2031
-    }
-  },
-  "elevation": "3,500m (11,480ft)",
-  "climate": "Subtropical de altura",
-  "bestTimeToVisit": "Abril a octubre (época seca)",
+  "gallery": [
+    "/images/destinations/maras-moray/main.jpg",
+    "/images/destinations/maras-moray/gallery-1.jpg"
+  ],
+  "location": "Valle Sagrado, Cusco, Perú",
+  "elevation": "3,300m (10,800ft)",
+  "climate": "Templado de altura",
+  "bestTime": "Mayo a septiembre (época seca)",
   "highlights": [
-    "Terrazas agrícolas circulares de Moray",
-    "Terrazas y piscinas de sal de Maras",
-    "Experimentación agrícola inca",
-    "Cosecha tradicional de sal",
-    "Patrones geométricos espectaculares",
-    "Vistas panorámicas del Valle Sagrado"
-  ],
-  "features": [
-    "Innovación agrícola inca",
-    "Producción tradicional de sal",
+    "Terrazas circulares de Moray",
+    "Salineras de Maras",
+    "Ingeniería inca avanzada",
     "Fotografía de paisajes únicos",
-    "Preservación del patrimonio cultural",
-    "Fácil accesibilidad desde Cusco"
+    "Historia agrícola",
+    "Cultura local"
   ],
-  "accessibility": {
-    "difficulty": "Fácil a Moderado",
-    "facilities": "Centros de visitantes, estacionamiento, guías locales",
-    "transportation": "45 minutos en auto desde Cusco"
+  "activities": [
+    "Visitas guiadas arqueológicas",
+    "Fotografía de paisajes",
+    "Compra de sal artesanal",
+    "Aprendizaje sobre agricultura inca",
+    "Experiencias culturales",
+    "Senderismo ligero"
+  ],
+  "culturalSites": [
+    "Terrazas circulares de Moray",
+    "Salineras de Maras",
+    "Pueblo de Maras",
+    "Centro de interpretación"
+  ],
+  "travelTips": [
+    "Llevar agua y protector solar",
+    "Usar zapatos cómodos",
+    "Respetar las salineras",
+    "Comprar sal local",
+    "Contratar guía local",
+    "Llevar efectivo"
+  ],
+  "gettingThere": {
+    "fromCusco": "Bus o tour privado (1 hora)",
+    "transportation": ["Bus público", "Tour privado", "Taxi"],
+    "duration": "1 hora desde Cusco"
   },
-  "culturalSignificance": "Moray sirvió como centro de investigación agrícola inca con microclimas para experimentación de cultivos. Maras representa el conocimiento indígena continuo en producción de sal que abarca siglos.",
-  "sites": {
-    "moray": {
-      "summary": "Anfiteatros aterrazados circulares usados para experimentos agrícolas",
-      "features": "Variaciones de temperatura, pruebas de cultivos, propósitos ceremoniales"
-    },
-    "maras": {
-      "summary": "Minas de sal ancestrales con más de 3,000 piscinas aterrazadas",
-      "features": "Manantiales de sal naturales, cosecha tradicional, importancia económica"
-    }
+  "accommodation": {
+    "types": [
+      "Hoteles en Cusco",
+      "Lodges en Valle Sagrado",
+      "Hostales familiares"
+    ],
+    "recommendations": [
+      "Hospedarse en Cusco o Valle Sagrado",
+      "Reservar con anticipación"
+    ]
+  },
+  "additionalInfo": {
+    "accessibility": "Accesible, senderos bien mantenidos",
+    "safety": "Área segura, precauciones normales",
+    "currency": "Sol Peruano (PEN)",
+    "language": "Español, Quechua, guías en inglés disponibles"
   }
 }

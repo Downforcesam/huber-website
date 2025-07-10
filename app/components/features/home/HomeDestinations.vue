@@ -15,79 +15,125 @@
       <div
         class="gap-6 lg:gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8"
       >
-        <UCard
-          v-for="destination in destinations"
+        <NuxtLink
+          v-for="destination in props.destinations"
           :key="destination.slug"
           :to="localePath(`/destinations/${destination.slug}`)"
-          class="group cursor-pointer"
+          class="group flex flex-col h-full cursor-pointer"
         >
-          <template #header>
-            <!-- Destination image -->
-            <div
-              class="relative bg-gray-200 h-64 sm:h-72 overflow-hidden group-hover:scale-105 transition-transform duration-300"
-            >
-              <NuxtImg
-                :src="destination.thumbnail"
-                :alt="destination.title"
-                class="w-full h-full object-cover"
-                loading="lazy"
-              />
-              <!-- Gradient overlay -->
+          <UCard class="flex flex-col h-full">
+            <template #header>
+              <!-- Destination image -->
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-              ></div>
-
-              <!-- Destination info overlay -->
-              <div class="bottom-4 left-4 absolute text-white">
-                <h3 class="mb-1 font-bold text-xl sm:text-2xl">
-                  {{ destination.title }}
-                </h3>
-                <p class="text-gray-200 text-sm">Peru</p>
-              </div>
-            </div>
-          </template>
-
-          <!-- Content -->
-          <div class="p-6">
-            <p class="mb-4 text-gray-600 text-sm line-clamp-3">
-              {{ destination.summary }}
-            </p>
-
-            <!-- Key info -->
-            <div class="gap-4 grid grid-cols-2 mb-4 text-sm">
-              <div>
-                <span class="text-gray-500">{{ t('elevation') }}:</span>
-                <span class="ml-1 font-medium">{{
-                  destination.elevation
-                }}</span>
-              </div>
-              <div>
-                <span class="text-gray-500">{{ t('region') }}:</span>
-                <span class="ml-1 font-medium">Peru</span>
-              </div>
-            </div>
-
-            <!-- CTA -->
-            <div
-              class="flex items-center font-medium text-blue-600 group-hover:text-blue-700 text-sm"
-            >
-              {{ t('exploreDestination') }}
-              <svg
-                class="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+                class="relative bg-gray-200 h-64 sm:h-72 overflow-hidden group-hover:scale-105 transition-transform duration-300"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M9 5l7 7-7 7"
+                <NuxtImg
+                  :src="destination.thumbnail"
+                  :alt="destination.title"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
                 />
-              </svg>
+                <!-- Gradient overlay -->
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+                ></div>
+
+                <!-- Destination info overlay -->
+                <div class="bottom-4 left-4 absolute text-white">
+                  <h3 class="mb-1 font-bold text-xl sm:text-2xl">
+                    {{ destination.title }}
+                  </h3>
+                  <p class="text-gray-200 text-sm">Peru</p>
+                </div>
+              </div>
+            </template>
+
+            <!-- Content -->
+            <div class="flex flex-col flex-1 p-6">
+              <p class="mb-4 text-gray-600 text-sm line-clamp-3">
+                {{ destination.summary }}
+              </p>
+
+              <!-- Key info -->
+              <div class="gap-4 grid grid-cols-2 mb-4 text-sm">
+                <div>
+                  <span class="text-gray-500">{{ t('elevation') }}:</span>
+                  <span class="ml-1 font-medium">{{
+                    destination.elevation
+                  }}</span>
+                </div>
+                <div>
+                  <span class="text-gray-500">{{ t('region') }}:</span>
+                  <span class="ml-1 font-medium">Peru</span>
+                </div>
+              </div>
+
+              <!-- Highlights -->
+              <div v-if="destination.highlights" class="mb-4">
+                <h4 class="mb-2 font-semibold text-gray-700 text-sm">
+                  {{ t('highlights') }}:
+                </h4>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    v-for="highlight in destination.highlights?.slice(0, 3)"
+                    :key="highlight"
+                    class="inline-block bg-blue-100 px-2 py-1 rounded-full text-blue-800 text-xs"
+                  >
+                    {{ highlight }}
+                  </span>
+                  <span
+                    v-if="destination.highlights?.length > 3"
+                    class="inline-block bg-gray-100 px-2 py-1 rounded-full text-gray-600 text-xs"
+                  >
+                    +{{ destination.highlights.length - 3 }} {{ t('more') }}
+                  </span>
+                </div>
+              </div>
+
+              <!-- Activities -->
+              <div v-if="destination.activities" class="mb-4">
+                <h4 class="mb-2 font-semibold text-gray-700 text-sm">
+                  {{ t('activities') }}:
+                </h4>
+                <div class="flex flex-wrap gap-1">
+                  <span
+                    v-for="activity in destination.activities?.slice(0, 2)"
+                    :key="activity"
+                    class="inline-block bg-green-100 px-2 py-1 rounded-full text-green-800 text-xs"
+                  >
+                    {{ activity }}
+                  </span>
+                  <span
+                    v-if="destination.activities?.length > 2"
+                    class="inline-block bg-gray-100 px-2 py-1 rounded-full text-gray-600 text-xs"
+                  >
+                    +{{ destination.activities.length - 2 }} {{ t('more') }}
+                  </span>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div
+                class="flex items-center mt-auto font-medium text-blue-600 group-hover:text-blue-700 text-sm"
+              >
+                {{ t('exploreDestination') }}
+                <svg
+                  class="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1 duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </UCard>
+          </UCard>
+        </NuxtLink>
       </div>
 
       <!-- See all destinations button -->
@@ -136,26 +182,15 @@
 
 <script setup lang="ts">
 const { t } = useI18n();
-const { locale } = useI18n();
 const localePath = useLocalePath();
 
-// Reactive collection name based on current locale
-const collectionName = computed(() =>
-  locale.value === 'es' ? 'esDestinations' : 'enDestinations'
-);
+// Accept destinations as prop instead of fetching internally
+interface Props {
+  destinations?: any[];
+}
 
-// Fetch featured destinations using Nuxt Content v3 API
-const { data: allDestinations } = await useAsyncData(
-  () => `home-featured-destinations-${locale.value}`,
-  () => queryCollection(collectionName.value).all()
-);
-
-// Filter for featured destinations only
-const destinations = computed(() => {
-  if (!allDestinations.value) return [];
-  return allDestinations.value
-    .filter((destination) => destination.featured === true)
-    .slice(0, 3); // Limit to top 3
+const props = withDefaults(defineProps<Props>(), {
+  destinations: () => [],
 });
 
 const features = [

@@ -1,53 +1,67 @@
 {
-  "title": "Cusco City",
+  "title": "Cusco",
   "slug": "cusco",
   "featured": true,
-  "type": "Colonial/Historical",
-  "summary": "The historic capital of the Inca Empire, now a vibrant colonial city and gateway to Machu Picchu.",
-  "description": "Cusco, once the capital of the mighty Inca Empire, is a fascinating blend of Inca and colonial architecture. Known as the 'Imperial City,' this UNESCO World Heritage Site serves as the perfect base for exploring the Sacred Valley and Machu Picchu. Its cobblestone streets, ancient walls, and vibrant markets tell the story of Peru's rich cultural heritage.",
+  "type": "Cultural",
+  "summary": "The ancient capital of the Inca Empire, a Spanish colonial city built on Inca foundations.",
+  "description": "Cusco, the ancient capital of the Inca Empire, is a fascinating city where Inca and Spanish colonial history intertwine. Designated as a UNESCO World Heritage Site, Cusco offers a unique blend of original Inca architecture, Spanish colonial buildings constructed on Inca foundations, and a vibrant contemporary culture.",
   "thumbnail": "/images/destinations/cusco/main.jpg",
   "gallery": [
     "/images/destinations/cusco/main.jpg",
     "/images/destinations/cusco/gallery-1.jpg",
     "/images/destinations/cusco/gallery-2.jpg"
   ],
-  "location": {
-    "region": "Cusco",
-    "country": "Peru",
-    "coordinates": {
-      "lat": -13.5319,
-      "lng": -71.9675
-    }
-  },
+  "location": "Cusco, Peru",
   "elevation": "3,400m (11,200ft)",
-  "climate": "Highland subtropical",
-  "bestTimeToVisit": "April to October (dry season)",
+  "climate": "Temperate highland",
+  "bestTime": "May to September (dry season)",
   "highlights": [
     "Plaza de Armas",
-    "Qorikancha Temple",
-    "Sacsayhuamán fortress",
-    "San Pedro Market",
-    "Colonial architecture",
-    "Inca stone walls"
+    "Sacsayhuamán",
+    "San Blas neighborhood",
+    "Cusco Cathedral",
+    "Qorikancha",
+    "San Pedro Market"
   ],
-  "features": [
-    "UNESCO World Heritage Site",
-    "Colonial and Inca architecture",
-    "Vibrant local culture",
-    "Traditional markets",
-    "Gateway to Sacred Valley"
+  "activities": [
+    "Guided historical tours",
+    "Archaeological site exploration",
+    "Craft shopping",
+    "Local gastronomy",
+    "Urban photography",
+    "Cultural experiences"
   ],
-  "accessibility": {
-    "difficulty": "Easy",
-    "facilities": "Full city amenities, hotels, restaurants, hospitals",
-    "transportation": "International airport, buses, taxis"
+  "culturalSites": [
+    "Plaza de Armas",
+    "Sacsayhuamán",
+    "Qorikancha",
+    "Cusco Cathedral",
+    "San Blas Church"
+  ],
+  "travelTips": [
+    "Acclimatize to altitude",
+    "Carry water and coca",
+    "Use sunscreen",
+    "Book tours in advance",
+    "Respect sacred sites",
+    "Bring cash for markets"
+  ],
+  "gettingThere": {
+    "fromLima": "Direct flight (1 hour) or bus (20 hours)",
+    "transportation": ["Plane", "Bus", "Taxi from airport"],
+    "duration": "1 hour by plane from Lima"
   },
-  "culturalSignificance": "Former capital of the Inca Empire, center of Andean culture and traditions, and the historic heart of Peru.",
-  "cuisine": [
-    "Cuy (guinea pig)",
-    "Alpaca meat",
-    "Quinoa dishes",
-    "Traditional Andean ingredients",
-    "Pisco cocktails"
-  ]
+  "accommodation": {
+    "types": ["Boutique hotels", "Hostels", "Airbnb", "Luxury hotels"],
+    "recommendations": [
+      "Book in advance during high season",
+      "Choose location near historic center"
+    ]
+  },
+  "additionalInfo": {
+    "accessibility": "Accessible city, some steep streets",
+    "safety": "Safe city, normal precautions",
+    "currency": "Peruvian Sol (PEN)",
+    "language": "Spanish, Quechua, English in tourist areas"
+  }
 }

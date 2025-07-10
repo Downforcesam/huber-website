@@ -32,19 +32,19 @@
           <ul class="space-y-3">
             <li v-for="link in quickLinks" :key="link.name">
               <NuxtLink
-                v-if="!link.href.startsWith('/#')"
+                v-if="!link.href.startsWith('#')"
                 :to="link.href"
                 class="text-gray-300 hover:text-white transition-colors duration-200"
               >
                 {{ link.name }}
               </NuxtLink>
-              <a
+              <button
                 v-else
-                :href="link.href"
-                class="text-gray-300 hover:text-white transition-colors duration-200"
+                @click="handleFooterAnchorClick(link.href)"
+                class="bg-transparent border-none w-full text-gray-300 hover:text-white text-left transition-colors duration-200 cursor-pointer"
               >
                 {{ link.name }}
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -106,7 +106,7 @@ const quickLinks = [
   { name: 'Tours', href: '/tours' },
   { name: 'Destinations', href: '/destinations' },
   { name: 'About Us', href: '/about' },
-  { name: 'Contact', href: '/#contact' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 const socialLinks = [
@@ -131,4 +131,15 @@ const socialLinks = [
     icon: 'i-simple-icons-youtube',
   },
 ];
+
+function handleFooterAnchorClick(anchor: string) {
+  if (!anchor || typeof anchor !== 'string' || anchor.trim() === '') {
+    return;
+  }
+
+  const element = document.querySelector(anchor);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 </script>

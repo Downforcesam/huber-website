@@ -168,6 +168,12 @@ const mobileMenuOpen = ref(false);
 
 // Handle anchor link clicks with proper navigation
 function handleAnchorClick(anchor: string) {
+  // Validate anchor parameter
+  if (!anchor || typeof anchor !== 'string' || anchor.trim() === '') {
+    console.warn('Invalid anchor provided to handleAnchorClick:', anchor);
+    return;
+  }
+
   if (route.path === '/') {
     // Already on home page, just scroll
     const element = document.querySelector(anchor);

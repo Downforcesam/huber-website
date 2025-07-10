@@ -1,46 +1,66 @@
 {
   "title": "Montaña de Colores",
-  "slug": "montana-colores",
-  "type": "Natural/Geológico",
-  "summary": "Una maravilla natural impresionante con depósitos minerales coloridos creando laderas montañosas con rayas arcoíris.",
-  "description": "La Montaña de Colores, conocida localmente como Vinicunca o Montaña de Siete Colores, es una de las maravillas naturales más fotografiadas de Perú. Esta maravilla geológica muestra franjas vibrantes de rojo, naranja, amarillo, verde y azul en sus laderas, creadas por diferentes depósitos minerales expuestos durante millones de años. Ubicada en los Andes al sureste de Cusco, este destino turístico relativamente descubierto recientemente ofrece senderismo de gran altitud y vistas panorámicas espectaculares.",
+  "slug": "rainbow-mountain",
+  "featured": false,
+  "type": "Natural",
+  "summary": "La vibrante Montaña de Colores (Vinicunca), una formación geológica única con bandas de colores naturales.",
+  "description": "La Montaña de Colores, también conocida como Vinicunca, es una formación geológica única en los Andes peruanos. Sus laderas exhiben bandas vibrantes de colores naturales - rojo, amarillo, verde, azul y púrpura - creadas por diferentes minerales y sedimentos depositados durante millones de años. Esta maravilla natural se encuentra a una altitud extrema y ofrece vistas espectaculares de los picos nevados de los Andes.",
   "thumbnail": "/images/destinations/rainbow-mountain/main.jpg",
-  "gallery": ["/rainbow-mountain.jpeg"],
-  "location": {
-    "region": "Cusco",
-    "country": "Perú",
-    "coordinates": {
-      "lat": -13.8658,
-      "lng": -71.3032
-    }
-  },
+  "gallery": ["/images/destinations/rainbow-mountain/main.jpg"],
+  "location": "Cusco, Perú",
   "elevation": "5,200m (17,060ft)",
-  "climate": "Alpino alto",
-  "bestTimeToVisit": "Mayo a septiembre (época seca)",
+  "climate": "Alpino extremo",
+  "bestTime": "Mayo a septiembre (época seca)",
   "highlights": [
-    "Laderas vibrantes de colores arcoíris",
-    "Vistas panorámicas andinas",
-    "Cordillera Ausangate",
-    "Senderismo de gran altitud",
-    "Formaciones geológicas únicas",
-    "Rebaños de alpacas y llamas"
+    "Bandas de colores naturales",
+    "Vistas panorámicas de los Andes",
+    "Fotografía de paisajes únicos",
+    "Experiencia de altitud extrema",
+    "Cultura local andina",
+    "Senderos de trekking"
   ],
-  "features": [
-    "Maravilla geológica natural",
-    "Desafío de gran altitud",
-    "Paraíso fotográfico",
-    "Ubicación montañosa remota",
-    "Encuentros culturales con comunidades locales"
+  "activities": [
+    "Trekking de día completo",
+    "Fotografía de paisajes",
+    "Experiencia cultural andina",
+    "Observación de fauna local",
+    "Visita a pueblos tradicionales",
+    "Aclimatación a altitud extrema"
   ],
-  "accessibility": {
-    "difficulty": "Desafiante (gran altitud)",
-    "facilities": "Instalaciones básicas en el punto de partida, refugios de montaña",
-    "transportation": "3 horas en auto desde Cusco + 1.5 horas de caminata"
+  "culturalSites": [
+    "Pueblo de Pitumarca",
+    "Comunidades andinas locales",
+    "Templos tradicionales",
+    "Mercados locales"
+  ],
+  "travelTips": [
+    "Aclimatarse en Cusco primero",
+    "Llevar ropa abrigada",
+    "Hidratarse constantemente",
+    "Usar protector solar fuerte",
+    "Contratar guía local",
+    "Llevar medicamentos para altitud"
+  ],
+  "gettingThere": {
+    "fromCusco": "Bus a Pitumarca, luego caminata (3-4 horas)",
+    "transportation": ["Bus", "Caminata", "Caballo (opcional)"],
+    "duration": "3-4 horas de caminata desde el punto de partida"
   },
-  "culturalSignificance": "Montaña sagrada (Apu) en la cosmología andina, considerada una deidad viviente por las comunidades locales, parte de rutas de peregrinaje ancestrales.",
-  "geologicalInfo": {
-    "formation": "Depósitos minerales de capas de roca sedimentaria",
-    "colors": "Óxido de hierro (rojo), azufre (amarillo), clorita (verde), goetita (naranja)",
-    "age": "Más de 14 millones de años"
+  "accommodation": {
+    "types": [
+      "Camping básico",
+      "Alojamiento en comunidades locales",
+      "Hoteles en Cusco (base)"
+    ],
+    "recommendations": [
+      "Hospedarse en Cusco la noche anterior",
+      "Llevar equipo de camping si es necesario"
+    ]
+  },
+  "additionalInfo": {
+    "accessibility": "Solo accesible por trekking desafiante",
+    "safety": "Altitud extrema, condiciones climáticas variables",
+    "currency": "Sol Peruano (PEN)",
+    "language": "Español, Quechua, guías disponibles"
   }
 }

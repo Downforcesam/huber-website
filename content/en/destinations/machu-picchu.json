@@ -11,17 +11,10 @@
     "/machu-picchu-lama.jpeg",
     "/machu-picchu-trip.jpeg"
   ],
-  "location": {
-    "region": "Cusco",
-    "country": "Peru",
-    "coordinates": {
-      "lat": -13.1631,
-      "lng": -72.545
-    }
-  },
+  "location": "Cusco, Peru",
   "elevation": "2,430m (7,970ft)",
   "climate": "Subtropical highland",
-  "bestTimeToVisit": "May to September (dry season)",
+  "bestTime": "May to September (dry season)",
   "highlights": [
     "UNESCO World Heritage Site",
     "Inca Trail access point",
@@ -30,23 +23,49 @@
     "Intihuatana stone",
     "Agricultural terraces"
   ],
-  "features": [
-    "Archaeological significance",
-    "Spectacular mountain views",
-    "Rich biodiversity",
-    "Cultural heritage",
-    "Photography opportunities"
+  "activities": [
+    "Guided archaeological tours",
+    "Hiking Huayna Picchu",
+    "Inca Trail trekking",
+    "Photography",
+    "Sunrise viewing",
+    "Cultural interpretation"
   ],
-  "accessibility": {
-    "difficulty": "Easy to Challenging (depending on route)",
-    "facilities": "Visitor center, restrooms, first aid",
-    "transportation": "Train + bus or hiking trails"
+  "culturalSites": [
+    "Temple of the Sun",
+    "Intihuatana stone",
+    "Temple of the Three Windows",
+    "Royal Tomb",
+    "Agricultural terraces"
+  ],
+  "travelTips": [
+    "Book tickets in advance",
+    "Arrive early for sunrise",
+    "Acclimatize in Cusco first",
+    "Bring water and snacks",
+    "Wear comfortable walking shoes",
+    "Respect the site's sacred nature"
+  ],
+  "gettingThere": {
+    "fromCusco": "Train to Aguas Calientes, then bus to Machu Picchu",
+    "transportation": ["Train", "Bus", "Hiking (Inca Trail)"],
+    "duration": "3-4 hours from Cusco"
   },
-  "culturalSignificance": "Sacred Inca citadel and astronomical observatory, representing the pinnacle of Inca architecture and urban planning.",
-  "wildlife": [
-    "Spectacled bears",
-    "Mountain viscachas",
-    "Over 400 bird species",
-    "Diverse flora including orchids"
-  ]
+  "accommodation": {
+    "types": [
+      "Hotels in Aguas Calientes",
+      "Luxury lodges",
+      "Camping (Inca Trail)"
+    ],
+    "recommendations": [
+      "Book accommodation in advance",
+      "Stay in Aguas Calientes for early access"
+    ]
+  },
+  "additionalInfo": {
+    "accessibility": "Moderate walking, some steep sections",
+    "safety": "Well-maintained paths, altitude considerations",
+    "currency": "Peruvian Sol (PEN)",
+    "language": "Spanish, English guides available"
+  }
 }

@@ -146,5 +146,14 @@
   "distance": "Distancia",
   "specialties": "Especialidades",
   "testimonials": "Testimonios",
-  "certifications": "Certificaciones"
+  "certifications": "Certificaciones",
+  "culturalSites": "Sitios Culturales",
+  "travelTips": "Consejos de Viaje",
+  "climate": "Clima",
+  "accessibility": "Accesibilidad",
+  "gettingThere": "Cómo Llegar",
+  "planYourVisit": "Planifica tu Visita",
+  "planYourVisitText": "¿Listo para explorar este destino? Planifiquemos tu aventura perfecta juntos.",
+  "fromCusco": "Desde Cusco",
+  "transportation": "Transporte"
 }

@@ -63,6 +63,7 @@ export const DestinationSchema = z.object({
   title: z.string(),
   slug: z.string(),
   featured: z.boolean().optional(),
+  type: z.string(), // Destination type (Archaeological, Natural, etc.)
   summary: z.string(), // Short version for cards
   description: z.string(), // Full detailed description
   location: z.string(),

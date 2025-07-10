@@ -12,7 +12,10 @@
       </div>
 
       <!-- Loading State -->
-      <div v-if="!tours || tours.length === 0" class="py-12 text-center">
+      <div
+        v-if="!props.tours || props.tours.length === 0"
+        class="py-12 text-center"
+      >
         <UIcon
           name="i-heroicons-arrow-path"
           class="mx-auto mb-4 w-8 h-8 animate-spin brand-teal"
@@ -26,7 +29,7 @@
         class="gap-6 lg:gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       >
         <UCard
-          v-for="tour in tours"
+          v-for="tour in props.tours"
           :key="tour.slug"
           :to="localePath(`/tours/${tour.slug}`)"
           class="group cursor-pointer"
@@ -151,23 +154,14 @@
 <script setup lang="ts">
 const { t } = useI18n();
 const localePath = useLocalePath();
-const { locale } = useI18n();
 
-// Reactive collection name based on current locale
-const collectionName = computed(() =>
-  locale.value === 'es' ? 'esTours' : 'enTours'
-);
+// Accept tours as prop instead of fetching internally
+interface Props {
+  tours?: any[];
+}
 
-// Fetch featured tours using Nuxt Content v3 API
-const { data: allTours } = await useAsyncData(
-  () => `home-featured-tours-${locale.value}`,
-  () => queryCollection(collectionName.value).all()
-);
-
-// Filter for featured tours only
-const tours = computed(() => {
-  if (!allTours.value) return [];
-  return allTours.value.filter((tour) => tour.featured === true).slice(0, 3); // Limit to top 3
+const props = withDefaults(defineProps<Props>(), {
+  tours: () => [],
 });
 
 function navigateToTour(slug: string) {

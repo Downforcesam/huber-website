@@ -1,46 +1,66 @@
 {
   "title": "Rainbow Mountain",
   "slug": "rainbow-mountain",
-  "type": "Natural/Geological",
-  "summary": "A stunning natural wonder featuring colorful mineral deposits creating rainbow-striped mountain slopes.",
-  "description": "Rainbow Mountain, known locally as Vinicunca or Montaña de Siete Colores (Mountain of Seven Colors), is one of Peru's most photographed natural wonders. This geological marvel showcases vibrant stripes of red, orange, yellow, green, and blue across its slopes, created by different mineral deposits exposed over millions of years. Located in the Andes southeast of Cusco, this relatively recently discovered tourist destination offers breathtaking high-altitude hiking and spectacular panoramic views.",
+  "featured": false,
+  "type": "Natural",
+  "summary": "The vibrant Rainbow Mountain (Vinicunca), a unique geological formation with natural colored bands.",
+  "description": "Rainbow Mountain, also known as Vinicunca, is a unique geological formation in the Peruvian Andes. Its slopes display vibrant bands of natural colors - red, yellow, green, blue, and purple - created by different minerals and sediments deposited over millions of years. This natural wonder sits at extreme altitude and offers spectacular views of the snow-capped Andes peaks.",
   "thumbnail": "/images/destinations/rainbow-mountain/main.jpg",
-  "gallery": ["/rainbow-mountain.jpeg"],
-  "location": {
-    "region": "Cusco",
-    "country": "Peru",
-    "coordinates": {
-      "lat": -13.8658,
-      "lng": -71.3032
-    }
-  },
+  "gallery": ["/images/destinations/rainbow-mountain/main.jpg"],
+  "location": "Cusco, Peru",
   "elevation": "5,200m (17,060ft)",
-  "climate": "High alpine",
-  "bestTimeToVisit": "May to September (dry season)",
+  "climate": "Extreme alpine",
+  "bestTime": "May to September (dry season)",
   "highlights": [
-    "Vibrant rainbow-colored slopes",
-    "Panoramic Andean views",
-    "Ausangate mountain range",
-    "High-altitude hiking",
-    "Unique geological formations",
-    "Alpaca and llama herds"
+    "Natural colored bands",
+    "Panoramic Andes views",
+    "Unique landscape photography",
+    "Extreme altitude experience",
+    "Local Andean culture",
+    "Trekking trails"
   ],
-  "features": [
-    "Natural geological wonder",
-    "High-altitude challenge",
-    "Photography paradise",
-    "Remote mountain location",
-    "Cultural encounters with local communities"
+  "activities": [
+    "Full-day trekking",
+    "Landscape photography",
+    "Andean cultural experience",
+    "Local wildlife observation",
+    "Traditional village visits",
+    "Extreme altitude acclimatization"
   ],
-  "accessibility": {
-    "difficulty": "Challenging (high altitude)",
-    "facilities": "Basic facilities at trailhead, mountain huts",
-    "transportation": "3-hour drive from Cusco + 1.5-hour hike"
+  "culturalSites": [
+    "Pitumarca village",
+    "Local Andean communities",
+    "Traditional temples",
+    "Local markets"
+  ],
+  "travelTips": [
+    "Acclimatize in Cusco first",
+    "Bring warm clothing",
+    "Stay hydrated constantly",
+    "Use strong sunscreen",
+    "Hire local guide",
+    "Bring altitude medication"
+  ],
+  "gettingThere": {
+    "fromCusco": "Bus to Pitumarca, then hiking (3-4 hours)",
+    "transportation": ["Bus", "Hiking", "Horse (optional)"],
+    "duration": "3-4 hours hiking from starting point"
   },
-  "culturalSignificance": "Sacred mountain (Apu) in Andean cosmology, considered a living deity by local communities, part of ancient pilgrimage routes.",
-  "geologicalInfo": {
-    "formation": "Mineral deposits from sedimentary rock layers",
-    "colors": "Iron oxide (red), sulfur (yellow), chlorite (green), goethite (orange)",
-    "age": "Over 14 million years old"
+  "accommodation": {
+    "types": [
+      "Basic camping",
+      "Local community lodging",
+      "Hotels in Cusco (base)"
+    ],
+    "recommendations": [
+      "Stay in Cusco the night before",
+      "Bring camping gear if needed"
+    ]
+  },
+  "additionalInfo": {
+    "accessibility": "Only accessible by challenging trek",
+    "safety": "Extreme altitude, variable weather conditions",
+    "currency": "Peruvian Sol (PEN)",
+    "language": "Spanish, Quechua, guides available"
   }
 }

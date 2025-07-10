@@ -1,49 +1,68 @@
 {
   "title": "Valle Sagrado",
-  "slug": "valle-sagrado",
-  "featured": true,
-  "type": "Valle/Arqueológico",
-  "summary": "El corazón del Imperio Inca, un valle fértil salpicado de pueblos tradicionales y ruinas antiguas.",
-  "description": "El Valle Sagrado de los Incas (Valle Sagrado) es un valle impresionante en los Andes peruanos que una vez fue el corazón del Imperio Inca. Este valle fértil, tallado por el río Urubamba, se extiende desde el pueblo de Pisaq hasta Ollantaytambo y está salpicado de pueblos andinos tradicionales, mercados coloridos, terrazas ancestrales y sitios arqueológicos impresionantes. La menor altitud del valle lo convierte en un lugar ideal para aclimatarse antes de visitar Machu Picchu.",
+  "slug": "sacred-valley",
+  "featured": false,
+  "type": "Cultural",
+  "summary": "El fértil valle del río Urubamba, hogar de antiguas ruinas incas y pueblos tradicionales.",
+  "description": "El Valle Sagrado de los Incas, ubicado entre Cusco y Machu Picchu, es un fértil valle del río Urubamba que fue el corazón agrícola del Imperio Inca. Conocido por sus impresionantes terrazas agrícolas, pueblos tradicionales y sitios arqueológicos, el valle ofrece una visión auténtica de la vida andina y la ingeniería inca.",
   "thumbnail": "/images/destinations/sacred-valley/main.jpg",
-  "gallery": ["/sacred-valley.jpeg"],
-  "location": {
-    "region": "Cusco",
-    "country": "Perú",
-    "coordinates": {
-      "lat": -13.2921,
-      "lng": -72.1542
-    }
-  },
-  "elevation": "2,800m (9,186ft)",
-  "climate": "Templado de altura",
-  "bestTimeToVisit": "Abril a octubre (época seca)",
+  "gallery": ["/images/destinations/sacred-valley/main.jpg"],
+  "location": "Valle del Urubamba, Cusco, Perú",
+  "elevation": "2,800m (9,200ft)",
+  "climate": "Templado de valle",
+  "bestTime": "Mayo a septiembre (época seca)",
   "highlights": [
-    "Sitio arqueológico y mercado de Pisaq",
+    "Pisac y su mercado",
+    "Ollantaytambo",
+    "Chinchero",
+    "Terrazas de Moray",
+    "Salineras de Maras",
+    "Pueblos tradicionales"
+  ],
+  "activities": [
+    "Visitas a mercados tradicionales",
+    "Exploración de ruinas incas",
+    "Fotografía de paisajes",
+    "Experiencias culturales",
+    "Compras de artesanías",
+    "Gastronomía local"
+  ],
+  "culturalSites": [
     "Fortaleza de Ollantaytambo",
-    "Pueblo tejedor de Chinchero",
-    "Valle del río Urubamba",
-    "Pueblos andinos tradicionales",
-    "Terrazas agrícolas"
+    "Ruinas de Pisac",
+    "Iglesia de Chinchero",
+    "Terrazas circulares de Moray",
+    "Salineras de Maras"
   ],
-  "features": [
-    "Aclimatación a menor altitud",
-    "Rica herencia cultural",
-    "Mercados tradicionales",
-    "Innovación agrícola",
-    "Puerta de entrada a Machu Picchu"
+  "travelTips": [
+    "Visitar mercados temprano",
+    "Llevar efectivo para compras",
+    "Respetar costumbres locales",
+    "Usar protector solar",
+    "Llevar agua",
+    "Contratar guía local"
   ],
-  "accessibility": {
-    "difficulty": "Fácil a Moderado",
-    "facilities": "Hoteles, restaurantes, mercados, transporte",
-    "transportation": "Acceso por carretera desde Cusco, tren a Machu Picchu"
+  "gettingThere": {
+    "fromCusco": "Bus o tour privado (1-2 horas)",
+    "transportation": ["Bus público", "Tour privado", "Taxi"],
+    "duration": "1-2 horas desde Cusco"
   },
-  "culturalSignificance": "Corazón del Imperio Inca, centro de innovación agrícola y testimonio vivo de la cultura y tradiciones andinas.",
-  "villages": [
-    "Pisaq - mercado y ruinas",
-    "Ollantaytambo - pueblo inca viviente",
-    "Chinchero - tradiciones textiles",
-    "Urubamba - centro de deportes de aventura",
-    "Maras - terrazas de sal"
-  ]
+  "accommodation": {
+    "types": [
+      "Hoteles boutique",
+      "Lodges rurales",
+      "Hostales familiares",
+      "Camping"
+    ],
+    "recommendations": [
+      "Reservar con anticipación",
+      "Elegir ubicación cerca de sitios de interés"
+    ]
+  },
+  "additionalInfo": {
+    "accessibility": "Accesible, algunos senderos empinados",
+    "safety": "Área segura, precauciones normales",
+    "currency": "Sol Peruano (PEN)",
+    "language": "Español, Quechua, algunos guías en inglés"
+  }
 }

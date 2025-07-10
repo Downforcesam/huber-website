@@ -1,49 +1,67 @@
 {
-  "title": "Ciudad del Cusco",
+  "title": "Cusco",
   "slug": "cusco",
   "featured": true,
-  "type": "Colonial/Histórico",
-  "summary": "La histórica capital del Imperio Inca, ahora una vibrante ciudad colonial y puerta de entrada a Machu Picchu.",
-  "description": "Cusco, una vez capital del poderoso Imperio Inca, es una fascinante mezcla de arquitectura inca y colonial. Conocida como la 'Ciudad Imperial', este Sitio Patrimonio Mundial de la UNESCO sirve como la base perfecta para explorar el Valle Sagrado y Machu Picchu. Sus calles empedradas, muros ancestrales y mercados vibrantes cuentan la historia de la rica herencia cultural del Perú.",
+  "type": "Cultural",
+  "summary": "La antigua capital del Imperio Inca, una ciudad colonial española construida sobre cimientos incas.",
+  "description": "Cusco, la antigua capital del Imperio Inca, es una ciudad fascinante donde la historia inca y colonial española se entrelazan. Designada como Patrimonio Mundial de la UNESCO, Cusco ofrece una mezcla única de arquitectura inca original, edificios coloniales españoles construidos sobre cimientos incas, y una vibrante cultura contemporánea.",
   "thumbnail": "/images/destinations/cusco/main.jpg",
-  "gallery": ["/cusco.jpeg", "/cusco-2.jpeg", "/cusco-city.jpeg"],
-  "location": {
-    "region": "Cusco",
-    "country": "Perú",
-    "coordinates": {
-      "lat": -13.5319,
-      "lng": -71.9675
-    }
-  },
+  "gallery": [
+    "/images/destinations/cusco/main.jpg",
+    "/images/destinations/cusco/gallery-1.jpg",
+    "/images/destinations/cusco/gallery-2.jpg"
+  ],
+  "location": "Cusco, Perú",
   "elevation": "3,400m (11,200ft)",
-  "climate": "Subtropical de altura",
-  "bestTimeToVisit": "Abril a octubre (época seca)",
+  "climate": "Templado de altura",
+  "bestTime": "Mayo a septiembre (época seca)",
   "highlights": [
     "Plaza de Armas",
-    "Templo Qorikancha",
-    "Fortaleza Sacsayhuamán",
-    "Mercado San Pedro",
-    "Arquitectura colonial",
-    "Muros de piedra inca"
+    "Sacsayhuamán",
+    "Barrio de San Blas",
+    "Catedral de Cusco",
+    "Qorikancha",
+    "Mercado de San Pedro"
   ],
-  "features": [
-    "Sitio Patrimonio Mundial UNESCO",
-    "Arquitectura colonial e inca",
-    "Cultura local vibrante",
-    "Mercados tradicionales",
-    "Puerta de entrada al Valle Sagrado"
+  "activities": [
+    "Tours históricos guiados",
+    "Exploración de sitios arqueológicos",
+    "Compras de artesanías",
+    "Gastronomía local",
+    "Fotografía urbana",
+    "Experiencias culturales"
   ],
-  "accessibility": {
-    "difficulty": "Fácil",
-    "facilities": "Servicios urbanos completos, hoteles, restaurantes, hospitales",
-    "transportation": "Aeropuerto internacional, buses, taxis"
+  "culturalSites": [
+    "Plaza de Armas",
+    "Sacsayhuamán",
+    "Qorikancha",
+    "Catedral de Cusco",
+    "Iglesia de San Blas"
+  ],
+  "travelTips": [
+    "Aclimatarse a la altitud",
+    "Llevar agua y coca",
+    "Usar protector solar",
+    "Reservar tours con anticipación",
+    "Respetar sitios sagrados",
+    "Llevar efectivo para mercados"
+  ],
+  "gettingThere": {
+    "fromLima": "Vuelo directo (1 hora) o bus (20 horas)",
+    "transportation": ["Avión", "Bus", "Taxi desde aeropuerto"],
+    "duration": "1 hora en avión desde Lima"
   },
-  "culturalSignificance": "Antigua capital del Imperio Inca, centro de la cultura y tradiciones andinas, y el corazón histórico del Perú.",
-  "cuisine": [
-    "Cuy (cuy)",
-    "Carne de alpaca",
-    "Platos de quinua",
-    "Ingredientes andinos tradicionales",
-    "Cocteles de pisco"
-  ]
+  "accommodation": {
+    "types": ["Hoteles boutique", "Hostales", "Airbnb", "Hoteles de lujo"],
+    "recommendations": [
+      "Reservar con anticipación en temporada alta",
+      "Elegir ubicación cerca del centro histórico"
+    ]
+  },
+  "additionalInfo": {
+    "accessibility": "Ciudad accesible, algunas calles empinadas",
+    "safety": "Ciudad segura, precauciones normales",
+    "currency": "Sol Peruano (PEN)",
+    "language": "Español, Quechua, inglés en áreas turísticas"
+  }
 }

@@ -1,49 +1,63 @@
 {
   "title": "Sacred Valley",
   "slug": "sacred-valley",
-  "featured": true,
-  "type": "Valley/Archaeological",
-  "summary": "The heartland of the Inca Empire, a fertile valley dotted with traditional villages and ancient ruins.",
-  "description": "The Sacred Valley of the Incas (Valle Sagrado) is a breathtaking valley in the Peruvian Andes that was once the heartland of the Inca Empire. This fertile valley, carved by the Urubamba River, stretches from the village of Pisaq to Ollantaytambo and is dotted with traditional Andean villages, colorful markets, ancient terraces, and impressive archaeological sites. The valley's lower altitude makes it an ideal place to acclimatize before visiting Machu Picchu.",
+  "featured": false,
+  "type": "Cultural",
+  "summary": "The fertile Urubamba River valley, home to ancient Inca ruins and traditional villages.",
+  "description": "The Sacred Valley of the Incas, located between Cusco and Machu Picchu, is a fertile valley of the Urubamba River that was the agricultural heart of the Inca Empire. Known for its impressive agricultural terraces, traditional villages, and archaeological sites, the valley offers an authentic glimpse into Andean life and Inca engineering.",
   "thumbnail": "/images/destinations/sacred-valley/main.jpg",
-  "gallery": ["/sacred-valley.jpeg"],
-  "location": {
-    "region": "Cusco",
-    "country": "Peru",
-    "coordinates": {
-      "lat": -13.2921,
-      "lng": -72.1542
-    }
-  },
-  "elevation": "2,800m (9,186ft)",
-  "climate": "Temperate highland",
-  "bestTimeToVisit": "April to October (dry season)",
+  "gallery": ["/images/destinations/sacred-valley/main.jpg"],
+  "location": "Urubamba Valley, Cusco, Peru",
+  "elevation": "2,800m (9,200ft)",
+  "climate": "Temperate valley",
+  "bestTime": "May to September (dry season)",
   "highlights": [
-    "Pisaq archaeological site and market",
+    "Pisac and its market",
+    "Ollantaytambo",
+    "Chinchero",
+    "Moray terraces",
+    "Maras salt mines",
+    "Traditional villages"
+  ],
+  "activities": [
+    "Traditional market visits",
+    "Inca ruin exploration",
+    "Landscape photography",
+    "Cultural experiences",
+    "Craft shopping",
+    "Local gastronomy"
+  ],
+  "culturalSites": [
     "Ollantaytambo fortress",
-    "Chinchero weaving village",
-    "Urubamba River valley",
-    "Traditional Andean villages",
-    "Agricultural terraces"
+    "Pisac ruins",
+    "Chinchero church",
+    "Moray circular terraces",
+    "Maras salt mines"
   ],
-  "features": [
-    "Lower altitude acclimatization",
-    "Rich cultural heritage",
-    "Traditional markets",
-    "Agricultural innovation",
-    "Gateway to Machu Picchu"
+  "travelTips": [
+    "Visit markets early",
+    "Bring cash for shopping",
+    "Respect local customs",
+    "Use sunscreen",
+    "Carry water",
+    "Hire local guide"
   ],
-  "accessibility": {
-    "difficulty": "Easy to Moderate",
-    "facilities": "Hotels, restaurants, markets, transportation",
-    "transportation": "Road access from Cusco, train to Machu Picchu"
+  "gettingThere": {
+    "fromCusco": "Bus or private tour (1-2 hours)",
+    "transportation": ["Public bus", "Private tour", "Taxi"],
+    "duration": "1-2 hours from Cusco"
   },
-  "culturalSignificance": "Heart of the Inca Empire, center of agricultural innovation, and living testament to Andean culture and traditions.",
-  "villages": [
-    "Pisaq - market and ruins",
-    "Ollantaytambo - living Inca town",
-    "Chinchero - weaving traditions",
-    "Urubamba - adventure sports hub",
-    "Maras - salt terraces"
-  ]
+  "accommodation": {
+    "types": ["Boutique hotels", "Rural lodges", "Family hostels", "Camping"],
+    "recommendations": [
+      "Book in advance",
+      "Choose location near points of interest"
+    ]
+  },
+  "additionalInfo": {
+    "accessibility": "Accessible, some steep trails",
+    "safety": "Safe area, normal precautions",
+    "currency": "Peruvian Sol (PEN)",
+    "language": "Spanish, Quechua, some guides in English"
+  }
 }

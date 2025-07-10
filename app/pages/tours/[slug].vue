@@ -277,10 +277,7 @@ const collectionName = computed(() =>
 // Fetch tour data using the same approach as destinations
 const { data: tour } = await useAsyncData(
   () => `tour-${slug}-${locale.value}`,
-  () =>
-    queryCollection(collectionName.value)
-      .where({ slug: route.params.slug })
-      .first()
+  () => queryCollection(collectionName.value).where({ slug: slug }).first()
 );
 
 // Handle 404

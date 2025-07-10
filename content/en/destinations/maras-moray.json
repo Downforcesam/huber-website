@@ -1,51 +1,62 @@
 {
-  "title": "Maras & Moray",
+  "title": "Maras and Moray",
   "slug": "maras-moray",
-  "type": "Archaeological/Natural",
-  "summary": "Ancient Inca agricultural laboratories and spectacular salt terraces showcasing ingenious Andean engineering.",
-  "description": "Maras and Moray represent two of the most fascinating examples of Inca ingenuity in the Sacred Valley. Moray features mysterious circular terraces that served as an agricultural laboratory where the Incas experimented with different crops at various altitudes. Nearby, the Maras salt mines have been producing salt for over 500 years through an intricate system of terraced ponds fed by natural salt springs, creating a stunning geometric landscape of white and golden pools.",
+  "featured": false,
+  "type": "Archaeological",
+  "summary": "The ancient circular terraces of Moray and the salt mines of Maras, unique examples of Inca engineering.",
+  "description": "Maras and Moray are two unique archaeological sites in the Sacred Valley that showcase the advanced engineering of the Incas. Moray features concentric circular terraces that functioned as an experimental agricultural laboratory, while Maras houses thousands of salt ponds that have been used from pre-Inca times to the present day.",
   "thumbnail": "/images/destinations/maras-moray/main.jpg",
-  "gallery": ["/maras.jpeg", "/maras-moray.jpeg"],
-  "location": {
-    "region": "Cusco",
-    "country": "Peru",
-    "coordinates": {
-      "lat": -13.3847,
-      "lng": -72.2031
-    }
-  },
-  "elevation": "3,500m (11,480ft)",
-  "climate": "Highland subtropical",
-  "bestTimeToVisit": "April to October (dry season)",
+  "gallery": [
+    "/images/destinations/maras-moray/main.jpg",
+    "/images/destinations/maras-moray/gallery-1.jpg"
+  ],
+  "location": "Sacred Valley, Cusco, Peru",
+  "elevation": "3,300m (10,800ft)",
+  "climate": "Temperate highland",
+  "bestTime": "May to September (dry season)",
   "highlights": [
-    "Moray circular agricultural terraces",
-    "Maras salt terraces and ponds",
-    "Inca agricultural experimentation",
-    "Traditional salt harvesting",
-    "Spectacular geometric patterns",
-    "Sacred Valley panoramic views"
-  ],
-  "features": [
-    "Inca agricultural innovation",
-    "Traditional salt production",
+    "Moray circular terraces",
+    "Maras salt mines",
+    "Advanced Inca engineering",
     "Unique landscape photography",
-    "Cultural heritage preservation",
-    "Easy accessibility from Cusco"
+    "Agricultural history",
+    "Local culture"
   ],
-  "accessibility": {
-    "difficulty": "Easy to Moderate",
-    "facilities": "Visitor centers, parking, local guides",
-    "transportation": "45-minute drive from Cusco"
+  "activities": [
+    "Guided archaeological visits",
+    "Landscape photography",
+    "Artisanal salt purchase",
+    "Learning about Inca agriculture",
+    "Cultural experiences",
+    "Light hiking"
+  ],
+  "culturalSites": [
+    "Moray circular terraces",
+    "Maras salt mines",
+    "Maras village",
+    "Interpretation center"
+  ],
+  "travelTips": [
+    "Bring water and sunscreen",
+    "Wear comfortable shoes",
+    "Respect the salt mines",
+    "Buy local salt",
+    "Hire local guide",
+    "Bring cash"
+  ],
+  "gettingThere": {
+    "fromCusco": "Bus or private tour (1 hour)",
+    "transportation": ["Public bus", "Private tour", "Taxi"],
+    "duration": "1 hour from Cusco"
   },
-  "culturalSignificance": "Moray served as an Inca agricultural research center with microclimates for crop experimentation. Maras represents continuous indigenous knowledge in salt production spanning centuries.",
-  "sites": {
-    "moray": {
-      "summary": "Circular terraced amphitheaters used for agricultural experiments",
-      "features": "Temperature variations, crop testing, ceremonial purposes"
-    },
-    "maras": {
-      "summary": "Ancient salt mines with over 3,000 terraced pools",
-      "features": "Natural salt springs, traditional harvesting, economic importance"
-    }
+  "accommodation": {
+    "types": ["Hotels in Cusco", "Lodges in Sacred Valley", "Family hostels"],
+    "recommendations": ["Stay in Cusco or Sacred Valley", "Book in advance"]
+  },
+  "additionalInfo": {
+    "accessibility": "Accessible, well-maintained trails",
+    "safety": "Safe area, normal precautions",
+    "currency": "Peruvian Sol (PEN)",
+    "language": "Spanish, Quechua, guides in English available"
   }
 }

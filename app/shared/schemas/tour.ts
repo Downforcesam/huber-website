@@ -21,7 +21,7 @@ export const TourSchema = z.object({
   slug: z.string().min(1),
   summary: z.string().min(1), // Short version for cards/hero
   description: z.string().min(1), // Full detailed description
-  thumbnail: z.string().url(),
+  thumbnail: z.string(),
   gallery: z.array(z.string()).optional(),
   category: z.string().min(1),
   difficulty: z.string().min(1),

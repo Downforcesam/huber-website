@@ -108,15 +108,22 @@
 const { t } = useI18n();
 
 function scrollToTours() {
-  const toursSection = document.getElementById('tours');
-  if (toursSection) {
-    const headerHeight = 80; // Approximate header height
-    const elementTop = toursSection.offsetTop - headerHeight;
+  // Wait for next tick to ensure DOM is ready
+  nextTick(() => {
+    try {
+      const toursSection = document.getElementById('tours');
+      if (toursSection && toursSection.offsetTop !== undefined) {
+        const headerHeight = 80; // Approximate header height
+        const elementTop = toursSection.offsetTop - headerHeight;
 
-    window.scrollTo({
-      top: elementTop,
-      behavior: 'smooth',
-    });
-  }
+        window.scrollTo({
+          top: elementTop,
+          behavior: 'smooth',
+        });
+      }
+    } catch (error) {
+      console.warn('Error scrolling to tours section:', error);
+    }
+  });
 }
 </script>

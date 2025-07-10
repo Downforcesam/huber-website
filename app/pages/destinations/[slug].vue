@@ -4,7 +4,7 @@
     <div class="relative bg-white">
       <div class="relative h-64 sm:h-80 lg:h-96 overflow-hidden">
         <NuxtImg
-          :src="destination?.featuredImage"
+          :src="destination?.thumbnail"
           :alt="destination?.title"
           class="w-full h-full object-cover"
         />
@@ -204,9 +204,26 @@
             <h3 class="mb-4 font-bold text-gray-900 text-xl">
               {{ t('gettingThere') }}
             </h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              {{ destination.gettingThere }}
-            </p>
+            <div class="space-y-3">
+              <div class="flex justify-between">
+                <span class="text-gray-600">{{ t('fromCusco') }}:</span>
+                <span class="font-medium">{{
+                  destination?.gettingThere?.fromCusco
+                }}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">{{ t('duration') }}:</span>
+                <span class="font-medium">{{
+                  destination?.gettingThere?.duration
+                }}</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-gray-600">{{ t('transportation') }}:</span>
+                <span class="font-medium">{{
+                  destination?.gettingThere?.transportation?.join(', ')
+                }}</span>
+              </div>
+            </div>
           </div>
 
           <!-- CTA -->
@@ -241,9 +258,10 @@
 </template>
 
 <script setup>
-const { locale, t } = useI18n();
+const { slug } = useRoute().params;
+const { locale } = useI18n();
+const { t } = useI18n();
 const localePath = useLocalePath();
-const route = useRoute();
 
 // Reactive collection name based on current locale
 const collectionName = computed(() =>
@@ -252,12 +270,37 @@ const collectionName = computed(() =>
 
 // Fetch destination using new Nuxt Content v3 API
 const { data: destination } = await useAsyncData(
-  () => `destination-${route.params.slug}-${locale.value}`,
-  () =>
-    queryCollection(collectionName.value)
-      .where({ slug: route.params.slug })
-      .first()
+  () => `destination-${slug}-${locale.value}`,
+  async () => {
+    // First, let's see what's in the collection
+    const allDestinations = await queryCollection(collectionName.value).all();
+
+    // Check if our slug exists in the collection
+    const slugExists = allDestinations.some((d) => d.slug === slug);
+
+    if (slugExists) {
+      const foundDestination = allDestinations.find((d) => d.slug === slug);
+      return foundDestination;
+    }
+
+    // Fallback: try the specific query
+    const result = await queryCollection(collectionName.value)
+      .where({ slug: slug })
+      .first();
+
+    return result;
+  }
 );
+
+// Handle 404
+if (!destination.value) {
+  console.error('Destination not found for slug:', slug);
+  throw createError({
+    statusCode: 404,
+    statusMessage: 'Destination Not Found',
+    fatal: true,
+  });
+}
 
 // SEO
 useHead({

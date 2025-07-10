@@ -1,22 +1,16 @@
 {
   "title": "Choquequirao",
   "slug": "choquequirao",
+  "featured": false,
   "type": "Arqueológico",
   "summary": "La 'Ciudad Hermana' de Machu Picchu, una ciudadela inca remota y espectacular accesible solo por trekking.",
   "description": "Choquequirao, que significa 'Cuna de Oro' en quechua, es uno de los sitios arqueológicos más espectaculares pero menos visitados de Perú. A menudo llamada la 'Ciudad Hermana' de Machu Picchu, esta magnífica ciudadela inca se asienta dramáticamente en una cresta montañosa con vista al Cañón del Apurímac. Construida en el mismo período que Machu Picchu, sirvió como finca real y centro sagrado, con impresionantes terrazas, templos y complejos residenciales.",
   "thumbnail": "/images/destinations/choquequirao/main.jpg",
   "gallery": ["/trekking.jpeg"],
-  "location": {
-    "region": "Cusco/Apurímac",
-    "country": "Perú",
-    "coordinates": {
-      "lat": -13.5369,
-      "lng": -72.8419
-    }
-  },
+  "location": "Cusco/Apurímac, Perú",
   "elevation": "3,050m (10,010ft)",
   "climate": "Bosque nuboso a altiplánico",
-  "bestTimeToVisit": "Abril a octubre (época seca)",
+  "bestTime": "Abril a octubre (época seca)",
   "highlights": [
     "Ciudad hermana de Machu Picchu",
     "Terrazas agrícolas espectaculares",
@@ -25,24 +19,42 @@
     "Vistas dramáticas del cañón",
     "Relieves de llamas y alpacas"
   ],
-  "features": [
-    "Remoto y sin multitudes",
-    "Acceso solo por trekking desafiante",
-    "Rica biodiversidad",
-    "Importancia arqueológica",
-    "Energía espiritual"
+  "activities": [
+    "Trekking de 4-5 días",
+    "Exploración arqueológica",
+    "Avistamiento de cóndores",
+    "Fotografía de paisajes",
+    "Experiencia cultural andina",
+    "Camping en la montaña"
   ],
-  "accessibility": {
-    "difficulty": "Desafiante (acceso solo por trekking)",
-    "facilities": "Instalaciones básicas de campamento, sin centro de visitantes",
-    "transportation": "Trek de 4-5 días desde Cachora"
+  "culturalSites": [
+    "Plaza principal",
+    "Templo del Sol",
+    "Terrazas agrícolas",
+    "Complejo residencial",
+    "Sistema de agua inca"
+  ],
+  "travelTips": [
+    "Aclimatarse en Cusco primero",
+    "Llevar equipo de camping completo",
+    "Contratar guía local",
+    "Llevar agua y comida",
+    "Respetar el sitio sagrado",
+    "Prepararse para altitud extrema"
+  ],
+  "gettingThere": {
+    "fromCusco": "Trek de 4-5 días desde Cachora",
+    "transportation": ["Caminata", "Mulas para equipaje"],
+    "duration": "4-5 días de trekking"
   },
-  "culturalSignificance": "Ciudadela inca sagrada y finca real, representando arquitectura inca avanzada y alineación astronómica, conectada con la última resistencia inca.",
-  "wildlife": [
-    "Cóndores andinos",
-    "Osos de anteojos",
-    "Vizcachas de montaña",
-    "Más de 300 especies de aves",
-    "Orquídeas y bromelias endémicas"
-  ]
+  "accommodation": {
+    "types": ["Camping", "Refugios básicos"],
+    "recommendations": ["Llevar tienda de campaña", "Reservar con anticipación"]
+  },
+  "additionalInfo": {
+    "accessibility": "Solo accesible por trekking desafiante",
+    "safety": "Altitud extrema, llevar equipo adecuado",
+    "currency": "Sol Peruano (PEN)",
+    "language": "Español, Quechua, guías disponibles"
+  }
 }

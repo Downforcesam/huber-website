@@ -1,22 +1,16 @@
 {
   "title": "Choquequirao",
   "slug": "choquequirao",
+  "featured": true,
   "type": "Archaeological",
   "summary": "The 'Sister City' of Machu Picchu, an remote and spectacular Inca citadel accessible only by trekking.",
   "description": "Choquequirao, meaning 'Cradle of Gold' in Quechua, is one of Peru's most spectacular yet least visited archaeological sites. Often called the 'Sister City' of Machu Picchu, this magnificent Inca citadel sits dramatically on a mountain ridge overlooking the Apurímac Canyon. Built in the same period as Machu Picchu, it served as both a royal estate and sacred center, featuring impressive terraces, temples, and residential complexes.",
   "thumbnail": "/images/destinations/choquequirao/main.jpg",
   "gallery": ["/trekking.jpeg"],
-  "location": {
-    "region": "Cusco/Apurímac",
-    "country": "Peru",
-    "coordinates": {
-      "lat": -13.5369,
-      "lng": -72.8419
-    }
-  },
+  "location": "Cusco/Apurímac, Peru",
   "elevation": "3,050m (10,010ft)",
   "climate": "Cloud forest to highland",
-  "bestTimeToVisit": "April to October (dry season)",
+  "bestTime": "April to October (dry season)",
   "highlights": [
     "Sister city to Machu Picchu",
     "Spectacular terraced agriculture",
@@ -25,24 +19,42 @@
     "Dramatic canyon views",
     "Llama and alpaca reliefs"
   ],
-  "features": [
-    "Remote and uncrowded",
-    "Challenging trek access only",
-    "Rich biodiversity",
-    "Archaeological significance",
-    "Spiritual energy"
+  "activities": [
+    "4-5 day trekking",
+    "Archaeological exploration",
+    "Condor watching",
+    "Landscape photography",
+    "Andean cultural experience",
+    "Mountain camping"
   ],
-  "accessibility": {
-    "difficulty": "Challenging (trekking only access)",
-    "facilities": "Basic camping facilities, no visitor center",
-    "transportation": "4-5 day trek from Cachora"
+  "culturalSites": [
+    "Main plaza",
+    "Temple of the Sun",
+    "Agricultural terraces",
+    "Residential complex",
+    "Inca water system"
+  ],
+  "travelTips": [
+    "Acclimatize in Cusco first",
+    "Bring complete camping gear",
+    "Hire local guide",
+    "Carry water and food",
+    "Respect sacred site",
+    "Prepare for extreme altitude"
+  ],
+  "gettingThere": {
+    "fromCusco": "4-5 day trek from Cachora",
+    "transportation": ["Hiking", "Mules for luggage"],
+    "duration": "4-5 days of trekking"
   },
-  "culturalSignificance": "Sacred Inca citadel and royal estate, representing advanced Inca architecture and astronomical alignment, connected to the last Inca resistance.",
-  "wildlife": [
-    "Andean condors",
-    "Spectacled bears",
-    "Mountain viscachas",
-    "Over 300 bird species",
-    "Endemic orchids and bromeliads"
-  ]
+  "accommodation": {
+    "types": ["Camping", "Basic shelters"],
+    "recommendations": ["Bring camping tent", "Book in advance"]
+  },
+  "additionalInfo": {
+    "accessibility": "Only accessible by challenging trek",
+    "safety": "Extreme altitude, bring adequate equipment",
+    "currency": "Peruvian Sol (PEN)",
+    "language": "Spanish, Quechua, guides available"
+  }
 }
