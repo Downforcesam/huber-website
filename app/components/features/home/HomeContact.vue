@@ -17,94 +17,94 @@
 
       <div class="mx-auto max-w-lg">
         <!-- Contact Form -->
-        <UCard class="shadow-lg p-0">
-          <template #header>
-            <div class="pb-2 text-center">
-              <h3 class="mb-1 font-bold text-gray-900 text-2xl">
-                Send us a message
-              </h3>
-              <p class="text-gray-600 text-base">
-                We'll get back to you within 24 hours
-              </p>
-            </div>
-          </template>
+        <div class="bg-white shadow-lg rounded-xl overflow-hidden">
+          <div class="p-6 pb-2 text-center">
+            <h3 class="mb-1 font-bold text-gray-900 text-2xl">
+              Send us a message
+            </h3>
+            <p class="text-gray-600 text-base">
+              We'll get back to you within 24 hours
+            </p>
+          </div>
 
-          <UForm
-            :schema="schema"
-            :state="state"
-            class="space-y-4"
-            @submit="onSubmit"
-            :loading="loading"
-          >
-            <UFormField label="Name" name="senderName" required>
-              <UInput
-                v-model="state.senderName"
-                placeholder="Enter your name"
-                size="lg"
-                icon="i-heroicons-user"
-                class="mx-auto w-full max-w-sm"
-              />
-            </UFormField>
-
-            <UFormField label="Email" name="senderEmail" required>
-              <UInput
-                v-model="state.senderEmail"
-                type="email"
-                placeholder="Enter your email"
-                size="lg"
-                icon="i-heroicons-envelope"
-                class="mx-auto w-full max-w-sm"
-              />
-            </UFormField>
-
-            <UFormField label="Subject" name="senderSubject" required>
-              <UInput
-                v-model="state.senderSubject"
-                placeholder="What's this about?"
-                size="lg"
-                icon="i-heroicons-chat-bubble-left-right"
-                class="mx-auto w-full max-w-sm"
-              />
-            </UFormField>
-
-            <UFormField label="Message" name="senderMessage" required>
-              <UTextarea
-                v-model="state.senderMessage"
-                placeholder="Tell me about your dream adventure..."
-                :rows="7"
-                size="lg"
-                class="mx-auto w-full max-w-md min-h-[140px]"
-              />
-            </UFormField>
-
-            <div
-              class="flex sm:flex-row flex-col justify-center gap-3 mx-auto pt-2 max-w-md"
+          <div class="px-6 pb-6">
+            <UForm
+              :schema="schema"
+              :state="state"
+              class="space-y-4"
+              @submit="onSubmit"
+              :loading="loading"
             >
-              <UButton
-                type="submit"
-                size="lg"
-                color="primary"
-                :loading="loading"
-                icon="i-heroicons-paper-airplane"
-                class="w-full sm:w-auto"
-              >
-                {{ t('send') }}
-              </UButton>
+              <UFormField :label="t('name')" name="senderName" required>
+                <UInput
+                  v-model="state.senderName"
+                  :placeholder="t('enterName')"
+                  size="lg"
+                  icon="i-heroicons-user"
+                  class="mx-auto w-full max-w-sm"
+                />
+              </UFormField>
 
-              <UButton
-                variant="outline"
-                size="lg"
-                color="secondary"
-                :to="`https://wa.me/your-number?text=${encodeURIComponent('Hi! I\'m interested in a Peru adventure. Can you help me plan something amazing?')}`"
-                target="_blank"
-                icon="i-simple-icons-whatsapp"
-                class="w-full sm:w-auto"
+              <UFormField :label="t('email')" name="senderEmail" required>
+                <UInput
+                  v-model="state.senderEmail"
+                  type="email"
+                  :placeholder="t('enterEmail')"
+                  size="lg"
+                  icon="i-heroicons-envelope"
+                  class="mx-auto w-full max-w-sm"
+                />
+              </UFormField>
+
+              <UFormField :label="t('subject')" name="senderSubject" required>
+                <UInput
+                  v-model="state.senderSubject"
+                  :placeholder="t('enterSubject')"
+                  size="lg"
+                  icon="i-heroicons-chat-bubble-left-right"
+                  class="mx-auto w-full max-w-sm"
+                />
+              </UFormField>
+
+              <UFormField :label="t('message')" name="senderMessage" required>
+                <UTextarea
+                  v-model="state.senderMessage"
+                  :placeholder="t('enterMessage')"
+                  :rows="7"
+                  size="lg"
+                  class="mx-auto w-full max-w-md min-h-[140px]"
+                />
+              </UFormField>
+
+              <div
+                class="flex sm:flex-row flex-col justify-center gap-3 mx-auto pt-2 max-w-md"
               >
-                {{ t('whatsappContact') }}
-              </UButton>
-            </div>
-          </UForm>
-        </UCard>
+                <UButton
+                  type="submit"
+                  size="lg"
+                  color="primary"
+                  :loading="loading"
+                  icon="i-heroicons-paper-airplane"
+                  class="w-full sm:w-auto"
+                >
+                  {{ t('send') }}
+                </UButton>
+
+                <UButton
+                  variant="outline"
+                  size="lg"
+                  color="secondary"
+                  :to="`https://wa.me/your-number?text=${encodeURIComponent('Hi! I\'m interested in a Peru adventure. Can you help me plan something amazing?')}`"
+                  target="_blank"
+                  icon="i-simple-icons-whatsapp"
+                  class="w-full sm:w-auto"
+                >
+                  {{ t('whatsappContact') }}
+                </UButton>
+              </div>
+            </UForm>
+          </div>
+        </div>
       </div>
     </div>
   </section>

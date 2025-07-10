@@ -15,34 +15,36 @@
       <div
         class="gap-6 lg:gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8"
       >
-        <div
+        <UCard
           v-for="destination in destinations"
           :key="destination.slug"
           class="group relative bg-white shadow-sm hover:shadow-lg rounded-xl overflow-hidden transition-shadow duration-300 cursor-pointer"
         >
-          <!-- Destination image -->
-          <div
-            class="relative bg-gray-200 h-64 sm:h-72 overflow-hidden group-hover:scale-105 transition-transform duration-300"
-          >
-            <NuxtImg
-              :src="destination.thumbnail"
-              :alt="destination.title"
-              class="w-full h-full object-cover"
-              loading="lazy"
-            />
-            <!-- Gradient overlay -->
+          <template #header>
+            <!-- Destination image -->
             <div
-              class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
-            ></div>
+              class="relative bg-gray-200 h-64 sm:h-72 overflow-hidden group-hover:scale-105 transition-transform duration-300"
+            >
+              <NuxtImg
+                :src="destination.thumbnail"
+                :alt="destination.title"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+              <!-- Gradient overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
+              ></div>
 
-            <!-- Destination info overlay -->
-            <div class="bottom-4 left-4 absolute text-white">
-              <h3 class="mb-1 font-bold text-xl sm:text-2xl">
-                {{ destination.title }}
-              </h3>
-              <p class="text-gray-200 text-sm">Peru</p>
+              <!-- Destination info overlay -->
+              <div class="bottom-4 left-4 absolute text-white">
+                <h3 class="mb-1 font-bold text-xl sm:text-2xl">
+                  {{ destination.title }}
+                </h3>
+                <p class="text-gray-200 text-sm">Peru</p>
+              </div>
             </div>
-          </div>
+          </template>
 
           <!-- Content -->
           <div class="p-6">
@@ -84,7 +86,7 @@
               </svg>
             </div>
           </div>
-        </div>
+        </UCard>
       </div>
 
       <!-- See all destinations button -->

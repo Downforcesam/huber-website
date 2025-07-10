@@ -52,7 +52,15 @@
                 {{ tour.title }}
               </h3>
               <p class="text-gray-200 text-sm">
-                {{ t(tour.category) }}
+                {{
+                  (tour.category as string) === 'City Tour' ||
+                  (tour.category as string) === 'Tour Ciudad'
+                    ? t('cityTour')
+                    : (tour.category as string) === 'Trekking' ||
+                        (tour.category as string) === 'Senderismo'
+                      ? t('trekking')
+                      : tour.category
+                }}
               </p>
             </div>
           </div>
@@ -73,7 +81,21 @@
               </div>
               <div>
                 <span class="text-gray-500">{{ t('difficulty') }}:</span>
-                <span class="ml-1 font-medium">{{ t(tour.difficulty) }}</span>
+                <span class="ml-1 font-medium">{{
+                  (tour.difficulty as string) === 'Easy' ||
+                  (tour.difficulty as string) === 'Fácil'
+                    ? t('easy')
+                    : (tour.difficulty as string) === 'Moderate' ||
+                        (tour.difficulty as string) === 'Moderado'
+                      ? t('moderate')
+                      : (tour.difficulty as string) === 'Challenging' ||
+                          (tour.difficulty as string) === 'Desafiante'
+                        ? t('challenging')
+                        : (tour.difficulty as string) === 'Expert' ||
+                            (tour.difficulty as string) === 'Experto'
+                          ? t('expert')
+                          : tour.difficulty
+                }}</span>
               </div>
             </div>
 
