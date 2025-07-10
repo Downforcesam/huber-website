@@ -111,7 +111,7 @@
 </template>
 
 <script setup lang="ts">
-import { SimpleContactFormSchema } from '~/shared/schemas/contact';
+import { SimpleContactFormSchema } from '../../../shared/schemas/contact';
 
 const { t } = useI18n();
 const toast = useToast();

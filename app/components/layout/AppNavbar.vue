@@ -20,7 +20,7 @@
         <nav class="hidden lg:flex items-center space-x-8">
           <template v-for="item in navigation" :key="item.name">
             <NuxtLink
-              v-if="!item.href.startsWith('#')"
+              v-if="!item.isAnchor"
               :to="localePath(item.href)"
               class="group relative font-medium text-gray-700 hover:text-brand-teal text-sm transition-colors duration-200"
             >
@@ -29,16 +29,16 @@
                 class="-bottom-1 left-0 absolute bg-brand-teal w-0 group-hover:w-full h-0.5 transition-all duration-200"
               ></span>
             </NuxtLink>
-            <a
+            <button
               v-else
-              :href="route.path === '/' ? item.href : `/${item.href}`"
-              class="group relative font-medium text-gray-700 hover:text-brand-teal text-sm transition-colors duration-200"
+              @click="handleAnchorClick(item.href)"
+              class="group relative font-medium text-gray-700 hover:text-brand-teal text-sm transition-colors duration-200 cursor-pointer"
             >
               {{ t(item.name) }}
               <span
                 class="-bottom-1 left-0 absolute bg-brand-teal w-0 group-hover:w-full h-0.5 transition-all duration-200"
               ></span>
-            </a>
+            </button>
           </template>
         </nav>
 
@@ -89,21 +89,23 @@
             </h3>
             <template v-for="item in navigation" :key="item.name">
               <NuxtLink
-                v-if="!item.href.startsWith('#')"
+                v-if="!item.isAnchor"
                 :to="localePath(item.href)"
                 @click="mobileMenuOpen = false"
                 class="block hover:bg-gray-50 px-3 py-2 rounded-md font-medium text-gray-700 hover:text-brand-teal text-base transition-colors"
               >
                 {{ t(item.name) }}
               </NuxtLink>
-              <a
+              <button
                 v-else
-                :href="route.path === '/' ? item.href : `/${item.href}`"
-                @click="mobileMenuOpen = false"
-                class="block hover:bg-gray-50 px-3 py-2 rounded-md font-medium text-gray-700 hover:text-brand-teal text-base transition-colors"
+                @click="
+                  handleAnchorClick(item.href);
+                  mobileMenuOpen = false;
+                "
+                class="block hover:bg-gray-50 px-3 py-2 rounded-md w-full font-medium text-gray-700 hover:text-brand-teal text-base text-left transition-colors cursor-pointer"
               >
                 {{ t(item.name) }}
-              </a>
+              </button>
             </template>
           </div>
 
@@ -116,13 +118,15 @@
             </h3>
 
             <UButton
-              :to="route.path === '/' ? '#contact' : '/#contact'"
+              @click="
+                handleAnchorClick('#contact');
+                mobileMenuOpen = false;
+              "
               color="primary"
               variant="solid"
               size="lg"
               block
               icon="i-heroicons-envelope"
-              @click="mobileMenuOpen = false"
             >
               {{ t('contactUs') }}
             </UButton>
@@ -150,16 +154,41 @@
 const { t } = useI18n();
 const localePath = useLocalePath();
 const route = useRoute();
+const router = useRouter();
 
 const navigation = [
-  { name: 'home', href: '/' },
-  { name: 'tours', href: '/tours' },
-  { name: 'destinations', href: '/destinations' },
-  { name: 'about', href: '/about' },
-  { name: 'contact', href: '#contact' },
+  { name: 'home', href: '/', isAnchor: false },
+  { name: 'tours', href: '/tours', isAnchor: false },
+  { name: 'destinations', href: '/destinations', isAnchor: false },
+  { name: 'about', href: '/about', isAnchor: false },
+  { name: 'contact', href: '#contact', isAnchor: true },
 ];
 
 const mobileMenuOpen = ref(false);
+
+// Handle anchor link clicks with proper navigation
+function handleAnchorClick(anchor: string) {
+  if (route.path === '/') {
+    // Already on home page, just scroll
+    const element = document.querySelector(anchor);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  } else {
+    // Navigate to home page first, then scroll after navigation
+    router.push('/').then(() => {
+      // Wait for the page to load, then scroll
+      nextTick(() => {
+        setTimeout(() => {
+          const element = document.querySelector(anchor);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 100);
+      });
+    });
+  }
+}
 
 // Close mobile menu when clicking outside
 onMounted(() => {
