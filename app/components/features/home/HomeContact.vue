@@ -20,10 +20,10 @@
         <UCard class="shadow-lg">
           <div class="p-6 pb-2 text-center">
             <h3 class="mb-1 font-bold text-gray-900 text-2xl">
-              Send us a message
+              {{ t('sendMessage') }}
             </h3>
             <p class="text-gray-600 text-base">
-              We'll get back to you within 24 hours
+              {{ t('contactSubtitle') }}
             </p>
           </div>
 
